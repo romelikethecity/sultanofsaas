@@ -14,7 +14,7 @@ TOOL_CONTENT = {}
 TOOL_CONTENT["zendesk"] = {
     "overview": [
         "Zendesk is the name most people hear first when they search for help desk software. Founded in 2007, acquired by a private equity consortium in 2022 for $10.2 billion, it's the incumbent. Over 100,000 companies use it. The product covers ticketing, live chat, knowledge base, phone support, and a marketplace with 1,500+ integrations. If you need it, Zendesk probably has it somewhere.",
-        "That depth comes with baggage. Zendesk has accumulated 17 years of features, settings, and admin panels. Configuration is powerful but intimidating. Getting the system set up the way you actually want takes days, sometimes weeks. Small teams regularly report spending more time configuring Zendesk than answering tickets in their first month.",
+        "That depth comes with baggage. Zendesk has accumulated 17 years of features, settings, and admin panels. Configuration is powerful but intimidating. Getting the system set up the way you want takes days, sometimes weeks. Small teams regularly report spending more time configuring Zendesk than answering tickets in their first month.",
         "Pricing starts at $19/agent/mo for the stripped-down Suite Team plan. But most growing teams land on Suite Growth ($55/agent/mo) or Suite Professional ($115/agent/mo) once they realize the cheaper plans lack SLA management, custom analytics, and multilingual support. A 15-agent team on Professional pays $20,700/yr. That's a real number for an SMB, and it goes up from there if you add the AI add-on ($50/agent/mo extra).",
     ],
     "expanded_pros": [
@@ -24,7 +24,7 @@ TOOL_CONTENT["zendesk"] = {
         },
         {
             "title": "Mature automation and trigger system",
-            "detail": "Zendesk's triggers, automations, and macros are genuinely powerful once you learn them. You can auto-route tickets by language, escalate based on SLA timers, tag by keyword, and build multi-step workflows. Teams that invest the time to set this up properly see real efficiency gains at scale.",
+            "detail": "Zendesk's triggers, automations, and macros are powerful once you learn them. You can auto-route tickets by language, escalate based on SLA timers, tag by keyword, and build multi-step workflows. Teams that invest the time to set this up properly see real efficiency gains at scale.",
         },
         {
             "title": "Battle-tested at scale",
@@ -64,7 +64,7 @@ TOOL_CONTENT["zendesk"] = {
     ],
     "who_should_skip": [
         {"audience": "Small teams under 10 agents", "reason": "You'll spend more time configuring Zendesk than you'll save with its features. Freshdesk or Help Scout delivers 90% of the value with a fraction of the setup headache and cost."},
-        {"audience": "Bootstrapped founders watching every dollar", "reason": "At $115/agent/mo for the plan most teams actually need, Zendesk is one of the most expensive options in the category. Freshdesk's free tier or Groove at $4.80/user/mo accomplish the same core job for new teams."},
+        {"audience": "Bootstrapped founders watching every dollar", "reason": "At $115/agent/mo for the plan most teams need, Zendesk is one of the most expensive options in the category. Freshdesk's free tier or Groove at $4.80/user/mo accomplish the same core job for new teams."},
         {"audience": "Teams that want simple, opinionated software", "reason": "Zendesk gives you infinite configuration options. If you'd rather have software that makes good default decisions and gets out of your way, look at Help Scout or Groove."},
     ],
     "stage_guidance": {
@@ -85,11 +85,11 @@ TOOL_CONTENT["zendesk"] = {
         "For everyone else, Zendesk is the safe choice that quietly costs 2-3x more than alternatives that would serve you just as well. Freshdesk matches most of Zendesk's features at lower cost. Help Scout offers a simpler experience. Groove costs a tenth of the price. Being the market leader doesn't automatically make Zendesk the right pick for your team.",
     ],
     "faqs": [
-        {"question": "Is Zendesk worth the price for small businesses?", "answer": "For most small businesses under 10 agents, no. The Professional plan ($115/agent) is what you'll actually need, and at that price, Freshdesk Pro ($49/agent) offers comparable features for less than half. Zendesk's value proposition strengthens at 15+ agents where its automation and reporting depth justify the premium."},
+        {"question": "Is Zendesk worth the price for small businesses?", "answer": "For most small businesses under 10 agents, no. The Professional plan ($115/agent) is what you'll need, and at that price, Freshdesk Pro ($49/agent) offers comparable features for less than half. Zendesk's value proposition strengthens at 15+ agents where its automation and reporting depth justify the premium."},
         {"question": "How long does Zendesk take to set up?", "answer": "Basic setup takes 1-2 days. A full implementation with custom ticket forms, automation rules, SLA policies, and integrations takes 2-4 weeks for most teams. Larger deployments often hire a Zendesk implementation partner, budgeting $3,000-$10,000 for setup."},
         {"question": "Is Zendesk's AI worth the extra $50/agent/mo?", "answer": "It depends on volume. The AI handles auto-responses, intelligent routing, and agent suggestions. At 500+ tickets/day, the time savings justify the cost. Below that threshold, you're paying for technology that doesn't move the needle enough. Freshdesk includes AI features in its Pro tier without a separate charge."},
         {"question": "Can Zendesk handle phone support?", "answer": "Yes. Zendesk Talk (the voice product) is included in Suite plans. It handles inbound/outbound calls, IVR, call recording, and voicemail. The voice quality is good, though dedicated call center software (like LiveAgent or Five9) offers more depth for teams where phone is the primary channel."},
-        {"question": "How does Zendesk compare to Freshdesk?", "answer": "Zendesk has deeper enterprise features, a larger integration marketplace, and more configuration flexibility. Freshdesk is easier to learn, cheaper at every tier, and includes a genuinely useful free plan. For teams under 20 agents, Freshdesk is typically the better value. Above 20, Zendesk's depth starts to justify the premium."},
+        {"question": "How does Zendesk compare to Freshdesk?", "answer": "Zendesk has deeper enterprise features, a larger integration marketplace, and more configuration flexibility. Freshdesk is easier to learn, cheaper at every tier, and includes a useful free plan. For teams under 20 agents, Freshdesk is typically the better value. Above 20, Zendesk's depth starts to justify the premium."},
         {"question": "Does Zendesk have a free plan?", "answer": "No. Zendesk eliminated its free plan years ago. The cheapest option is Suite Team at $19/agent/mo (annual billing). Freshdesk offers a free tier for up to 2 agents, and Zoho Desk is free for up to 3 agents, if you need a no-cost starting point."},
     ],
 }
@@ -106,7 +106,7 @@ TOOL_CONTENT["freshdesk"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Free tier that's actually usable",
+            "title": "Free tier that's usable",
             "detail": "Two agents, email ticketing, knowledge base, ticket dispatch, and basic reporting. No credit card required. This is enough for a small business to run real support for months before needing to upgrade. Zendesk's cheapest plan is $19/agent/mo. Zoho Desk's free tier is limited to 3 agents but with a weaker feature set. Freshdesk's free plan is the best no-cost starting point in help desk.",
         },
         {
@@ -171,12 +171,12 @@ TOOL_CONTENT["freshdesk"] = {
         {"tool": "Groove", "reason": "Choose Groove if you're a very small team (2-5 people) that wants the simplest possible help desk at $4.80-$15.60/user/mo. Groove deliberately does less than Freshdesk, and for tiny teams, that's a feature."},
     ],
     "verdict_long": [
-        "Freshdesk earned Sultan's Pick because it answers the question 90% of support teams are actually asking: how do I run professional customer support without spending $15,000+/yr? The free tier is real, the Pro plan ($49/agent) includes AI without surcharges, and the interface doesn't require a certification to navigate.",
-        "The feature gap with Zendesk exists, but it's narrower than Zendesk's pricing premium suggests. For teams under 25 agents, I'd pick Freshdesk over Zendesk every time unless a specific Zendesk integration is truly irreplaceable. The $8,000+/yr you save per 10 agents buys you something Zendesk can't sell: budget for hiring, training, or better tools elsewhere in your stack.",
+        "Freshdesk earned Sultan's Pick because it answers the question 90% of support teams are asking: how do I run professional customer support without spending $15,000+/yr? The free tier is real, the Pro plan ($49/agent) includes AI without surcharges, and the interface doesn't require a certification to navigate.",
+        "The feature gap with Zendesk exists, but it's narrower than Zendesk's pricing premium suggests. For teams under 25 agents, I'd pick Freshdesk over Zendesk every time unless a specific Zendesk integration is irreplaceable. The $8,000+/yr you save per 10 agents buys you something Zendesk can't sell: budget for hiring, training, or better tools elsewhere in your stack.",
         "Freshdesk does have a ceiling. Enterprise teams with complex compliance needs, sandbox requirements, and 50+ agents may outgrow it. But most support teams never reach that ceiling. And if you do, you'll have saved enough money in the meantime to fund the migration comfortably.",
     ],
     "faqs": [
-        {"question": "Is Freshdesk really better than Zendesk?", "answer": "For teams under 25 agents, yes. Freshdesk offers 80-90% of Zendesk's features at roughly half the cost with a faster learning curve. Above 25 agents with complex enterprise requirements, Zendesk's depth in compliance, sandbox testing, and custom objects still leads."},
+        {"question": "Is Freshdesk better than Zendesk?", "answer": "For teams under 25 agents, yes. Freshdesk offers 80-90% of Zendesk's features at roughly half the cost with a faster learning curve. Above 25 agents with complex enterprise requirements, Zendesk's depth in compliance, sandbox testing, and custom objects still leads."},
         {"question": "Is Freshdesk's free plan worth using?", "answer": "Absolutely. The free plan includes email ticketing, a knowledge base, and basic reporting for up to 2 agents. It's a legitimate support tool, not a crippled demo. Many small businesses run on the free plan for months or even years before needing paid features."},
         {"question": "How does Freddy AI compare to Zendesk AI?", "answer": "Comparable in capability (auto-triage, suggested responses, chatbot), dramatically different in pricing. Freddy AI is included in Freshdesk Pro ($49/agent). Zendesk AI costs $50/agent/mo on top of a $115/agent base plan. For most teams, Freddy AI delivers similar value at a fraction of the cost."},
         {"question": "Can Freshdesk handle phone support?", "answer": "Yes, through Freshcaller (sold separately or bundled in some plans). It covers inbound/outbound calling, IVR, call recording, and call routing. The integration with Freshdesk ticketing is native. Quality is solid for most support teams, though dedicated call center platforms offer more depth."},
@@ -191,7 +191,7 @@ TOOL_CONTENT["freshdesk"] = {
 
 TOOL_CONTENT["intercom"] = {
     "overview": [
-        "Intercom pioneered the chat widget that pops up in the bottom corner of every SaaS app. The company has evolved well beyond that, adding ticketing, email, knowledge base, and an AI chatbot called Fin that's genuinely one of the best in class. If your customers expect real-time chat and you want AI handling the easy questions, Intercom does that better than anyone.",
+        "Intercom pioneered the chat widget that pops up in the bottom corner of every SaaS app. The company has evolved well beyond that, adding ticketing, email, knowledge base, and an AI chatbot called Fin that's one of the best in class. If your customers expect real-time chat and you want AI handling the easy questions, Intercom does that better than anyone.",
         "The AI story is the headline. Fin (Intercom's AI agent) resolves up to 50% of support conversations without human involvement, according to Intercom's published data. That number varies by industry and knowledge base quality, but even at 30% resolution, you're cutting ticket volume by a third. For SaaS companies with high chat volume and well-documented products, Fin is a genuine force multiplier.",
         "The catch is pricing. Intercom's billing model is confusing and changes frequently. The current structure charges per seat ($39-$139/seat/mo) plus a per-resolution fee for Fin AI ($0.99 per AI resolution). A team of 5 agents handling 3,000 conversations/month where Fin resolves 1,000 of them pays $195-695/mo in seat costs plus $990/mo in AI resolution fees. The total bill lands between $1,185 and $1,685/mo. You'll want a spreadsheet to model it.",
     ],
@@ -215,7 +215,7 @@ TOOL_CONTENT["intercom"] = {
     ],
     "expanded_cons": [
         {
-            "title": "Pricing is genuinely confusing",
+            "title": "Pricing is confusing",
             "detail": "Seat-based pricing plus per-resolution AI fees plus add-ons for product tours and WhatsApp. Intercom has changed its pricing structure multiple times, and the current model requires careful modeling to predict your actual monthly bill. Founders report bill surprises when AI resolution volume exceeds estimates. Ask for a detailed cost projection before signing.",
         },
         {
@@ -264,7 +264,7 @@ TOOL_CONTENT["intercom"] = {
         "If your support is primarily email-based, or if your budget won't support $1,500+/mo, Intercom isn't the right tool. Freshdesk or Help Scout will serve you better at a third of the cost. But for chat-first SaaS support with AI at the core, Intercom is the category leader, and the results (30-50% ticket deflection) are hard to argue with.",
     ],
     "faqs": [
-        {"question": "How much does Intercom's Fin AI actually cost?", "answer": "Fin charges $0.99 per AI resolution on top of your seat-based plan. A resolution counts when Fin fully answers a customer question without human involvement. If Fin handles 1,000 conversations/month, that's $990/mo in AI fees alone. The cost scales directly with Fin's effectiveness, which makes budgeting tricky."},
+        {"question": "How much does Intercom's Fin AI cost?", "answer": "Fin charges $0.99 per AI resolution on top of your seat-based plan. A resolution counts when Fin fully answers a customer question without human involvement. If Fin handles 1,000 conversations/month, that's $990/mo in AI fees alone. The cost scales directly with Fin's effectiveness, which makes budgeting tricky."},
         {"question": "Is Intercom good for email support?", "answer": "Adequate but underpowered compared to tools built for email-first support. Intercom's email ticketing works, but the UI is designed around chat conversations. Teams that handle primarily email tickets will find Freshdesk, Zendesk, or Help Scout more comfortable and more capable."},
         {"question": "Can Intercom replace my onboarding tool?", "answer": "In many cases, yes. Intercom's product tours, tooltips, checklists, and targeted messages cover the core functionality of standalone tools like Userpilot or Appcues. The tours are simpler than dedicated onboarding platforms but sufficient for most SaaS products."},
         {"question": "How does Fin compare to Zendesk AI?", "answer": "Fin is generally considered more natural in conversation and more effective at resolving questions independently. Zendesk AI is stronger at ticket routing and agent assist features. For chat-based AI support, Fin leads. For ticket-based AI augmentation, Zendesk has the edge."},
@@ -347,8 +347,8 @@ TOOL_CONTENT["help-scout"] = {
     "alternatives_detail": [
         {"tool": "Freshdesk", "reason": "Choose Freshdesk if you want more features (phone, advanced automation, AI chatbot) at a similar price point. Freshdesk is the full-featured mid-market option. Help Scout is the intentionally simple option. Different philosophies, similar pricing."},
         {"tool": "Groove", "reason": "Choose Groove if Help Scout is more than you need and you want to spend even less. Groove shares the simple, email-like philosophy at $4.80-$15.60/user/mo. For teams under 5, Groove may be all you need."},
-        {"tool": "Zendesk", "reason": "Choose Zendesk if you need deep automation, complex workflows, and enterprise-grade reporting. Zendesk is the opposite of Help Scout's philosophy (maximum configurability vs. intentional simplicity), and some teams genuinely need that depth."},
-        {"tool": "Intercom", "reason": "Choose Intercom if live chat and AI-powered conversations are your primary support channel. Intercom is chat-first. Help Scout is email-first. Pick the tool that matches how your customers actually contact you."},
+        {"tool": "Zendesk", "reason": "Choose Zendesk if you need deep automation, complex workflows, and enterprise-grade reporting. Zendesk is the opposite of Help Scout's philosophy (maximum configurability vs. intentional simplicity), and some teams need that depth."},
+        {"tool": "Intercom", "reason": "Choose Intercom if live chat and AI-powered conversations are your primary support channel. Intercom is chat-first. Help Scout is email-first. Pick the tool that matches how your customers contact you."},
     ],
     "verdict_long": [
         "Help Scout scores highest in this category because it does something remarkably rare in SaaS: it makes a deliberate choice about what kind of product it wants to be and executes that vision consistently. It's a help desk that feels like email, treats customers like people, and gives small teams everything they need without burying them in features they don't.",
@@ -418,7 +418,7 @@ TOOL_CONTENT["hubspot-service"] = {
     ],
     "who_should_buy": [
         {"audience": "Teams already running HubSpot CRM at Professional tier", "reason": "If you're already paying for HubSpot Sales or Marketing Professional, adding Service Hub to your bundle is often discounted. The CRM integration alone saves hours of context-switching per week, and the unified data model enables reporting that's impossible with separate tools."},
-        {"audience": "B2B companies wanting unified customer lifecycle data", "reason": "Seeing a customer's marketing engagement, sales history, and support interactions in one timeline is genuinely valuable. If customer success depends on knowing the full relationship history, HubSpot's unified platform delivers that better than any integration between separate tools."},
+        {"audience": "B2B companies wanting unified customer lifecycle data", "reason": "Seeing a customer's marketing engagement, sales history, and support interactions in one timeline is valuable. If customer success depends on knowing the full relationship history, HubSpot's unified platform delivers that better than any integration between separate tools."},
     ],
     "who_should_skip": [
         {"audience": "Teams that don't use HubSpot CRM", "reason": "Service Hub without HubSpot CRM is a mediocre help desk at premium pricing. The entire value proposition is the CRM integration. Without it, you're paying more for less capability than Freshdesk, Help Scout, or Zendesk."},
@@ -437,7 +437,7 @@ TOOL_CONTENT["hubspot-service"] = {
         {"tool": "Help Scout", "reason": "Choose Help Scout if you want simple, personal support at $20-40/user/mo. Help Scout doesn't have CRM integration depth, but the support experience for customers and agents is better than HubSpot Service Hub."},
     ],
     "verdict_long": [
-        "HubSpot Service Hub exists to complete the HubSpot platform, and it does that job well. The CRM integration is unmatched. The unified customer timeline is genuinely useful. If you're already deep in HubSpot's ecosystem, adding Service Hub is a logical extension that creates real operational value.",
+        "HubSpot Service Hub exists to complete the HubSpot platform, and it does that job well. The CRM integration is unmatched. The unified customer timeline is useful. If you're already deep in HubSpot's ecosystem, adding Service Hub is a logical extension that creates real operational value.",
         "As a standalone help desk, Service Hub is overpriced and underfeatured. The $500/mo Professional tier offers less support depth than Freshdesk at $49/agent or Help Scout at $40/user. The free and Starter tiers are fine for very basic needs, but the cliff between Starter and Professional is steep enough to break budgets.",
         "Buy HubSpot Service Hub because you're a HubSpot shop and the CRM integration matters. Don't buy it because you think it's the best help desk. It isn't. It's the best help desk for HubSpot users, which is a much narrower recommendation.",
     ],
@@ -608,7 +608,7 @@ TOOL_CONTENT["liveagent"] = {
         {"tool": "Zoho Desk", "reason": "Choose Zoho Desk if you want an even cheaper option ($7-23/agent) with Zoho ecosystem integration. Zoho Desk lacks LiveAgent's call center depth, but the phone basics are covered through Zoho Voice integration."},
     ],
     "verdict_long": [
-        "LiveAgent is the scrappy all-in-one that packs more features per dollar than anything else in the category. The built-in call center is the headline, and it's genuinely impressive. Inbound, outbound, IVR, recording, routing: all included in a $29/agent plan. Teams that handle significant phone volume save thousands per year by consolidating their help desk and phone system into one product.",
+        "LiveAgent is the scrappy all-in-one that packs more features per dollar than anything else in the category. The built-in call center is the headline, and it's impressive. Inbound, outbound, IVR, recording, routing: all included in a $29/agent plan. Teams that handle significant phone volume save thousands per year by consolidating their help desk and phone system into one product.",
         "The trade-off is the user interface. LiveAgent looks and feels older than its competitors. The feature density that's a strength on paper becomes a complexity burden in daily use. Agents who switch from Freshdesk or Help Scout will notice the gap, and the learning curve is steeper than most modern help desks.",
         "If phone support is a core part of your operation and budget matters, LiveAgent deserves serious consideration. The savings are real and the features are genuine. Just bring patience for the setup process and set expectations about the daily interface experience. You're choosing function over form, and sometimes that's the right trade.",
     ],
@@ -669,7 +669,7 @@ TOOL_CONTENT["happyfox"] = {
         "The lack of a free trial without contacting sales is a red flag. Freshdesk, Help Scout, and Zendesk all offer self-serve trials. When a company won't let you test the product without talking to a salesperson, you should wonder what the self-serve conversion rate looks like.",
     ],
     "who_should_buy": [
-        {"audience": "Teams wanting a clean, no-frills help desk at mid-range pricing", "reason": "If you value a well-organized ticketing system without the complexity of Zendesk or the minimalism of Groove, HappyFox hits the middle ground. The ticket management is genuinely clean, and the learning curve is moderate."},
+        {"audience": "Teams wanting a clean, no-frills help desk at mid-range pricing", "reason": "If you value a well-organized ticketing system without the complexity of Zendesk or the minimalism of Groove, HappyFox hits the middle ground. The ticket management is clean, and the learning curve is moderate."},
         {"audience": "Companies needing multi-brand support without enterprise pricing", "reason": "HappyFox includes multi-brand features at lower tiers. If you manage 3-5 brands and need separate portals and knowledge bases, HappyFox handles this at $49/agent/mo where Zendesk would charge $115+ for comparable multi-brand features."},
     ],
     "who_should_skip": [
@@ -709,7 +709,7 @@ TOOL_CONTENT["happyfox"] = {
 
 TOOL_CONTENT["kayako"] = {
     "overview": [
-        "Kayako has a long history in help desk software. Founded in 2001, it was one of the original on-premise help desk solutions before pivoting to cloud. At its peak, Kayako served 30,000+ organizations. The product offered a clean, conversation-based approach to support that was genuinely ahead of its time.",
+        "Kayako has a long history in help desk software. Founded in 2001, it was one of the original on-premise help desk solutions before pivoting to cloud. At its peak, Kayako served 30,000+ organizations. The product offered a clean, conversation-based approach to support that was ahead of its time.",
         "That was then. The product has stagnated. Feature development has slowed to a crawl. The knowledge base is outdated. The integration list is short and getting shorter. G2 reviews from the last two years paint a picture of a product coasting on existing customers rather than competing for new ones. Support teams evaluating Kayako today are mostly Kayako users deciding whether to stay or leave.",
         "Pricing starts at $15/agent/mo for the basic plan and goes to custom pricing for enterprise. The features you get at those price points were competitive five years ago. Today, Freshdesk's free plan offers more functionality than Kayako's paid starter tier. It's difficult to recommend Kayako to any team that isn't already locked in.",
     ],
@@ -774,7 +774,7 @@ TOOL_CONTENT["kayako"] = {
         {"tool": "Zoho Desk", "reason": "Choose Zoho Desk if budget is your primary constraint. Zoho Desk Enterprise ($23/agent) costs less than Kayako Scale ($30/agent) and offers more features with active development."},
     ],
     "verdict_long": [
-        "Kayako pioneered ideas that other help desks have since adopted and improved upon. The conversation-based approach, the customer journey tracking, the unified timeline: these were genuinely innovative when Kayako introduced them. But innovation from 2015 doesn't earn a recommendation in 2026.",
+        "Kayako pioneered ideas that other help desks have since adopted and improved upon. The conversation-based approach, the customer journey tracking, the unified timeline: these were innovative when Kayako introduced them. But innovation from 2015 doesn't earn a recommendation in 2026.",
         "The product has stagnated. Development has slowed. Integrations are thinning. AI is absent. Support quality is declining. The company's direction is unclear. These aren't minor quibbles. They're systemic signals that Kayako isn't investing in the product's future the way Freshdesk, Zendesk, and Intercom continue to invest in theirs.",
         "Existing Kayako customers should build a migration plan. New buyers should look elsewhere. Freshdesk, Help Scout, and Zoho Desk all deliver more value at comparable or lower prices with active product development. Kayako earned its place in help desk history. That place is increasingly in the past.",
     ],
@@ -856,7 +856,7 @@ TOOL_CONTENT["groove-helpdesk"] = {
     },
     "alternatives_detail": [
         {"tool": "Help Scout", "reason": "Choose Help Scout if you want Groove's philosophy (simple, email-like) with more depth (better reporting, more integrations, Beacon widget). Help Scout costs more ($20-40/user) but grows further before you hit the ceiling."},
-        {"tool": "Freshdesk", "reason": "Choose Freshdesk if you need features Groove lacks: automation, SLA management, phone support, AI, and a free tier. Freshdesk's free plan is actually free and more capable than Groove's paid Standard plan."},
+        {"tool": "Freshdesk", "reason": "Choose Freshdesk if you need features Groove lacks: automation, SLA management, phone support, AI, and a free tier. Freshdesk's free plan is free and more capable than Groove's paid Standard plan."},
         {"tool": "Zoho Desk", "reason": "Choose Zoho Desk if you want more features at a similar price point. Zoho Desk Standard ($7/agent) costs a bit more than Groove Standard ($4.80/user) but adds SLA management, social media channels, and automation rules."},
     ],
     "verdict_long": [
