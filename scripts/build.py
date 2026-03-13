@@ -1396,7 +1396,7 @@ NICHES = {
             'email-marketing': ['mailerlite', 'convertkit', 'brevo', 'beehiiv', 'mailchimp'],
             'seo-tools': ['mangools', 'ubersuggest', 'se-ranking', 'screaming-frog', 'ahrefs'],
             'help-desk': ['groove-helpdesk', 'help-scout', 'freshdesk', 'zoho-desk', 'hubspot-service'],
-            'ai-sdr': ['lavender', 'smartlead', 'outplay', 'aisdr', 'salesrobot'],
+            'ai-sdr': ['smartlead', 'lavender', 'outplay', 'aisdr', 'salesrobot'],
             'sales-engagement': ['instantly', 'apollo', 'lemlist', 'mailshake', 'yesware'],
             'conversation-intelligence': ['fathom', 'fireflies', 'otter-ai', 'sybill', 'avoma'],
             'data-enrichment': ['lusha', 'apollo', 'leadiq', 'rocketreach', 'kaspr'],
@@ -1407,7 +1407,7 @@ NICHES = {
             'email-marketing': "MailerLite gives you automations, landing pages, and a clean email builder for free (up to 1,000 subscribers). It does 80% of what ConvertKit does at a fraction of the price.",
             'seo-tools': "Mangools packages five SEO tools into one affordable bundle. KWFinder alone is worth the price: the cleanest keyword difficulty scoring interface in the market.",
             'help-desk': "Groove is the simplest help desk you can buy. Shared inbox, knowledge base, and live chat at $4.80/user/mo. If you're the only person answering support emails, this is all you need.",
-            'ai-sdr': "Skip the AI agents. Lavender coaches your email writing in real-time for $29/mo. It measures what's working, tells you what to fix, and improves your reply rates within the first week. An AI SDR agent costs $2-5K/mo and still needs you managing it.",
+            'ai-sdr': "Smartlead gives solo founders unlimited mailbox rotation and AI warmup at $39/mo. You can run high-volume cold email campaigns without worrying about deliverability, and the setup takes an afternoon. Lavender coaches your writing, but Smartlead handles the entire sending infrastructure.",
             'sales-engagement': "Instantly gives you unlimited email accounts with built-in warmup at $30/mo. Solo founders doing cold outreach need volume and deliverability, not a complex multi-channel platform.",
             'conversation-intelligence': "Fathom records your Zoom calls and generates AI summaries for free. Unlimited recordings, no credit card. Every solo founder taking sales calls should be running Fathom.",
             'data-enrichment': "Lusha's Chrome extension finds emails and phone numbers from LinkedIn in seconds for $29/mo. Solo founders need quick lookups, not a $15K/yr database.",
@@ -1427,7 +1427,7 @@ NICHES = {
             'seo-tools': ['se-ranking', 'semrush', 'ahrefs', 'mangools', 'moz'],
             'help-desk': ['help-scout', 'freshdesk', 'zendesk', 'zoho-desk', 'intercom'],
             'ai-sdr': ['smartlead', 'lavender', 'outplay', 'amplemarket', 'nooks'],
-            'sales-engagement': ['apollo', 'lemlist', 'instantly', 'reply-io', 'mixmax'],
+            'sales-engagement': ['lemlist', 'apollo', 'instantly', 'reply-io', 'mixmax'],
             'conversation-intelligence': ['sybill', 'fireflies', 'fathom', 'avoma', 'gong'],
             'data-enrichment': ['apollo', 'lusha', 'clay', 'leadiq', 'uplead'],
         },
@@ -1438,7 +1438,7 @@ NICHES = {
             'seo-tools': "SE Ranking delivers 70% of Semrush's functionality at 35% of the price. For small teams watching their budget, the value per dollar is unbeatable.",
             'help-desk': "Help Scout makes customer support feel personal. No ticket numbers, no robotic auto-replies. Just clean, human conversations. Small teams who believe support is a differentiator belong here.",
             'ai-sdr': "Smartlead gives small outbound teams unlimited mailbox rotation and AI warmup at $39/mo. Your 2-5 person sales team gets enterprise-level cold email infrastructure at startup pricing.",
-            'sales-engagement': "Apollo combines a 275M+ contact database with full engagement features for $49/user/mo. Small teams get prospecting data and sequencing in one platform instead of paying for two.",
+            'sales-engagement': "Lemlist's personalized images and liquid syntax make every cold email feel hand-written. Small teams sending hundreds of emails (not thousands) get better reply rates through personalization quality. The built-in B2B database covers basic prospecting without a separate data tool.",
             'conversation-intelligence': "Sybill automatically updates your CRM from call recordings and drafts follow-up emails. Small teams where reps wear multiple hats need AI that eliminates data entry, and Sybill does exactly that.",
             'data-enrichment': "Apollo's included contact database covers most small team prospecting needs at $49/user/mo. You get data + engagement in one tool instead of paying ZoomInfo $15K/yr for data alone.",
         },
@@ -1456,8 +1456,8 @@ NICHES = {
             'email-marketing': ['mailerlite', 'brevo', 'beehiiv', 'convertkit', 'mailchimp'],
             'seo-tools': ['screaming-frog', 'ubersuggest', 'moz', 'mangools', 'se-ranking'],
             'help-desk': ['zoho-desk', 'freshdesk', 'hubspot-service', 'groove-helpdesk', 'liveagent'],
-            'ai-sdr': ['lavender', 'outplay', 'smartlead', 'aisdr', 'salesrobot'],
-            'sales-engagement': ['apollo', 'yesware', 'instantly', 'mailshake', 'reply-io'],
+            'ai-sdr': ['outplay', 'lavender', 'smartlead', 'aisdr', 'salesrobot'],
+            'sales-engagement': ['yesware', 'apollo', 'instantly', 'mailshake', 'reply-io'],
             'conversation-intelligence': ['fathom', 'fireflies', 'otter-ai', 'avoma', 'sybill'],
             'data-enrichment': ['apollo', 'lusha', 'kaspr', 'leadiq', 'rocketreach'],
         },
@@ -1467,8 +1467,8 @@ NICHES = {
             'email-marketing': "MailerLite's free tier gives you 1,000 subscribers with automations, landing pages, and a clean email builder. Most free tiers gut the features. MailerLite gives you enough to run a real email operation.",
             'seo-tools': "Screaming Frog's free tier crawls 500 URLs with full technical SEO analysis. Every technical SEO uses it. The free version handles most small-site audits without spending a cent.",
             'help-desk': "Zoho Desk's free tier supports 3 agents, one more than Freshdesk's free plan. For tiny teams stretching every dollar, that extra seat matters. The feature set covers ticketing, knowledge base, and basic automations.",
-            'ai-sdr': "Lavender's free plan gives you enough email coaching to see if AI writing assistance improves your cold outreach. No autonomous AI SDR tool offers a meaningful free tier. Lavender lets you test the category at zero risk.",
-            'sales-engagement': "Apollo's free plan includes 50 emails/day and access to the contact database. That's more functionality for free than any competitor offers on a paid plan. The best free tier in B2B sales, period.",
+            'ai-sdr': "Outplay's free plan includes multi-channel outreach across email, phone, LinkedIn, and SMS. You get a full engagement platform at $0, covering more ground than Lavender's email-only coaching. For founders testing outbound channels, Outplay lets you experiment across all of them for free.",
+            'sales-engagement': "Yesware's free plan adds email tracking and templates directly inside Gmail and Outlook. You can see who opens your emails and when, without paying anything or leaving your inbox. For free-tier users, that visibility into prospect engagement is more actionable than database access.",
             'conversation-intelligence': "Fathom records unlimited Zoom calls and generates AI summaries at no cost. No time limits, no credit card. The most generous free tier in conversation intelligence.",
             'data-enrichment': "Apollo's free plan includes contact database access and 50 export credits/month. You can prospect, find data, and send emails without paying anything. No other data provider comes close at $0.",
         },
@@ -1489,7 +1489,7 @@ NICHES = {
             'ai-sdr': ['smartlead', 'instantly', 'outplay', 'lavender', 'amplemarket'],
             'sales-engagement': ['instantly', 'woodpecker', 'lemlist', 'apollo', 'reply-io'],
             'conversation-intelligence': ['fireflies', 'gong', 'fathom', 'sybill', 'avoma'],
-            'data-enrichment': ['clay', 'apollo', 'lusha', 'uplead', 'leadiq'],
+            'data-enrichment': ['apollo', 'clay', 'lusha', 'uplead', 'leadiq'],
         },
         'why_winners': {
             'crm': "Pipedrive's visual pipeline scales cleanly across multiple client accounts. Agencies managing outbound for several clients at once get a clear view of every deal stage without the overhead of Salesforce.",
@@ -1500,7 +1500,7 @@ NICHES = {
             'ai-sdr': "Smartlead's agency panel lets you manage cold email campaigns across multiple client accounts with separate mailbox pools. Unlimited mailbox rotation means your clients' domains stay clean.",
             'sales-engagement': "Instantly's multi-client workspace was built for agencies running cold outreach at scale. Separate campaigns, separate mailboxes, separate analytics per client. The pricing stays flat as you add accounts.",
             'conversation-intelligence': "Fireflies records and transcribes every client call, making institutional knowledge searchable. Agencies with high account manager turnover keep context alive when team members change.",
-            'data-enrichment': "Clay's waterfall enrichment lets agencies build custom data workflows per client. Each client gets enrichment tailored to their ICP, not a one-size-fits-all database export.",
+            'data-enrichment': "Apollo gives agencies a 275M+ contact database with built-in sequencing at $49/user/mo per client account. Agencies managing outbound for multiple clients get data + engagement in one platform, keeping per-client costs predictable. Clay's waterfall enrichment is more powerful, but Apollo's bundled pricing is easier to margin-stack across client retainers.",
         },
     },
 
@@ -1546,8 +1546,8 @@ NICHES = {
             'email-marketing': ['brevo', 'mailerlite', 'convertkit', 'beehiiv', 'mailchimp'],
             'seo-tools': ['se-ranking', 'mangools', 'ubersuggest', 'screaming-frog', 'ahrefs'],
             'help-desk': ['groove-helpdesk', 'freshdesk', 'zoho-desk', 'help-scout', 'hubspot-service'],
-            'ai-sdr': ['lavender', 'smartlead', 'outplay', 'aisdr', 'salesrobot'],
-            'sales-engagement': ['apollo', 'instantly', 'lemlist', 'mailshake', 'yesware'],
+            'ai-sdr': ['smartlead', 'lavender', 'outplay', 'aisdr', 'salesrobot'],
+            'sales-engagement': ['instantly', 'apollo', 'lemlist', 'mailshake', 'yesware'],
             'conversation-intelligence': ['fathom', 'fireflies', 'otter-ai', 'sybill', 'avoma'],
             'data-enrichment': ['apollo', 'lusha', 'leadiq', 'kaspr', 'rocketreach'],
         },
@@ -1557,8 +1557,8 @@ NICHES = {
             'email-marketing': "Brevo charges by emails sent, not contacts stored. For startups growing their list fast, this pricing model saves real money. Email, SMS, chat, and CRM in one tool, all under $25/mo for most early-stage companies.",
             'seo-tools': "SE Ranking delivers Semrush-caliber features (keyword research, rank tracking, site audits) at $44/mo vs. Semrush's $130. Startups get 70% of the capability at 35% of the cost.",
             'help-desk': "Groove starts at $4.80/user/mo. That is cheaper than every competitor's lowest tier. For a startup handling 10-50 support tickets a day, Groove's shared inbox and knowledge base are all you need.",
-            'ai-sdr': "Lavender at $29/mo improves your email response rates immediately. Startups can't afford the $2-5K/mo gamble on autonomous AI SDR agents. Invest in making your human outreach better instead.",
-            'sales-engagement': "Apollo gives startups prospecting data, email sequences, and a dialer for $49/user/mo. You'd need ZoomInfo ($15K/yr) plus Outreach ($100/user/mo) to replicate what Apollo bundles at a fraction of the cost.",
+            'ai-sdr': "Smartlead at $39/mo gives startups unlimited mailbox rotation and AI warmup for high-volume cold email. Early-stage companies sending thousands of outbound emails per month need deliverability infrastructure, and Smartlead's pricing stays flat as you scale sending volume.",
+            'sales-engagement': "Instantly's unlimited email accounts and built-in warmup at $30/mo give startups cold email infrastructure at the lowest price in the category. When cash is tight, Instantly delivers volume and deliverability without the $49/user/mo per-seat cost of Apollo.",
             'conversation-intelligence': "Fathom is free. Unlimited call recordings and AI summaries with no credit card. Every startup founder taking sales calls should install Fathom today.",
             'data-enrichment': "Apollo's free tier includes database access and 50 credits/month. For startups pre-revenue, you get contact data without any financial commitment. Upgrade to $49/mo when you need more volume.",
         },
@@ -2786,12 +2786,15 @@ def build_stacks_index():
     <div class="stacks-grid">{cards}</div>
 </div>'''
 
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Stack Guides", "/stacks/")])
+
     page = get_page_wrapper(
         f"SaaS Stack Guides ({CURRENT_YEAR})",
         f"Curated SaaS tool stacks by role and budget. From $0/mo founder stacks to $300/mo agency stacks. {len(STACKS)} guides.",
         "/stacks/",
         body,
-        active_page="/stacks/"
+        active_page="/stacks/",
+        extra_head=bc_schema
     )
     write_page("stacks/index.html", page)
 
@@ -2827,12 +2830,15 @@ def build_about_page():
     <p>Some links on this site are affiliate links. If you sign up through them, The Sultan earns a commission at no extra cost to you. This never influences reviews or scores. Tools that pay affiliate commissions do not get higher ratings.</p>
 </div>'''
 
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("About", "/about/")])
+
     page = get_page_wrapper(
         "About SultanOfSaaS",
         "The Sultan reviews SaaS tools with opinions, scores, and clear recommendations. No pay-for-placement. Every comparison declares a winner.",
         "/about/",
         body,
-        active_page="/about/"
+        active_page="/about/",
+        extra_head=bc_schema
     )
     write_page("about/index.html", page)
 
@@ -3004,11 +3010,14 @@ def build_industries_index():
     {cards}
 </div>'''
 
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Industries", "/for/")])
+
     page = get_page_wrapper(
         f"Best SaaS Tools by Industry ({CURRENT_YEAR})",
         f"SaaS tool recommendations for {len(INDUSTRIES)} industries. CRM, email, SEO, PM, and help desk picks tailored to your business.",
         "/for/",
-        body
+        body,
+        extra_head=bc_schema
     )
     write_page("for/index.html", page)
 
@@ -3267,11 +3276,14 @@ def build_tools_index():
 </div>
 {filter_js}'''
 
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("All Tools", "/tools/")])
+
     page = get_page_wrapper(
         f"All SaaS Tools Reviewed ({CURRENT_YEAR})",
         f"Browse all {len(TOOLS)} SaaS tools reviewed by The Sultan. Filter by category, price, company size, and industry.",
         "/tools/",
-        body
+        body,
+        extra_head=bc_schema
     )
     write_page("tools/index.html", page)
 
@@ -3295,12 +3307,15 @@ def build_category_index():
     <div class="category-grid">{cards}</div>
 </div>'''
 
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Categories", "/best/")])
+
     page = get_page_wrapper(
         f"All SaaS Tool Categories ({CURRENT_YEAR})",
         f"Browse {len(CATEGORIES)} categories of SaaS software. Each category ranked, scored, and reviewed by The Sultan.",
         "/best/",
         body,
-        active_page="/best/"
+        active_page="/best/",
+        extra_head=bc_schema
     )
     write_page("best/index.html", page)
 
