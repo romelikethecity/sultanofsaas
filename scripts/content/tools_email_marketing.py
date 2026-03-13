@@ -19,7 +19,7 @@ TOOL_CONTENT["mailchimp"] = {
     ],
     "expanded_pros": [
         {
-            "title": "The template library and builder are genuinely excellent",
+            "title": "The template library and builder are excellent",
             "detail": "Hundreds of pre-built templates, a drag-and-drop editor that works without fighting you, and a new AI-assisted design tool that generates reasonable starting points. For someone who needs to send a good-looking email in 30 minutes with zero design skills, Mailchimp still delivers.",
         },
         {
@@ -38,7 +38,7 @@ TOOL_CONTENT["mailchimp"] = {
     "expanded_cons": [
         {
             "title": "Free plan gutted to near uselessness",
-            "detail": "500 contacts and 1,000 sends per month with a 500/day cap. That's barely enough for a personal blog. The old 2,000-contact free plan was genuinely useful for early-stage businesses. The current version exists so Mailchimp can technically say 'free plan available' in marketing materials. MailerLite gives you 1,000 subscribers free. Kit gives you 10,000.",
+            "detail": "500 contacts and 1,000 sends per month with a 500/day cap. That's barely enough for a personal blog. The old 2,000-contact free plan was useful for early-stage businesses. The current version exists so Mailchimp can technically say 'free plan available' in marketing materials. MailerLite gives you 1,000 subscribers free. Kit gives you 10,000.",
         },
         {
             "title": "Pricing climbs aggressively with contact count",
@@ -81,7 +81,7 @@ TOOL_CONTENT["mailchimp"] = {
         {"tool": "MailerLite", "reason": "Choose MailerLite if you want 80% of Mailchimp's features at 60% of the price. Cleaner interface, better free tier (1,000 subs), and surprisingly good automation builder. The obvious switch for cost-conscious Mailchimp users."},
         {"tool": "Brevo", "reason": "Choose Brevo if your list is large but you don't email everyone frequently. Pricing by emails sent (not contacts) saves serious money when you have 20,000+ contacts but only send 4 campaigns a month."},
         {"tool": "Kit", "reason": "Choose Kit if you're a creator, newsletter operator, or solopreneur. 10,000 free subscribers, built for audience building, and the paid plans are simpler than Mailchimp's tier maze."},
-        {"tool": "ActiveCampaign", "reason": "Choose ActiveCampaign if you've outgrown Mailchimp's automation limits. The learning curve is steeper, but the automation builder is genuinely in a different league."},
+        {"tool": "ActiveCampaign", "reason": "Choose ActiveCampaign if you've outgrown Mailchimp's automation limits. The learning curve is steeper, but the automation builder is in a different league."},
     ],
     "verdict_long": [
         "Mailchimp is the Honda Civic of email marketing. Reliable, recognizable, gets you where you need to go. But the 2026 version costs 40% more than it did three years ago, and the competitors have caught up on everything except brand awareness. You're paying a premium for the name.",
@@ -114,7 +114,7 @@ TOOL_CONTENT["convertkit"] = {
             "detail": "Most creators quit before they hit 1,000 subscribers because they can't justify paying for email tools before they're earning. Kit removes that barrier entirely. Build your list to 10,000 on the free plan, start selling digital products, then upgrade when revenue justifies it. This is the most creator-friendly pricing model in the industry.",
         },
         {
-            "title": "Visual automation builder that creators actually understand",
+            "title": "Visual automation builder that creators understand",
             "detail": "Kit's automation builder uses a visual flowchart approach that makes sense to non-technical users. Tag a subscriber when they click a link, move them to a different sequence, trigger a sale. The logic is visible, not buried in settings menus. It handles 90% of what a solo creator or small team needs without the learning curve of ActiveCampaign.",
         },
         {
@@ -179,7 +179,7 @@ TOOL_CONTENT["convertkit"] = {
     ],
     "faqs": [
         {"question": "Is Kit the same as ConvertKit?", "answer": "Yes. ConvertKit rebranded to Kit in 2024. Same product, same team, same features. The name change was cosmetic. Some integration partners and tutorials still reference the old name."},
-        {"question": "Can you really get 10,000 subscribers free on Kit?", "answer": "Yes. The Newsletter plan covers up to 10,000 subscribers with unlimited broadcasts, landing pages, and forms. You don't get automations or sequences on the free plan, but for building an audience and sending regular newsletters, it's the best free deal in email marketing."},
+        {"question": "Can you get 10,000 subscribers free on Kit?", "answer": "Yes. The Newsletter plan covers up to 10,000 subscribers with unlimited broadcasts, landing pages, and forms. You don't get automations or sequences on the free plan, but for building an audience and sending regular newsletters, it's the best free deal in email marketing."},
         {"question": "Is Kit good for e-commerce?", "answer": "For digital products (ebooks, courses, memberships), Kit handles sales, delivery, and email receipts directly. For physical product e-commerce with Shopify or WooCommerce, Kit lacks the deep integration that Klaviyo and Drip offer. Use Kit for digital, Klaviyo for physical."},
         {"question": "How does Kit compare to Substack?", "answer": "Substack is simpler (just write and publish) but takes 10% of paid subscription revenue. Kit charges a flat monthly fee and gives you landing pages, automations, tagging, and multi-product sales. Kit costs more upfront but less at scale for anyone earning over $500/mo from subscriptions."},
         {"question": "What's Kit's deliverability like?", "answer": "Strong. Kit maintains strict anti-spam policies and offers deliverability reporting on Creator Pro. Independent tests consistently rate Kit's inbox placement above 85%. The text-forward email style also helps, since image-heavy HTML emails are more likely to trigger spam filters."},
@@ -194,14 +194,14 @@ TOOL_CONTENT["convertkit"] = {
 
 TOOL_CONTENT["activecampaign"] = {
     "overview": [
-        "ActiveCampaign is the automation powerhouse of email marketing. While most email tools let you send campaigns and set up basic welcome sequences, ActiveCampaign lets you build workflows that rival what enterprise companies pay six figures for with Marketo or Pardot. Conditional branching, lead scoring, site tracking, split actions, wait conditions, goal tracking. The automation builder is genuinely in a different league.",
+        "ActiveCampaign is the automation powerhouse of email marketing. While most email tools let you send campaigns and set up basic welcome sequences, ActiveCampaign lets you build workflows that rival what enterprise companies pay six figures for with Marketo or Pardot. Conditional branching, lead scoring, site tracking, split actions, wait conditions, goal tracking. The automation builder is in a different league.",
         "The trade-off is complexity. ActiveCampaign takes longer to learn than anything else in this category. New users frequently describe the first two weeks as overwhelming. The interface has improved over the years, but there's simply a lot of surface area. If you just want to send a weekly newsletter, this tool is overkill. If you want emails triggered by specific page visits, scoring thresholds, or CRM pipeline changes, nothing under $500/mo competes.",
         "Founded in 2003 and bootstrapped for most of its life, ActiveCampaign has the stability of a company that grew on revenue instead of venture capital. Over 180,000 customers across 170 countries. They've resisted the temptation to add a CMS, a social scheduler, and every other feature Mailchimp bolted on. The focus stays on automation, CRM, and email. That discipline shows in the product quality.",
     ],
     "expanded_pros": [
         {
             "title": "Automation builder that punches way above its price",
-            "detail": "The visual automation builder supports if/then branching, split testing within automations, goal-based triggers, wait conditions, webhook actions, and CRM pipeline updates. You can build automations that would require Marketo or HubSpot Enterprise ($3,600/mo) using ActiveCampaign's Plus plan at $49/mo. For SMBs who actually use automation, the value gap is massive.",
+            "detail": "The visual automation builder supports if/then branching, split testing within automations, goal-based triggers, wait conditions, webhook actions, and CRM pipeline updates. You can build automations that would require Marketo or HubSpot Enterprise ($3,600/mo) using ActiveCampaign's Plus plan at $49/mo. For SMBs who use automation, the value gap is massive.",
         },
         {
             "title": "Built-in CRM keeps sales and marketing connected",
@@ -231,7 +231,7 @@ TOOL_CONTENT["activecampaign"] = {
         },
         {
             "title": "Pricing jumps between tiers are steep",
-            "detail": "Lite to Plus is $29 to $49/mo. Plus to Professional is $49 to $149/mo. That Professional tier is where predictive sending, site messaging, and attribution reporting unlock. Many teams start on Plus and realize the features they actually need sit behind the $149/mo wall. Budget for Professional from the start if automation depth is why you're here.",
+            "detail": "Lite to Plus is $29 to $49/mo. Plus to Professional is $49 to $149/mo. That Professional tier is where predictive sending, site messaging, and attribution reporting unlock. Many teams start on Plus and realize the features they need sit behind the $149/mo wall. Budget for Professional from the start if automation depth is why you're here.",
         },
         {
             "title": "Reporting could be better organized",
@@ -267,7 +267,7 @@ TOOL_CONTENT["activecampaign"] = {
         {"tool": "Brevo", "reason": "Choose Brevo if budget is your primary constraint. Brevo's automation builder is decent and pricing per email sent (not contacts) saves money for large, lightly-emailed lists. The automation depth is a tier below ActiveCampaign's."},
     ],
     "verdict_long": [
-        "ActiveCampaign has the highest score in this category for a reason. The automation builder delivers marketing technology that genuinely costs 5-10x more on enterprise platforms. For SMBs and mid-market teams that take email marketing seriously (behavioral triggers, lead scoring, multi-step nurtures, CRM integration) nothing in this price range competes.",
+        "ActiveCampaign has the highest score in this category for a reason. The automation builder delivers marketing technology that costs 5-10x more on enterprise platforms. For SMBs and mid-market teams that take email marketing seriously (behavioral triggers, lead scoring, multi-step nurtures, CRM integration) nothing in this price range competes.",
         "The learning curve is real, and I won't pretend otherwise. Budget 2-4 weeks for your team to get comfortable. The email builder is adequate, not great. Reporting could be better unified. These are legitimate drawbacks that matter in daily use.",
         "But here's where I land: if email automation is a core part of your growth strategy, ActiveCampaign gives you the tools to execute at a level that used to require enterprise budgets. The Plus plan at $49/mo with a built-in CRM is one of the best values in SaaS. Learn the tool, build the automations, and the ROI speaks for itself.",
     ],
@@ -288,7 +288,7 @@ TOOL_CONTENT["activecampaign"] = {
 TOOL_CONTENT["constant-contact"] = {
     "overview": [
         "Constant Contact has been around since 1995, which makes it ancient by SaaS standards. For two decades, it was the default email platform for local businesses, nonprofits, and small organizations that needed something simpler than Mailchimp. The brand recognition is enormous. The product, unfortunately, hasn't kept pace.",
-        "The one genuinely useful feature is event management. Constant Contact lets you create event registration pages, send invitations, track RSVPs, and follow up with attendees, all built into the email platform. If you run a nonprofit that hosts quarterly fundraisers or a local business with monthly events, this saves you from juggling Eventbrite plus an email tool. Nobody else in this category does this well.",
+        "The one useful feature is event management. Constant Contact lets you create event registration pages, send invitations, track RSVPs, and follow up with attendees, all built into the email platform. If you run a nonprofit that hosts quarterly fundraisers or a local business with monthly events, this saves you from juggling Eventbrite plus an email tool. Nobody else in this category does this well.",
         "Outside of events, Constant Contact is outclassed at nearly every price point. The automation builder is rudimentary. The template selection, once a strength, now feels dated. Pricing starts low at $12/mo but scales aggressively with contact count. At 10,000 contacts on the Standard plan, you're paying $80/mo for a platform that MailerLite matches at $54/mo and Brevo undercuts at $25/mo. The brand name carries weight with small business owners who remember it from 2010. The product itself has been lapped by faster competitors.",
     ],
     "expanded_pros": [
@@ -298,7 +298,7 @@ TOOL_CONTENT["constant-contact"] = {
         },
         {
             "title": "Onboarding and support cater to non-technical users",
-            "detail": "Phone support on all plans. Live chat. A knowledge base written for people who've never used email marketing software. Constant Contact assumes its users are beginners, and the hand-holding is genuinely helpful for the audience it serves. If your office manager handles email marketing as a side duty, Constant Contact won't intimidate them.",
+            "detail": "Phone support on all plans. Live chat. A knowledge base written for people who've never used email marketing software. Constant Contact assumes its users are beginners, and the hand-holding is helpful for the audience it serves. If your office manager handles email marketing as a side duty, Constant Contact won't intimidate them.",
         },
         {
             "title": "Social media posting from the email platform",
@@ -333,7 +333,7 @@ TOOL_CONTENT["constant-contact"] = {
         "The only scenario where Constant Contact's pricing makes sense is if you heavily use event management. Eventbrite's pricing (fees per registration plus monthly subscriptions) can exceed $50/mo for active event organizers. If Constant Contact replaces Eventbrite entirely, the combined value math works out. Otherwise, you're overpaying.",
     ],
     "who_should_buy": [
-        {"audience": "Nonprofits and community organizations running regular events", "reason": "The built-in event management is genuinely useful and saves the cost and complexity of a separate events platform. Combined with nonprofit discounts (up to 30% off), Constant Contact makes sense for organizations where events are a core communication channel."},
+        {"audience": "Nonprofits and community organizations running regular events", "reason": "The built-in event management is useful and saves the cost and complexity of a separate events platform. Combined with nonprofit discounts (up to 30% off), Constant Contact makes sense for organizations where events are a core communication channel."},
         {"audience": "Local businesses with non-technical staff managing email", "reason": "Phone support on all plans, a simple interface, and guided onboarding make Constant Contact workable for someone who does email marketing as 10% of their job. If your office manager handles it and they need to call someone when they're stuck, that phone support has real value."},
     ],
     "who_should_skip": [
@@ -353,7 +353,7 @@ TOOL_CONTENT["constant-contact"] = {
         {"tool": "Mailchimp", "reason": "Choose Mailchimp if brand familiarity is driving your decision anyway. Better templates, deeper integrations, and similar ease of use. Mailchimp is also overpriced relative to MailerLite, but at least the product is more capable."},
     ],
     "verdict_long": [
-        "Constant Contact is a legacy platform living on brand recognition and one genuinely unique feature. Event management is valuable for the right organization, and phone support matters to non-technical users. Those two things carry more weight than they might seem for nonprofits and local businesses that don't have IT support.",
+        "Constant Contact is a legacy platform living on brand recognition and one unique feature. Event management is valuable for the right organization, and phone support matters to non-technical users. Those two things carry more weight than they might seem for nonprofits and local businesses that don't have IT support.",
         "For everyone else, the math doesn't work. Higher prices than MailerLite and Brevo. Weaker automation than ActiveCampaign. Fewer free subscribers than Kit. Dated templates compared to Mailchimp. Constant Contact had a long head start in email marketing. The competitors used that time to build better products at lower prices.",
         "If you're a nonprofit running quarterly fundraising events, Constant Contact earns its place. For any other use case in 2026, the market offers better options at every price point. The 6.3 score reflects a tool that's adequate but overpriced and under-innovated.",
     ],
@@ -373,7 +373,7 @@ TOOL_CONTENT["constant-contact"] = {
 TOOL_CONTENT["brevo"] = {
     "overview": [
         "Brevo, formerly Sendinblue, flips the standard email pricing model on its head. Where Mailchimp, Kit, and ActiveCampaign all charge based on how many contacts you store, Brevo charges based on how many emails you send. This single difference saves 40-70% for businesses with large contact databases that don't email every subscriber every week.",
-        "The platform has grown from a simple email tool into a genuine multi-channel suite. Email, SMS, WhatsApp, chat, CRM, and marketing automation all live under one roof. The pricing on each channel is transparent and usage-based. Store unlimited contacts for free, pay for what you actually send. For budget-conscious teams that have been priced out by Mailchimp's contact-based billing, Brevo's model is a revelation.",
+        "The platform has grown from a simple email tool into a genuine multi-channel suite. Email, SMS, WhatsApp, chat, CRM, and marketing automation all live under one roof. The pricing on each channel is transparent and usage-based. Store unlimited contacts for free, pay for what you send. For budget-conscious teams that have been priced out by Mailchimp's contact-based billing, Brevo's model is a revelation.",
         "The trade-off is polish. Brevo's automation builder is competent but lacks ActiveCampaign's depth. The email templates are functional but won't win design awards. The CRM is basic compared to HubSpot's free tier. Every individual component is a B or B+, never an A+. But the combined package at Brevo's price point gives you 80% of what HubSpot's $800/mo Marketing Hub offers for under $65/mo. For SMBs watching every dollar, that math is hard to argue with.",
     ],
     "expanded_pros": [
@@ -382,7 +382,7 @@ TOOL_CONTENT["brevo"] = {
             "detail": "Store 100,000 contacts and pay nothing for storage. Send 20,000 emails/mo on the Starter plan for $25/mo. On Mailchimp, 100,000 contacts on Standard costs over $800/mo whether you email them all or not. If you have a large list but only send to active segments, Brevo saves hundreds of dollars monthly. This alone is reason enough to switch.",
         },
         {
-            "title": "Multi-channel from one dashboard actually works",
+            "title": "Multi-channel from one dashboard works",
             "detail": "Email, SMS, WhatsApp campaigns, live chat, and a basic CRM all accessible from one login. You can set up an automation that sends an email, waits two days, sends an SMS if unopened, and creates a CRM deal if clicked. No Zapier needed. No integration maintenance. It all works natively, and each channel is priced separately and transparently.",
         },
         {
@@ -438,7 +438,7 @@ TOOL_CONTENT["brevo"] = {
         {"tool": "Mailchimp", "reason": "Choose Mailchimp if you need a massive integration ecosystem and prettier templates. You'll pay more per contact, but the ecosystem depth and brand familiarity have value for teams deeply integrated with other tools."},
         {"tool": "ActiveCampaign", "reason": "Choose ActiveCampaign if marketing automation complexity is your top requirement. The automation builder is a generation ahead of Brevo's. You'll pay more (especially with large lists), but the capability gap is significant."},
         {"tool": "MailerLite", "reason": "Choose MailerLite if you want similar value pricing with a cleaner interface. MailerLite charges per subscriber (not per email), so the cost comparison depends on your list size versus send volume. For small lists with high send frequency, MailerLite may cost less."},
-        {"tool": "HubSpot Marketing Hub", "reason": "Choose HubSpot if you want the full platform (CRM, marketing, sales, service) and budget allows $800+/mo. Brevo gives you 30% of HubSpot's capability at 8% of the price. Whether that ratio works depends on which 30% you actually need."},
+        {"tool": "HubSpot Marketing Hub", "reason": "Choose HubSpot if you want the full platform (CRM, marketing, sales, service) and budget allows $800+/mo. Brevo gives you 30% of HubSpot's capability at 8% of the price. Whether that ratio works depends on which 30% you need."},
     ],
     "verdict_long": [
         "Brevo's per-email pricing model is the most founder-friendly approach in email marketing. Storing unlimited contacts for free and paying only for sends means your costs scale with actual usage, not list size. For businesses that have been watching their Mailchimp bill climb as their list grows (even though half those contacts haven't opened an email in months), switching to Brevo is an immediate win.",
@@ -467,7 +467,7 @@ TOOL_CONTENT["drip"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Shopify and WooCommerce integrations go genuinely deep",
+            "title": "Shopify and WooCommerce integrations go deep",
             "detail": "Real-time sync of products, orders, customers, cart activity, and browse behavior. Drip doesn't just know a customer bought something. It knows they browsed three products, added one to cart, removed it, then bought a different item two days later. That level of behavioral data powers automations that generic email tools simply can't replicate.",
         },
         {
@@ -528,7 +528,7 @@ TOOL_CONTENT["drip"] = {
         {"tool": "Brevo", "reason": "Choose Brevo if your contact list is large and budget is tight. Brevo's per-email pricing saves money on big lists. The e-commerce features are basic but functional, and the multi-channel capabilities (SMS, WhatsApp, chat) add value Drip doesn't match."},
     ],
     "verdict_long": [
-        "Drip occupies a valuable niche in email marketing: serious e-commerce email for stores that aren't ready for (or don't need) Klaviyo's full enterprise stack. The Shopify and WooCommerce integrations are genuinely deep. The pre-built workflows save real setup time. Revenue attribution per email turns email marketing from a guessing game into a measurable P&L line.",
+        "Drip occupies a valuable niche in email marketing: serious e-commerce email for stores that aren't ready for (or don't need) Klaviyo's full enterprise stack. The Shopify and WooCommerce integrations are deep. The pre-built workflows save real setup time. Revenue attribution per email turns email marketing from a guessing game into a measurable P&L line.",
         "The pricing model is the main concern. Contact-based billing punishes stores with large historical customer lists, and the $699/mo ceiling at 50,000 contacts puts you uncomfortably close to Klaviyo's superior analytics. Clean your list religiously and Drip's value holds. Let dead contacts accumulate and the economics shift toward Brevo's per-email model or Klaviyo's deeper feature set.",
         "For e-commerce stores doing $100K-$5M, Drip delivers the right balance of capability and simplicity. It's the e-commerce email tool I'd recommend for founders who want results without hiring a marketing ops specialist. Once you're past $5M and have a dedicated email team, graduate to Klaviyo.",
     ],
@@ -549,7 +549,7 @@ TOOL_CONTENT["mailerlite"] = {
     "overview": [
         "MailerLite is the quiet overachiever of email marketing. While Mailchimp spends on brand campaigns and Kit courts the creator economy, MailerLite keeps building a better product at a lower price. The result is a platform that does 80% of what any SMB needs from email marketing at roughly 60% of what Mailchimp charges. For bootstrapped founders watching every dollar, that math is compelling.",
         "The free plan covers 1,000 subscribers with 12,000 emails per month, the drag-and-drop editor, landing pages, forms, and basic automation. That's more free functionality than Mailchimp offers on its gutted free tier. The paid plans start at $10/mo and include a website builder, auto-resend to non-openers, and unlimited templates. At $10/mo. Mailchimp charges $13/mo for less.",
-        "MailerLite was founded in Lithuania and operates with the lean efficiency of a company that never raised venture capital. No bloated feature set trying to justify a $12 billion acquisition. No aggressive pricing hikes to satisfy investor returns. The product improves steadily, pricing stays reasonable, and the interface remains one of the cleanest in the category. It won't win awards for innovation. It'll win on value, and that's what bootstrapped founders actually need.",
+        "MailerLite was founded in Lithuania and operates with the lean efficiency of a company that never raised venture capital. No bloated feature set trying to justify a $12 billion acquisition. No aggressive pricing hikes to satisfy investor returns. The product improves steadily, pricing stays reasonable, and the interface remains one of the cleanest in the category. It won't win awards for innovation. It'll win on value, and that's what bootstrapped founders need.",
     ],
     "expanded_pros": [
         {
@@ -561,7 +561,7 @@ TOOL_CONTENT["mailerlite"] = {
             "detail": "The drag-and-drop editor loads quickly and responds without lag. Navigation is intuitive. Finding features takes seconds, not minutes of hunting through menus. This matters more than it sounds. When you're building email campaigns weekly, an interface that doesn't fight you saves cumulative hours per month.",
         },
         {
-            "title": "Free plan is genuinely useful (not a trap)",
+            "title": "Free plan is useful (not a trap)",
             "detail": "1,000 subscribers, 12,000 emails/mo, drag-and-drop editor, landing pages, signup forms, and 10 landing pages. You can run a legitimate email program for a small business on the free tier for months. MailerLite branding appears in emails, but that's standard for free tiers. No artificial crippling of core features to force upgrades.",
         },
         {
@@ -626,7 +626,7 @@ TOOL_CONTENT["mailerlite"] = {
     ],
     "faqs": [
         {"question": "Is MailerLite better than Mailchimp?", "answer": "For most small businesses, yes. MailerLite offers comparable features at 40-60% lower pricing, a more generous free tier (1,000 vs 500 subscribers), and a cleaner interface. Mailchimp has more integrations and better brand recognition. But on pure value, MailerLite wins."},
-        {"question": "Is MailerLite's free plan any good?", "answer": "It's one of the best free email marketing plans available. 1,000 subscribers, 12,000 emails per month, drag-and-drop editor, landing pages, signup forms, and basic automation. The main limitations are MailerLite branding on emails and a cap of 10 landing pages. For small businesses starting out, it's genuinely sufficient."},
+        {"question": "Is MailerLite's free plan any good?", "answer": "It's one of the best free email marketing plans available. 1,000 subscribers, 12,000 emails per month, drag-and-drop editor, landing pages, signup forms, and basic automation. The main limitations are MailerLite branding on emails and a cap of 10 landing pages. For small businesses starting out, it's sufficient."},
         {"question": "How does MailerLite's automation compare to ActiveCampaign?", "answer": "MailerLite handles standard automations (welcome series, lead nurture, re-engagement) well at a fraction of the price. ActiveCampaign offers deeper conditional branching, lead scoring, site tracking, and CRM pipeline triggers. If automation complexity is your primary need, ActiveCampaign is worth the premium. If standard automations suffice, MailerLite saves you significant money."},
         {"question": "Why does MailerLite reject some accounts?", "answer": "MailerLite manually reviews every new account to maintain platform-wide deliverability. Some industries (affiliate marketing, cryptocurrency, gambling) face stricter scrutiny. Legitimate businesses occasionally get delayed in the review process. If rejected, submit an appeal with details about your business and list source. The strict vetting benefits all users by keeping deliverability high."},
         {"question": "Is MailerLite good for e-commerce?", "answer": "For basic e-commerce email (abandoned carts, order confirmations, product highlights), yes. For advanced e-commerce email with predictive product recommendations, deep revenue attribution, and browse-based segmentation, Drip and Klaviyo are significantly better. Use MailerLite for e-commerce if budget is the priority."},
@@ -646,7 +646,7 @@ TOOL_CONTENT["campaign-monitor"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Email template builder produces genuinely beautiful emails",
+            "title": "Email template builder produces beautiful emails",
             "detail": "Campaign Monitor's templates are a cut above the competition. Clean typography, thoughtful layouts, mobile-responsive out of the box. The builder gives you fine-grained control over spacing, fonts, and styling without touching HTML. For brands where email design directly reflects brand quality (luxury goods, professional services, premium SaaS), this matters.",
         },
         {
@@ -714,7 +714,7 @@ TOOL_CONTENT["campaign-monitor"] = {
         {"question": "Is Campaign Monitor good for agencies?", "answer": "Yes. Campaign Monitor is the best email platform for agencies managing multiple client accounts. White-label branding, per-client billing, multi-account dashboards, and aggregate reporting are built for the agency workflow. It's the one scenario where Campaign Monitor's pricing premium is justified."},
         {"question": "How does Campaign Monitor's pricing compare to Mailchimp?", "answer": "Similar at lower tiers, more expensive at higher contact counts. At 10,000 contacts: Campaign Monitor Unlimited costs $149/mo, Mailchimp Standard costs $100/mo. Both are overpriced compared to MailerLite ($73/mo) and Brevo ($25-65/mo). Campaign Monitor charges a premium for template quality and agency features."},
         {"question": "Does Campaign Monitor have a free plan?", "answer": "No. Campaign Monitor offers only a limited free trial. No permanent free tier. This puts it at a disadvantage compared to Mailchimp (500 contacts free), MailerLite (1,000), Kit (10,000), and Brevo (300 emails/day) which all offer ongoing free plans."},
-        {"question": "Are Campaign Monitor's templates really that much better?", "answer": "For most businesses, the difference between Campaign Monitor's templates and MailerLite's is noticeable but not critical. Campaign Monitor templates are more refined typographically and more design-forward. Whether that's worth 2x the price depends on how much email aesthetics matter to your brand perception."},
+        {"question": "Are Campaign Monitor's templates that much better?", "answer": "For most businesses, the difference between Campaign Monitor's templates and MailerLite's is noticeable but not critical. Campaign Monitor templates are more refined typographically and more design-forward. Whether that's worth 2x the price depends on how much email aesthetics matter to your brand perception."},
         {"question": "What's the best Campaign Monitor alternative?", "answer": "MailerLite for general email marketing at a lower price. ActiveCampaign for better automation at a comparable price. For agencies specifically, there's no direct substitute that matches Campaign Monitor's multi-client management. Some agencies use Mailchimp's partner program, but it's less elegant."},
     ],
 }
@@ -726,7 +726,7 @@ TOOL_CONTENT["campaign-monitor"] = {
 TOOL_CONTENT["klaviyo"] = {
     "overview": [
         "Klaviyo is the dominant email and SMS platform for e-commerce. The company IPO'd in 2023, serves 100,000+ brands, and processes billions of dollars in attributed revenue annually. If you run a Shopify store doing $1M+ in revenue, Klaviyo is probably what your peers are using. That's both a recommendation and a warning about pricing.",
-        "The Shopify integration is the deepest in the category. Product views, cart events, purchase history, customer lifetime value, predicted next order date, churn risk scoring. Klaviyo ingests every behavioral signal your store generates and turns it into targeting data. The result is email and SMS campaigns that feel personalized because they genuinely are. A customer who bought running shoes three months ago gets a restock reminder for the same brand. A customer who browsed winter coats but didn't buy gets a targeted discount. This level of behavioral targeting is why Klaviyo-powered stores attribute 25-40% of total revenue to email.",
+        "The Shopify integration is the deepest in the category. Product views, cart events, purchase history, customer lifetime value, predicted next order date, churn risk scoring. Klaviyo ingests every behavioral signal your store generates and turns it into targeting data. The result is email and SMS campaigns that feel personalized because they are. A customer who bought running shoes three months ago gets a restock reminder for the same brand. A customer who browsed winter coats but didn't buy gets a targeted discount. This level of behavioral targeting is why Klaviyo-powered stores attribute 25-40% of total revenue to email.",
         "The trade-off is cost. Klaviyo's free plan covers only 250 contacts (essentially a trial). Paid plans start at $35/mo for 500 contacts and climb to $1,380/mo at 100,000. At scale, Klaviyo is one of the most expensive email platforms in the market. The ROI math works for stores generating significant email revenue. For smaller stores or those just starting with email marketing, the pricing pressure is real.",
     ],
     "expanded_pros": [

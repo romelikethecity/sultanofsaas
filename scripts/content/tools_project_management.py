@@ -13,13 +13,13 @@ TOOL_CONTENT = {}
 
 TOOL_CONTENT["asana"] = {
     "overview": [
-        "Asana has quietly become the default project management tool for growing teams. While Monday and ClickUp fight over marketing spend and Notion chases the all-in-one workspace dream, Asana keeps doing the boring work of making teams actually ship projects on time. It's used by Amazon, Deloitte, and thousands of 10-person startups that never show up in case studies.",
+        "Asana has quietly become the default project management tool for growing teams. While Monday and ClickUp fight over marketing spend and Notion chases the all-in-one workspace dream, Asana keeps doing the boring work of making teams ship projects on time. It's used by Amazon, Deloitte, and thousands of 10-person startups that never show up in case studies.",
         "What makes Asana stick is the workflow engine. You can build multi-step approval chains, automate task routing based on form submissions, and create templates that enforce your process without forcing everyone into the same rigid view. Board people get boards. List people get lists. Timeline people get Gantt charts. The underlying data stays the same.",
         "The free tier covers up to 10 users with basic task management. Premium ($10.99/user/mo) unlocks timelines, custom fields, and reporting. Business ($24.99/user/mo) adds portfolios, goals, and advanced integrations. Enterprise is custom pricing. For a team of 20 on the Business plan, you're looking at $6,000/yr. That's competitive with Monday and significantly cheaper than building the same capability from separate tools.",
     ],
     "expanded_pros": [
         {
-            "title": "Workflow automation that actually reduces manual work",
+            "title": "Workflow automation that reduces manual work",
             "detail": "Asana's rules engine handles the admin tasks that eat project managers alive. Move a task to 'Review'? It auto-assigns to the reviewer, sets a due date, and notifies the team. Approve a design request? It routes to the next stage automatically. Most PM tools call this 'automation.' Asana's version works without needing a computer science degree to configure.",
         },
         {
@@ -82,7 +82,7 @@ TOOL_CONTENT["asana"] = {
     ],
     "verdict_long": [
         "Asana earns the Sultan's Pick because it does the most important thing a PM tool can do: it makes average teams organized and good teams faster. The workflow automation handles admin tasks that would otherwise fall on your most expensive people. The multiple views mean you don't have to convince your designer, your PM, and your CEO to all think the same way.",
-        "The pricing is fair for what you get. Premium at $10.99/user/mo covers 80% of what growing teams need. Business at $24.99/user/mo adds the strategic layer (portfolios, goals) that helps founders sleep at night. You'll outgrow the free tier eventually, but Asana earns the upgrade with features that genuinely save time.",
+        "The pricing is fair for what you get. Premium at $10.99/user/mo covers 80% of what growing teams need. Business at $24.99/user/mo adds the strategic layer (portfolios, goals) that helps founders sleep at night. You'll outgrow the free tier eventually, but Asana earns the upgrade with features that save real time.",
         "I went back and forth between Asana and Linear for this pick. Linear is objectively faster and better for pure engineering teams. But the Sultan's Pick goes to the tool that serves the broadest range of teams well, and Asana's flexibility across marketing, ops, product, and engineering gives it the edge. If you manage projects with humans (and you do), start here.",
     ],
     "faqs": [
@@ -103,7 +103,7 @@ TOOL_CONTENT["monday"] = {
     "overview": [
         "Monday.com is what happens when you design a PM tool for people who hate PM tools. Everything is color-coded. Every board looks like a spreadsheet that went to design school. The learning curve is essentially 'if you can use Excel, you can use Monday.' That accessibility is Monday's superpower and its ceiling.",
         "The platform started as a visual work management tool and has expanded into CRM, dev workflows, and marketing project management through specialized 'products' on the same platform. Core PM features include boards (kanban, timeline, calendar), automations, integrations (200+), and dashboards. The 3-seat minimum on all paid plans means solo users and two-person teams pay for a phantom third seat.",
-        "Monday went public in 2021 (MNDY) and reports $700M+ in annual revenue. This isn't a startup that might fold. The product roadmap is aggressive, with AI features rolling out quarterly. For non-technical teams that need a PM tool they'll actually use (as opposed to one that gathers dust because it's too complex), Monday is the safest bet in the category.",
+        "Monday went public in 2021 (MNDY) and reports $700M+ in annual revenue. This isn't a startup that might fold. The product roadmap is aggressive, with AI features rolling out quarterly. For non-technical teams that need a PM tool they'll use (as opposed to one that gathers dust because it's too complex), Monday is the safest bet in the category.",
     ],
     "expanded_pros": [
         {
@@ -159,7 +159,7 @@ TOOL_CONTENT["monday"] = {
     "stage_guidance": {
         "solo": "Use the free Individual plan for personal task management, but you're better off with Trello or Notion. Monday's team features are where the value lives, and you don't need them yet.",
         "small_team": "Standard ($12/seat/mo) is the right entry point for 3-10 people. The 3-seat minimum matters less once you have 3+ people. Most small teams run Standard comfortably for a year before considering Pro.",
-        "mid_market": "Pro ($19/seat/mo) unlocks formula columns, time tracking, and chart views. For a 20-person team ($380/mo), you get a capable PM platform that the whole company will actually log into. Compare Pro to Asana Business at $24.99/seat. Monday costs less per seat but Asana's Business features (portfolios, goals) are more advanced.",
+        "mid_market": "Pro ($19/seat/mo) unlocks formula columns, time tracking, and chart views. For a 20-person team ($380/mo), you get a capable PM platform that the whole company will log into. Compare Pro to Asana Business at $24.99/seat. Monday costs less per seat but Asana's Business features (portfolios, goals) are more advanced.",
         "enterprise": "Enterprise plan adds SSO, audit logs, and advanced permissions. At 100+ seats, negotiate hard on per-seat pricing. Monday's enterprise sales team has flexibility, and you're likely comparing against Wrike and Asana Enterprise, both of which will undercut on volume.",
     },
     "alternatives_detail": [
@@ -170,7 +170,7 @@ TOOL_CONTENT["monday"] = {
     ],
     "verdict_long": [
         "Monday.com wins on adoption. The most feature-rich PM tool in the world is useless if your team won't log in. Monday solves this by making project management look and feel like something everyone already knows: a colorful spreadsheet. That design choice sacrifices depth for breadth, but for 80% of teams, the trade-off is correct.",
-        "The 3-seat minimum is annoying. The per-seat pricing gets expensive at scale. The customization ceiling will frustrate power users. These are real limitations. They matter less than the fact that your entire team will actually use the tool, update their statuses, and keep projects moving without being nagged.",
+        "The 3-seat minimum is annoying. The per-seat pricing gets expensive at scale. The customization ceiling will frustrate power users. These are real limitations. They matter less than the fact that your entire team will use the tool, update their statuses, and keep projects moving without being nagged.",
         "Score: 8.1. If your team is non-technical and you need a PM tool that people will adopt without a training session, Monday is the answer. If you need deep automation, portfolio management, or engineering-specific features, look at Asana or Linear.",
     ],
     "faqs": [
@@ -189,7 +189,7 @@ TOOL_CONTENT["monday"] = {
 
 TOOL_CONTENT["clickup"] = {
     "overview": [
-        "ClickUp's pitch is audacious: one app to replace all your work tools. Project management, docs, whiteboards, chat, time tracking, goals, dashboards, and (as of 2025) AI. The feature list is genuinely massive. Every category has a ClickUp response. The question is whether breadth comes at the cost of depth.",
+        "ClickUp's pitch is audacious: one app to replace all your work tools. Project management, docs, whiteboards, chat, time tracking, goals, dashboards, and (as of 2025) AI. The feature list is massive. Every category has a ClickUp response. The question is whether breadth comes at the cost of depth.",
         "The free plan is the most generous in project management. Unlimited members, unlimited tasks, 100MB storage. You can run a real team on the free tier, which is why ClickUp has grown to 10M+ users. Paid plans start at $7/member/mo (Unlimited), jumping to $12/member/mo (Business) and custom Enterprise pricing. For a 15-person team, ClickUp's Unlimited plan costs $1,260/yr. That's roughly half what Asana Premium costs.",
         "Founded in 2017, ClickUp raised $400M at a $4B valuation in 2021. The company has shipped features at a relentless pace, sometimes faster than the UI can accommodate. That's the core tension with ClickUp: you can do almost anything, but finding how to do it requires patience. G2 reviews consistently praise the feature depth and criticize the learning curve. Both camps are right.",
     ],
@@ -232,7 +232,7 @@ TOOL_CONTENT["clickup"] = {
     "pricing_detail": [
         "Free Forever: unlimited members, unlimited tasks, 100MB storage, limited integrations. Unlimited: $7/member/mo. Business: $12/member/mo. Enterprise: custom.",
         "Team cost breakdown: 10 people on Unlimited = $70/mo ($840/yr). 10 people on Business = $120/mo ($1,440/yr). 25 people on Business = $300/mo ($3,600/yr). Compare those numbers to Asana Business at $24.99/seat/mo (25 seats = $7,497/yr). ClickUp saves roughly 50% at equivalent tier.",
-        "The free tier is genuinely usable. Unlike Monday's 2-user free plan, ClickUp lets your whole team in. The limitations (100MB storage, limited automations, no guests) push you toward paid eventually, but a resourceful team of 10 can run on free for months.",
+        "The free tier is usable. Unlike Monday's 2-user free plan, ClickUp lets your whole team in. The limitations (100MB storage, limited automations, no guests) push you toward paid eventually, but a resourceful team of 10 can run on free for months.",
     ],
     "who_should_buy": [
         {"audience": "Teams that want to consolidate multiple tools into one", "reason": "If you're paying for Asana ($150/mo) + Notion ($80/mo) + Toggl ($90/mo) separately, ClickUp Business at $120/mo for 10 people replaces all three. The individual features are 80% as good, but the consolidation savings and reduced context-switching are real."},
@@ -262,7 +262,7 @@ TOOL_CONTENT["clickup"] = {
         "Score: 7.8. The raw value-per-dollar is the highest in this category. If your team has the patience to learn it and a champion to configure it, ClickUp will save you money and reduce tool sprawl. If you want something that works out of the box, Asana is the safer bet.",
     ],
     "faqs": [
-        {"question": "Is ClickUp really free?", "answer": "Yes. The Free Forever plan includes unlimited members and unlimited tasks. Limitations: 100MB storage, limited automations, no guest access, and fewer integrations. It's genuinely usable for small teams, which is why ClickUp has 10M+ users."},
+        {"question": "Is ClickUp free?", "answer": "Yes. The Free Forever plan includes unlimited members and unlimited tasks. Limitations: 100MB storage, limited automations, no guest access, and fewer integrations. It's usable for small teams, which is why ClickUp has 10M+ users."},
         {"question": "Why is ClickUp cheaper than Asana and Monday?", "answer": "ClickUp uses aggressive pricing as a growth strategy. At $7/member/mo (Unlimited), they're buying market share. The trade-off is that ClickUp monetizes through upsells to Business and Enterprise tiers, plus add-on products like ClickUp AI ($5/member/mo extra)."},
         {"question": "Is ClickUp good for small teams?", "answer": "Excellent on value, mixed on experience. The free plan is unbeatable. The learning curve is steeper than Monday or Trello. If someone on your team enjoys setting up tools, ClickUp pays off. If everyone just wants to log in and manage tasks, start with Trello or Monday."},
         {"question": "Does ClickUp have good mobile apps?", "answer": "Functional but limited. You can view tasks, add comments, and update statuses. Complex operations (creating views, configuring automations, building dashboards) require the desktop app. The mobile experience has improved significantly since 2023, but it's still behind Asana's mobile app."},
@@ -277,13 +277,13 @@ TOOL_CONTENT["clickup"] = {
 
 TOOL_CONTENT["notion"] = {
     "overview": [
-        "Notion built a beautiful workspace that millions of people love for notes, docs, and wikis. Then it bolted on project management. The result is a tool that's genuinely excellent at documentation and genuinely mediocre at managing complex projects. Knowing which category your team falls into determines whether Notion is brilliant or frustrating.",
-        "The database system is Notion's secret weapon. Every project board, task list, and content calendar is really a database with views (table, board, timeline, calendar, gallery). This means you can create a single source of truth and slice it six different ways. Your PM sees the timeline. Your designer sees the board. Your writer sees the calendar. The flexibility is addictive once you learn the system.",
+        "Notion built a beautiful workspace that millions of people love for notes, docs, and wikis. Then it bolted on project management. The result is a tool that's excellent at documentation and mediocre at managing complex projects. Knowing which category your team falls into determines whether Notion is brilliant or frustrating.",
+        "The database system is Notion's secret weapon. Every project board, task list, and content calendar is a database with views (table, board, timeline, calendar, gallery). This means you can create a single source of truth and slice it six different ways. Your PM sees the timeline. Your designer sees the board. Your writer sees the calendar. The flexibility is addictive once you learn the system.",
         "Pricing is straightforward. Free for individuals, $10/seat/mo (Plus), $18/seat/mo (Business). Notion AI adds $10/member/mo. For a 15-person team on Plus, that's $1,800/yr. Add Notion AI and it's $3,600/yr. Competitive with ClickUp but cheaper than Asana Business. The catch is that you'll spend time building what Asana and Monday give you out of the box.",
     ],
     "expanded_pros": [
         {
-            "title": "Best-in-class documentation and wiki",
+            "title": "Top-tier documentation and wiki",
             "detail": "If your team's primary pain is scattered docs, tribal knowledge, and information locked in people's heads, Notion solves it beautifully. The block-based editor handles text, code, embeds, databases, toggles, callouts, and tables. Templates let you standardize meeting notes, PRDs, and runbooks. Confluence is the main competition here, and Notion is years ahead on user experience.",
         },
         {
@@ -291,12 +291,12 @@ TOOL_CONTENT["notion"] = {
             "detail": "A Notion database can be a task board, a CRM, a content calendar, and a bug tracker depending on which view you apply. Relations and rollups let you connect databases (link tasks to projects, projects to goals). This flexibility means you can build almost any workflow. The trade-off: you have to build it. Asana and Monday give you these structures out of the box.",
         },
         {
-            "title": "Beautiful design that people actually enjoy using",
+            "title": "Beautiful design that people enjoy using",
             "detail": "This sounds superficial but it matters. Notion is the only PM-adjacent tool where teams actively enjoy the interface. Cover images, icons, custom layouts. People personalize their workspaces because the tool lets them. Happy users log in more. More logins mean better data. Better data means projects don't slip through cracks.",
         },
         {
             "title": "Free tier is generous for individuals and tiny teams",
-            "detail": "The free plan includes unlimited pages and blocks for individuals, and limited sharing. For a solo founder running their entire business from Notion (docs, tasks, notes, CRM), it's genuinely free. Paid plans kick in when you need team collaboration features, which is fair pricing aligned with actual value.",
+            "detail": "The free plan includes unlimited pages and blocks for individuals, and limited sharing. For a solo founder running their entire business from Notion (docs, tasks, notes, CRM), it's free. Paid plans kick in when you need team collaboration features, which is fair pricing aligned with actual value.",
         },
     ],
     "expanded_cons": [
@@ -352,7 +352,7 @@ TOOL_CONTENT["notion"] = {
     "faqs": [
         {"question": "Is Notion good for project management?", "answer": "For simple to moderate PM needs (task tracking, sprint boards, content calendars), yes. For complex project management with multi-project dependencies, resource leveling, and portfolio reporting, no. Notion's PM features have improved but still trail Asana, Monday, and ClickUp."},
         {"question": "Can Notion replace Confluence?", "answer": "For most teams, yes. Notion's wiki experience is significantly better than Confluence's. The main exception is Jira-heavy teams. Confluence's deep Jira integration (bi-directional linking, embedded Jira issues, sprint reporting) is something Notion can't replicate."},
-        {"question": "Is Notion AI worth $10/member/month?", "answer": "For teams that write extensively (product teams, content teams, documentation-heavy orgs), it saves time on drafting, summarizing, and editing. For teams that primarily use Notion for task management, the AI add-on is $10/mo you won't use enough to justify. Try it for a month and check how often your team actually uses it."},
+        {"question": "Is Notion AI worth $10/member/month?", "answer": "For teams that write extensively (product teams, content teams, documentation-heavy orgs), it saves time on drafting, summarizing, and editing. For teams that primarily use Notion for task management, the AI add-on is $10/mo you won't use enough to justify. Try it for a month and check how often your team uses it."},
         {"question": "Why is Notion slow with large databases?", "answer": "Notion's architecture loads database content dynamically, which creates latency with large datasets. Databases over 1,000 items slow noticeably. Workarounds: use filtered views (don't load everything at once), split large databases into multiple smaller ones, and archive completed items regularly."},
         {"question": "Should I use Notion or Asana?", "answer": "If documentation is your primary need with PM on the side, Notion. If project management is your primary need with docs on the side, Asana. Many teams use both: Notion for the wiki and knowledge base, Asana for project tracking and workflow automation."},
         {"question": "Can a team of 20 run entirely on Notion?", "answer": "Possible but stressful. At 20 people, you'll feel the PM limitations (weak automations, no resource views, limited reporting). Small teams under 10 can run entirely on Notion. Teams of 20+ typically need a dedicated PM tool alongside Notion for docs."},
@@ -375,7 +375,7 @@ TOOL_CONTENT["trello"] = {
             "detail": "Trello's learning curve is zero. Open the app, make a board, add cards, drag them across columns. No training needed. No onboarding wizard. No YouTube tutorials required. For teams where the previous 'PM tool' was a whiteboard with Post-it notes, Trello is a natural digital upgrade.",
         },
         {
-            "title": "Free plan that actually works",
+            "title": "Free plan that works",
             "detail": "Unlimited cards, up to 10 boards, and one Power-Up per board. A solopreneur can manage their entire business on Trello's free plan: one board for tasks, one for content planning, one for client projects. Compare that to Monday's 2-user free cap or Asana's feature limitations on free.",
         },
         {
@@ -409,7 +409,7 @@ TOOL_CONTENT["trello"] = {
     "who_should_buy": [
         {"audience": "Solopreneurs and freelancers", "reason": "Trello's free plan is the best simple task management tool for one person. One board for daily tasks, one for client projects, one for ideas. It stays out of your way and never tries to be more than you need it to be."},
         {"audience": "Teams transitioning from physical whiteboards", "reason": "If your project management today consists of sticky notes on a wall, Trello is the gentlest possible digital upgrade. The visual metaphor is identical. Adoption will be instant."},
-        {"audience": "Anyone who just needs a kanban board", "reason": "If your workflow is genuinely column-based (To Do, In Progress, Review, Done) and you don't need timelines, Gantt charts, or portfolio views, Trello does the kanban thing better than anyone else. Don't pay for complexity you won't use."},
+        {"audience": "Anyone who just needs a kanban board", "reason": "If your workflow is column-based (To Do, In Progress, Review, Done) and you don't need timelines, Gantt charts, or portfolio views, Trello does the kanban thing better than anyone else. Don't pay for complexity you won't use."},
     ],
     "who_should_skip": [
         {"audience": "Growing teams (10+ people)", "reason": "Trello's limitations compound with team size. Cross-board visibility is poor. Reporting is minimal. As projects multiply, the board-per-project model creates silos. Move to Asana or Monday before you outgrow Trello and waste months on workarounds."},
@@ -420,7 +420,7 @@ TOOL_CONTENT["trello"] = {
         "solo": "Perfect fit. Trello's free plan was made for solo founders. Use it until you hire your first team member. Even then, Standard ($5/user/mo) is cheap enough that you won't think about it.",
         "small_team": "Works for 2-5 people with simple workflows. Standard ($5/user/mo) covers most needs. Start evaluating alternatives when you hit 5+ concurrent projects or need timeline views. The migration to Asana or Monday is straightforward and worth doing before complexity builds.",
         "mid_market": "Skip Trello. At 15+ people, you need portfolio views, reporting, and automation that Trello can't provide. Premium ($10/user/mo) doesn't bridge the gap. Asana Business or Monday Pro are better investments at this size.",
-        "enterprise": "Enterprise plan ($17.50/user/mo) is overpriced for what you get. Asana, Monday, and Wrike all offer more enterprise functionality at competitive prices. Trello Enterprise exists because Atlassian wants to keep existing enterprise customers, not because it's the right tool for enterprises.",
+        "enterprise": "Enterprise plan ($17.50/user/mo) is overpriced for what you get. Asana, Monday, and Wrike all offer more enterprise functionality at competitive prices. Trello Enterprise exists to keep existing Atlassian customers from leaving, and the feature set reflects that retention play rather than a serious enterprise PM investment.",
     },
     "alternatives_detail": [
         {"tool": "Asana", "reason": "Choose Asana when you outgrow Trello's simplicity. Asana offers the same board view plus timelines, workflow automation, and portfolios. The free tier covers 10 users. Most Trello-to-Asana migrations happen around the 8-10 person mark."},
@@ -430,7 +430,7 @@ TOOL_CONTENT["trello"] = {
     ],
     "verdict_long": [
         "Trello is the best version of a tool that most teams will eventually outgrow. The simplicity is its defining feature and its fundamental limitation. It does one thing (kanban boards) better than anyone else, and it refuses to become something more complex. I respect that decision even as I recommend alternatives for most growing teams.",
-        "If you're a solopreneur, a freelancer, or a team of 3-5 with straightforward workflows, Trello is hard to beat. The free plan is genuinely useful. The interface is joyfully simple. You'll never waste time figuring out how to use it. Start here and graduate when you're ready.",
+        "If you're a solopreneur, a freelancer, or a team of 3-5 with straightforward workflows, Trello is hard to beat. The free plan is useful. The interface is joyfully simple. You'll never waste time figuring out how to use it. Start here and graduate when you're ready.",
     ],
     "faqs": [
         {"question": "Is Trello still relevant in 2026?", "answer": "For simple task management, yes. Trello has 50M+ users and remains the easiest kanban tool available. For project management with timelines, automation, and reporting, competitors have pulled ahead. Trello is relevant for what it is, but the category has evolved beyond what it offers."},
@@ -537,7 +537,7 @@ TOOL_CONTENT["linear"] = {
     "expanded_pros": [
         {
             "title": "Speed that makes every other PM tool feel broken",
-            "detail": "Linear's performance is its most recognizable feature. Open the app. Create an issue. Assign it. Move to the next one. Everything happens instantly. There's no perceptible delay between action and result. After using Linear for a week, switching back to Jira or Asana feels like wading through mud. Speed reduces friction, and reduced friction means engineers actually keep their issues updated.",
+            "detail": "Linear's performance is its most recognizable feature. Open the app. Create an issue. Assign it. Move to the next one. Everything happens instantly. There's no perceptible delay between action and result. After using Linear for a week, switching back to Jira or Asana feels like wading through mud. Speed reduces friction, and reduced friction means engineers keep their issues updated.",
         },
         {
             "title": "Keyboard-first interface designed for developers",
@@ -609,8 +609,8 @@ TOOL_CONTENT["linear"] = {
     "faqs": [
         {"question": "Is Linear better than Jira?", "answer": "For developer experience, dramatically yes. Linear is faster, cleaner, and more intuitive. For enterprise reporting, advanced workflow customization, and integration ecosystem, Jira still leads. Most teams under 100 developers prefer Linear. Large enterprises with complex Jira configurations face a harder migration."},
         {"question": "Can non-engineers use Linear?", "answer": "They can, but they probably shouldn't. Linear's terminology (issues, cycles, triage), Git integrations, and developer-centric design create friction for non-technical users. Design teams sometimes adapt, but marketing and ops teams are better served by Asana, Monday, or ClickUp."},
-        {"question": "How fast is Linear really?", "answer": "Noticeably faster than every competitor. Page loads are instant. Issue creation takes seconds. View switching has no delay. The difference is most dramatic when compared to Jira, where loading a board can take 3-5 seconds. After a week on Linear, every other tool feels sluggish."},
-        {"question": "How does Linear handle sprints?", "answer": "Linear calls them 'cycles.' You set a fixed length (1-4 weeks), add issues, and track progress. Issues that aren't completed roll over automatically. The cycle view shows scope, progress, and velocity. It's simpler than Jira's sprint management but covers 90% of what teams actually need."},
+        {"question": "How fast is Linear?", "answer": "Noticeably faster than every competitor. Page loads are instant. Issue creation takes seconds. View switching has no delay. The difference is most dramatic when compared to Jira, where loading a board can take 3-5 seconds. After a week on Linear, every other tool feels sluggish."},
+        {"question": "How does Linear handle sprints?", "answer": "Linear calls them 'cycles.' You set a fixed length (1-4 weeks), add issues, and track progress. Issues that aren't completed roll over automatically. The cycle view shows scope, progress, and velocity. It's simpler than Jira's sprint management but covers 90% of what teams need."},
         {"question": "Is Linear free?", "answer": "Free for up to 250 issues. A 5-person team creating 10 issues/week will exhaust that in about 5 weeks. After that, Standard is $8/user/mo. Think of the free tier as a trial period rather than a permanent free plan."},
         {"question": "Can Linear replace Asana?", "answer": "For engineering teams, yes. For cross-functional teams, no. Linear replaces the engineering-specific portion of Asana. Marketing campaigns, content calendars, client onboarding, and operational workflows all need a tool that Linear wasn't designed to handle."},
         {"question": "What size team is Linear best for?", "answer": "3-50 developers. Below 3, GitHub Issues is probably enough. Above 50, evaluate whether Linear's reporting meets your leadership's needs. The sweet spot is a 5-20 person engineering team at a startup or mid-size company."},
@@ -625,7 +625,7 @@ TOOL_CONTENT["wrike"] = {
     "overview": [
         "Wrike is the project management tool that enterprise procurement teams love and individual users tolerate. It's packed with features: Gantt charts, resource management, time tracking, workload views, custom request forms, proofing tools, and business intelligence reporting. On paper, Wrike checks every box on an enterprise RFP. In practice, learning to use all of it takes weeks.",
         "Founded in 2006 and acquired by Citrix (now Cloud Software Group) in 2021 for $2.25B, Wrike has deep roots in enterprise work management. The customer list (Google, Siemens, Airbnb, Dell) reflects the product's strength: large organizations with complex project portfolios, cross-functional dependencies, and resource constraints that simpler tools can't handle.",
-        "Pricing starts free (limited), then jumps to Team ($9.80/user/mo), Business ($24.80/user/mo), Enterprise (custom), and Pinnacle (custom). The Business plan is where Wrike becomes genuinely powerful, with custom workflows, resource management, and time tracking. For a 20-person team on Business, you're paying $5,952/yr. That's competitive with Asana Business ($5,998/yr) but Wrike offers significantly deeper resource planning.",
+        "Pricing starts free (limited), then jumps to Team ($9.80/user/mo), Business ($24.80/user/mo), Enterprise (custom), and Pinnacle (custom). The Business plan is where Wrike becomes powerful, with custom workflows, resource management, and time tracking. For a 20-person team on Business, you're paying $5,952/yr. That's competitive with Asana Business ($5,998/yr) but Wrike offers significantly deeper resource planning.",
     ],
     "expanded_pros": [
         {
@@ -633,7 +633,7 @@ TOOL_CONTENT["wrike"] = {
             "detail": "Wrike's workload view shows who's overbooked, who has capacity, and how resources are allocated across projects. You can set hours per task, compare planned vs. actual time, and rebalance workloads visually. Asana and Monday show basic assignment data. Wrike shows resource capacity planning that rivals dedicated resource management tools. For teams where overbooking kills delivery timelines, this feature alone justifies Wrike.",
         },
         {
-            "title": "Gantt charts that actually work for complex projects",
+            "title": "Gantt charts that work for complex projects",
             "detail": "Wrike's Gantt view handles dependencies, milestones, critical paths, and baseline comparisons. You can drag to reschedule, link tasks across projects, and see the cascade effect of delays. Monday and Asana have timeline views. Wrike has real Gantt charts with the depth that project managers trained on Microsoft Project expect.",
         },
         {
@@ -652,7 +652,7 @@ TOOL_CONTENT["wrike"] = {
         },
         {
             "title": "Free and Team plans are too limited to evaluate properly",
-            "detail": "The free plan limits you to basic task management without timelines, Gantt charts, or custom workflows. The Team plan ($9.80/user/mo) adds some features but still locks out resource management and time tracking. You need the Business plan ($24.80/user/mo) to see what Wrike actually does well. That's a $5,952/yr commitment for a 20-person team before you've validated the fit.",
+            "detail": "The free plan limits you to basic task management without timelines, Gantt charts, or custom workflows. The Team plan ($9.80/user/mo) adds some features but still locks out resource management and time tracking. You need the Business plan ($24.80/user/mo) to see what Wrike does well. That's a $5,952/yr commitment for a 20-person team before you've validated the fit.",
         },
         {
             "title": "Overkill for small and medium teams",
@@ -669,7 +669,7 @@ TOOL_CONTENT["wrike"] = {
         "The feature unlock matters: Team plan gives you Gantt charts and dashboards. Business adds resource management, time tracking, custom workflows, and project portfolios. Most of what makes Wrike distinctive lives in the Business tier. Budget accordingly.",
     ],
     "who_should_buy": [
-        {"audience": "Mid-market teams (25-100 people) with complex project portfolios", "reason": "If you're managing 15+ concurrent projects with resource constraints, cross-team dependencies, and executive reporting needs, Wrike gives you the depth that Asana and Monday lack. The resource management and Gantt capabilities are genuinely enterprise-grade."},
+        {"audience": "Mid-market teams (25-100 people) with complex project portfolios", "reason": "If you're managing 15+ concurrent projects with resource constraints, cross-team dependencies, and executive reporting needs, Wrike gives you the depth that Asana and Monday lack. The resource management and Gantt capabilities are enterprise-grade."},
         {"audience": "Agencies and consulting firms that bill hourly", "reason": "Built-in time tracking, resource allocation, and workload management in one tool. Agencies currently running Asana + Harvest + a spreadsheet for resource planning can consolidate into Wrike alone. The proofing feature is a bonus for creative agencies."},
         {"audience": "PMO teams that need governance and standardization", "reason": "Custom request forms, approval workflows, and portfolio dashboards give PMO leaders the structure to enforce project intake processes and track portfolio health. This is the use case Wrike was built for."},
     ],
@@ -687,13 +687,13 @@ TOOL_CONTENT["wrike"] = {
     "alternatives_detail": [
         {"tool": "Asana", "reason": "Choose Asana if you want similar PM features with a significantly better user experience. Asana's workflow automation is stronger. Wrike's resource management is stronger. The decision comes down to whether your team's bottleneck is complexity or adoption."},
         {"tool": "Smartsheet", "reason": "Choose Smartsheet if your team thinks in spreadsheets and needs enterprise-grade reporting. Smartsheet's grid-based approach and BI capabilities rival Wrike's, with a UI that feels more familiar to Excel power users."},
-        {"tool": "Monday", "reason": "Choose Monday if the team that will use the tool is non-technical and values visual simplicity. Monday can't match Wrike's depth, but it will actually get used by people who find Wrike overwhelming."},
+        {"tool": "Monday", "reason": "Choose Monday if the team that will use the tool is non-technical and values visual simplicity. Monday can't match Wrike's depth, but it will get used by people who find Wrike overwhelming."},
         {"tool": "Teamwork", "reason": "Choose Teamwork if you're an agency that needs time tracking and client management. Teamwork is simpler than Wrike with a sharper focus on agency workflows, including client permissions and invoicing."},
     ],
     "verdict_long": [
         "Wrike is the PM tool you choose when your projects have outgrown the tools everyone recommends first. When Asana's reporting feels thin, when Monday's dependency handling feels basic, when ClickUp's performance issues are costing you time, Wrike steps in with the depth that complex organizations need. Resource management, real Gantt charts, time tracking, and portfolio oversight in one platform.",
         "The trade-off is user experience. Wrike feels heavy. The learning curve is real. Your team won't pick it up in an afternoon like they would with Monday or Trello. Budget for training, configuration time, and a period where people complain about the interface before they appreciate the capability underneath it.",
-        "Score: 7.2. The depth is there. The polish isn't. For mid-market and enterprise teams with genuinely complex PM needs, Wrike delivers features that simpler tools can't match. For everyone else, the complexity is a liability, not an asset.",
+        "Score: 7.2. The depth is there. The polish isn't. For mid-market and enterprise teams with complex PM needs, Wrike delivers features that simpler tools can't match. For everyone else, the complexity is a liability, not an asset.",
     ],
     "faqs": [
         {"question": "Is Wrike good for small teams?", "answer": "Generally no. Wrike's depth is wasted on teams under 15 people, and the learning curve slows adoption. Small teams get better results from Asana, Monday, or ClickUp, all of which are easier to learn and comparable in price for basic PM needs."},

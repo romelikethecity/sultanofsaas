@@ -13,7 +13,7 @@ TOOL_CONTENT = {}
 
 TOOL_CONTENT["hubspot"] = {
     "overview": [
-        "HubSpot built its empire on a simple bet: give away a CRM for free, then charge for everything around it. That bet paid off. Their free tier is genuinely useful for teams under 5, with contact management, deal tracking, and basic email that most competitors lock behind a paywall.",
+        "HubSpot built its empire on a simple bet: give away a CRM for free, then charge for everything around it. That bet paid off. Their free tier is useful for teams under 5, with contact management, deal tracking, and basic email that most competitors lock behind a paywall.",
         "The catch shows up when you grow. HubSpot's paid tiers jump fast, and the Marketing Hub integration (which is the real product they want you on) can run $800+/mo for a small team. You'll start free, fall in love with the UX, then face a pricing cliff around month 6.",
         "For SMBs who want one platform that does CRM, marketing, and support without stitching together 5 tools, HubSpot is still the most complete option. For teams that only need CRM and nothing else, Pipedrive does the core job at half the cost.",
     ],
@@ -23,7 +23,7 @@ TOOL_CONTENT["hubspot"] = {
             "detail": "Up to 1,000,000 contacts, deal pipelines, meeting scheduling, live chat, and basic email. No trial period, no credit card required. Competitors like Salesforce and Pipedrive don't come close at the free level.",
         },
         {
-            "title": "All-in-one platform that actually works together",
+            "title": "All-in-one platform that works together",
             "detail": "Marketing Hub, Sales Hub, Service Hub, and CMS Hub share the same database. When marketing qualifies a lead, sales sees the full history. Most 'all-in-one' platforms bolt pieces together. HubSpot built them on one codebase.",
         },
         {
@@ -46,9 +46,9 @@ TOOL_CONTENT["hubspot"] = {
         },
     ],
     "pricing_detail": [
-        "The free tier is genuinely free with no expiration. HubSpot makes money by converting you to paid plans, not by gating the free version.",
+        "The free tier is free with no expiration. HubSpot makes money by converting you to paid plans, not by gating the free version.",
         "Starter ($20/mo billed annually) removes branding from emails and adds simple automation. Good value for solo founders. Professional ($500/mo) unlocks sequences, custom reporting, and forecasting. This is where most sales teams land.",
-        "What you'll actually pay for a team of 5: Professional Sales Hub ($500) + 5 paid seats ($25 each) = $625/mo minimum. Add Marketing Hub and you're over $1,400/mo. For a team of 10: $500 base + 10 seats at $25 = $750/mo for CRM only. That's $9,000/year before you add any other Hub. The free-to-paid cliff is real.",
+        "What you'll pay for a team of 5: Professional Sales Hub ($500) + 5 paid seats ($25 each) = $625/mo minimum. Add Marketing Hub and you're over $1,400/mo. For a team of 10: $500 base + 10 seats at $25 = $750/mo for CRM only. That's $9,000/year before you add any other Hub. The free-to-paid cliff is real.",
     ],
     "who_should_buy": [
         {"audience": "Solo founders and tiny teams (1-5)", "reason": "The free tier gives you 80% of what you need. You can run a real pipeline without spending a dollar until you hit meaningful revenue."},
@@ -72,12 +72,12 @@ TOOL_CONTENT["hubspot"] = {
         {"tool": "Close", "reason": "Choose Close if you're a calling-heavy team. Built-in dialer, SMS, and call coaching that HubSpot charges extra for."},
     ],
     "verdict_long": [
-        "HubSpot earned its Sultan's Pick because it solves the biggest problem SMBs face: needing one platform that actually works. The free tier is the best on-ramp in SaaS, the UX respects your time, and the ecosystem means you can add marketing, support, and content without switching platforms.",
+        "HubSpot earned its Sultan's Pick because it solves the biggest problem SMBs face: needing one platform that works. The free tier is the best on-ramp in SaaS, the UX respects your time, and the ecosystem means you can add marketing, support, and content without switching platforms.",
         "The pricing is the elephant in the room. HubSpot gets expensive fast, and the annual contracts mean you're committing before you know if it fits. But for teams that grow into the platform, the cost of switching away is so high that most stay. HubSpot knows this.",
         "If you're starting from zero and want one tool that can grow with you from solo founder to 50-person company, HubSpot is the default choice. If you already know you only need CRM and nothing else, save your money and use Pipedrive.",
     ],
     "faqs": [
-        {"question": "Is HubSpot's free CRM really free forever?", "answer": "Yes. There's no trial period and no credit card required. HubSpot's business model is converting free users to paid plans, so they keep the free tier genuinely useful. You can use it indefinitely with up to 1,000,000 contacts."},
+        {"question": "Is HubSpot's free CRM free forever?", "answer": "Yes. There's no trial period and no credit card required. HubSpot's business model is converting free users to paid plans, so they keep the free tier useful. You can use it indefinitely with up to 1,000,000 contacts."},
         {"question": "How does HubSpot compare to Salesforce for small businesses?", "answer": "HubSpot wins on ease of use and total cost for teams under 20. Salesforce wins on customization and enterprise features. If you don't have a dedicated admin, HubSpot is the better choice. If you need complex workflows, territory management, or CPQ, Salesforce pulls ahead."},
         {"question": "What's the real cost of HubSpot for a team of 10?", "answer": "Professional Sales Hub ($500/mo) + 10 seats ($25/seat/mo) = $750/mo for CRM only. Add Marketing Hub Professional for a 5,000 contact list and you're at $1,550/mo. Annual contract required, so you're committing to $18,600/year."},
         {"question": "Can I switch from HubSpot to another CRM later?", "answer": "HubSpot makes exporting contacts easy, but migrating workflows, sequences, and automations is manual. The longer you use HubSpot, the harder it is to leave. This is by design. If you think you might outgrow it, consider whether the ecosystem lock-in is worth the convenience."},
@@ -106,7 +106,7 @@ TOOL_CONTENT["salesforce"] = {
         },
         {
             "title": "Reporting and analytics that scale with complexity",
-            "detail": "Salesforce's reporting engine can handle anything. Cross-object reports, custom dashboards, forecasting models, pipeline analytics. For companies that live and die by pipeline metrics, Salesforce's reporting depth is genuinely unmatched. You can build board-ready dashboards without a BI tool.",
+            "detail": "Salesforce's reporting engine can handle anything. Cross-object reports, custom dashboards, forecasting models, pipeline analytics. For companies that live and die by pipeline metrics, Salesforce's reporting depth is unmatched. You can build board-ready dashboards without a BI tool.",
         },
         {
             "title": "Industry-specific clouds for vertical needs",
@@ -169,7 +169,7 @@ TOOL_CONTENT["salesforce"] = {
     ],
     "faqs": [
         {"question": "Is Salesforce worth it for a small business?", "answer": "For most small businesses (under 20 people), no. The license cost is manageable but the admin overhead is what kills you. You'll need a consultant for setup ($15K-50K) and ongoing admin ($2K-8K/mo). HubSpot or Pipedrive deliver 80% of the value at a fraction of the total cost."},
-        {"question": "What does Salesforce actually cost per month?", "answer": "License cost for Enterprise (the most common tier): $165/user/mo. A team of 10 pays $1,650/mo in licenses. Add admin costs, consultant fees, and add-on modules, and realistic total cost is $3,000-5,000/mo for a 10-person team. That's $36,000-60,000/year all-in."},
+        {"question": "What does Salesforce cost per month?", "answer": "License cost for Enterprise (the most common tier): $165/user/mo. A team of 10 pays $1,650/mo in licenses. Add admin costs, consultant fees, and add-on modules, and realistic total cost is $3,000-5,000/mo for a 10-person team. That's $36,000-60,000/year all-in."},
         {"question": "How long does Salesforce take to set up?", "answer": "A proper implementation takes 2-4 months for a 20-person team. That includes data migration, custom configuration, integration setup, and user training. You can get a basic setup running in 2-3 weeks, but it'll be so unconfigured that reps won't use it."},
         {"question": "Can I start with Salesforce Essentials and upgrade later?", "answer": "Technically yes, but Essentials is so limited that it gives you a poor impression of the platform. No workflow automation, limited reporting, capped at 10 users. You're better off using HubSpot's free tier until you're ready for Salesforce Enterprise or Professional."},
         {"question": "Why do so many companies switch away from Salesforce?", "answer": "Low user adoption is the #1 reason. Reps find the interface clunky and log fewer activities, which means dirtier data and worse forecasting. Companies switch to HubSpot or Pipedrive for the better UX, then lose the customization depth they had. It's a constant trade-off between power and usability."},
@@ -184,8 +184,8 @@ TOOL_CONTENT["salesforce"] = {
 TOOL_CONTENT["pipedrive"] = {
     "overview": [
         "Pipedrive was built by salespeople who were frustrated with CRMs designed for managers. That origin story shows in every design decision. The visual pipeline is the centerpiece, a drag-and-drop board that makes deal management feel intuitive instead of like data entry. You open Pipedrive and immediately see where every deal stands. No report building required.",
-        "The pricing is refreshingly transparent. Four tiers from $14 to $99/user/mo, with each tier clearly adding features you can actually see. No hidden per-contact charges, no ecosystem tax, no mandatory onboarding fees. A team of 5 on the Advanced plan ($34/user/mo) pays $170/mo. That's it. Compare that to HubSpot Professional at $625/mo for the same team size.",
-        "Where Pipedrive falls short: it's a pure CRM. No marketing automation, no help desk, no CMS. If you want an all-in-one platform, look at HubSpot. But if you want the best pure sales pipeline tool for a small team, Pipedrive has earned that crown. The visual pipeline is genuinely the best in the business, and the mobile app is one of the few CRM mobile experiences that reps actually use.",
+        "The pricing is refreshingly transparent. Four tiers from $14 to $99/user/mo, with each tier clearly adding features you can see. No hidden per-contact charges, no ecosystem tax, no mandatory onboarding fees. A team of 5 on the Advanced plan ($34/user/mo) pays $170/mo. That's it. Compare that to HubSpot Professional at $625/mo for the same team size.",
+        "Where Pipedrive falls short: it's a pure CRM. No marketing automation, no help desk, no CMS. If you want an all-in-one platform, look at HubSpot. But if you want the best pure sales pipeline tool for a small team, Pipedrive has earned that crown. The visual pipeline is the best in the business, and the mobile app is one of the few CRM mobile experiences that reps use daily.",
     ],
     "expanded_pros": [
         {
@@ -197,7 +197,7 @@ TOOL_CONTENT["pipedrive"] = {
             "detail": "Essential at $14/user/mo. Advanced at $34/user/mo. Professional at $49/user/mo. Power at $64/user/mo. Enterprise at $99/user/mo. No contact limits on any tier. No mandatory annual contracts on most plans. A team of 10 on Advanced pays $340/mo. HubSpot Professional for 10 users runs $750/mo minimum.",
         },
         {
-            "title": "Reps actually use it",
+            "title": "Reps use it",
             "detail": "CRM adoption is the silent killer of most implementations. Pipedrive's UX is simple enough that reps log activities without being forced. The mobile app is legitimately good (rare for CRMs) and the email integration auto-tracks conversations. When reps use the CRM voluntarily, your data stays clean.",
         },
         {
@@ -251,7 +251,7 @@ TOOL_CONTENT["pipedrive"] = {
         {"tool": "Less Annoying CRM", "reason": "Choose Less Annoying CRM if even Pipedrive feels like too much. One plan, $15/user/mo, zero complexity. For solo operators who want the absolute simplest option."},
     ],
     "verdict_long": [
-        "Pipedrive is the CRM I recommend most often. For small sales teams that need pipeline management without the overhead of HubSpot's ecosystem or Salesforce's complexity, Pipedrive delivers. The visual pipeline is the best in the business. The pricing is honest. Reps actually use it, which is the single most important factor in CRM success.",
+        "Pipedrive is the CRM I recommend most often. For small sales teams that need pipeline management without the overhead of HubSpot's ecosystem or Salesforce's complexity, Pipedrive delivers. The visual pipeline is the best in the business. The pricing is honest. Reps use it, which is the single most important factor in CRM success.",
         "The limitations are real but predictable. You won't get marketing automation, help desk, or enterprise reporting. Pipedrive knows what it is and stays in its lane. For a team of 5-20 reps running an outbound or meeting-driven sales motion, that lane is exactly where you need to be.",
         "If I were starting a company today with a 5-person sales team, I'd use HubSpot's free tier until I needed paid features, then switch to Pipedrive Advanced instead of HubSpot Professional. You save $400+/mo and get a better pipeline experience. That's real money for a growing business.",
     ],
@@ -277,7 +277,7 @@ TOOL_CONTENT["close"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Built-in power dialer that actually works",
+            "title": "Built-in power dialer that works",
             "detail": "Close's power dialer queues up a list of prospects and auto-dials the next number when you hang up. No pause, no clicking, no switching tabs. A rep using Close's dialer can make 60-80 calls per hour versus 20-30 with a manual process. The predictive dialer on higher tiers dials multiple numbers simultaneously and connects you to the first person who picks up.",
         },
         {
@@ -296,7 +296,7 @@ TOOL_CONTENT["close"] = {
     "expanded_cons": [
         {
             "title": "Pricing runs hot for larger teams",
-            "detail": "Startup is $49/user/mo. Professional is $99/user/mo. Enterprise is $139/user/mo. A team of 10 on Professional pays $990/mo ($11,880/year). That's cheaper than Salesforce but significantly more than Pipedrive Advanced at $340/mo for the same headcount. The built-in dialer justifies the premium, but only if your team actually makes heavy call volume.",
+            "detail": "Startup is $49/user/mo. Professional is $99/user/mo. Enterprise is $139/user/mo. A team of 10 on Professional pays $990/mo ($11,880/year). That's cheaper than Salesforce but significantly more than Pipedrive Advanced at $340/mo for the same headcount. The built-in dialer justifies the premium, but only if your team makes heavy call volume.",
         },
         {
             "title": "Limited reporting compared to bigger platforms",
@@ -361,7 +361,7 @@ TOOL_CONTENT["freshsales"] = {
     "overview": [
         "Freshsales is the CRM arm of Freshworks, a publicly traded company (NASDAQ: FRSH) that also makes Freshdesk (help desk), Freshservice (IT), and Freshmarketer (marketing). The pitch is a mid-range CRM that does most things well at a price that undercuts HubSpot and Salesforce. The free tier supports 3 users, and paid plans start at $9/user/mo. For budget-conscious teams, those numbers are appealing.",
         "The AI features (Freddy AI) get prominent billing on the marketing page. Contact scoring, deal insights, next-best-action recommendations. In practice, Freddy is more of a basic scoring engine than the intelligent assistant Freshworks claims. It assigns scores based on email opens and website visits, which is useful but hardly AI. The gap between the AI marketing and the AI reality is wider than it should be for a public company.",
-        "Where Freshsales genuinely shines: if you're already using Freshdesk or Freshservice, the integration is tight. Shared customer records, unified views, automatic ticket-to-deal linking. For Freshworks ecosystem users, Freshsales is the natural CRM choice. For everyone else, HubSpot's free tier offers more features and Pipedrive offers a better pipeline experience.",
+        "Where Freshsales shines: if you're already using Freshdesk or Freshservice, the integration is tight. Shared customer records, unified views, automatic ticket-to-deal linking. For Freshworks ecosystem users, Freshsales is the natural CRM choice. For everyone else, HubSpot's free tier offers more features and Pipedrive offers a better pipeline experience.",
     ],
     "expanded_pros": [
         {
@@ -370,7 +370,7 @@ TOOL_CONTENT["freshsales"] = {
         },
         {
             "title": "Native Freshworks ecosystem integration",
-            "detail": "If you're running Freshdesk for support and Freshsales for CRM, the integration is genuinely useful. Support tickets appear in the CRM contact record. Sales reps see pending issues before reaching out. This unified view saves time and prevents the awkward 'I see you have an open support ticket' surprise during a sales call.",
+            "detail": "If you're running Freshdesk for support and Freshsales for CRM, the integration is tight. Support tickets appear in the CRM contact record. Sales reps see pending issues before reaching out. This unified view saves time and prevents the awkward 'I see you have an open support ticket' surprise during a sales call.",
         },
         {
             "title": "Built-in phone with no add-on required",
@@ -407,7 +407,7 @@ TOOL_CONTENT["freshsales"] = {
     ],
     "who_should_skip": [
         {"audience": "Teams choosing CRM based on AI claims", "reason": "Freddy AI is a basic scoring engine, not the intelligent assistant the marketing suggests. If AI-driven insights are your primary buying criterion, you'll be underwhelmed."},
-        {"audience": "Teams that prioritize UX and rep adoption", "reason": "Freshsales' interface is functional but cluttered. If getting reps to actually use the CRM matters (and it should), Pipedrive and HubSpot both offer cleaner, more intuitive experiences."},
+        {"audience": "Teams that prioritize UX and rep adoption", "reason": "Freshsales' interface is functional but cluttered. If getting reps to use the CRM matters (and it should), Pipedrive and HubSpot both offer cleaner, more intuitive experiences."},
         {"audience": "Companies that need deep customization", "reason": "Freshsales hits customization limits faster than HubSpot or Salesforce. If your sales process requires complex multi-step automations, custom objects, or advanced approval workflows, you'll outgrow Freshsales."},
     ],
     "stage_guidance": {
@@ -423,12 +423,12 @@ TOOL_CONTENT["freshsales"] = {
         {"tool": "Close", "reason": "Choose Close if calling is your primary sales channel. Close's dialer is more powerful than Freshsales' built-in phone, and the CRM is purpose-built for inside sales workflows."},
     ],
     "verdict_long": [
-        "Freshsales is a solid mid-range CRM that earns its keep for Freshworks ecosystem users. If you're running Freshdesk and need CRM, the unified customer view across support and sales genuinely saves time. The pricing is aggressive, the built-in phone is a nice touch, and the core CRM functionality covers the basics well.",
+        "Freshsales is a solid mid-range CRM that earns its keep for Freshworks ecosystem users. If you're running Freshdesk and need CRM, the unified customer view across support and sales saves real time. The pricing is aggressive, the built-in phone is a nice touch, and the core CRM functionality covers the basics well.",
         "For everyone outside the Freshworks ecosystem, the value proposition weakens. Pipedrive offers a better pipeline experience at similar prices. HubSpot's free tier is more generous. The AI features, marketed heavily, deliver basic lead scoring that doesn't justify choosing Freshsales over competitors. Freddy is ordinary.",
         "My advice: choose Freshsales if you're already in Freshworks or seriously evaluating their suite. The bundle savings are real. If you're evaluating CRM standalone, Pipedrive for small teams or HubSpot for all-in-one needs are better picks.",
     ],
     "faqs": [
-        {"question": "Is Freshsales really free?", "answer": "The free plan supports up to 3 users with basic contact management, a kanban board, built-in phone, and email. It's more limited than HubSpot's free CRM (which supports unlimited users and more features) but functional for micro-teams testing the waters."},
+        {"question": "Is Freshsales free?", "answer": "The free plan supports up to 3 users with basic contact management, a kanban board, built-in phone, and email. It's more limited than HubSpot's free CRM (which supports unlimited users and more features) but functional for micro-teams testing the waters."},
         {"question": "How does Freshsales compare to HubSpot?", "answer": "Freshsales is cheaper on paid tiers ($39/user vs. HubSpot Professional's $500+ base). HubSpot has a better free tier, stronger marketing tools, and a larger ecosystem. Choose Freshsales for budget savings or Freshworks integration. Choose HubSpot for all-in-one capability and ecosystem breadth."},
         {"question": "Is Freddy AI worth it?", "answer": "Freddy AI provides basic lead scoring and activity insights. If you're expecting ChatGPT-level intelligence in your CRM, reset those expectations. Freddy is useful for prioritizing leads based on engagement signals, but the 'AI' label overpromises. Every CRM has some version of lead scoring."},
         {"question": "What does Freshsales cost for a team of 10?", "answer": "Pro plan: 10 x $39 = $390/mo ($4,680/year). Enterprise plan: 10 x $59 = $590/mo ($7,080/year). Both include built-in phone. Compare to Pipedrive Professional at $490/mo and HubSpot Professional at $750/mo for the same headcount."},
@@ -510,9 +510,9 @@ TOOL_CONTENT["zoho-crm"] = {
         {"tool": "Freshsales", "reason": "Choose Freshsales if you want a simpler mid-range CRM with a better interface. Freshsales is less powerful than Zoho but easier to use. Similar pricing on comparable tiers."},
     ],
     "verdict_long": [
-        "Zoho CRM is the best value in the category on paper. Feature-for-feature at the Enterprise tier, it competes with tools that cost 3-4x more. The Zoho One bundle ($37/employee/mo for 45+ apps) is genuinely one of the best deals in business software. If you're running a cost-conscious operation and willing to invest time in configuration, Zoho delivers capability that punches well above its price point.",
+        "Zoho CRM is the best value in the category on paper. Feature-for-feature at the Enterprise tier, it competes with tools that cost 3-4x more. The Zoho One bundle ($37/employee/mo for 45+ apps) is one of the best deals in business software. If you're running a cost-conscious operation and willing to invest time in configuration, Zoho delivers capability that punches well above its price point.",
         "The caveat: value and usability are different things. The interface is dense, the learning curve is steep, and the mobile experience is mediocre. For small teams where CRM adoption depends on simplicity, these UX gaps can undermine the feature advantages. A powerful CRM that reps don't use is worse than a simple CRM they use every day.",
-        "My take: Zoho is the right choice for teams that want maximum features at minimum cost and have someone willing to learn the system deeply. If nobody on your team is excited about configuring a CRM, spend the extra money on Pipedrive or HubSpot and get something your team will actually use consistently.",
+        "My take: Zoho is the right choice for teams that want maximum features at minimum cost and have someone willing to learn the system deeply. If nobody on your team is excited about configuring a CRM, spend the extra money on Pipedrive or HubSpot and get something your team will use consistently.",
     ],
     "faqs": [
         {"question": "Is Zoho CRM better than HubSpot?", "answer": "Zoho offers more features at lower prices. HubSpot offers a better user experience with a stronger ecosystem. For budget-conscious teams that need depth, Zoho wins. For teams that prioritize ease of use and rep adoption, HubSpot wins. Both have free tiers worth testing."},
@@ -531,7 +531,7 @@ TOOL_CONTENT["zoho-crm"] = {
 TOOL_CONTENT["copper"] = {
     "overview": [
         "Copper's entire value proposition rests on one thing: it lives inside Google Workspace. If your team runs on Gmail and Google Calendar, Copper sits in a sidebar within Gmail, automatically logs emails, creates contacts from conversations, and syncs with Google Calendar without any setup. There's no import process, no email integration to configure. You install the Chrome extension and your CRM is inside the tools you already use.",
-        "For Google-native teams, this integration is genuinely magical. Contacts auto-populate from email conversations. Deals can be created without leaving Gmail. Calendar events sync both ways. The friction of using a CRM drops to near zero because you never have to switch tabs. Reps who refuse to log activities in Salesforce or HubSpot find themselves using Copper because it's just... there.",
+        "For Google-native teams, this integration is magic. Contacts auto-populate from email conversations. Deals can be created without leaving Gmail. Calendar events sync both ways. The friction of using a CRM drops to near zero because you never have to switch tabs. Reps who refuse to log activities in Salesforce or HubSpot find themselves using Copper because it's just... there.",
         "Outside of Google Workspace, Copper has limited appeal. It doesn't support Outlook. The standalone web app is functional but unremarkable. Features like reporting, automation, and pipeline management are adequate but don't match Pipedrive or HubSpot. You're paying $23-$99/user/mo specifically for the Google integration. If that integration matters to you, Copper is worth it. If you're on Microsoft 365, Copper has nothing to offer.",
     ],
     "expanded_pros": [
@@ -613,7 +613,7 @@ TOOL_CONTENT["copper"] = {
 TOOL_CONTENT["monday-sales-crm"] = {
     "overview": [
         "Monday Sales CRM is what happens when a project management company decides to enter the CRM market. Monday.com repackaged their flexible board system with sales-specific templates, pre-built automations, and a pipeline view. If you already use Monday.com for project management, the CRM feels like a natural extension. Same interface, same logic, same workspace. Everything lives in one platform.",
-        "For Monday.com users, this is genuinely compelling. Your sales pipeline, project boards, and team tasks share the same workspace. When a deal closes, you can automatically create a project board for onboarding. When support tickets come in, sales reps see them in context. This cross-functional visibility is hard to get with separate tools, and it's where Monday Sales CRM adds real value.",
+        "For Monday.com users, this is compelling. Your sales pipeline, project boards, and team tasks share the same workspace. When a deal closes, you can automatically create a project board for onboarding. When support tickets come in, sales reps see them in context. This cross-functional visibility is hard to get with separate tools, and it's where Monday Sales CRM adds real value.",
         "For everyone else, the CRM features feel bolted on. The pipeline management is functional but not as polished as Pipedrive's. The contact management lacks the depth of HubSpot's. Sales-specific features like email sequences, built-in calling, and lead scoring either don't exist or are basic compared to dedicated CRMs. Monday.com built a good project management tool that can also do CRM. That's different from building a good CRM.",
     ],
     "expanded_pros": [
@@ -712,7 +712,7 @@ TOOL_CONTENT["nutshell"] = {
         },
         {
             "title": "Helpful customer support with a personal touch",
-            "detail": "Nutshell consistently earns praise for responsive, knowledgeable support. For small businesses without a technical team, having a vendor that actually answers your questions makes a real difference. G2 reviews frequently mention the support experience as a reason for staying with Nutshell.",
+            "detail": "Nutshell consistently earns praise for responsive, knowledgeable support. For small businesses without a technical team, having a vendor that answers your questions makes a real difference. G2 reviews frequently mention the support experience as a reason for staying with Nutshell.",
         },
     ],
     "expanded_cons": [
@@ -740,7 +740,7 @@ TOOL_CONTENT["nutshell"] = {
     ],
     "who_should_buy": [
         {"audience": "Very small teams (1-5 people) with basic needs", "reason": "If your sales process is simple and you want CRM + email marketing without managing multiple tools, Nutshell bundles both at an affordable price. The simplicity is an advantage when you don't have time to learn complex software."},
-        {"audience": "Non-technical teams that value good support", "reason": "Nutshell's customer support is genuinely strong. For teams without a technical person on staff, having a vendor that walks you through setup and answers questions is worth more than a feature list."},
+        {"audience": "Non-technical teams that value good support", "reason": "Nutshell's customer support is strong. For teams without a technical person on staff, having a vendor that walks you through setup and answers questions is worth more than a feature list."},
         {"audience": "Small businesses that send email newsletters", "reason": "The built-in email marketing saves you from managing a separate Mailchimp or Constant Contact subscription. For teams that send 1-2 newsletters per month alongside basic CRM, it's a clean solution."},
     ],
     "who_should_skip": [
@@ -790,12 +790,12 @@ TOOL_CONTENT["less-annoying-crm"] = {
             "detail": "$15/user/mo. Monthly billing. Cancel anytime. No annual contract discount tricks, no feature tiers to navigate, no per-contact surcharges, no hidden implementation fees. What you see is what you pay. For a team of 10, that's $150/mo. Every month. No surprises.",
         },
         {
-            "title": "Genuinely easy to learn and use",
+            "title": "Easy to learn and use",
             "detail": "Less Annoying CRM was designed for people who dislike software. The interface is spartan by design. No unnecessary menus, no feature bloat, no hidden settings panels. Most users are productive within 30 minutes of signing up. For non-technical founders who've bounced off HubSpot or Salesforce, this simplicity is a relief.",
         },
         {
             "title": "Customer support from actual humans who care",
-            "detail": "Every user gets a dedicated CRM coach for the first 30 days. After that, support is via email with fast response times from a team that knows the product inside out. The support experience is consistently the #1 reason cited in reviews. In a world of chatbot-first support, talking to a human who actually helps is refreshing.",
+            "detail": "Every user gets a dedicated CRM coach for the first 30 days. After that, support is via email with fast response times from a team that knows the product inside out. The support experience is consistently the #1 reason cited in reviews. In a world of chatbot-first support, talking to a human who helps is refreshing.",
         },
         {
             "title": "No lock-in, no switching cost games",
@@ -827,7 +827,7 @@ TOOL_CONTENT["less-annoying-crm"] = {
     ],
     "who_should_buy": [
         {"audience": "Solo founders and freelancers", "reason": "$15/mo for a simple CRM with good support and no complexity. If you're tracking 50-200 contacts and a handful of deals, Less Annoying CRM does the job without getting in your way."},
-        {"audience": "Non-technical teams in traditional industries", "reason": "Real estate agents, insurance brokers, consultants, small professional services firms. People who need to track relationships and follow-ups but don't want to learn complicated software. The 30-minute setup is genuinely 30 minutes."},
+        {"audience": "Non-technical teams in traditional industries", "reason": "Real estate agents, insurance brokers, consultants, small professional services firms. People who need to track relationships and follow-ups but don't want to learn complicated software. The 30-minute setup is 30 minutes."},
         {"audience": "Teams that have bounced off other CRMs", "reason": "If your team tried HubSpot, Salesforce, or Pipedrive and stopped using them because they were too complex, Less Annoying CRM is designed for you. The deliberate simplicity means there's less to learn and less to go wrong."},
     ],
     "who_should_skip": [
@@ -842,7 +842,7 @@ TOOL_CONTENT["less-annoying-crm"] = {
         "enterprise": "Not applicable. Less Annoying CRM is built for small businesses and doesn't pretend otherwise. No enterprise features, no enterprise pricing, no enterprise sales team. And honestly, that's part of its charm.",
     },
     "alternatives_detail": [
-        {"tool": "Pipedrive", "reason": "Choose Pipedrive if you want the simplicity of Less Annoying CRM with more features and room to grow. Pipedrive Essential ($14/user/mo) is actually $1 cheaper and includes more pipeline management features, plus a path to Advanced and Professional tiers as you scale."},
+        {"tool": "Pipedrive", "reason": "Choose Pipedrive if you want the simplicity of Less Annoying CRM with more features and room to grow. Pipedrive Essential ($14/user/mo) is $1 cheaper and includes more pipeline management features, plus a path to Advanced and Professional tiers as you scale."},
         {"tool": "HubSpot", "reason": "Choose HubSpot if you want a free starting point with the option to add marketing, support, and advanced sales features later. HubSpot's free tier has more features than Less Annoying CRM's paid plan, though the transition to paid HubSpot is a steep jump."},
         {"tool": "Nutshell", "reason": "Choose Nutshell if you want Less Annoying CRM's simplicity with email marketing included. Nutshell Foundation ($16/user/mo) adds email campaigns for just $1/user more per month."},
         {"tool": "Streak", "reason": "Choose Streak if you want CRM inside Gmail for free. Streak's free plan gives Gmail users basic pipeline management without leaving their inbox. Less polished than Less Annoying CRM but costs nothing."},
@@ -853,7 +853,7 @@ TOOL_CONTENT["less-annoying-crm"] = {
         "I respect what Less Annoying CRM represents. But for most readers of this site, even small teams should start with Pipedrive Essential ($14/user/mo) or HubSpot's free tier. Both give you more features at the same or lower cost, with room to grow. Less Annoying CRM is the right choice when you specifically want the simplest possible CRM and you know you won't need more. That's a small but real audience, and they'll love this tool.",
     ],
     "faqs": [
-        {"question": "Is Less Annoying CRM really $15/user/month?", "answer": "Yes. One plan, one price, monthly billing, cancel anytime. No annual contracts, no feature tiers, no hidden fees. A team of 10 pays $150/mo. That's it. The pricing model is the product's strongest selling point."},
+        {"question": "Is Less Annoying CRM $15/user/month?", "answer": "Yes. One plan, one price, monthly billing, cancel anytime. No annual contracts, no feature tiers, no hidden fees. A team of 10 pays $150/mo. That's it. The pricing model is the product's strongest selling point."},
         {"question": "How does Less Annoying CRM compare to HubSpot free?", "answer": "HubSpot's free CRM has more features (marketing tools, unlimited users, more integrations). Less Annoying CRM has a cleaner interface, better onboarding support, and simpler pricing when you go paid. Choose HubSpot free if you want more features. Choose Less Annoying CRM if you want more simplicity."},
         {"question": "Can Less Annoying CRM handle a team of 20?", "answer": "Technically yes, but practically it will feel limiting. No automation, basic reporting, and limited integrations become real constraints at 20 users. Teams that size typically need Pipedrive, HubSpot, or Salesforce for the deeper features that sales management requires."},
         {"question": "Does Less Annoying CRM have a mobile app?", "answer": "No native app. The website is mobile-responsive, so you can access it from a phone browser. For basic lookups and quick updates, the mobile web works. For heavy mobile use, field sales, or offline access, the lack of a native app is a limitation."},
