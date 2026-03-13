@@ -34,9 +34,9 @@
 
 ### Visual & Deploy
 
-- [ ] **VIS-01**: Sample pages render correctly in browser (homepage, category, tool review, niche, industry, tools index)
-- [ ] **VIS-02**: New category pages (AI SDR, Sales Engagement, Conversation Intelligence, Data Enrichment) have correct CSS styling
-- [ ] **DEPLOY-01**: Site deployed to GitHub Pages at sultanofsaas.com
+- [x] **VIS-01**: Sample pages render correctly in browser (homepage, category, tool review, niche, industry, tools index)
+- [x] **VIS-02**: New category pages (AI SDR, Sales Engagement, Conversation Intelligence, Data Enrichment) have correct CSS styling
+- [x] **DEPLOY-01**: Site deployed to GitHub Pages at sultanofsaas.com
 
 ## v2 Requirements
 
@@ -85,9 +85,9 @@
 | SEO-02 | Phase 1 | Complete |
 | SEO-03 | Phase 1 | Complete |
 | SEO-04 | Phase 1 | Complete |
-| VIS-01 | Phase 3 | Pending |
-| VIS-02 | Phase 3 | Pending |
-| DEPLOY-01 | Phase 3 | Pending |
+| VIS-01 | Phase 3 | Complete |
+| VIS-02 | Phase 3 | Complete |
+| DEPLOY-01 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 21 total
