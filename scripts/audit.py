@@ -12,8 +12,10 @@ Run:  python3 scripts/audit.py
 import os
 import sys
 import re
+import json
 from dataclasses import dataclass, field
-from collections import Counter
+from collections import Counter, defaultdict
+from html.parser import HTMLParser
 
 # Add scripts dir to path
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -30,7 +32,7 @@ from content import get_tool_content, has_deep_content
 @dataclass
 class Finding:
     severity: str       # "error" | "warning"
-    category: str       # "writing" | "structure" | "data"
+    category: str       # "writing" | "structure" | "data" | "seo"
     entity: str         # tool slug, niche slug, or industry name
     section: str        # content section name or ""
     rule: str           # short rule ID
@@ -581,10 +583,326 @@ def check_data():
 
 
 # =============================================================================
+# SEO CHECKS
+# =============================================================================
+
+class PageDataExtractor(HTMLParser):
+    """Single-pass HTML parser that extracts SEO-relevant elements."""
+
+    def __init__(self):
+        super().__init__()
+        self.title = ""
+        self.meta_description = ""
+        self.json_ld_blocks = []
+        self.hrefs = []
+        self.h1 = ""
+
+        self._in_title = False
+        self._in_h1 = False
+        self._in_json_ld = False
+        self._current_text = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+
+        if tag == "title":
+            self._in_title = True
+            self._current_text = []
+
+        elif tag == "h1" and not self.h1:
+            self._in_h1 = True
+            self._current_text = []
+
+        elif tag == "meta":
+            name = attrs_dict.get("name", "").lower()
+            if name == "description":
+                self.meta_description = attrs_dict.get("content", "")
+
+        elif tag == "script":
+            stype = attrs_dict.get("type", "").lower()
+            if stype == "application/ld+json":
+                self._in_json_ld = True
+                self._current_text = []
+
+        elif tag == "a":
+            href = attrs_dict.get("href", "")
+            if href:
+                self.hrefs.append(href)
+
+    def handle_endtag(self, tag):
+        if tag == "title" and self._in_title:
+            self._in_title = False
+            self.title = "".join(self._current_text).strip()
+
+        elif tag == "h1" and self._in_h1:
+            self._in_h1 = False
+            self.h1 = "".join(self._current_text).strip()
+
+        elif tag == "script" and self._in_json_ld:
+            self._in_json_ld = False
+            raw = "".join(self._current_text).strip()
+            if raw:
+                try:
+                    self.json_ld_blocks.append(json.loads(raw))
+                except json.JSONDecodeError:
+                    pass
+
+    def handle_data(self, data):
+        if self._in_title or self._in_h1 or self._in_json_ld:
+            self._current_text.append(data)
+
+
+def _parse_html_file(filepath):
+    """Parse an HTML file and return extracted page data."""
+    parser = PageDataExtractor()
+    with open(filepath, "r", encoding="utf-8", errors="replace") as f:
+        parser.feed(f.read())
+    return parser
+
+
+def _resolve_internal_link(href, output_dir):
+    """Resolve an internal link href to a file path in output/.
+    Returns the resolved path or None if not resolvable."""
+    # Strip query string and fragment
+    clean = href.split("?")[0].split("#")[0]
+    if not clean or clean == "/":
+        return os.path.join(output_dir, "index.html")
+
+    # Remove leading slash
+    rel = clean.lstrip("/")
+
+    # If it ends with /, append index.html
+    if rel.endswith("/"):
+        return os.path.join(output_dir, rel, "index.html")
+
+    # If it has no extension, treat as directory
+    if "." not in os.path.basename(rel):
+        return os.path.join(output_dir, rel, "index.html")
+
+    # Direct file reference
+    return os.path.join(output_dir, rel)
+
+
+def check_seo(output_dir):
+    """Check SEO elements across all generated HTML pages.
+
+    Validates: unique titles/descriptions (SEO-01), BreadcrumbList schema (SEO-02),
+    FAQPage schema on tool reviews (SEO-03), broken internal links (SEO-04).
+    """
+    findings = []
+
+    # Check output dir exists
+    if not os.path.isdir(output_dir):
+        findings.append(Finding(
+            severity="warning",
+            category="seo",
+            entity="output/",
+            section="",
+            rule="seo_skipped",
+            message="SEO checks skipped: run build.py first (output/ not found)",
+        ))
+        return findings
+
+    # Collect all HTML files
+    html_files = []
+    for root, dirs, files in os.walk(output_dir):
+        # Skip assets directory
+        if "assets" in root.split(os.sep):
+            continue
+        for fname in files:
+            if fname.endswith(".html"):
+                html_files.append(os.path.join(root, fname))
+
+    if len(html_files) < 300:
+        findings.append(Finding(
+            severity="warning",
+            category="seo",
+            entity="output/",
+            section="",
+            rule="seo_skipped",
+            message=f"SEO checks skipped: run build.py first (found {len(html_files)} pages, expected 334)",
+        ))
+        return findings
+
+    # Parse all pages
+    page_data = {}  # filepath -> PageDataExtractor
+    for fpath in html_files:
+        page_data[fpath] = _parse_html_file(fpath)
+
+    # Helper: relative path from output dir for display
+    def rel(fpath):
+        return os.path.relpath(fpath, output_dir)
+
+    # Determine which tools have FAQs in their content
+    tools_with_faqs = set()
+    for slug in TOOLS:
+        content = get_tool_content(slug)
+        if content and content.get("faqs"):
+            tools_with_faqs.add(slug)
+
+    # --- SEO-01: Unique meta titles ---
+    titles = defaultdict(list)  # title -> [filepaths]
+    for fpath, data in page_data.items():
+        if not data.title:
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=rel(fpath),
+                section="",
+                rule="missing_title",
+                message="Page has no <title> tag or title is empty",
+            ))
+        else:
+            titles[data.title].append(fpath)
+
+    for title, fpaths in titles.items():
+        if len(fpaths) > 1:
+            paths_str = ", ".join(rel(f) for f in fpaths[:5])
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=paths_str,
+                section="",
+                rule="duplicate_title",
+                message=f"Duplicate title across {len(fpaths)} pages",
+                snippet=title[:120],
+            ))
+
+    # --- SEO-01: Meta descriptions ---
+    descriptions = defaultdict(list)  # desc -> [filepaths]
+    for fpath, data in page_data.items():
+        if not data.meta_description:
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=rel(fpath),
+                section="",
+                rule="missing_description",
+                message="Page has no meta description",
+            ))
+        else:
+            desc_len = len(data.meta_description)
+            if desc_len < 120 or desc_len > 160:
+                findings.append(Finding(
+                    severity="warning",
+                    category="seo",
+                    entity=rel(fpath),
+                    section="",
+                    rule="description_length",
+                    message=f"Meta description length {desc_len} chars (target: 120-160)",
+                    snippet=data.meta_description[:120],
+                ))
+            descriptions[data.meta_description].append(fpath)
+
+    for desc, fpaths in descriptions.items():
+        if len(fpaths) > 1:
+            paths_str = ", ".join(rel(f) for f in fpaths[:5])
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=paths_str,
+                section="",
+                rule="duplicate_description",
+                message=f"Duplicate meta description across {len(fpaths)} pages",
+                snippet=desc[:120],
+            ))
+
+    # --- SEO-02: BreadcrumbList schema on inner pages ---
+    homepage = os.path.join(output_dir, "index.html")
+    for fpath, data in page_data.items():
+        if fpath == homepage:
+            continue  # Homepage excluded from breadcrumb requirement
+
+        has_breadcrumb = False
+        for block in data.json_ld_blocks:
+            if isinstance(block, dict) and block.get("@type") == "BreadcrumbList":
+                has_breadcrumb = True
+                break
+
+        if not has_breadcrumb:
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=rel(fpath),
+                section="",
+                rule="missing_breadcrumb",
+                message="Page missing BreadcrumbList JSON-LD schema",
+            ))
+
+    # --- SEO-03: FAQPage schema on tool review pages ---
+    tools_dir = os.path.join(output_dir, "tools")
+    for fpath, data in page_data.items():
+        # Only check pages under tools/ (but not tools/index.html)
+        if not fpath.startswith(tools_dir + os.sep):
+            continue
+        # Skip tools/index.html
+        if fpath == os.path.join(tools_dir, "index.html"):
+            continue
+
+        # Extract slug from path: output/tools/{slug}/index.html
+        rel_path = os.path.relpath(fpath, tools_dir)
+        slug = rel_path.split(os.sep)[0]
+
+        # Only flag if this tool has FAQs in its content
+        if slug not in tools_with_faqs:
+            continue
+
+        has_faq_schema = False
+        for block in data.json_ld_blocks:
+            if isinstance(block, dict) and block.get("@type") == "FAQPage":
+                has_faq_schema = True
+                break
+
+        if not has_faq_schema:
+            findings.append(Finding(
+                severity="error",
+                category="seo",
+                entity=rel(fpath),
+                section="",
+                rule="missing_faq_schema",
+                message=f"Tool review page for '{slug}' has FAQs but missing FAQPage JSON-LD schema",
+            ))
+
+    # --- SEO-04: Broken internal links ---
+    broken_links = defaultdict(list)  # broken_url -> [source filepaths]
+    for fpath, data in page_data.items():
+        for href in data.hrefs:
+            # Only check internal links (starting with /)
+            if not href.startswith("/"):
+                continue
+            # Skip anchor-only links and asset links
+            clean_href = href.split("?")[0].split("#")[0]
+            if not clean_href or clean_href == "/":
+                continue
+            # Skip asset paths
+            if clean_href.startswith("/assets/"):
+                continue
+
+            resolved = _resolve_internal_link(href, output_dir)
+            if resolved and not os.path.exists(resolved):
+                broken_links[clean_href].append(fpath)
+
+    for broken_url, source_files in sorted(broken_links.items()):
+        count = len(source_files)
+        sample_sources = ", ".join(rel(f) for f in source_files[:3])
+        findings.append(Finding(
+            severity="error",
+            category="seo",
+            entity=broken_url,
+            section="",
+            rule="broken_internal_link",
+            message=f"Broken internal link (referenced from {count} page{'s' if count > 1 else ''})",
+            snippet=f"Found in: {sample_sources}",
+        ))
+
+    return findings
+
+
+# =============================================================================
 # REPORT
 # =============================================================================
 
-def print_report(findings, verbose=False, tools_scanned=0):
+def print_report(findings, verbose=False, tools_scanned=0, pages_scanned=0):
     """Print audit report grouped by severity."""
     errors = [f for f in findings if f.severity == "error"]
     warnings = [f for f in findings if f.severity == "warning"]
@@ -598,7 +916,8 @@ def print_report(findings, verbose=False, tools_scanned=0):
     warning_rules = Counter(f.rule for f in warnings)
 
     print("=" * 72)
-    print(f"  AUDIT RESULTS: {tools_scanned} tools scanned")
+    pages_part = f", {pages_scanned} pages" if pages_scanned else ""
+    print(f"  AUDIT RESULTS: {tools_scanned} tools{pages_part} scanned")
     print("=" * 72)
     print()
 
@@ -630,7 +949,7 @@ def print_report(findings, verbose=False, tools_scanned=0):
         print("-" * 72)
 
         # Group by category
-        for cat in ["writing", "structure", "data"]:
+        for cat in ["writing", "structure", "data", "seo"]:
             cat_findings = [f for f in errors if f.category == cat]
             if not cat_findings:
                 continue
@@ -649,7 +968,7 @@ def print_report(findings, verbose=False, tools_scanned=0):
         print("  WARNINGS")
         print("-" * 72)
 
-        for cat in ["writing", "structure", "data"]:
+        for cat in ["writing", "structure", "data", "seo"]:
             cat_findings = [f for f in warnings if f.category == cat]
             if not cat_findings:
                 continue
@@ -750,9 +1069,23 @@ def main():
     data_findings = check_data()
     all_findings.extend(data_findings)
 
+    # SEO checks (across all generated pages)
+    output_dir = os.path.join(os.path.dirname(SCRIPT_DIR), "output")
+    seo_findings = check_seo(output_dir)
+    all_findings.extend(seo_findings)
+
+    # Count pages scanned for report
+    pages_scanned = 0
+    if os.path.isdir(output_dir):
+        for root, dirs, files in os.walk(output_dir):
+            if "assets" in root.split(os.sep):
+                continue
+            pages_scanned += sum(1 for f in files if f.endswith(".html"))
+
     # Report
     total_scanned = len(TOOLS)
-    print_report(all_findings, verbose=verbose, tools_scanned=total_scanned)
+    print_report(all_findings, verbose=verbose, tools_scanned=total_scanned,
+                 pages_scanned=pages_scanned)
 
     if verbose:
         print(f"\n  Tools with content: {len(tools_with_content)}")
