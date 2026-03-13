@@ -21,26 +21,24 @@ Every review picks a winner with evidence. Founders get decisive recommendations
 - ✓ Filterable tools index with client-side JS — Phase 2
 - ✓ Nav/footer updated with industries and tools links — Phase 2
 - ✓ Static site generator producing ~204 pages from inline data — Phase 1+2
+- ✓ 4 new categories added (AI SDR, Sales Engagement, Conversation Intelligence, Data Enrichment) — Phase 3
+- ✓ 40 new tools with full T() data across new categories — Phase 3
+- ✓ Deep review content system (scripts/content/) with expanded review sections — Phase 3
+- ✓ All 90 tools have deep editorial content (overview, pros/cons, pricing, buy/skip, stage guidance, FAQs) — Phase 3
+- ✓ 32 comparisons, 18 alternatives, 90 pricing pages — Phase 3
+- ✓ 64 niche pages covering all 9 categories — Phase 3
+- ✓ 8 stack guides — Phase 3
+- ✓ Build produces 334 pages — Phase 3
 
 ### Active
 
-- [ ] Add AI SDR category (10 tools, Sultan's Pick, full T() data)
-- [ ] Add Sales Engagement category (10 tools, Sultan's Pick, full T() data)
-- [ ] Add Conversation Intelligence category (10 tools, Sultan's Pick, full T() data)
-- [ ] Add Data Enrichment category (10 tools, Sultan's Pick, full T() data)
-- [ ] New category comparisons (4-5 per new category, ~18 total)
-- [ ] New category alternatives pages (2-3 per new category, ~10 total)
-- [ ] New category pricing pages (10 per new category, 40 total)
-- [ ] Niche rankings for all 4 new categories across all 16 niches
-- [ ] Industry picks for all 4 new categories across all 17 industries
-- [ ] Tools index updated with new category filter options
-- [ ] Nav/footer updated with new categories
-- [ ] Deepen all tool review pages to 2,000-4,000 words (90 tools total)
-- [ ] New review template with sections: overview, expanded pros/cons, pricing detail, who should buy/skip, stage guidance, alternatives detail, Sultan's bottom line, FAQs
-- [ ] Review template generator function in build.py updated
-- [ ] Writing guidelines codified into BRAND.md or build process
-- [ ] Homepage stats updated (90 tools, 9 categories)
-- [ ] Sitemap updated with all new pages
+- [ ] Quality audit: verify all 90 deep reviews pass writing guidelines checklist
+- [ ] Quality audit: verify no false reframes, em-dashes, or banned words across all content files
+- [ ] Quality audit: verify niche winners are defensible and different from Sultan's Pick
+- [ ] Quality audit: verify all 17 industry pages have picks for all 9 categories
+- [ ] Visual review: check generated pages render correctly in browser
+- [ ] Visual review: verify new category pages have correct CSS styling
+- [ ] Deploy: push to GitHub Pages at sultanofsaas.com
 
 ### Out of Scope
 
