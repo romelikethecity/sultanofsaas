@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-03-13)
 
 **Core value:** Every review picks a winner with evidence. Ship 334 pages that pass writing quality standards.
-**Current focus:** Phase 1: Automated Quality Audit
+**Current focus:** Phase 2: Content Remediation
 
 ## Current Position
 
-Phase: 1 of 3 (Automated Quality Audit)
-Plan: 2 of 2 in current phase
-Status: Phase 1 complete (all plans done)
-Last activity: 2026-03-13 -- Completed 01-02-PLAN.md (SEO validation checks)
+Phase: 2 of 3 (Content Remediation)
+Plan: 1 of 3 in current phase
+Status: In progress
+Last activity: 2026-03-13 -- Completed 02-01-PLAN.md (original content remediation)
 
-Progress: [██████████] 100%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 4.5min
-- Total execution time: 0.15 hours
+- Total plans completed: 3
+- Average duration: 7min
+- Total execution time: 0.35 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-automated-quality-audit | 2 | 9min | 4.5min |
+| 02-content-remediation | 1 | 12min | 12min |
 
 **Recent Trend:**
-- Last 5 plans: 6min, 3min
-- Trend: Improving
+- Last 5 plans: 6min, 3min, 12min
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -47,6 +48,8 @@ Recent decisions affecting current work:
 - Tool name exclusion: Capitalized banned words matching tool names are excluded to prevent false positives
 - SEO validation: HTMLParser-based extraction, BreadcrumbList required on all inner pages (homepage excluded), FAQPage cross-referenced against content
 - Description length: 120-160 char target range for meta descriptions
+- Banned word removal: prefer deletion when sentence reads naturally without the word; thesaurus swaps only when deletion breaks the sentence
+- False reframe rewrite: trello enterprise description rewritten to direct voice about Atlassian retention strategy
 
 ### Pending Todos
 
@@ -61,5 +64,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-13
-Stopped at: Completed 01-02-PLAN.md (SEO validation checks)
+Stopped at: Completed 02-01-PLAN.md (original content remediation)
 Resume file: None
