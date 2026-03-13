@@ -1,0 +1,10 @@
+<svg viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Flow Diamonds Mark -->
+  <rect x="2" y="1" width="10" height="10" rx="2.5" transform="rotate(45, 7, 6)" fill="#D4A054"/>
+  <rect x="5.5" y="10" width="10" height="10" rx="2.5" transform="rotate(45, 10.5, 15)" fill="#D4A054" opacity="0.55"/>
+  <rect x="2" y="19" width="10" height="10" rx="2.5" transform="rotate(45, 7, 24)" fill="#D4A054" opacity="0.25"/>
+  <!-- Wordmark -->
+  <text x="30" y="26" font-family="Outfit, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5" fill="#0C0E12">Sultan</text>
+  <text x="103" y="26" font-family="Outfit, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5" fill="#D4A054">Of</text>
+  <text x="130" y="26" font-family="Outfit, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5" fill="#0C0E12">SaaS</text>
+</svg>
