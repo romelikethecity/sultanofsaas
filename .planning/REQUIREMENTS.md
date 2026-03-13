@@ -81,10 +81,10 @@
 | FIX-04 | Phase 2 | Pending |
 | FIX-05 | Phase 2 | Pending |
 | FIX-06 | Phase 2 | Pending |
-| SEO-01 | Phase 3 | Pending |
-| SEO-02 | Phase 3 | Pending |
-| SEO-03 | Phase 3 | Pending |
-| SEO-04 | Phase 3 | Pending |
+| SEO-01 | Phase 1 | Pending |
+| SEO-02 | Phase 1 | Pending |
+| SEO-03 | Phase 1 | Pending |
+| SEO-04 | Phase 1 | Pending |
 | VIS-01 | Phase 3 | Pending |
 | VIS-02 | Phase 3 | Pending |
 | DEPLOY-01 | Phase 3 | Pending |
@@ -92,8 +92,8 @@
 **Coverage:**
 - v1 requirements: 21 total
 - Mapped to phases: 21
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-13*
-*Last updated: 2026-03-13 after initial definition*
+*Last updated: 2026-03-13 after roadmap creation*
