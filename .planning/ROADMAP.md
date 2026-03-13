@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md -- Content quality audit (writing rules, structure validation, data integrity checks)
-- [ ] 01-02-PLAN.md -- SEO validation (meta tags, schema markup, internal links across 334 pages)
+- [x] 01-02-PLAN.md -- SEO validation (meta tags, schema markup, internal links across 334 pages)
 
 ### Phase 2: Content Remediation
 **Goal**: Every violation from the audit is resolved and the audit script runs clean
@@ -43,11 +43,12 @@ Plans:
   2. All false reframes are rewritten (not just deleted) to preserve the original point in direct voice
   3. Every niche page picks a winner different from the main category Sultan's Pick
   4. All 17 industry pages have picks for all 9 categories
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Fix writing violations in 5 original content files (CRM, PM, email, SEO, help desk)
+- [ ] 02-02-PLAN.md -- Fix writing violations in 4 new content files + build.py text (TOOLS/NICHES/INDUSTRIES)
+- [ ] 02-03-PLAN.md -- Fix data issues (niche winners, BreadcrumbList), rebuild, verify zero audit errors
 
 ### Phase 3: Visual Verification & Deploy
 **Goal**: The site looks correct in a browser and is live at sultanofsaas.com
@@ -69,6 +70,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Automated Quality Audit | 1/2 | In progress | - |
-| 2. Content Remediation | 0/? | Not started | - |
+| 1. Automated Quality Audit | 2/2 | Complete | 2026-03-13 |
+| 2. Content Remediation | 0/3 | Not started | - |
 | 3. Visual Verification & Deploy | 0/? | Not started | - |
