@@ -23,8 +23,8 @@ TOOL_CONTENT["outreach"] = {
             "detail": "Outreach lets you build sequences with conditional branching, A/B testing at every step, multi-channel touchpoints (email, phone, LinkedIn, SMS), and dynamic prioritization based on prospect engagement. No other platform matches this level of sequence sophistication.",
         },
         {
-            "title": "AI deal intelligence that actually surfaces useful insights",
-            "detail": "Outreach's Kaia AI analyzes email and call patterns to flag deals at risk, identify next steps, and predict close dates. The insights improve as usage increases. Teams with 6+ months of data get genuinely useful deal health scores that help reps prioritize and managers forecast.",
+            "title": "AI deal intelligence that surfaces useful insights",
+            "detail": "Outreach's Kaia AI analyzes email and call patterns to flag deals at risk, identify next steps, and predict close dates. The insights improve as usage increases. Teams with 6+ months of data get useful deal health scores that help reps prioritize and managers forecast.",
         },
         {
             "title": "Salesforce integration is the deepest in the category",
@@ -72,7 +72,7 @@ TOOL_CONTENT["outreach"] = {
         {"tool": "Instantly", "reason": "Choose Instantly if your outbound is email-only and volume matters most. $30/mo vs. $100/user/mo for the core sequencing use case."},
     ],
     "verdict_long": [
-        "Outreach earned its market leadership by building the most capable sales engagement platform available. The sequencing engine, Salesforce integration, and deal intelligence are genuinely best-in-class. For mid-market and enterprise teams, it's the default choice for good reason.",
+        "Outreach earned its market leadership by building the most capable sales engagement platform available. The sequencing engine, Salesforce integration, and deal intelligence are the strongest in the category. For mid-market and enterprise teams, it's the default choice for good reason.",
         "The barriers are real: cost, complexity, and setup time. Small teams paying $100/user/mo for Outreach are renting a Ferrari to commute. The power is there but wasted on simple outbound motions. Apollo and Instantly handle the basic use case at a fraction of the cost.",
         "If you have 15+ reps, a Salesforce CRM, and RevOps support to properly configure the platform, Outreach delivers clear ROI. If any of those three conditions isn't met, start with something simpler and grow into Outreach when the complexity is justified.",
     ],
@@ -92,7 +92,7 @@ TOOL_CONTENT["outreach"] = {
 TOOL_CONTENT["salesloft"] = {
     "overview": [
         "SalesLoft was Outreach's primary competitor for years. Strong sequencing, solid analytics, and a more intuitive interface. Then Clari acquired SalesLoft in early 2025, merging conversation intelligence and revenue forecasting with sales engagement. On paper, that combination is powerful. In practice, the merger is creating uncertainty.",
-        "The core SalesLoft product is solid. Email sequences, dialer, coaching analytics, and pipeline management work well for teams of 10-50 reps. The UI is genuinely more intuitive than Outreach. Reps learn SalesLoft faster and resist it less, which matters more than feature checklists when you're trying to drive adoption.",
+        "The core SalesLoft product is solid. Email sequences, dialer, coaching analytics, and pipeline management work well for teams of 10-50 reps. The UI is noticeably more intuitive than Outreach. Reps learn SalesLoft faster and resist it less, which matters more than feature checklists when you're trying to drive adoption.",
         "The Clari merger complicates the recommendation. Product roadmap integration is underway, and some features are being consolidated. Teams buying SalesLoft today are buying into a platform mid-transition. That's a risk if you value stability, and an opportunity if you believe the merged platform will be the best in category within 12-18 months.",
     ],
     "expanded_pros": [
@@ -129,9 +129,9 @@ TOOL_CONTENT["salesloft"] = {
         "Post-merger, the pricing structure may evolve. Clari's standalone product was priced separately ($50-$100+/user/mo). Getting both engagement and forecasting in one subscription is a clear cost advantage over buying them separately.",
     ],
     "who_should_buy": [
-        {"audience": "Teams prioritizing adoption over power features", "reason": "SalesLoft's UX advantage means more reps actually use the platform consistently. A tool that 90% of your team uses beats a more powerful tool that only 60% adopt."},
+        {"audience": "Teams prioritizing adoption over power features", "reason": "SalesLoft's UX advantage means more reps use the platform consistently. A tool that 90% of your team uses beats a more powerful tool that only 60% adopt."},
         {"audience": "Companies already using Clari", "reason": "If you're a Clari customer, SalesLoft is the natural engagement platform. The unified data model eliminates the Clari-Outreach integration headaches."},
-        {"audience": "Sales leaders focused on coaching", "reason": "SalesLoft's coaching analytics are best-in-class for the price. Call recordings, email performance data, and rep scorecards help managers coach with evidence."},
+        {"audience": "Sales leaders focused on coaching", "reason": "SalesLoft's coaching analytics are the strongest for the price. Call recordings, email performance data, and rep scorecards help managers coach with evidence."},
     ],
     "who_should_skip": [
         {"audience": "Teams that need maximum sequence customization", "reason": "Outreach's sequencing engine has more branching options, testing capabilities, and workflow triggers. If sequence sophistication drives your competitive advantage, Outreach is the better choice."},
@@ -168,7 +168,7 @@ TOOL_CONTENT["salesloft"] = {
 
 TOOL_CONTENT["apollo"] = {
     "overview": [
-        "Apollo.io is the best value in B2B sales tools. Full stop. A 275M+ contact database, email sequencing, built-in dialer, LinkedIn integration, and AI email writing. All starting at $49/user/mo. There's a free tier that's genuinely useful. Apollo took the ZoomInfo + Outreach bundle and priced it for founders, not enterprises.",
+        "Apollo.io is the best value in B2B sales tools. Full stop. A 275M+ contact database, email sequencing, built-in dialer, LinkedIn integration, and AI email writing. All starting at $49/user/mo. There's a free tier that's useful for real work. Apollo took the ZoomInfo + Outreach bundle and priced it for founders, not enterprises.",
         "The data quality question is fair. Apollo's 275M+ profiles include some outdated contacts, and accuracy rates run 85-90% compared to ZoomInfo's 90-95%. For most SMB outbound campaigns, that 5% difference doesn't change outcomes. You're trading marginal data accuracy for massive cost savings.",
         "Apollo's breadth is both its strength and its complexity. The platform does prospecting data, engagement, analytics, enrichment, and AI writing. New users can feel overwhelmed by the sheer number of features. The learning curve isn't as steep as Outreach, but it's steeper than a single-purpose tool like Instantly or Mailshake.",
     ],
@@ -182,7 +182,7 @@ TOOL_CONTENT["apollo"] = {
             "detail": "Email sequencing, built-in dialer, LinkedIn integration, and meeting scheduler come standard. You don't need a separate Outreach or SalesLoft subscription. One platform handles finding prospects AND reaching them, which eliminates the data-to-engagement pipeline that breaks when tools don't sync properly.",
         },
         {
-            "title": "Free tier that's actually useful for real work",
+            "title": "Free tier that's useful for real work",
             "detail": "Apollo's free plan includes contact search, 10,000 email credits, basic sequences, and limited exports. Solo founders can run a real prospecting operation without spending a dollar. No other tool in the category comes close to this level of free functionality.",
         },
         {
@@ -251,7 +251,7 @@ TOOL_CONTENT["instantly"] = {
     "overview": [
         "Instantly is cold email built for volume. Unlimited email accounts, AI warmup, and a built-in lead database at prices that undercut the entire category. If your growth strategy is sending thousands of cold emails per month and you want the infrastructure to do it without landing in spam, Instantly delivers.",
         "The platform added a B2B lead finder that lets you search for prospects by job title, company size, industry, and location. The database quality varies by segment (strong in US tech, weaker in international and niche industries), but having any data source built into your email tool saves a subscription. Think of it as a bonus, not a ZoomInfo replacement.",
-        "Instantly's weakness is scope. Email only. No phone dialer, no LinkedIn steps, no SMS. If your outbound motion is multi-channel, Instantly handles one channel well but you need additional tools for the rest. For email-first teams and agencies running high-volume campaigns, that narrow focus is actually an advantage. The platform does one thing without distractions.",
+        "Instantly's weakness is scope. Email only. No phone dialer, no LinkedIn steps, no SMS. If your outbound motion is multi-channel, Instantly handles one channel well but you need additional tools for the rest. For email-first teams and agencies running high-volume campaigns, that narrow focus is an advantage. The platform does one thing without distractions.",
     ],
     "expanded_pros": [
         {
@@ -364,7 +364,7 @@ TOOL_CONTENT["reply-io"] = {
     ],
     "who_should_buy": [
         {"audience": "Teams wanting multi-channel without enterprise complexity", "reason": "Reply.io is less complex than Outreach, more capable than Mailshake, and includes channels (SMS, WhatsApp) that many competitors lack. Good middle-ground for teams of 5-15 reps."},
-        {"audience": "Email-only teams wanting flexibility to add channels later", "reason": "Start with the Email Volume plan ($49/mo) and upgrade to Multichannel when you're ready to add LinkedIn and phone. The migration path is seamless since everything stays in one platform."},
+        {"audience": "Email-only teams wanting flexibility to add channels later", "reason": "Start with the Email Volume plan ($49/mo) and upgrade to Multichannel when you're ready to add LinkedIn and phone. The migration path is smooth since everything stays in one platform."},
     ],
     "who_should_skip": [
         {"audience": "Teams prioritizing email deliverability above all else", "reason": "Instantly and Smartlead have better email infrastructure (unlimited mailboxes, superior warmup). If email volume and deliverability are your primary concerns, dedicated email tools outperform Reply.io."},
@@ -439,7 +439,7 @@ TOOL_CONTENT["mixmax"] = {
     ],
     "who_should_buy": [
         {"audience": "Gmail-exclusive teams that resist new tools", "reason": "If your team uses Gmail, refuses to adopt Outreach, and you just need tracking + sequences + scheduling, Mixmax is the path of least resistance."},
-        {"audience": "Teams where meeting scheduling is a critical bottleneck", "reason": "Mixmax's in-email scheduling widget is the most frictionless way to book meetings from cold outreach. If every percentage point of booking rate matters, this feature alone justifies the cost."},
+        {"audience": "Teams where meeting scheduling is a critical bottleneck", "reason": "Mixmax's in-email scheduling widget is the smoothest way to book meetings from cold outreach. If every percentage point of booking rate matters, this feature alone justifies the cost."},
     ],
     "who_should_skip": [
         {"audience": "Outlook users or mixed email environments", "reason": "Gmail only. If even one rep uses Outlook, Mixmax can't be your team-wide standard."},
@@ -551,13 +551,13 @@ TOOL_CONTENT["mailshake"] = {
 
 TOOL_CONTENT["woodpecker"] = {
     "overview": [
-        "Woodpecker is cold email for people who care about deliverability above everything else. Domain warmup, bounce detection, sending throttling, and spam filter detection are built into the core product. While competitors add AI features and multi-channel, Woodpecker doubles down on making sure your emails actually reach the inbox.",
+        "Woodpecker is cold email for people who care about deliverability above everything else. Domain warmup, bounce detection, sending throttling, and spam filter detection are built into the core product. While competitors add AI features and multi-channel, Woodpecker doubles down on making sure your emails reach the inbox.",
         "The agency features are a standout. Woodpecker's multi-client panel lets agencies manage separate client campaigns with isolated domains, reporting, and billing. If you run cold email campaigns for clients, Woodpecker's agency infrastructure is among the best in the category.",
         "The trade-off: Woodpecker is email-centric. Limited phone support, basic LinkedIn integration, and no SMS. Teams running multi-channel outbound will find Woodpecker covers one leg of the journey. But for teams where email deliverability is the difference between pipeline and crickets, Woodpecker's focus pays off.",
     ],
     "expanded_pros": [
         {
-            "title": "Deliverability features are best-in-class for the price",
+            "title": "Deliverability features are the strongest for the price",
             "detail": "Domain warmup, bounce detection, sending throttling, email validation, and spam filter testing. Woodpecker monitors your sender reputation in real time and automatically adjusts sending volume if deliverability degrades. For teams that have been burned by spam folder issues, this proactive protection is worth the subscription alone.",
         },
         {
@@ -661,7 +661,7 @@ TOOL_CONTENT["lemlist"] = {
     "pricing_detail": [
         "Email Starter: $32/user/mo for basic email sequences. Email Pro: $55/user/mo adds custom images and advanced templates. Multichannel Expert: $79/user/mo adds LinkedIn, phone, and custom landing pages. Outreach Scale: $129/user/mo adds AI and advanced automation.",
         "For a 5-person team: Email Pro runs $275/mo ($3,300/yr). Multichannel Expert runs $395/mo ($4,740/yr). The pricing is competitive with Apollo Professional ($395/mo) and Outplay Growth ($395/mo), with Lemlist winning on personalization and the others winning on data or channel depth.",
-        "The personalization features justify the premium over basic email tools (Mailshake $25/mo, Instantly $30/mo) only if you actually use them. If your team sends standard text-based cold emails, you're paying for image and landing page capabilities you won't touch.",
+        "The personalization features justify the premium over basic email tools (Mailshake $25/mo, Instantly $30/mo) only if you use them. If your team sends standard text-based cold emails, you're paying for image and landing page capabilities you won't touch.",
     ],
     "who_should_buy": [
         {"audience": "Teams where personalization quality drives response rates", "reason": "If your ICP is flooded with cold emails and you need to stand out visually, Lemlist's custom images and landing pages create a differentiated experience that text-only tools can't match."},

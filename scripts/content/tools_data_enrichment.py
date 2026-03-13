@@ -23,7 +23,7 @@ TOOL_CONTENT["zoominfo"] = {
             "detail": "100M+ business profiles. 70M+ direct dials. Org chart mapping. Technographic data on 20K+ technologies. No other single provider comes close to this breadth and depth. If a contact exists in the B2B world, ZoomInfo probably has a record for them. The data team behind ZoomInfo includes a community-sourced validation network that continuously updates records, which is why their enterprise-level data stays fresher than most competitors.",
         },
         {
-            "title": "Intent data that actually moves pipeline",
+            "title": "Intent data that moves pipeline",
             "detail": "ZoomInfo's intent signals track which companies are actively researching topics related to your product. This turns cold outreach into warm outreach. Teams using intent data report 2-3x higher reply rates compared to blind prospecting. The Bidstream data has limitations, but combining it with ZoomInfo's first-party signals creates a usable buying intent picture.",
         },
         {
@@ -42,7 +42,7 @@ TOOL_CONTENT["zoominfo"] = {
     "expanded_cons": [
         {
             "title": "$15K/yr minimum with aggressive renewal tactics",
-            "detail": "The floor is $15K/year on an annual contract. Most teams end up at $25K-40K once they add the features they actually need (intent data, org charts, advanced search filters). Renewal conversations often come with price increases of 15-30%, and cancellation requires written notice 60-90 days before your contract ends. Miss that window and you're auto-renewed.",
+            "detail": "The floor is $15K/year on an annual contract. Most teams end up at $25K-40K once they add the features they need (intent data, org charts, advanced search filters). Renewal conversations often come with price increases of 15-30%, and cancellation requires written notice 60-90 days before your contract ends. Miss that window and you're auto-renewed.",
         },
         {
             "title": "Credit system is designed to confuse",
@@ -76,7 +76,7 @@ TOOL_CONTENT["zoominfo"] = {
         "solo": "Skip it. At $15K/yr, ZoomInfo costs more than most solo founders spend on their entire tool stack. Use Apollo's free tier for contact data and LinkedIn Sales Navigator ($99/mo) for research. Revisit ZoomInfo when you're doing $500K+ ARR.",
         "small_team": "Still probably too expensive unless you're running aggressive outbound with deal sizes above $20K. If you do buy, negotiate hard. End-of-quarter timing, multi-year commitment, and competitive quotes from Cognism or Apollo can shave 25-35% off list price.",
         "mid_market": "This is ZoomInfo's sweet spot. Your team is big enough to use the depth, your deals are large enough to justify the cost, and you have an admin who can manage the credit system. Budget $25K-40K/yr and negotiate the intent data add-on into your contract.",
-        "enterprise": "You probably already have ZoomInfo. The negotiation here is about renewal pricing. Bring competitive quotes from Cognism and Apollo. ZoomInfo's retention team will negotiate, but only if they believe you'll actually leave. Get quotes in writing before your renewal conversation.",
+        "enterprise": "You probably already have ZoomInfo. The negotiation here is about renewal pricing. Bring competitive quotes from Cognism and Apollo. ZoomInfo's retention team will negotiate, but only if they believe you'll leave. Get quotes in writing before your renewal conversation.",
     },
     "alternatives_detail": [
         {"tool": "Clay", "reason": "Choose Clay if you want better data coverage through waterfall enrichment across 75+ providers. Clay often finds contacts ZoomInfo misses because it checks multiple databases. $149-800/mo vs. $15K+/yr. Different philosophy, often better results."},
@@ -89,7 +89,7 @@ TOOL_CONTENT["zoominfo"] = {
         "If you can afford it and negotiate well, ZoomInfo delivers. If you're watching every dollar, Clay's waterfall approach or Apollo's free tier will get you 70-80% of the way there for a fraction of the cost. The gap between ZoomInfo and the alternatives is shrinking every year.",
     ],
     "faqs": [
-        {"question": "How much does ZoomInfo actually cost?", "answer": "The real floor is $15,000/year for Professional with limited credits. Most teams spend $25K-40K/yr once they add intent data and enough credits to use the platform daily. Enterprise contracts range from $50K-100K+/yr. Always negotiate, especially at end-of-quarter."},
+        {"question": "How much does ZoomInfo cost?", "answer": "The real floor is $15,000/year for Professional with limited credits. Most teams spend $25K-40K/yr once they add intent data and enough credits to use the platform daily. Enterprise contracts range from $50K-100K+/yr. Always negotiate, especially at end-of-quarter."},
         {"question": "Is ZoomInfo's data accurate?", "answer": "For enterprise and mid-market companies, accuracy is strong (85%+ for emails, 70%+ for direct dials). For SMBs and startups, accuracy drops to 60-70% for emails and 40-50% for phone numbers. The 100M+ profile count includes a significant number of outdated records. Always verify high-value contacts before calling."},
         {"question": "Can I cancel ZoomInfo mid-contract?", "answer": "Typically no. ZoomInfo enforces annual contracts strictly. You need to give written notice 60-90 days before your renewal date to cancel. Miss that window and you auto-renew for another year. Some teams have negotiated early termination clauses, but only during initial contract negotiation, not after signing."},
         {"question": "How does ZoomInfo compare to Apollo?", "answer": "ZoomInfo has deeper data (intent signals, org charts, technographics) and more direct dial phone numbers. Apollo has a massive free tier, built-in sequencing, and costs 80-95% less. For most SMBs, Apollo provides enough data. For enterprise sales teams running ABM, ZoomInfo's depth creates real advantages."},
@@ -179,7 +179,7 @@ TOOL_CONTENT["clay"] = {
         "At $149-800/mo, Clay costs a fraction of ZoomInfo while often delivering better contact coverage. The lack of built-in outreach means you'll need a sending tool, but the enrichment quality is worth the extra integration. If you're willing to learn the platform, Clay is the single biggest upgrade you can make to your outbound data stack.",
     ],
     "faqs": [
-        {"question": "How does Clay's waterfall enrichment work?", "answer": "You define a sequence of data providers to check for each contact field. Clay tries provider #1 first. If no result, it tries #2, then #3, and so on through up to 75+ providers. Each step only fires if the previous one failed, so you only pay credits for the provider that actually returns data. This maximizes coverage while minimizing cost."},
+        {"question": "How does Clay's waterfall enrichment work?", "answer": "You define a sequence of data providers to check for each contact field. Clay tries provider #1 first. If no result, it tries #2, then #3, and so on through up to 75+ providers. Each step only fires if the previous one failed, so you only pay credits for the provider that returns data. This maximizes coverage while minimizing cost."},
         {"question": "Is Clay better than ZoomInfo for B2B data?", "answer": "For contact finding (emails and phone numbers), Clay's waterfall approach often finds 30-50% more valid contacts than ZoomInfo alone. For intent data, org charts, and technographics, ZoomInfo is still superior. Many teams use both: ZoomInfo for strategic account intelligence and Clay for enrichment and contact finding."},
         {"question": "How many contacts can I enrich per month with Clay?", "answer": "Depends on your plan and enrichment depth. Starter (2,000 credits) covers roughly 200-400 fully enriched contacts. Explorer (10,000 credits) covers 1,000-2,000. Pro (50,000 credits) covers 5,000-10,000. These estimates assume full enrichment (email + phone + company + verification) at 5-15 credits per contact."},
         {"question": "Does Clay replace my CRM?", "answer": "No. Clay enriches data and pushes it to your CRM (HubSpot, Salesforce, Pipedrive, etc.). It doesn't manage deals, track conversations, or handle pipeline stages. Think of Clay as the engine that feeds clean, enriched data into your CRM, not a replacement for it."},
@@ -200,7 +200,7 @@ TOOL_CONTENT["clearbit"] = {
     "expanded_pros": [
         {
             "title": "API-first architecture that developers love",
-            "detail": "Clearbit's API is clean, well-documented, and returns structured JSON in milliseconds. For engineering teams building enrichment into product workflows (lead scoring at signup, visitor identification, form shortening), Clearbit's API experience is best-in-class. Other enrichment providers offer APIs that feel bolted on. Clearbit's feels purpose-built. The response schema is consistent and well-typed, error handling is graceful, and rate limits are generous. Developer experience matters when you're building enrichment into production systems that handle thousands of requests daily.",
+            "detail": "Clearbit's API is clean, well-documented, and returns structured JSON in milliseconds. For engineering teams building enrichment into product workflows (lead scoring at signup, visitor identification, form shortening), Clearbit's API experience is the strongest in the category. Other enrichment providers offer APIs that feel bolted on. Clearbit's feels purpose-built. The response schema is consistent and well-typed, error handling is graceful, and rate limits are generous. Developer experience matters when you're building enrichment into production systems that handle thousands of requests daily.",
         },
         {
             "title": "Strong company-level data",
@@ -236,7 +236,7 @@ TOOL_CONTENT["clearbit"] = {
     ],
     "who_should_buy": [
         {"audience": "HubSpot shops wanting native enrichment", "reason": "If you're already on HubSpot, Clearbit integration is the easiest enrichment win available. Records auto-enrich, lead scoring uses Clearbit data natively, and you don't need another vendor relationship. The data quality is solid and the integration is the tightest in the market."},
-        {"audience": "Product teams building enrichment into their app", "reason": "Clearbit's API is best-in-class for embedding enrichment into product workflows. Shorten signup forms, score leads at registration, or trigger onboarding flows based on company attributes. If you need an API that returns structured data fast and reliably, Clearbit delivers."},
+        {"audience": "Product teams building enrichment into their app", "reason": "Clearbit's API is the strongest for embedding enrichment into product workflows. Shorten signup forms, score leads at registration, or trigger onboarding flows based on company attributes. If you need an API that returns structured data fast and reliably, Clearbit delivers."},
     ],
     "who_should_skip": [
         {"audience": "Non-HubSpot teams evaluating new enrichment tools", "reason": "If you don't use HubSpot, the risk-reward tilts against Clearbit. The standalone product's future is uncertain, and alternatives like Clay or Apollo offer more value with clearer long-term independence."},
@@ -246,7 +246,7 @@ TOOL_CONTENT["clearbit"] = {
     "stage_guidance": {
         "solo": "If you're on HubSpot's free CRM, check whether Clearbit enrichment is included in your tier. If so, turn it on. Free data appended to your contacts is a no-brainer. If you're not on HubSpot, skip Clearbit entirely and use Apollo or Hunter.",
         "small_team": "For HubSpot teams, Clearbit is likely already available. Configure auto-enrichment and build lead scoring workflows using Clearbit attributes. For non-HubSpot teams, Clay ($149/mo) gives you access to Clearbit's data plus 74 other providers through waterfall enrichment.",
-        "mid_market": "HubSpot shops should leverage Clearbit Reveal for website visitor identification alongside contact enrichment. Non-HubSpot teams should use Clearbit's API if it's already integrated into your product, but start evaluating alternatives for the 2-3 year horizon.",
+        "mid_market": "HubSpot shops should use Clearbit Reveal for website visitor identification alongside contact enrichment. Non-HubSpot teams should use Clearbit's API if it's already integrated into your product, but start evaluating alternatives for the 2-3 year horizon.",
         "enterprise": "Evaluate whether Clearbit's standalone offering will still exist in its current form in 2-3 years. If you're making a long-term architectural decision, factor in the HubSpot acquisition. For product-embedded use cases, Clearbit's API reliability and speed justify the bet. For sales team use cases, ZoomInfo or Cognism offer more certainty.",
     },
     "alternatives_detail": [
@@ -362,7 +362,7 @@ TOOL_CONTENT["cognism"] = {
     "expanded_pros": [
         {
             "title": "Diamond Data: phone-verified mobile numbers",
-            "detail": "Cognism manually verifies mobile numbers by actually calling them. This produces an 87% accuracy rate on Diamond-verified contacts versus the industry average of 40-60%. For outbound teams running cold call cadences into EMEA, this accuracy difference translates directly to more conversations per dial session. You spend time talking to prospects instead of leaving voicemails at wrong numbers.",
+            "detail": "Cognism manually verifies mobile numbers by calling them. This produces an 87% accuracy rate on Diamond-verified contacts versus the industry average of 40-60%. For outbound teams running cold call cadences into EMEA, this accuracy difference translates directly to more conversations per dial session. You spend time talking to prospects instead of leaving voicemails at wrong numbers.",
         },
         {
             "title": "Strongest European data coverage in the category",
@@ -422,7 +422,7 @@ TOOL_CONTENT["cognism"] = {
         {"tool": "Kaspr", "reason": "Choose Kaspr if you're focused on LinkedIn-based European prospecting and want the cheapest compliant option. Kaspr's data extraction from LinkedIn is simple and GDPR-compliant at $0-99/user/mo. More limited than Cognism but a fraction of the cost."},
     ],
     "verdict_long": [
-        "Cognism earns a 7.5 because it solves a specific, valuable problem better than anyone else: European B2B contact data with verified phone numbers and genuine GDPR compliance. If you sell into EMEA, Cognism should be on your shortlist. Diamond Data's verification process produces phone accuracy rates that make cold calling actually productive.",
+        "Cognism earns a 7.5 because it solves a specific, valuable problem better than anyone else: European B2B contact data with verified phone numbers and genuine GDPR compliance. If you sell into EMEA, Cognism should be on your shortlist. Diamond Data's verification process produces phone accuracy rates that make cold calling productive.",
         "The score would be higher if the US coverage kept pace with the European depth. Cognism is transparent that EMEA is their primary strength, and the North American data reflects that priority. Teams splitting pipeline between US and Europe will likely need Cognism plus a US-focused tool like ZoomInfo or Apollo.",
         "For European-focused sales teams, Cognism is the best investment in the data enrichment category. For globally distributed teams, it's a strong EMEA supplement. For purely North American teams, it's the wrong tool at the wrong price.",
     ],
@@ -452,7 +452,7 @@ TOOL_CONTENT["seamless-ai"] = {
         },
         {
             "title": "Chrome extension integrates with LinkedIn workflow",
-            "detail": "The browser extension lets you pull contact data directly from LinkedIn profiles, company pages, and Sales Navigator searches. One-click contact reveal while you're browsing prospects. When the data it finds is accurate, the workflow is fast and frictionless. The problem is the 'when accurate' qualifier.",
+            "detail": "The browser extension lets you pull contact data directly from LinkedIn profiles, company pages, and Sales Navigator searches. One-click contact reveal while you're browsing prospects. When the data it finds is accurate, the workflow is fast and smooth. The problem is the 'when accurate' qualifier.",
         },
         {
             "title": "Writer feature for email copy assistance",
@@ -529,7 +529,7 @@ TOOL_CONTENT["uplead"] = {
     "expanded_pros": [
         {
             "title": "Real-time email verification at point of export",
-            "detail": "UpLead verifies every email address when you download it. If an email can't be verified, it's flagged and doesn't count against your credits. This means the 95% accuracy claim reflects what you actually receive, not what was accurate when it was originally collected six months ago. For teams measuring sender reputation and bounce rates, this verification step is genuinely valuable. You don't need a separate ZeroBounce or NeverBounce subscription for email hygiene. UpLead handles it at the point of extraction.",
+            "detail": "UpLead verifies every email address when you download it. If an email can't be verified, it's flagged and doesn't count against your credits. This means the 95% accuracy claim reflects what you receive, not what was accurate when it was originally collected six months ago. For teams measuring sender reputation and bounce rates, this verification step is valuable. You don't need a separate ZeroBounce or NeverBounce subscription for email hygiene. UpLead handles it at the point of extraction.",
         },
         {
             "title": "Transparent pricing that respects your budget",
@@ -584,12 +584,12 @@ TOOL_CONTENT["uplead"] = {
         {"tool": "ZoomInfo", "reason": "Choose ZoomInfo if you need intent data, org charts, and the deepest database available. You'll pay 10-20x more, but the data depth and platform features are in a different class. UpLead is the budget alternative, not the feature-competitive one."},
     ],
     "verdict_long": [
-        "UpLead earns a 6.8 by being genuinely useful for the price. The real-time email verification is a differentiated feature that solves a real problem. The transparent pricing respects your intelligence and your budget. And the database, while not the largest, covers most standard B2B prospecting needs.",
+        "UpLead earns a 6.8 by being useful for the price. The real-time email verification is a differentiated feature that solves a real problem. The transparent pricing respects your intelligence and your budget. And the database, while not the largest, covers most standard B2B prospecting needs.",
         "The score isn't higher because UpLead is a solid B-player rather than an A-player. The database is smaller than the leaders. The phone data is inconsistent. The platform features are functional without being impressive. Intent data requires the $299/mo tier. There's nothing broken about UpLead, but there's also nothing that makes you say 'this is the best tool I've ever used.'",
         "The recommendation is simple: if you need verified B2B email data and ZoomInfo is outside your budget, UpLead delivers the core value at a fraction of the cost. Use it for what it does well (email enrichment) and supplement with other tools for what it doesn't (phone numbers, international coverage, intent data).",
     ],
     "faqs": [
-        {"question": "Is UpLead's 95% email accuracy claim real?", "answer": "Yes, with a caveat. UpLead verifies emails at the point of export, not at the point of collection. This real-time verification catches emails that have gone stale since they were last updated. The 95% refers to verified emails that pass the real-time check. Emails that fail verification are flagged and don't count against your credits. This is a genuinely better approach than reporting accuracy at time of collection."},
+        {"question": "Is UpLead's 95% email accuracy claim real?", "answer": "Yes, with a caveat. UpLead verifies emails at the point of export, not at the point of collection. This real-time verification catches emails that have gone stale since they were last updated. The 95% refers to verified emails that pass the real-time check. Emails that fail verification are flagged and don't count against your credits. This is a better approach than reporting accuracy at time of collection."},
         {"question": "How does UpLead compare to ZoomInfo?", "answer": "UpLead provides approximately 70% of ZoomInfo's core functionality (contact data, company data, technographics, basic intent) at about 20% of the price. ZoomInfo is superior for intent data, org charts, phone numbers, and platform features. UpLead is superior for transparent pricing, real-time email verification, and month-to-month flexibility."},
         {"question": "Does UpLead have a free trial?", "answer": "Yes, UpLead offers a free trial with 5 credits. Enough to test data quality for your specific ICP but not enough for real prospecting. Use the trial to verify that UpLead covers your target market before committing to a paid plan."},
         {"question": "Can UpLead replace ZoomInfo for my team?", "answer": "Depends on what you use ZoomInfo for. If you primarily use ZoomInfo for email lookup and basic company data, yes. UpLead covers those needs at 80-90% of the quality for 20% of the price. If you rely on ZoomInfo's intent data, org charts, or phone numbers, UpLead won't fully replace it. Many teams switch to UpLead for enrichment and add a specialized tool for the gaps."},
@@ -670,7 +670,7 @@ TOOL_CONTENT["rocketreach"] = {
         "Use RocketReach as a backup, not a primary. Budget $39-99/mo as your second-pass enrichment tool. Access it through Clay's waterfall if you want the data without the interface. And always verify RocketReach emails before sending, because the accuracy won't carry your sender reputation.",
     ],
     "faqs": [
-        {"question": "Does RocketReach really have 700M+ profiles?", "answer": "The 700M number refers to total indexed profiles, which includes records with minimal data (name and company only), stale records from people who've changed jobs, and duplicate entries. The number of profiles with usable, current email and phone data is considerably smaller. Think of 700M as the raw index, not the active database."},
+        {"question": "Does RocketReach have 700M+ profiles?", "answer": "The 700M number refers to total indexed profiles, which includes records with minimal data (name and company only), stale records from people who've changed jobs, and duplicate entries. The number of profiles with usable, current email and phone data is considerably smaller. Think of 700M as the raw index, not the active database."},
         {"question": "How accurate is RocketReach data?", "answer": "Email accuracy runs 70-75% based on independent testing. Phone number accuracy is lower. This puts RocketReach below the 80-85% standard set by ZoomInfo and Apollo but above tools that don't verify at all. Always verify emails through a separate tool (ZeroBounce, NeverBounce) before sending campaigns."},
         {"question": "Is RocketReach worth $39/month?", "answer": "As a supplemental tool, yes. 80 lookups per month at $39 is reasonable for a backup enrichment source. As a primary prospecting database, no. The accuracy limitations and credit constraints make it insufficient for daily outbound work. Apollo's free tier is a better primary tool."},
         {"question": "How does RocketReach compare to LinkedIn Sales Navigator?", "answer": "Different tools for different jobs. Sales Navigator ($99/mo) is a prospecting platform for finding and engaging leads within LinkedIn. RocketReach ($39-249/mo) is an enrichment tool that finds email and phone data. Sales Navigator doesn't give you email addresses. RocketReach doesn't give you LinkedIn messaging. Many reps use both: Sales Navigator for finding prospects, RocketReach for getting contact details."},
@@ -686,7 +686,7 @@ TOOL_CONTENT["leadiq"] = {
     "overview": [
         "LeadIQ built its product around one specific workflow: an SDR browses LinkedIn, finds a prospect, clicks the LeadIQ extension, and the contact's email and phone number get pushed directly into their CRM and sequencing tool. That's it. One click to capture, enrich, and sync. For SDR teams living in LinkedIn Sales Navigator, this workflow integration is the entire value proposition.",
         "The data quality is competitive with the mid-tier players. Email accuracy sits around 80% (comparable to Apollo, below ZoomInfo). Phone number coverage is moderate. What separates LeadIQ from other Chrome extensions like Lusha or Kaspr is the direct CRM push. Instead of exporting data and importing it into Salesforce or HubSpot, LeadIQ creates or updates the record in real time. Less friction means more contacts captured per day.",
-        "At $0-79/user/month, LeadIQ is priced for SDR teams that want seamless LinkedIn-to-CRM data capture. The free tier (20 verified emails per week) is enough to evaluate the workflow. The limitation is that LeadIQ does one thing. If you need bulk enrichment, waterfall data from multiple providers, intent signals, or standalone prospecting beyond LinkedIn, LeadIQ won't cover it. It's a precision tool for a specific job.",
+        "At $0-79/user/month, LeadIQ is priced for SDR teams that want smooth LinkedIn-to-CRM data capture. The free tier (20 verified emails per week) is enough to evaluate the workflow. The limitation is that LeadIQ does one thing. If you need bulk enrichment, waterfall data from multiple providers, intent signals, or standalone prospecting beyond LinkedIn, LeadIQ won't cover it. It's a precision tool for a specific job.",
     ],
     "expanded_pros": [
         {
@@ -722,7 +722,7 @@ TOOL_CONTENT["leadiq"] = {
     ],
     "pricing_detail": [
         "Free tier: 20 verified work emails per week, 10 mobile phone numbers per month, 40 email generations with Scribe. Starter: $36/user/mo with more credits and CRM integration. Essential: $79/user/mo with unlimited Scribe, job change alerts, and advanced CRM features.",
-        "The free tier is actually useful for solo operators or founders doing light prospecting. 20 verified emails per week (roughly 80/mo) is enough for targeted outreach. The jump to $36/mo adds CRM push, which is the core feature. The jump to $79/mo adds the automation and tracking that make LeadIQ valuable for SDR teams.",
+        "The free tier is useful for solo operators or founders doing light prospecting. 20 verified emails per week (roughly 80/mo) is enough for targeted outreach. The jump to $36/mo adds CRM push, which is the core feature. The jump to $79/mo adds the automation and tracking that make LeadIQ valuable for SDR teams.",
         "Team cost for 5 SDRs on Essential: $395/mo ($4,740/yr). For comparison: 5 Apollo licenses on the Basic plan ($49/user/mo) = $245/mo with a larger database and built-in sequencing. 5 Lusha Premium licenses ($51/user/mo) = $255/mo with better phone data. LeadIQ's premium is the workflow integration and CRM sync, which saves enough rep time to justify the cost differential for LinkedIn-heavy teams.",
     ],
     "who_should_buy": [
@@ -746,7 +746,7 @@ TOOL_CONTENT["leadiq"] = {
         {"tool": "Kaspr", "reason": "Choose Kaspr if you're focused on European LinkedIn prospecting at a lower price point. Kaspr's Chrome extension is simpler than LeadIQ's but costs less ($0-99/mo) and emphasizes GDPR-compliant European data."},
     ],
     "verdict_long": [
-        "LeadIQ earns a 7.0 by being the best at one specific job: capturing contacts from LinkedIn and pushing them into your CRM. The workflow is genuinely faster than any alternative. The CRM deduplication prevents data quality problems. And the job change tracking creates a warm outreach channel that most tools ignore.",
+        "LeadIQ earns a 7.0 by being the best at one specific job: capturing contacts from LinkedIn and pushing them into your CRM. The workflow is faster than any alternative. The CRM deduplication prevents data quality problems. And the job change tracking creates a warm outreach channel that most tools ignore.",
         "The score reflects the narrow focus. LeadIQ does one thing well, but it only does one thing. No bulk enrichment. No standalone search. No intent data. No waterfall coverage. You're paying a premium for workflow integration around a single prospecting channel. For LinkedIn-heavy SDR teams, that premium is worth it. For everyone else, Apollo does 80% of the job for free.",
         "If your SDRs live in LinkedIn Sales Navigator and you're willing to pay for workflow efficiency, LeadIQ is the right tool. If LinkedIn is one of several prospecting channels, the per-seat cost is hard to justify when Apollo's Chrome extension exists for free.",
     ],

@@ -14,7 +14,7 @@ TOOL_CONTENT = {}
 TOOL_CONTENT["11x"] = {
     "overview": [
         "11x raised $50M+ from a16z and Benchmark to build an AI that replaces human SDRs. The pitch is compelling: an AI agent named 'Alice' that researches prospects, writes personalized emails, and handles multi-channel outreach at a fraction of the cost of a human rep. The reality is less inspiring.",
-        "A TechCrunch investigation revealed fabricated customer testimonials on 11x's website. Internal data shows 75% of customers churn within 3 months. The AI handles initial outreach competently but falls apart when prospects actually reply. Off-script conversations produce robotic responses that damage your brand.",
+        "A TechCrunch investigation revealed fabricated customer testimonials on 11x's website. Internal data shows 75% of customers churn within 3 months. The AI handles initial outreach competently but falls apart when prospects reply. Off-script conversations produce robotic responses that damage your brand.",
         "At $5,000/mo with a 12-month contract, you're committing $60,000 to a tool that still requires a human SDR team to handle replies, qualify leads, and manage anything beyond the first cold email. The AI SDR concept has real potential. This particular execution carries too much risk for most SMBs.",
     ],
     "expanded_pros": [
@@ -67,7 +67,7 @@ TOOL_CONTENT["11x"] = {
         "solo": "Skip 11x entirely. At $5,000/mo, you'd spend your entire marketing budget on one tool. Use Lavender ($29/mo) to improve your own cold emails.",
         "small_team": "Still too expensive and too risky for most small teams. If you're curious about AI SDR, start with AiSDR's quarterly plan at $900/mo to test the concept without a $60K commitment.",
         "mid_market": "This is where 11x starts making sense IF you have an existing SDR team and the budget to experiment. Run a 90-day pilot alongside your human team. Measure meetings booked per dollar spent vs. your SDR cost-per-meeting.",
-        "enterprise": "At enterprise scale with 25+ SDRs, the volume argument gets stronger. But verify the churn stats first. Ask 11x for customer references you can actually call, and insist on a pilot period before signing annual.",
+        "enterprise": "At enterprise scale with 25+ SDRs, the volume argument gets stronger. But verify the churn stats first. Ask 11x for customer references you can call, and insist on a pilot period before signing annual.",
     },
     "alternatives_detail": [
         {"tool": "AiSDR", "reason": "Choose AiSDR if you want to test autonomous AI outbound with quarterly contracts ($900/mo) instead of $60K annual risk. Same concept, 1/20th the commitment."},
@@ -81,7 +81,7 @@ TOOL_CONTENT["11x"] = {
     ],
     "faqs": [
         {"question": "Is 11x worth $5,000/month?", "answer": "For most SMBs, no. The 75% churn rate within 3 months tells you that 3 out of 4 customers don't see enough value to justify the cost. The tool works best for well-funded teams with existing SDR infrastructure and a high-volume, simple outbound motion."},
-        {"question": "Can 11x actually replace human SDRs?", "answer": "Not yet. 11x handles initial outreach (first emails and LinkedIn messages) but can't carry conversations when prospects reply. You still need human SDRs for reply handling, qualification, and anything beyond the first touch."},
+        {"question": "Can 11x replace human SDRs?", "answer": "Not yet. 11x handles initial outreach (first emails and LinkedIn messages) but can't carry conversations when prospects reply. You still need human SDRs for reply handling, qualification, and anything beyond the first touch."},
         {"question": "Why did TechCrunch report on fake 11x testimonials?", "answer": "TechCrunch found that customer testimonials on 11x's website were fabricated. Some quoted individuals denied being customers or giving those quotes. This raised questions about the company's transparency and the actual customer satisfaction behind the marketing claims."},
         {"question": "How does 11x compare to hiring an SDR?", "answer": "A junior SDR costs $50,000-$70,000/yr fully loaded. 11x costs $60,000-$96,000/yr. The SDR handles the full conversation. 11x only handles the first touch. Unless your volume needs exceed what 2-3 SDRs can handle, the human hire is often cheaper and more effective."},
         {"question": "What's the best alternative to 11x?", "answer": "AiSDR offers the same autonomous AI SDR concept at $900/mo with quarterly contracts. Lavender takes a different approach entirely, coaching your existing reps to write better emails at $29/mo. Both are lower-risk ways to bring AI into your outbound process."},
@@ -95,7 +95,7 @@ TOOL_CONTENT["11x"] = {
 TOOL_CONTENT["artisan"] = {
     "overview": [
         "Artisan's AI agent 'Ava' represents the more pragmatic end of the AI SDR market. Y Combinator-backed and led by Jaspar Carmichael-Jack, the company bundles a 300M+ contact database with AI email writing and multi-channel outreach. Instead of asking you to pay separately for data (ZoomInfo), sequencing (Outreach), and AI writing (Lavender), Artisan rolls everything into one platform.",
-        "The bundled approach solves a real problem. Most SMB sales teams run 3-4 tools that don't talk to each other well. Artisan gives you prospect data, AI-written outreach, and multi-channel delivery in one login. The trade-off is that none of those individual components are best-in-class. The data is good, not ZoomInfo-good. The AI writing is decent, not Lavender-good.",
+        "The bundled approach solves a real problem. Most SMB sales teams run 3-4 tools that don't talk to each other well. Artisan gives you prospect data, AI-written outreach, and multi-channel delivery in one login. The trade-off is that none of those individual components are top-tier. The data is good, not ZoomInfo-good. The AI writing is decent, not Lavender-good.",
         "At $2,000/mo with annual contracts, Artisan sits in the middle of the AI SDR pricing spectrum. Cheaper than 11x by 60% but still a significant annual commitment ($24K) on technology that G2 reviewers describe as inconsistent. The AI output varies from surprisingly good to obviously templated, depending on the ICP and industry.",
     ],
     "expanded_pros": [
@@ -115,7 +115,7 @@ TOOL_CONTENT["artisan"] = {
     "expanded_cons": [
         {
             "title": "AI email quality is inconsistent",
-            "detail": "G2 reviews consistently mention that Ava's emails range from solid to generic. The personalization engine pulls surface-level details (company size, industry, recent news) but misses the nuanced insights that make cold emails actually convert. Heavy human editing is often required.",
+            "detail": "G2 reviews consistently mention that Ava's emails range from solid to generic. The personalization engine pulls surface-level details (company size, industry, recent news) but misses the nuanced insights that make cold emails convert. Heavy human editing is often required.",
         },
         {
             "title": "Annual contracts on nascent technology",
@@ -152,7 +152,7 @@ TOOL_CONTENT["artisan"] = {
         {"tool": "11x", "reason": "Choose 11x only if budget isn't a concern and you want the highest-volume autonomous outreach. But read the 11x review first. The 75% churn rate should give you pause."},
     ],
     "verdict_long": [
-        "Artisan's bundled approach makes strategic sense. Combining prospecting data, AI writing, and multi-channel delivery into one platform is what most SMB sales teams actually need. The execution is promising but uneven. Ava's emails land somewhere between genuinely personalized and obviously templated, and the consistency issue means you can't fully trust the AI without human review.",
+        "Artisan's bundled approach makes strategic sense. Combining prospecting data, AI writing, and multi-channel delivery into one platform is what most SMB sales teams need. The execution is promising but uneven. Ava's emails land somewhere between well-personalized and obviously templated, and the consistency issue means you can't fully trust the AI without human review.",
         "At $24K/yr, Artisan is priced reasonably for what you get. A comparable stack from best-of-breed vendors costs more. But you're trading peak performance in each category for the convenience of one platform. That trade-off works for teams building outbound from scratch. It's harder to justify for teams that already have functioning tools.",
         "Artisan is doing the right thing strategically. If you're going to bet on an AI SDR, this is a more reasonable bet than 11x. Just go in knowing that 'AI SDR' in 2026 means 'AI-assisted outbound with heavy human oversight,' not 'replace your SDR team.'",
     ],
@@ -186,7 +186,7 @@ TOOL_CONTENT["aisdr"] = {
         },
         {
             "title": "Sub-10-minute reply handling",
-            "detail": "When a prospect replies, AiSDR's AI responds within 10 minutes. Most human SDRs take 30 minutes to several hours, especially across time zones. Fast reply speed correlates with higher booking rates. This is one area where AI genuinely outperforms humans.",
+            "detail": "When a prospect replies, AiSDR's AI responds within 10 minutes. Most human SDRs take 30 minutes to several hours, especially across time zones. Fast reply speed correlates with higher booking rates. This is one area where AI consistently outperforms humans.",
         },
         {
             "title": "Unused message credits roll over",
@@ -215,7 +215,7 @@ TOOL_CONTENT["aisdr"] = {
     "who_should_buy": [
         {"audience": "Teams testing AI SDR for the first time", "reason": "Quarterly contracts at $900/mo let you validate whether autonomous outbound works for your ICP without a $24K-$60K annual bet. If it works, scale up. If not, you're out $2,700, not $60,000."},
         {"audience": "HubSpot shops with outbound motion", "reason": "The HubSpot integration is solid. If your CRM is HubSpot and you want AI-powered outbound, AiSDR is the most cost-effective path with the best user satisfaction scores."},
-        {"audience": "SMBs sending 500-2,000 emails/month", "reason": "At this volume, AiSDR's pricing is genuinely affordable ($900-$1,650/mo) and the 700M+ database eliminates the need for a separate data provider."},
+        {"audience": "SMBs sending 500-2,000 emails/month", "reason": "At this volume, AiSDR's pricing is affordable ($900-$1,650/mo) and the 700M+ database eliminates the need for a separate data provider."},
     ],
     "who_should_skip": [
         {"audience": "Salesforce teams", "reason": "There's no Salesforce integration yet. Until that ships, AiSDR can't sync contacts, log activities, or update deals in your CRM. Running it as a sidecar creates data hygiene problems."},
@@ -258,12 +258,12 @@ TOOL_CONTENT["regie-ai"] = {
     ],
     "expanded_pros": [
         {
-            "title": "AI content generation that actually integrates with your stack",
+            "title": "AI content generation that integrates with your stack",
             "detail": "Regie plugs directly into Outreach and SalesLoft. Your reps don't switch between apps. They get AI-suggested email copy, personalization, and A/B testing inside the tools they already use. This is the opposite of asking your team to learn an entirely new platform.",
         },
         {
             "title": "G2's top-ranked AI Sales Assistant for 5 straight quarters",
-            "detail": "400+ reviews, 4.5/5 rating, and #1 in implementation for mid-market. That's not a marketing claim. It's sustained user satisfaction measured by an independent platform. The implementation ranking is especially telling because it means teams actually get the tool working successfully.",
+            "detail": "400+ reviews, 4.5/5 rating, and #1 in implementation for mid-market. That's not a marketing claim. It's sustained user satisfaction measured by an independent platform. The implementation ranking is especially telling because it means teams get the tool working successfully.",
         },
         {
             "title": "Augmentation beats replacement for 2026 AI maturity",
@@ -335,7 +335,7 @@ TOOL_CONTENT["amplemarket"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Genuinely all-in-one with no missing pieces",
+            "title": "All-in-one with no missing pieces",
             "detail": "Prospect database, AI writing, email sequencing, LinkedIn automation, phone integration, and intent signals. All under one roof. For teams tired of managing 4 vendor contracts and 4 sets of billing, this consolidation has real value.",
         },
         {
@@ -372,7 +372,7 @@ TOOL_CONTENT["amplemarket"] = {
     ],
     "who_should_skip": [
         {"audience": "Budget-conscious SMBs", "reason": "At estimated $1,000-2,000/user/month, Amplemarket costs more than Apollo's free tier + Smartlead's $39/mo combined. If price matters most, build the stack from cheaper components."},
-        {"audience": "Teams needing best-in-class in any one area", "reason": "If data quality, sequencing depth, or AI writing sophistication is your top priority, dedicated tools beat Amplemarket in each specific area. The all-in-one convenience comes at the cost of depth."},
+        {"audience": "Teams needing the strongest option in any one area", "reason": "If data quality, sequencing depth, or AI writing sophistication is your top priority, dedicated tools beat Amplemarket in each specific area. The all-in-one convenience comes at the cost of depth."},
     ],
     "stage_guidance": {
         "solo": "Way too expensive for solo founders. Build your stack with Apollo (free data) + Smartlead ($39/mo for email delivery) instead.",
@@ -410,8 +410,8 @@ TOOL_CONTENT["lavender"] = {
     ],
     "expanded_pros": [
         {
-            "title": "Real-time email scoring that actually improves reply rates",
-            "detail": "Lavender's scoring algorithm is trained on millions of email engagements. It evaluates length, reading level, personalization, subject lines, and formatting against what actually gets replies in your industry. Teams consistently report 20-40% improvements in reply rates within the first month.",
+            "title": "Real-time email scoring that improves reply rates",
+            "detail": "Lavender's scoring algorithm is trained on millions of email engagements. It evaluates length, reading level, personalization, subject lines, and formatting against what gets replies in your industry. Teams consistently report 20-40% improvements in reply rates within the first month.",
         },
         {
             "title": "$29/mo makes the ROI calculation trivial",
@@ -466,12 +466,12 @@ TOOL_CONTENT["lavender"] = {
         {"tool": "AiSDR", "reason": "Choose AiSDR if you want to automate outbound entirely rather than improve human-written emails. Different approach, different price point ($900/mo vs $29/mo), different risk level."},
     ],
     "verdict_long": [
-        "Lavender earns Sultan's Pick in AI SDR because it solves the problem that actually matters. Most sales teams don't need an AI agent sending thousands of emails. They need their existing reps to write better emails that get replies. Lavender does that at $29/mo with measurable results within weeks.",
+        "Lavender earns Sultan's Pick in AI SDR because it solves the problem that matters most. Most sales teams don't need an AI agent sending thousands of emails. They need their existing reps to write better emails that get replies. Lavender does that at $29/mo with measurable results within weeks.",
         "The AI SDR category is crowded with tools promising to replace human SDRs. Most of them require $24K-$60K annual commitments, heavy human oversight, and still produce inconsistent results. Lavender costs less per month than most AI SDR tools cost per day, and the improvement in email quality is something your reps carry with them forever.",
         "Is it the sexiest tool in the category? No. It doesn't promise to eliminate headcount or 10x your pipeline. It promises to make your cold emails better, and it delivers on that promise. In a category full of overpromises and underdelivery, that honesty is worth a lot.",
     ],
     "faqs": [
-        {"question": "Does Lavender actually improve reply rates?", "answer": "Yes. Teams consistently report 20-40% improvements in cold email reply rates within the first month. The scoring algorithm is trained on millions of email engagement patterns and provides specific, actionable suggestions for each email."},
+        {"question": "Does Lavender improve reply rates?", "answer": "Yes. Teams consistently report 20-40% improvements in cold email reply rates within the first month. The scoring algorithm is trained on millions of email engagement patterns and provides specific, actionable suggestions for each email."},
         {"question": "How is Lavender different from Grammarly?", "answer": "Grammarly checks grammar and tone across all writing. Lavender is specifically built for sales emails and scores on factors that drive replies: email length, reading level, personalization, subject lines, and mobile formatting. Lavender's suggestions are calibrated against sales email engagement data."},
         {"question": "Can Lavender replace Outreach or Apollo?", "answer": "No. Lavender doesn't send emails, manage sequences, or provide prospect data. It's a coaching layer that improves email quality. You'll still need a sequencing tool (Outreach, Apollo, Instantly) and a data source. Lavender makes whatever you send through those tools more effective."},
         {"question": "Is the free tier useful?", "answer": "The free tier gives you limited email scoring to test the product. It's enough to see whether the suggestions improve your writing. Upgrade to Individual ($29/mo) when you want unlimited scoring and full personalization data."},
@@ -495,7 +495,7 @@ TOOL_CONTENT["smartlead"] = {
             "detail": "Most cold email tools limit the number of sending accounts you can connect. Smartlead doesn't. Connect as many mailboxes as you want and the platform rotates between them automatically. This spreads sending volume across domains, keeping each individual mailbox under spam thresholds.",
         },
         {
-            "title": "AI warmup that actually works",
+            "title": "AI warmup that works",
             "detail": "Smartlead's warmup engine sends and receives emails between a network of accounts to build sender reputation before you start cold campaigns. The warmup runs alongside active campaigns, continuously maintaining deliverability. This is table stakes for serious cold email, and Smartlead does it better than most.",
         },
         {
@@ -694,7 +694,7 @@ TOOL_CONTENT["nooks"] = {
         {"tool": "Apollo", "reason": "Choose Apollo if you want a basic dialer included in an all-in-one platform. Apollo's dialer isn't as sophisticated as Nooks, but you also get data, email sequencing, and LinkedIn steps in one tool."},
     ],
     "verdict_long": [
-        "Nooks solves a specific problem very well: phone-heavy SDR teams that waste hours listening to unanswered calls. The parallel dialer genuinely multiplies connect rates, and the virtual sales floor solves the remote team motivation problem that every sales leader has experienced since 2020.",
+        "Nooks solves a specific problem very well: phone-heavy SDR teams that waste hours listening to unanswered calls. The parallel dialer multiplies connect rates, and the virtual sales floor solves the remote team motivation problem that every sales leader has experienced since 2020.",
         "The narrow focus is both a strength and a limitation. If your team lives on the phone, Nooks is a force multiplier. If your team runs multi-channel outbound with email as the primary channel, Nooks doesn't move the needle. Know which problem you're solving before buying.",
         "For phone-first teams of 5+ reps, Nooks is worth a serious evaluation. Get a demo, calculate the connect rate improvement against your current numbers, and make a data-driven decision.",
     ],
