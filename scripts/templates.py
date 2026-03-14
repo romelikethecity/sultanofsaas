@@ -37,7 +37,7 @@ OUTPUT_DIR = ""
 # INLINE SVG CONSTANTS
 # =============================================================================
 
-LOGO_MARK_SMALL = '''<svg viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg" class="logo-mark">
+LOGO_MARK_SMALL = '''<svg viewBox="0 0 18 24" width="18" height="24" xmlns="http://www.w3.org/2000/svg" class="logo-mark">
   <rect x="1" y="0" width="8" height="8" rx="2" transform="rotate(45, 5, 4)" fill="#D4A054"/>
   <rect x="4" y="7.5" width="8" height="8" rx="2" transform="rotate(45, 8, 11.5)" fill="#D4A054" opacity="0.55"/>
   <rect x="1" y="15" width="8" height="8" rx="2" transform="rotate(45, 5, 19)" fill="#D4A054" opacity="0.25"/>
