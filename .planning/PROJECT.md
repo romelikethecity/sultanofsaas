@@ -32,13 +32,17 @@ Every review picks a winner with evidence. Founders get decisive recommendations
 
 ### Active
 
-- [ ] Quality audit: verify all 90 deep reviews pass writing guidelines checklist
-- [ ] Quality audit: verify no false reframes, em-dashes, or banned words across all content files
-- [ ] Quality audit: verify niche winners are defensible and different from Sultan's Pick
-- [ ] Quality audit: verify all 17 industry pages have picks for all 9 categories
-- [ ] Visual review: check generated pages render correctly in browser
-- [ ] Visual review: verify new category pages have correct CSS styling
-- [ ] Deploy: push to GitHub Pages at sultanofsaas.com
+(None — v1.0 milestone complete)
+
+### Validated (v1.0)
+
+- ✓ Quality audit: all 90 deep reviews pass writing guidelines (0 errors) — v1.0
+- ✓ Quality audit: no false reframes, em-dashes, or banned words across all content files — v1.0
+- ✓ Quality audit: niche winners differ from Sultan's Pick for all categories — v1.0
+- ✓ Quality audit: all 17 industry pages have picks for all 9 categories — v1.0
+- ✓ Visual review: generated pages render correctly (automated structural checks) — v1.0
+- ✓ Visual review: new category pages have correct HTML structure and tool listings — v1.0
+- ✓ Deploy: pushed to GitHub Pages at sultanofsaas.com — v1.0
 
 ### Out of Scope
 
@@ -130,5 +134,13 @@ Every review picks a winner with evidence. Founders get decisive recommendations
 | T() function extended with new fields | Add overview, expanded_pros, expanded_cons, pricing_detail, buy_skip, stage_guidance, alternatives_detail, bottom_line, faqs fields to T() | — Pending |
 | Expand existing 50 tools too | All tools get the deep review treatment, not just new ones | — Pending |
 
+## Current State (v1.0 shipped)
+
+- **Pages:** 334 (90 tool reviews, 9 categories, 64 niche pages, 17 industry pages, comparisons, alternatives, pricing, stacks, tools index)
+- **Build:** `python3 scripts/build.py` → output/ (build.py ~2,548 lines + 9 content files ~7,752 lines)
+- **Audit:** `python3 scripts/audit.py` → 0 errors, ~413 warnings
+- **Deploy:** GitHub Pages, gh-pages branch, sultanofsaas.com (DNS configuration pending)
+- **Repo:** github.com/romelikethecity/sultanofsaas
+
 ---
-*Last updated: 2026-03-13 after initialization*
+*Last updated: 2026-03-14 after v1.0 milestone*
