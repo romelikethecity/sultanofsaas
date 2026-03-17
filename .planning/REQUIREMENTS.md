@@ -1,99 +1,91 @@
-# Requirements: SultanOfSaaS Phase 3 Quality Audit & Deploy
+# Requirements: SultanOfSaaS
 
-**Defined:** 2026-03-13
-**Core Value:** Every review picks a winner with evidence. Ship a site where all 334 pages pass writing quality standards.
+**Defined:** 2026-03-16
+**Core Value:** Every review picks a winner with evidence. Founders get decisive recommendations backed by real pricing, specific use cases, and honest trade-offs.
 
-## v1 Requirements
+## v2.0 Requirements
 
-### Audit Script
+Requirements for v2.0 — Audience Growth & Content Scaling. Each maps to roadmap phases.
 
-- [x] **AUDIT-01**: Audit script scans all 9 content files for false reframes (multiple regex patterns covering "not X, it's Y", "isn't X. It's Y.", "less about X, more about Y")
-- [x] **AUDIT-02**: Audit script detects all em-dashes in content strings
-- [x] **AUDIT-03**: Audit script flags banned words (robust, leverage, synergy, holistic, cutting-edge, seamless, frictionless, genuinely, truly, really, actually, game-changer, paradigm shift, best-in-class)
-- [x] **AUDIT-04**: Audit script validates word count per tool review (2,000-4,000 target range)
-- [x] **AUDIT-05**: Audit script checks all 9 content sections are present per tool (overview, expanded_pros, expanded_cons, pricing_detail, who_should_buy, who_should_skip, stage_guidance, alternatives_detail, verdict_long, faqs)
-- [x] **AUDIT-06**: Audit script validates niche winners differ from Sultan's Pick for every niche/category combo
-- [x] **AUDIT-07**: Audit script validates all 17 industry pages have picks for all 9 categories
-- [x] **AUDIT-08**: Audit script generates a clear report with findings grouped by severity (ERROR/WARNING)
+### Newsletter Capture
 
-### Content Fixes
+- [ ] **NEWS-01**: Email signup form embedded across all page types using existing D1 newsletter worker
+- [ ] **NEWS-02**: sultanofsaas.com added to CORS allowed origins in newsletter worker (`subscribe.js`)
+- [ ] **NEWS-03**: "sultan-of-saas" list seeded in D1 database (name: "The Sultan's Pick", from: insights@sultanofsaas.com)
+- [ ] **NEWS-04**: Signup form styled to match SultanOfSaaS brand (gold/dark theme)
 
-- [x] **FIX-01**: All false reframes removed or rewritten across all content files
-- [x] **FIX-02**: All em-dashes replaced with periods, commas, or parentheses
-- [x] **FIX-03**: All banned words replaced with appropriate alternatives
-- [x] **FIX-04**: All 7 niche winner conflicts resolved (different winner assigned with new rationale)
-- [x] **FIX-05**: Any missing content sections filled in
-- [x] **FIX-06**: Industry picks added for any missing category/industry combinations
+### Versus/Alternative Scaling
 
-### SEO Validation
+- [ ] **VERSUS-01**: 50+ new "[Tool A] vs [Tool B]" comparison pages using existing build.py patterns and data structure
+- [ ] **VERSUS-02**: 30+ new "[Tool] alternatives" pages using existing build.py patterns and data structure
+- [ ] **VERSUS-03**: All new versus/alternative pages pass audit.py with 0 errors
 
-- [x] **SEO-01**: All 334 pages have unique meta title and description
-- [x] **SEO-02**: All inner pages have BreadcrumbList JSON-LD schema
-- [x] **SEO-03**: All tool review pages with FAQs have FAQPage JSON-LD schema
-- [x] **SEO-04**: No broken internal links across all pages
+### Pricing Changelogs
 
-### Visual & Deploy
+- [ ] **PRICE-01**: "Last updated" date displayed on each of 90 existing pricing pages
+- [ ] **PRICE-02**: Changelog section on each pricing page showing historical price changes
+- [ ] **PRICE-03**: Changelog data stored inline in build.py following existing data patterns
 
-- [x] **VIS-01**: Sample pages render correctly in browser (homepage, category, tool review, niche, industry, tools index)
-- [x] **VIS-02**: New category pages (AI SDR, Sales Engagement, Conversation Intelligence, Data Enrichment) have correct CSS styling
-- [x] **DEPLOY-01**: Site deployed to GitHub Pages at sultanofsaas.com
+### Comparison Matrices
 
-## v2 Requirements
+- [ ] **MATRIX-01**: One filterable side-by-side comparison table per category (9 categories total)
+- [ ] **MATRIX-02**: Matrix displays pricing, ratings, and best-for tags for all tools in each category
+- [ ] **MATRIX-03**: Client-side filtering with vanilla JS (no frameworks)
 
-### Content Polish
+### Stack Expansion
 
-- **POLISH-01**: Readability scoring (Flesch-Kincaid 8-12 range) across all reviews
-- **POLISH-02**: Template homogeneity reduction (diversify transition phrases, vary section lengths)
-- **POLISH-03**: Pricing accuracy verification against current vendor pricing pages (top 30 tools)
-- **POLISH-04**: Unearned declaration removal ("The pattern here is clear:", "Here's the thing:")
+- [ ] **STACK-01**: 12+ new stack pages covering additional ICPs (RevOps, PLG, ABM, SDR manager, CS, founder, etc.)
+- [ ] **STACK-02**: Total stack pages reach 20+ (currently 8)
 
-### Analytics
+### Switched Teardowns
 
-- **ANALYTICS-01**: Google Analytics integration
-- **ANALYTICS-02**: Google Search Console setup
-- **ANALYTICS-03**: Rank tracking for target keywords
+- [ ] **SWITCH-01**: 20-30 "Why teams switch from [Tool A] to [Tool B]" pages targeting high-intent keywords
+- [ ] **SWITCH-02**: Content built from existing review data (pros, cons, pricing comparisons)
+
+## Future Requirements
+
+None deferred — all proposed features scoped into v2.0.
 
 ## Out of Scope
 
 | Feature | Reason |
 |---------|--------|
-| Automated screenshot testing | One-time visual check, manual is faster |
-| spaCy/NLP-based content analysis | Overkill for regex-solvable writing rules |
-| External prose linters (Vale, textlint) | Content is in Python dicts, not markup files |
-| Pricing page re-verification | Defer to v2, current prices are close enough for launch |
+| New backend/API for newsletter | Existing D1 worker handles everything |
+| JavaScript frameworks | Vanilla JS only, per v1.0 constraint |
+| User-generated content or comments | Content site, not community |
+| Affiliate link integration | Separate initiative, not this milestone |
 | Blog/content marketing | Separate initiative |
+| Tool data in external JSON files | All data stays inline in build.py |
 
 ## Traceability
 
+Which phases cover which requirements. Updated during roadmap creation.
+
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AUDIT-01 | Phase 1 | Complete |
-| AUDIT-02 | Phase 1 | Complete |
-| AUDIT-03 | Phase 1 | Complete |
-| AUDIT-04 | Phase 1 | Complete |
-| AUDIT-05 | Phase 1 | Complete |
-| AUDIT-06 | Phase 1 | Complete |
-| AUDIT-07 | Phase 1 | Complete |
-| AUDIT-08 | Phase 1 | Complete |
-| FIX-01 | Phase 2 | Complete |
-| FIX-02 | Phase 2 | Complete |
-| FIX-03 | Phase 2 | Complete |
-| FIX-04 | Phase 2 | Complete |
-| FIX-05 | Phase 2 | Complete |
-| FIX-06 | Phase 2 | Complete |
-| SEO-01 | Phase 1 | Complete |
-| SEO-02 | Phase 1 | Complete |
-| SEO-03 | Phase 1 | Complete |
-| SEO-04 | Phase 1 | Complete |
-| VIS-01 | Phase 3 | Complete |
-| VIS-02 | Phase 3 | Complete |
-| DEPLOY-01 | Phase 3 | Complete |
+| NEWS-01 | — | Pending |
+| NEWS-02 | — | Pending |
+| NEWS-03 | — | Pending |
+| NEWS-04 | — | Pending |
+| VERSUS-01 | — | Pending |
+| VERSUS-02 | — | Pending |
+| VERSUS-03 | — | Pending |
+| PRICE-01 | — | Pending |
+| PRICE-02 | — | Pending |
+| PRICE-03 | — | Pending |
+| MATRIX-01 | — | Pending |
+| MATRIX-02 | — | Pending |
+| MATRIX-03 | — | Pending |
+| STACK-01 | — | Pending |
+| STACK-02 | — | Pending |
+| SWITCH-01 | — | Pending |
+| SWITCH-02 | — | Pending |
 
 **Coverage:**
-- v1 requirements: 21 total
-- Mapped to phases: 21
-- Unmapped: 0
+- v2.0 requirements: 17 total
+- Mapped to phases: 0
+- Unmapped: 17 ⚠️
 
 ---
-*Requirements defined: 2026-03-13*
-*Last updated: 2026-03-13 after roadmap creation*
+*Requirements defined: 2026-03-16*
+*Last updated: 2026-03-16 after initial definition*
