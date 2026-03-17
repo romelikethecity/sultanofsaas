@@ -32,7 +32,17 @@ Every review picks a winner with evidence. Founders get decisive recommendations
 
 ### Active
 
-(None — v1.0 milestone complete)
+#### Current Milestone: v2.0 — Audience Growth & Content Scaling
+
+**Goal:** Turn SultanOfSaaS from a shipped review site into a traffic-generating machine with audience capture and scaled high-intent SEO content.
+
+**Target features:**
+- Newsletter email capture across all pages (existing D1 worker infra)
+- 80+ new versus/alternative comparison pages
+- Pricing changelogs with freshness signals
+- Category comparison matrices (filterable tables)
+- Stack page expansion to 20+ ICPs
+- "Switched from X to Y" teardown pages
 
 ### Validated (v1.0)
 
@@ -143,4 +153,4 @@ Every review picks a winner with evidence. Founders get decisive recommendations
 - **Repo:** github.com/romelikethecity/sultanofsaas
 
 ---
-*Last updated: 2026-03-14 after v1.0 milestone*
+*Last updated: 2026-03-16 after v2.0 milestone start*
