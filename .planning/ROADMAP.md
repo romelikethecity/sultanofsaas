@@ -36,7 +36,10 @@
   2. Visitor submits email and receives confirmation (form posts to existing D1 worker, no errors)
   3. Submitted emails appear in D1 database under "sultan-of-saas" list
   4. Signup form matches SultanOfSaaS gold/dark brand (not generic newsletter styling)
-**Plans**: TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 04-01-PLAN.md — CORS + branded signup form + D1 seed + visual verification
 
 ### Phase 5: Versus/Alternative Scaling
 **Goal**: SultanOfSaaS covers the long tail of "[Tool A] vs [Tool B]" and "[Tool] alternatives" searches with 80+ new pages
@@ -99,7 +102,7 @@ Phases 4-8 are independent and can execute in any order. Phase 9 benefits from P
 | 1. Automated Quality Audit | v1.0 | 2/2 | Complete | 2026-03-13 |
 | 2. Content Remediation | v1.0 | 3/3 | Complete | 2026-03-13 |
 | 3. Visual Verification & Deploy | v1.0 | 1/1 | Complete | 2026-03-13 |
-| 4. Newsletter Capture | v2.0 | 0/? | Not started | - |
+| 4. Newsletter Capture | v2.0 | 0/1 | Planned | - |
 | 5. Versus/Alternative Scaling | v2.0 | 0/? | Not started | - |
 | 6. Pricing Changelogs | v2.0 | 0/? | Not started | - |
 | 7. Comparison Matrices | v2.0 | 0/? | Not started | - |
