@@ -63,29 +63,29 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NEWS-01 | — | Pending |
-| NEWS-02 | — | Pending |
-| NEWS-03 | — | Pending |
-| NEWS-04 | — | Pending |
-| VERSUS-01 | — | Pending |
-| VERSUS-02 | — | Pending |
-| VERSUS-03 | — | Pending |
-| PRICE-01 | — | Pending |
-| PRICE-02 | — | Pending |
-| PRICE-03 | — | Pending |
-| MATRIX-01 | — | Pending |
-| MATRIX-02 | — | Pending |
-| MATRIX-03 | — | Pending |
-| STACK-01 | — | Pending |
-| STACK-02 | — | Pending |
-| SWITCH-01 | — | Pending |
-| SWITCH-02 | — | Pending |
+| NEWS-01 | Phase 4 | Pending |
+| NEWS-02 | Phase 4 | Pending |
+| NEWS-03 | Phase 4 | Pending |
+| NEWS-04 | Phase 4 | Pending |
+| VERSUS-01 | Phase 5 | Pending |
+| VERSUS-02 | Phase 5 | Pending |
+| VERSUS-03 | Phase 5 | Pending |
+| PRICE-01 | Phase 6 | Pending |
+| PRICE-02 | Phase 6 | Pending |
+| PRICE-03 | Phase 6 | Pending |
+| MATRIX-01 | Phase 7 | Pending |
+| MATRIX-02 | Phase 7 | Pending |
+| MATRIX-03 | Phase 7 | Pending |
+| STACK-01 | Phase 8 | Pending |
+| STACK-02 | Phase 8 | Pending |
+| SWITCH-01 | Phase 9 | Pending |
+| SWITCH-02 | Phase 9 | Pending |
 
 **Coverage:**
 - v2.0 requirements: 17 total
-- Mapped to phases: 0
-- Unmapped: 17 ⚠️
+- Mapped to phases: 17
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-16*
-*Last updated: 2026-03-16 after initial definition*
+*Last updated: 2026-03-16 after roadmap creation*
