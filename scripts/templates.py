@@ -184,6 +184,75 @@ def get_footer_html():
 
 
 # =============================================================================
+# NEWSLETTER SIGNUP
+# =============================================================================
+
+def get_newsletter_html():
+    """Generate newsletter signup section for every page."""
+    return '''<section class="nl-section">
+  <div class="container">
+    <div class="nl-card">
+      <div class="nl-content">
+        <h3 class="nl-title">The Sultan's Pick</h3>
+        <p class="nl-desc">One email per week. The best SaaS tool I reviewed, why it won, and who should buy it.</p>
+      </div>
+      <form class="nl-form" id="nl-form" data-list="sultan-of-saas">
+        <div class="nl-form-row">
+          <input type="email" name="email" placeholder="you@company.com" required class="nl-input" id="nl-email">
+          <button type="submit" class="nl-btn">Subscribe Free</button>
+        </div>
+        <p class="nl-msg" id="nl-msg"></p>
+        <p class="nl-fine">No spam. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+(function() {
+  var form = document.getElementById('nl-form');
+  var msg = document.getElementById('nl-msg');
+  var btn = form.querySelector('.nl-btn');
+  var emailInput = document.getElementById('nl-email');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = emailInput.value.trim();
+    var list = form.getAttribute('data-list');
+    if (!email) return;
+    btn.disabled = true;
+    btn.textContent = 'Subscribing...';
+    msg.textContent = '';
+    msg.className = 'nl-msg';
+    fetch('https://newsletter-subscribe.rome-workers.workers.dev/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({email: email, list: list})
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.ok) {
+        form.style.display = 'none';
+        msg.textContent = "You're in. Watch your inbox.";
+        msg.className = 'nl-msg success';
+        msg.style.display = 'block';
+      } else {
+        msg.textContent = data.error || 'Something went wrong.';
+        msg.className = 'nl-msg error';
+        btn.disabled = false;
+        btn.textContent = 'Subscribe Free';
+      }
+    })
+    .catch(function() {
+      msg.textContent = 'Connection error. Try again.';
+      msg.className = 'nl-msg error';
+      btn.disabled = false;
+      btn.textContent = 'Subscribe Free';
+    });
+  });
+})();
+</script>'''
+
+
+# =============================================================================
 # PAGE WRAPPER
 # =============================================================================
 
@@ -195,6 +264,7 @@ def get_page_wrapper(title, description, canonical_path, body_content, active_pa
 <main class="main-content">
 {body_content}
 </main>
+{get_newsletter_html()}
 {get_footer_html()}
 <script>
 // Mobile nav toggle
