@@ -90,4 +90,9 @@ FOOTER_COLUMNS = {
         {"href": "/about/", "label": "About The Sultan"},
         {"href": "/", "label": "Home"},
     ],
+    "Sales Intelligence": [
+        {"href": "https://b2bsalestools.com", "label": "B2B Sales Tools", "external": True},
+        {"href": "https://thecroreport.com", "label": "CRO Report", "external": True},
+        {"href": "https://datastackguide.com", "label": "DataStack Guide", "external": True},
+    ],
 }

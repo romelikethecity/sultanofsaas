@@ -162,7 +162,8 @@ def get_footer_html():
     for col_title, links in FOOTER_COLUMNS.items():
         links_html = ""
         for link in links:
-            links_html += f'<li><a href="{link["href"]}">{link["label"]}</a></li>\n'
+            ext_attrs = ' target="_blank" rel="noopener"' if link.get("external") else ""
+            links_html += f'<li><a href="{link["href"]}"{ext_attrs}>{link["label"]}</a></li>\n'
         columns_html += f'''<div class="footer-col">
             <h4>{col_title}</h4>
             <ul>{links_html}</ul>
