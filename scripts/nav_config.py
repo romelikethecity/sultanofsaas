@@ -54,6 +54,7 @@ NAV_ITEMS = [
     },
     {"href": "/tools/", "label": "Tools"},
     {"href": "/stacks/", "label": "Stacks"},
+    {"href": "/guides/", "label": "Guides"},
     {"href": "/about/", "label": "About"},
 ]
 
@@ -85,6 +86,7 @@ FOOTER_COLUMNS = {
         {"href": "/stacks/", "label": "All Stack Guides"},
         {"href": "/hubspot-vs-salesforce/", "label": "HubSpot vs Salesforce"},
         {"href": "/semrush-vs-ahrefs/", "label": "Semrush vs Ahrefs"},
+        {"href": "/guides/", "label": "Founder Guides"},
     ],
     "Site": [
         {"href": "/about/", "label": "About The Sultan"},

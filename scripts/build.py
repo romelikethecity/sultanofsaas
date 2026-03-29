@@ -3538,6 +3538,395 @@ def build_category_index():
     write_page("best/index.html", page)
 
 
+# =============================================================================
+# GUIDES — Long-form editorial articles
+# =============================================================================
+
+GUIDES = [
+    {
+        "slug": "choosing-a-crm-2026",
+        "title": "How to Choose a CRM in 2026",
+        "meta_title": "How to Choose a CRM in 2026",
+        "meta_desc": "A founder's guide to picking the right CRM. HubSpot, Pipedrive, Close, and the rest. What actually matters and what's marketing noise.",
+        "date": "March 2026",
+        "body": """
+    <p>You don't need a CRM "strategy session." You need a CRM that doesn't make you want to throw your laptop out a window. The problem is that every CRM vendor tells you theirs is the one. Salesforce says you need infinite customization. HubSpot says free is the way. Pipedrive says keep it visual. They're all right, and they're all wrong.</p>
+
+    <p>Here's what actually matters when you're choosing a CRM as a founder in 2026. Not features. Not integrations lists. Not the G2 badge they slap on every landing page. The stuff that determines whether you'll still be using this thing in 12 months.</p>
+
+    <h2>Start With Your Sales Motion, Not Features</h2>
+
+    <p>This is where 90% of founders go wrong. They open a comparison chart and start counting features. "This one has 47 integrations. This one has AI lead scoring." Cool. Do you have leads to score?</p>
+
+    <p>Your CRM should match how you sell today. Not how you aspire to sell after reading a SaaStr blog post.</p>
+
+    <ul>
+        <li><strong>If you're a solo founder doing outbound:</strong> You need a CRM with built-in email sequences and a dialer. <a href="/tools/close/">Close</a> was built for this. <a href="/tools/hubspot/">HubSpot</a> can do it, but you'll be duct-taping free tools together.</li>
+        <li><strong>If you run a small sales team (2-10 reps):</strong> You need pipeline visibility and activity tracking. <a href="/tools/pipedrive/">Pipedrive</a> has the best visual pipeline in the market. Period.</li>
+        <li><strong>If you're inbound-heavy and need marketing + sales:</strong> <a href="/tools/hubspot/">HubSpot</a> wins by a mile. The free CRM plus Marketing Hub is the most complete mid-market play available.</li>
+        <li><strong>If you have 50+ reps and complex workflows:</strong> Fine. Get <a href="/tools/salesforce/">Salesforce</a>. But hire an admin first. Seriously.</li>
+    </ul>
+
+    <p>See the pattern? Not one of those recommendations started with "which one has the most features." They all started with "how do you sell?"</p>
+
+    <h2>The Free Tier Trap</h2>
+
+    <p>HubSpot's free CRM is genuinely excellent. Best free tier in the market, and it's not close. But here's what nobody tells you: the upgrade path is designed to be painful.</p>
+
+    <p>You'll start free. You'll add your team. You'll build workflows. Then one day you'll need a feature that's locked behind the Professional tier at $500/month and you'll realize you've built your entire sales process on top of HubSpot's platform. Switching costs are now massive.</p>
+
+    <p>This isn't a conspiracy. It's a business model. And it works.</p>
+
+    <p>Does that mean you shouldn't use the free tier? No. It means you should go in with eyes open. Budget for the paid plan from day one, and treat the free tier as a trial, not a permanent solution.</p>
+
+    <h2>What "AI-Powered" Actually Means in 2026</h2>
+
+    <p>Every CRM now claims AI features. Salesforce has Einstein. HubSpot has ChatSpot. Freshsales has Freddy. Zoho has Zia. Here's the honest truth: most of these are glorified autocomplete.</p>
+
+    <p>The AI features that actually save time in 2026:</p>
+
+    <ul>
+        <li><strong>Email drafting from context:</strong> HubSpot and Close do this well. It pulls deal context and writes a follow-up. Saves 5-10 minutes per email.</li>
+        <li><strong>Call summaries:</strong> If your CRM integrates with <a href="/best/conversation-intelligence/">conversation intelligence tools</a>, auto-summaries after calls are genuinely useful.</li>
+        <li><strong>Lead scoring:</strong> Only useful if you have 500+ leads per month. Below that, you're scoring noise.</li>
+    </ul>
+
+    <p>Everything else? Marketing fluff. Don't pick a CRM because of AI features. Pick it because the core workflow fits your sales motion.</p>
+
+    <h2>The Pricing Reality Check</h2>
+
+    <p>CRM pricing is designed to confuse you. Here's what you'll actually pay:</p>
+
+    <ul>
+        <li><strong>HubSpot:</strong> Free to start. $500/mo the moment you need anything real. $1,200/mo when you're locked in.</li>
+        <li><strong>Salesforce:</strong> $25/user/mo on paper. $80-165/user/mo in reality once you add the features you need. Plus consultant costs.</li>
+        <li><strong>Pipedrive:</strong> $14-49/user/mo. What you see is close to what you pay. Refreshingly honest.</li>
+        <li><strong>Close:</strong> $49-139/user/mo. Premium, but includes the dialer and sequences that you'd pay extra for elsewhere.</li>
+        <li><strong>Less Annoying CRM:</strong> $15/user/mo. One plan. No upsells. The most honest pricing in the market.</li>
+    </ul>
+
+    <p>When comparing, always multiply by your team size and add the cost of any add-ons you'll need within 6 months. The "starting at" price is fiction.</p>
+
+    <h2>The Sultan's Take: Just Pick One</h2>
+
+    <p>The biggest CRM mistake founders make isn't picking the wrong tool. It's spending three weeks evaluating tools instead of selling.</p>
+
+    <p>Here's the shortcut. If you're reading this article, you probably don't need Salesforce. If you're a solo founder or tiny team, start with <a href="/tools/pipedrive/">Pipedrive</a> or <a href="/tools/close/">Close</a>. If you want the ecosystem play and can stomach the eventual upsell, go <a href="/tools/hubspot/">HubSpot</a>. If you hate complexity with every fiber of your being, <a href="/tools/less-annoying-crm/">Less Annoying CRM</a> is right there.</p>
+
+    <p>Make the call. Move on. Build pipeline. You can always migrate later, and you probably will. No CRM is forever. The best CRM is the one you'll actually use.</p>
+
+    <div class="guide-faq">
+        <div class="guide-faq-item">
+            <h4>What's the best free CRM for startups?</h4>
+            <p>HubSpot. It's not even close. The free tier includes contact management, deal tracking, email integration, and live chat. The catch is the upgrade path: once you need advanced features, you're looking at $500/mo+. But as a starting point, nothing beats it.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>Is Salesforce worth it for a small team?</h4>
+            <p>Almost never. Salesforce is built for companies with dedicated admins and complex sales processes. If you have fewer than 50 reps, you'll spend more time configuring Salesforce than using it. Pipedrive or HubSpot will serve you better.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>How long does CRM implementation take?</h4>
+            <p>For simple CRMs like Pipedrive or Less Annoying CRM: a few hours. For HubSpot with automations: 1-2 weeks. For Salesforce with customizations: 2-6 months with a consultant. Choose based on your patience, not just features.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>Should I pick a CRM based on integrations?</h4>
+            <p>Only if you have specific tools you need to connect today. Most founders overvalue integrations during evaluation and then use two of them. Focus on core workflow fit first, integrations second.</p>
+        </div>
+    </div>
+""",
+        "faqs": [
+            ("What's the best free CRM for startups?", "HubSpot. The free tier includes contact management, deal tracking, email integration, and live chat. The upgrade path gets expensive, but as a starting point, nothing beats it."),
+            ("Is Salesforce worth it for a small team?", "Almost never. Salesforce is built for companies with dedicated admins. If you have fewer than 50 reps, Pipedrive or HubSpot will serve you better."),
+            ("How long does CRM implementation take?", "Simple CRMs like Pipedrive: a few hours. HubSpot with automations: 1-2 weeks. Salesforce with customizations: 2-6 months with a consultant."),
+            ("Should I pick a CRM based on integrations?", "Only if you have specific tools you need to connect today. Focus on core workflow fit first, integrations second."),
+        ],
+    },
+    {
+        "slug": "ai-sdr-tools-honest-take",
+        "title": "AI SDR Tools: An Honest Take",
+        "meta_title": "AI SDR Tools: An Honest Take (2026)",
+        "meta_desc": "Most AI SDR tools overpromise and underdeliver. Here's which ones are worth your money and which are burning your budget.",
+        "date": "March 2026",
+        "body": """
+    <p>The AI SDR market is the most overhyped corner of B2B SaaS right now. Every vendor promises autonomous outbound that "books meetings while you sleep." The reality? Most of them send garbage emails that tank your domain reputation and annoy prospects.</p>
+
+    <p>I've reviewed every major AI SDR tool on the market. Here's the unfiltered truth about what works, what doesn't, and where the money is actually worth spending.</p>
+
+    <h2>The Fundamental Problem With AI SDRs</h2>
+
+    <p>Let's start with the uncomfortable part. The pitch for AI SDRs is compelling: replace your $60K/year SDR with a $500/month tool that sends personalized emails 24/7. Sounds great on a slide deck.</p>
+
+    <p>The problem is that most AI SDRs are doing the same thing: pulling a prospect from a database, running their LinkedIn through a prompt, and generating a vaguely personalized email. Except now every prospect is getting 15 of these a day, and they all sound the same.</p>
+
+    <p>The personalization isn't personal. It's pattern matching. "I noticed you recently expanded your team" isn't personalization when 400 other AI tools noticed the same thing from the same LinkedIn update.</p>
+
+    <h2>The Tools That Actually Work</h2>
+
+    <h3>Tier 1: Worth the Money</h3>
+
+    <p><a href="/tools/amplemarket/">Amplemarket</a> is the closest thing to a real AI SDR that delivers. It doesn't just blast emails. It combines intent data, multi-channel sequencing, and genuinely decent personalization. The catch? It's priced for mid-market teams, not solo founders. If you've got the budget and the volume, it's the real deal.</p>
+
+    <p><a href="/tools/smartlead/">Smartlead</a> isn't technically an AI SDR. It's an email infrastructure tool with AI bolted on. But that's exactly why it works. It solves the deliverability problem first, then adds AI on top. If your emails aren't landing in inboxes, no amount of personalization matters. Smartlead handles the plumbing, and the AI layer is competent enough to save time on copy.</p>
+
+    <h3>Tier 2: Situational Picks</h3>
+
+    <p><a href="/tools/regie-ai/">Regie.ai</a> is strong if your team already has a sales engagement platform and you need an AI writing layer. It's not a full SDR replacement. It's a copilot for human reps. And honestly? That's a more realistic use case for most teams. Augment your existing reps instead of replacing them.</p>
+
+    <p><a href="/tools/lavender/">Lavender</a> takes a different approach entirely. Instead of writing emails for you, it coaches you on the emails you write. Real-time scoring, suggestions, tone analysis. It won't book meetings autonomously, but it'll make your human SDRs 20-30% more effective. That's a better ROI than most autonomous tools deliver.</p>
+
+    <h3>Tier 3: Proceed With Caution</h3>
+
+    <p><a href="/tools/11x/">11x</a> and <a href="/tools/artisan/">Artisan</a> both have flashy demos and big fundraises. They both promise fully autonomous AI SDR agents. The marketing is world-class. But the results I've seen from real users are mixed at best. The emails are often generic, the targeting can be sloppy, and the "autonomous" part means you're debugging AI decisions instead of writing emails yourself.</p>
+
+    <p>Could they improve? Absolutely. AI moves fast. But right now, in March 2026, the autonomous SDR promise is ahead of the technology for most use cases.</p>
+
+    <h2>When AI SDRs Make Sense</h2>
+
+    <p>AI SDRs aren't all bad. They work well in specific situations:</p>
+
+    <ul>
+        <li><strong>High-volume, low-ACV outbound:</strong> If you're selling a $50/month tool and need to email 10,000 prospects a month, AI SDRs save time. The email doesn't need to be perfect. It needs to be good enough at scale.</li>
+        <li><strong>Top-of-funnel warming:</strong> Use AI for the first touch, then hand warm responses to human reps. This hybrid model works better than full automation.</li>
+        <li><strong>Data enrichment + sequencing combos:</strong> Tools like Amplemarket and Apollo that combine <a href="/best/data-enrichment/">data enrichment</a> with AI sequences create genuine efficiency gains.</li>
+    </ul>
+
+    <h2>When AI SDRs Will Burn Your Money</h2>
+
+    <ul>
+        <li><strong>High-ACV enterprise sales:</strong> If your deal size is $50K+, your prospects can smell an AI email from a mile away. They get hundreds of them. Human, thoughtful outreach wins every time.</li>
+        <li><strong>Niche markets:</strong> AI personalization falls apart when the prospect pool is small and specific. It doesn't have enough training data to sound smart about niche industries.</li>
+        <li><strong>When your ICP isn't defined:</strong> AI SDRs amplify your targeting. If you're targeting the wrong people, AI will just spam the wrong people faster.</li>
+    </ul>
+
+    <h2>The Hybrid Model: What Actually Works</h2>
+
+    <p>The smartest founders I've talked to aren't going all-in on AI SDRs or ignoring them entirely. They're running a hybrid model:</p>
+
+    <ol>
+        <li>Use <a href="/best/data-enrichment/">data enrichment tools</a> to build a clean, targeted prospect list.</li>
+        <li>Use AI to draft initial email sequences and handle the first 1-2 touches.</li>
+        <li>Route any positive response to a human rep immediately.</li>
+        <li>Use a tool like <a href="/tools/lavender/">Lavender</a> to coach reps on follow-up emails.</li>
+        <li>Track what works with <a href="/best/conversation-intelligence/">conversation intelligence</a> once calls get booked.</li>
+    </ol>
+
+    <p>This model gets you 80% of the automation benefit without the reputational risk of fully autonomous AI outreach. Your domain stays healthy. Your brand stays intact. And the meetings you book are with prospects who actually want to talk.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Most AI SDR tools are selling a future that doesn't exist yet. The ones that work are the ones that know their limitations: they handle the tedious stuff (research, first drafts, deliverability) and leave the actual relationship-building to humans.</p>
+
+    <p>If you're evaluating AI SDRs, start with <a href="/tools/smartlead/">Smartlead</a> for infrastructure and <a href="/tools/lavender/">Lavender</a> for rep coaching. If you've got the budget and the volume, test <a href="/tools/amplemarket/">Amplemarket</a>. Skip the fully autonomous agents until they prove themselves with real case studies, not demo videos.</p>
+
+    <p>The best sales teams in 2026 won't be the ones that replaced their SDRs with AI. They'll be the ones that made their SDRs superhuman with it.</p>
+
+    <div class="guide-faq">
+        <div class="guide-faq-item">
+            <h4>Are AI SDR tools worth the money?</h4>
+            <p>It depends on your sales motion. For high-volume, low-ACV outbound, yes. For enterprise sales or niche markets, probably not. The best approach is a hybrid model: AI handles the first touch, humans handle the relationship.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>Will AI SDRs replace human sales reps?</h4>
+            <p>Not in 2026. The technology isn't there yet for fully autonomous outbound that matches human quality. AI SDRs work best as force multipliers for existing reps, not replacements.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>What's the best AI SDR tool in 2026?</h4>
+            <p>Amplemarket for teams with budget and volume. Smartlead for email infrastructure. Lavender for coaching human reps. There's no single "best" because they solve different problems.</p>
+        </div>
+    </div>
+""",
+        "faqs": [
+            ("Are AI SDR tools worth the money?", "For high-volume, low-ACV outbound, yes. For enterprise sales or niche markets, probably not. The best approach is a hybrid model where AI handles first touches and humans handle relationships."),
+            ("Will AI SDRs replace human sales reps?", "Not in 2026. AI SDRs work best as force multipliers for existing reps, not replacements. The technology isn't there for fully autonomous outbound that matches human quality."),
+            ("What's the best AI SDR tool in 2026?", "Amplemarket for teams with budget. Smartlead for email infrastructure. Lavender for coaching reps. No single best because they solve different problems."),
+        ],
+    },
+    {
+        "slug": "outbound-tooling-mistakes",
+        "title": "Sales Engagement: What Founders Get Wrong",
+        "meta_title": "Sales Engagement: What Founders Get Wrong",
+        "meta_desc": "Founders waste thousands on sales engagement platforms they misconfigure. Here's what to get right before buying Outreach, Salesloft, or Apollo.",
+        "date": "March 2026",
+        "body": """
+    <p>Every founder who starts doing outbound eventually buys a sales engagement platform. And almost every one of them makes the same mistakes. They buy the biggest name, configure it wrong, get lousy results, and blame the tool.</p>
+
+    <p>I've watched this play out dozens of times. The tool isn't the problem. The approach is. Here's what founders consistently get wrong about outbound tooling, and how to fix it before you waste money on another annual contract.</p>
+
+    <h2>Mistake #1: Buying the Platform Before Fixing Your Emails</h2>
+
+    <p>This is the big one. Founders buy <a href="/tools/outreach/">Outreach</a> or <a href="/tools/salesloft/">Salesloft</a> thinking the platform will make their outbound work. It won't. These tools are amplifiers. If your emails are bad, you'll just send bad emails faster.</p>
+
+    <p>Before you spend a dollar on a sales engagement platform, write 10 cold emails manually. Send them from Gmail. Track responses in a spreadsheet. If you can't get a 5% reply rate with manual emails, no tool will save you.</p>
+
+    <p>The founders who crush outbound start with messaging. They nail the ICP, the pain point, and the ask before they ever automate anything. The tool comes last, not first.</p>
+
+    <h2>Mistake #2: Enterprise Tools for Startup Problems</h2>
+
+    <p><a href="/tools/outreach/">Outreach</a> is the market leader. It's also built for sales orgs with 20+ reps, a RevOps team, and an existing pipeline. If you're a 3-person startup, Outreach is like buying a semi truck to get groceries.</p>
+
+    <p>Here's who should use what:</p>
+
+    <ul>
+        <li><strong>Solo founder or 1-2 reps:</strong> <a href="/tools/instantly/">Instantly</a> or <a href="/tools/lemlist/">Lemlist</a>. Both are built for small teams doing scrappy outbound. Instantly is particularly good at email deliverability. Lemlist adds personality with image and video personalization.</li>
+        <li><strong>Small team (3-10 reps):</strong> <a href="/tools/apollo/">Apollo</a> is the best value play. It combines prospecting data with email sequences in one platform. You're getting a data enrichment tool and a sequencer for the price of one tool.</li>
+        <li><strong>Growth stage (10-30 reps):</strong> <a href="/tools/salesloft/">Salesloft</a> hits the sweet spot. More structured than the startup tools, less bloated than Outreach. Strong reporting, good integrations.</li>
+        <li><strong>Scale stage (30+ reps):</strong> Now <a href="/tools/outreach/">Outreach</a> makes sense. You need the governance, analytics, and workflow complexity. But you're paying for it.</li>
+    </ul>
+
+    <h2>Mistake #3: Ignoring Deliverability Until It's Too Late</h2>
+
+    <p>This one kills more outbound programs than bad messaging. You build your sequences, import your prospects, hit send, and 60% of your emails land in spam. Campaign ruined. Domain reputation damaged. Months of recovery ahead.</p>
+
+    <p>Deliverability isn't something you check after launch. It's something you set up before you send a single email.</p>
+
+    <ul>
+        <li>Buy dedicated sending domains (not your primary domain)</li>
+        <li>Warm them up for 2-3 weeks before any cold outbound</li>
+        <li>Set up SPF, DKIM, and DMARC on every sending domain</li>
+        <li>Start with low volume (20-30 emails/day per domain) and scale slowly</li>
+        <li>Monitor bounce rates religiously. Over 3% means your list is dirty.</li>
+    </ul>
+
+    <p><a href="/tools/instantly/">Instantly</a> and <a href="/tools/smartlead/">Smartlead</a> both handle warmup and deliverability natively. If you're using <a href="/tools/outreach/">Outreach</a> or <a href="/tools/salesloft/">Salesloft</a>, you'll need to handle this yourself or add a dedicated deliverability tool.</p>
+
+    <h2>Mistake #4: Too Many Channels, Too Soon</h2>
+
+    <p>Sales engagement platforms love promoting "multi-channel sequences." Email + LinkedIn + phone + SMS + carrier pigeon. The theory is sound: prospects respond to different channels. The reality is that most founders can't execute one channel well, let alone four.</p>
+
+    <p>Start with email. Get your reply rates above 5%. Then add LinkedIn touches (connection request + follow-up message). Then add phone if your ACV justifies it. Layer channels as you prove each one works, not because the platform offers them all.</p>
+
+    <p>The worst outbound campaigns I've seen are 14-step, multi-channel sequences built by someone who hasn't validated a single email template yet. Complexity doesn't equal sophistication.</p>
+
+    <h2>Mistake #5: Measuring the Wrong Things</h2>
+
+    <p>Open rates are a vanity metric. Apple Mail Privacy Protection inflated them years ago, and they've been unreliable ever since. Stop tracking opens. Here's what matters:</p>
+
+    <ul>
+        <li><strong>Reply rate:</strong> The only email metric that matters. Aim for 5-15% on cold outbound.</li>
+        <li><strong>Positive reply rate:</strong> Not all replies are created equal. "Remove me" doesn't count. Track genuinely interested responses.</li>
+        <li><strong>Meetings booked per 100 prospects contacted:</strong> This is the metric that connects outbound activity to pipeline. Benchmark: 2-5%.</li>
+        <li><strong>Bounce rate:</strong> Keep it under 3%. Higher means your data is bad.</li>
+        <li><strong>Unsubscribe rate:</strong> Under 1% means your targeting is decent. Over 3% means you're annoying people.</li>
+    </ul>
+
+    <p>Most sales engagement platforms report dozens of metrics. Ignore 90% of them. The five above tell you everything you need to know about whether your outbound is working.</p>
+
+    <h2>Mistake #6: Buying Data and Sequencing Separately</h2>
+
+    <p>This was unavoidable a few years ago. You'd buy <a href="/best/data-enrichment/">data from ZoomInfo</a>, clean it, import it into Outreach, build sequences, and pray the email addresses were still valid.</p>
+
+    <p>In 2026, you don't have to do that. <a href="/tools/apollo/">Apollo</a> combines a 250M+ contact database with a full sequencing platform. <a href="/tools/instantly/">Instantly</a> has a built-in lead finder. Even <a href="/tools/reply-io/">Reply.io</a> added data sourcing.</p>
+
+    <p>The all-in-one approach has real advantages: no CSV imports, no stale data, no syncing headaches. The trade-off is that no all-in-one tool has the best data or the best sequencing. But for most founders, "good enough at both" beats "best-in-class at one."</p>
+
+    <h2>The Stack That Actually Works</h2>
+
+    <p>If I were starting outbound from scratch in 2026, here's what I'd buy:</p>
+
+    <ol>
+        <li><strong><a href="/tools/apollo/">Apollo</a></strong> ($49/mo) for prospecting data + sequences. Best value in the market.</li>
+        <li><strong>A dedicated sending domain</strong> ($10/year). Never cold email from your primary domain.</li>
+        <li><strong><a href="/tools/instantly/">Instantly</a></strong> ($30/mo) as a backup sending infrastructure for deliverability.</li>
+        <li><strong>A spreadsheet</strong> for tracking what's working. You don't need a BI tool for early-stage outbound.</li>
+    </ol>
+
+    <p>Total cost: under $100/month. That'll outperform a $2,000/month Outreach + ZoomInfo stack for a small team. Not because the tools are better. Because the approach forces you to focus on what matters: messaging, targeting, and follow-through.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Sales engagement tools don't fix bad outbound. They scale it. If your messaging is off, your targeting is sloppy, or your deliverability is broken, the fanciest platform in the world will just help you fail faster and more expensively.</p>
+
+    <p>Fix the fundamentals first. Buy the simplest tool that matches your team size. Layer complexity only after you've proven the basics work. That's it. No secret playbook. No silver bullet. Just disciplined execution with the right tool for your stage.</p>
+
+    <div class="guide-faq">
+        <div class="guide-faq-item">
+            <h4>What's the best sales engagement platform for startups?</h4>
+            <p>Apollo for most startups. It combines prospecting data with email sequences at $49/month. For pure email deliverability, Instantly at $30/month. Don't buy Outreach or Salesloft until you have 10+ reps.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>How many emails should I send per day for cold outbound?</h4>
+            <p>Start with 20-30 per sending domain per day. Scale to 50-75 after 2-3 weeks of warmup. Never blast hundreds from a single domain. Use multiple sending domains to increase volume safely.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>Is Outreach worth the price?</h4>
+            <p>Only if you have 30+ reps and need enterprise-grade governance, analytics, and workflow complexity. For teams under 30, Salesloft or Apollo deliver 90% of the value at a fraction of the cost.</p>
+        </div>
+        <div class="guide-faq-item">
+            <h4>Do I need a separate data enrichment tool?</h4>
+            <p>Not necessarily. Apollo includes a large contact database. If you need the deepest data coverage, a dedicated tool like ZoomInfo or Clay adds value. But for most founders, Apollo's built-in data is enough to start.</p>
+        </div>
+    </div>
+""",
+        "faqs": [
+            ("What's the best sales engagement platform for startups?", "Apollo for most startups. It combines prospecting data with email sequences at $49/month. Don't buy Outreach or Salesloft until you have 10+ reps."),
+            ("How many emails should I send per day for cold outbound?", "Start with 20-30 per sending domain per day. Scale to 50-75 after 2-3 weeks of warmup. Use multiple sending domains to increase volume safely."),
+            ("Is Outreach worth the price?", "Only if you have 30+ reps. For smaller teams, Salesloft or Apollo deliver 90% of the value at a fraction of the cost."),
+            ("Do I need a separate data enrichment tool?", "Not necessarily. Apollo includes a large contact database. For most founders, Apollo's built-in data is enough to start."),
+        ],
+    },
+]
+
+
+def build_guide_pages():
+    """Generate long-form guide pages at /guides/{slug}/."""
+    for guide in GUIDES:
+        # Breadcrumbs
+        bc = breadcrumb_html([("Home", "/"), ("Guides", "/guides/"), (guide['title'], "")])
+        bc_schema = get_breadcrumb_schema([("Home", "/"), ("Guides", "/guides/"), (guide['title'], f'/guides/{guide["slug"]}/')])
+
+        # FAQ schema
+        faq_schema = ""
+        if guide.get('faqs'):
+            faq_schema = get_faq_schema(guide['faqs'])
+
+        body = f'''<div class="guide-page">
+    {bc}
+    <h1>{guide["title"]}</h1>
+    <div class="guide-meta">Updated {guide["date"]} &middot; By The Sultan</div>
+    {guide["body"]}
+</div>'''
+
+        extra_head = bc_schema + faq_schema
+        page = get_page_wrapper(
+            guide['meta_title'],
+            guide['meta_desc'],
+            f'/guides/{guide["slug"]}/',
+            body,
+            extra_head=extra_head
+        )
+        write_page(f'guides/{guide["slug"]}/index.html', page)
+
+
+def build_guides_index():
+    """Generate /guides/ index page."""
+    cards = ""
+    for guide in GUIDES:
+        cards += f'''<a href="/guides/{guide["slug"]}/" class="guide-card">
+    <h3>{guide["title"]}</h3>
+    <p>{guide["meta_desc"][:160]}</p>
+    <span class="guide-card-date">{guide["date"]}</span>
+</a>\n'''
+
+    body = f'''<div class="container">
+    <div class="category-header">
+        <h1>Founder Guides ({CURRENT_YEAR})</h1>
+        <p class="category-desc">Long-form, opinionated guides on choosing SaaS tools. No fluff, no "it depends." Just answers.</p>
+    </div>
+    <div class="guides-grid">{cards}</div>
+</div>'''
+
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Guides", "/guides/")])
+
+    page = get_page_wrapper(
+        f"SaaS Founder Guides ({CURRENT_YEAR})",
+        f"Opinionated guides for SaaS founders choosing tools. CRM, AI SDR, sales engagement, and more. {len(GUIDES)} guides.",
+        "/guides/",
+        body,
+        extra_head=bc_schema
+    )
+    write_page("guides/index.html", page)
+
+
 def build_sitemap():
     """Generate sitemap.xml."""
     urls = ""
@@ -3640,6 +4029,10 @@ def main():
 
     build_tools_index()
     print(f"  Tools index (filterable)")
+
+    build_guides_index()
+    build_guide_pages()
+    print(f"  {len(GUIDES)} guide articles + index")
 
     build_sitemap()
     build_robots()
