@@ -102,7 +102,7 @@ def get_html_head(title, description, canonical_path, extra_head=""):
     <link rel="stylesheet" href="/assets/css/styles.css?v={CSS_VERSION}">
 
     <!-- Google Search Console -->
-    <meta name="google-site-verification" content="PLACEHOLDER">
+    <!-- Google Search Console verification pending -->
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SBNZZYM4Y"></script>
