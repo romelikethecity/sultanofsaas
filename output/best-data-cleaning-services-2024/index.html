@@ -101,7 +101,11 @@
 
     <h2>1. Insycle (The Sultan's Pick for Self-Serve)</h2>
 
-    <p><a href="/tools/insycle/">Insycle</a> connects to HubSpot, Salesforce, Intercom, and Pipedrive. Deduplication, field standardization, bulk editing, and automated maintenance schedules. At $200/month, it sits in the sweet spot for growing companies.</p>
+    <p><a href="/tools/insycle/">Insycle</a> connects to HubSpot, Salesforce, Intercom, and Pipedrive. Deduplication, field standardization, bulk editing, and automated maintenance schedules. At $200/month, it sits in the sweet spot for growing companies that need ongoing data hygiene without hiring a data ops person.</p>
+
+    <p>The no-code interface means your marketing ops or sales ops team can set up cleaning rules without engineering help. Schedule weekly dedup scans, monthly field standardization, and daily formatting fixes. Once configured, Insycle runs in the background and keeps your data from deteriorating. The templates for common cleaning scenarios save setup time.</p>
+
+    <p>Where Insycle falls short is complex dedup scenarios. Fuzzy matching works for obvious duplicates (same email, different casing) but struggles with edge cases like contacts who appear at multiple companies or records with partial overlap. For Salesforce-heavy teams, DemandTools handles those edge cases better. Insycle also doesn't enrich records, so you'll need a separate tool to fill in missing fields.</p>
 
     <p><strong>Pros:</strong> Multi-CRM support, automated schedules, no-code interface.</p>
     <p><strong>Cons:</strong> Dedup less sophisticated than DemandTools. No enrichment.</p>
@@ -109,7 +113,11 @@
 
     <h2>2. Validity DemandTools (Best Salesforce Dedup)</h2>
 
-    <p><a href="/tools/validity-demandtools/">DemandTools</a> is the gold standard for Salesforce data cleaning. 15+ years of Salesforce admin trust. The dedup engine handles complex matching scenarios that simpler tools miss.</p>
+    <p><a href="/tools/validity-demandtools/">DemandTools</a> is the gold standard for Salesforce data cleaning. 15+ years of Salesforce admin trust. The dedup engine handles complex matching scenarios that simpler tools miss, including fuzzy matching across multiple fields, cross-object deduplication, and custom merge rules that preserve the right data from each duplicate record.</p>
+
+    <p>The bulk manipulation features go beyond simple cleaning. Mass update fields, reformat data, standardize picklist values, and reassign records in batches. For Salesforce admins managing 100K+ records, these operations save hours per week compared to doing them through native Salesforce tools or Data Loader alone.</p>
+
+    <p>The downsides are real. DemandTools only works with Salesforce. If you're on HubSpot, Pipedrive, or any other CRM, it's not an option. At roughly $12K/year, it's priced for mid-market and enterprise teams. And the desktop application, while powerful, feels dated compared to modern web-based tools. Validity has been working on a web version, but the desktop client remains the primary interface in 2024.</p>
 
     <p><strong>Pros:</strong> Best Salesforce dedup engine. Bulk manipulation. Reliable.</p>
     <p><strong>Cons:</strong> Salesforce only. ~$12K/year. Desktop app feels dated.</p>
@@ -117,7 +125,11 @@
 
     <h2>3. ZoomInfo Operations (Best for Enrichment + Cleaning)</h2>
 
-    <p>ZoomInfo Ops combines cleaning with enrichment. Only makes sense as a ZoomInfo add-on. At roughly $12K+ total, it's an enterprise purchase.</p>
+    <p>ZoomInfo Ops combines cleaning with enrichment. Only makes sense as a ZoomInfo add-on. At roughly $12K+ total, it's an enterprise purchase. The value proposition is that you're getting data cleaning and data enrichment from the same vendor, which means fewer integrations and a single source of truth for contact data.</p>
+
+    <p>The automated routing and normalization features keep incoming data clean as it enters your CRM. Job title standardization, company name normalization, and field formatting happen automatically. For teams ingesting data from multiple sources (events, webinars, content downloads), this prevents the formatting chaos that makes segmentation impossible.</p>
+
+    <p>The catch is that ZoomInfo Ops is only valuable if you're already a ZoomInfo customer. The cleaning features alone don't justify a $12K/year platform purchase. And the cleaning capabilities, while solid, aren't as deep as DemandTools for Salesforce-specific dedup scenarios. Think of ZoomInfo Ops as a good cleaning bonus on top of a data platform, not a standalone cleaning solution.</p>
 
     <p><strong>Pros:</strong> Cleaning + enrichment from one vendor.</p>
     <p><strong>Cons:</strong> Only valuable for existing ZoomInfo customers.</p>
@@ -125,7 +137,11 @@
 
     <h2>4. Reltio (Best Enterprise MDM)</h2>
 
-    <p>Reltio unifies data across every system into a single golden record. Implementation takes 6-12 months. Pricing starts at $50K+/yr. For growing companies, it's almost certainly overkill unless you're at 500+ employees.</p>
+    <p>Reltio unifies data across every system into a single golden record. Implementation takes 6-12 months. Pricing starts at $50K+/yr. For growing companies, it's almost certainly overkill unless you're at 500+ employees with data spread across 5+ systems that need to stay in sync.</p>
+
+    <p>What Reltio does well is solve the "which system has the right data?" problem. When your CRM says one thing, your marketing platform says another, and your finance system says a third, Reltio creates a master record that reconciles all three. The ML-powered matching identifies duplicates across systems even when the data formats differ completely.</p>
+
+    <p>The implementation timeline and cost put Reltio firmly in enterprise territory. A 6-12 month project with $50K+ annual licensing isn't something a 50-person company should consider. If you're at the scale where data governance across multiple enterprise systems is a board-level concern, Reltio is built for that problem. Everyone else should start with Insycle or DemandTools and revisit MDM solutions when the complexity justifies the investment.</p>
 
     <p><strong>Pros:</strong> Cross-system unification, ML-powered matching.</p>
     <p><strong>Cons:</strong> $50K+/year. 6-12 month implementation. Enterprise only.</p>
@@ -133,7 +149,7 @@
 
     <h2>The Sultan's Take</h2>
 
-    <p>In 2024, Insycle is the right choice for most growing companies. DemandTools if you're on Salesforce and dedup is the primary need. Skip ZoomInfo Ops and Reltio unless you're at the scale that justifies enterprise pricing.</p>
+    <p>In 2024, Insycle is the right choice for most growing companies. DemandTools if you're on Salesforce and dedup is the primary need. Skip ZoomInfo Ops and Reltio unless you're at the scale that justifies enterprise pricing. The first step for any team is to audit your current data quality: run a dedup scan, check your email bounce rate, and look at how many records are missing critical fields. That audit tells you whether you need a $200/month self-serve tool or something heavier.</p>
 
     <div class="guide-faq">
         <div class="guide-faq-item">

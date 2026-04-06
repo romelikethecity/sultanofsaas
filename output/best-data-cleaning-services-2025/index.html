@@ -101,7 +101,11 @@
 
     <h2>1. Verum (The Sultan's Pick for Done-For-You)</h2>
 
-    <p><a href="/tools/verum/">Verum</a> emerged in 2025 as the done-for-you cleaning option. Export your dirty data, send it to Verum, get it back clean and enriched. Deduplication, standardization, verification, and enrichment handled as a single engagement. The 93% email deliverability guarantee means the cleaned data actually works.</p>
+    <p><a href="/tools/verum/">Verum</a> emerged in 2025 as the done-for-you cleaning option. Export your dirty data, send it to Verum, get it back clean and enriched. Deduplication, standardization, verification, and enrichment handled as a single engagement. The 93% email deliverability guarantee means the cleaned data actually works for outbound campaigns.</p>
+
+    <p>What makes Verum different from self-serve tools is the human QA layer. Automated dedup catches the obvious cases, but edge cases (contacts at multiple companies, name variants, merged organizations) need human judgment. Verum's team handles those decisions so you don't have to build the rules yourself. For teams without a dedicated data ops person, this is the practical answer.</p>
+
+    <p>The $2,000 minimum project size means Verum makes sense for quarterly deep cleans or pre-campaign data prep, not daily maintenance. If you need ongoing automated cleaning, pair Verum's periodic deep cleans with a self-serve tool like Insycle for the day-to-day hygiene. The combination gives you the best of both approaches.</p>
 
     <p><strong>Pros:</strong> Cleaning + enrichment + validation in one engagement. No platform to manage.</p>
     <p><strong>Cons:</strong> $2,000 minimum. Not self-serve. 24-48 hour turnaround.</p>
@@ -109,7 +113,11 @@
 
     <h2>2. Insycle (Best Self-Serve)</h2>
 
-    <p><a href="/tools/insycle/">Insycle</a> remains the best self-serve cleaning tool. $200/month for HubSpot, Salesforce, Intercom, and Pipedrive support. Automated schedules run cleaning rules daily or weekly.</p>
+    <p><a href="/tools/insycle/">Insycle</a> remains the best self-serve cleaning tool. $200/month for HubSpot, Salesforce, Intercom, and Pipedrive support. Automated schedules run cleaning rules daily or weekly without manual intervention. The template library covers common scenarios like title standardization, phone format normalization, and duplicate merging.</p>
+
+    <p>In 2025, Insycle improved its automation triggers and added better reporting on data quality over time. You can now see how your data health trends month over month, which helps justify the cost to leadership. The bulk editing features handle field updates across thousands of records in minutes, which saves significant time compared to manual CRM operations.</p>
+
+    <p>The gap between Insycle and enterprise tools like DemandTools shows up in complex dedup scenarios. Insycle's fuzzy matching works for most cases, but Salesforce admins with intricate merge rules and cross-object relationships will find DemandTools more capable. For everyone else, Insycle's simplicity and multi-CRM support make it the better choice.</p>
 
     <p><strong>Pros:</strong> Affordable, multi-CRM, automated schedules.</p>
     <p><strong>Cons:</strong> No enrichment. Dedup less powerful than DemandTools on edge cases.</p>
@@ -117,7 +125,11 @@
 
     <h2>3. Validity DemandTools (Best Salesforce Dedup)</h2>
 
-    <p><a href="/tools/validity-demandtools/">DemandTools</a> remains the Salesforce dedup standard. The matching engine handles complex scenarios. Moving toward a web interface in 2025.</p>
+    <p><a href="/tools/validity-demandtools/">DemandTools</a> remains the Salesforce dedup standard. The matching engine handles complex scenarios that other tools can't touch: cross-object duplicates, custom matching rules, and multi-field fuzzy matching with weighted scoring. If you're a Salesforce admin managing data quality for a 100+ person sales team, DemandTools is the tool you've probably already heard about.</p>
+
+    <p>The web interface is making progress in 2025, though the desktop client remains the primary tool for heavy lifting. Bulk operations, mass deletes, and complex dedup workflows still run faster through the desktop app. Validity has committed to reaching feature parity on the web version, but that timeline keeps slipping.</p>
+
+    <p>At $12K/year, DemandTools is priced for mid-market and enterprise Salesforce deployments. If you're on Salesforce with fewer than 20 users, Insycle at $200/month is more cost-effective. DemandTools earns its price when dedup complexity and data volume make simpler tools inadequate.</p>
 
     <p><strong>Pros:</strong> Best Salesforce dedup. Battle-tested matching logic.</p>
     <p><strong>Cons:</strong> Salesforce only. ~$12K/year. Desktop client still primary.</p>
@@ -125,7 +137,11 @@
 
     <h2>4. ZoomInfo Operations (Best for Enrichment + Cleaning)</h2>
 
-    <p>ZoomInfo Ops adds automated cleaning to ZoomInfo's enrichment platform. At $14K+ total in 2025, only for existing ZoomInfo customers.</p>
+    <p>ZoomInfo Ops adds automated cleaning to ZoomInfo's enrichment platform. At $14K+ total in 2025, only for existing ZoomInfo customers. The cleaning features include automated field normalization, duplicate detection, and stale record flagging. When combined with ZoomInfo's enrichment, you get a closed loop: bad data gets cleaned and missing data gets filled in.</p>
+
+    <p>The routing rules are the standout feature. Incoming leads get normalized, enriched, and routed to the right team automatically. For high-volume inbound teams processing hundreds of leads per day, this automation prevents the data quality issues that manual processing introduces. The integration with Salesforce and HubSpot is native and reliable.</p>
+
+    <p>The reality is that ZoomInfo Ops is a feature of a larger platform, not a standalone product. If you're already paying $14K/year for ZoomInfo, enable Ops and use it. If you're not on ZoomInfo, the cleaning features alone don't justify the platform cost. Insycle does the cleaning part for $200/month without the data enrichment lock-in.</p>
 
     <p><strong>Pros:</strong> Cleaning + enrichment from one vendor.</p>
     <p><strong>Cons:</strong> $14K+. Only for ZoomInfo customers.</p>
@@ -133,7 +149,7 @@
 
     <h2>The Sultan's Take</h2>
 
-    <p>In 2025, the choice is clearer. If you want a one-time deep clean with enrichment, Verum does it all. If you need ongoing automated cleaning, Insycle is the right self-serve pick. DemandTools for Salesforce power users who need advanced dedup.</p>
+    <p>In 2025, the choice is clearer. If you want a one-time deep clean with enrichment, Verum does it all. If you need ongoing automated cleaning, Insycle is the right self-serve pick. DemandTools for Salesforce power users who need advanced dedup. The best approach for most growing companies is Insycle for daily maintenance plus Verum for quarterly deep cleans. That combination covers both prevention and remediation at a total cost that's well under enterprise MDM pricing.</p>
 
     <div class="guide-faq">
         <div class="guide-faq-item">
