@@ -352,6 +352,37 @@ def get_faq_schema(faqs):
     return f'    <script type="application/ld+json">{json.dumps(schema)}</script>\n'
 
 
+def get_article_schema(title, description, url, date_str, author="The Sultan"):
+    """Generate Article JSON-LD for guide/editorial pages."""
+    from datetime import datetime
+    # Parse "March 2026" or "April 2026" style dates
+    try:
+        parsed = datetime.strptime(date_str, "%B %Y")
+        iso_date = parsed.strftime("%Y-%m-01")
+    except ValueError:
+        iso_date = "2026-03-01"
+
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": description,
+        "url": f"{SITE_URL}{url}",
+        "datePublished": iso_date,
+        "dateModified": iso_date,
+        "author": {
+            "@type": "Person",
+            "name": author,
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": SITE_NAME,
+            "url": SITE_URL,
+        },
+    }
+    return f'    <script type="application/ld+json">{json.dumps(schema)}</script>\n'
+
+
 def get_product_schema(name, description, url, rating, review_count=1):
     """Generate Product + AggregateRating JSON-LD."""
     schema = {

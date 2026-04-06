@@ -21,7 +21,8 @@ from nav_config import SITE_NAME, SITE_URL, SITE_TAGLINE, CURRENT_YEAR, CSS_VERS
 from templates import (
     get_page_wrapper, write_page, get_verdict_color, get_verdict_word,
     get_price_tier_class, get_breadcrumb_schema, get_faq_schema,
-    get_product_schema, breadcrumb_html, LOGO_MARK_SMALL, DIAMOND_SINGLE,
+    get_article_schema, get_product_schema, breadcrumb_html,
+    LOGO_MARK_SMALL, DIAMOND_SINGLE,
     DIAMONDS_TRIPLE, ALL_PAGES,
 )
 import templates
@@ -10982,6 +10983,14 @@ def build_guide_pages():
         if guide.get('faqs'):
             faq_schema = get_faq_schema(guide['faqs'])
 
+        # Article schema
+        article_schema = get_article_schema(
+            title=guide['meta_title'],
+            description=guide['meta_desc'],
+            url=f'/guides/{guide["slug"]}/',
+            date_str=guide['date'],
+        )
+
         body = f'''<div class="guide-page">
     {bc}
     <h1>{guide["title"]}</h1>
@@ -10989,7 +10998,7 @@ def build_guide_pages():
     {guide["body"]}
 </div>'''
 
-        extra_head = bc_schema + faq_schema
+        extra_head = bc_schema + faq_schema + article_schema
         page = get_page_wrapper(
             guide['meta_title'],
             guide['meta_desc'],
