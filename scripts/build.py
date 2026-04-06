@@ -4012,6 +4012,32 @@ def build_category_pages():
         write_page(f"best/{slug}/index.html", page)
 
 
+def _generate_comparison_faqs(ta, tb, winner):
+    """Generate 3 generic FAQs for comparisons that lack hand-written ones."""
+    return [
+        (f"Is {ta['name']} or {tb['name']} better in {CURRENT_YEAR}?",
+         f"The Sultan picks {winner['name']}. {ta['name']} scores {ta['score']}/10 and {tb['name']} scores {tb['score']}/10. The right choice depends on your team size, budget, and workflow needs."),
+        (f"How does {ta['name']} pricing compare to {tb['name']}?",
+         f"{ta['name']} starts at {ta['pricing_start']} and {tb['name']} starts at {tb['pricing_start']}. Both offer different value at their price points, so compare features against your actual use case before committing."),
+        (f"Can I switch from {ta['name']} to {tb['name']} easily?",
+         f"Most teams can migrate between {ta['name']} and {tb['name']} within a few weeks. Export your data, map fields to the new platform, and plan for a 1-2 week overlap period where both tools run in parallel."),
+    ]
+
+
+def _generate_alternatives_faqs(original, alts_list):
+    """Generate 3 generic FAQs for alternatives pages that lack hand-written ones."""
+    top_alt = alts_list[0] if alts_list else None
+    top_name = top_alt['name'] if top_alt else 'alternatives'
+    return [
+        (f"What is the best {original['name']} alternative in {CURRENT_YEAR}?",
+         f"The Sultan's top pick is {top_name} (scored {top_alt['score']}/10). It offers a strong feature set at a competitive price point starting at {top_alt['pricing_start']}."),
+        (f"Why do people switch away from {original['name']}?",
+         f"Common reasons include pricing changes, missing features for specific workflows, and team size constraints. {original['name']} scores {original['score']}/10 overall, which means there are clear areas where alternatives can outperform it."),
+        (f"Is it hard to migrate away from {original['name']}?",
+         f"Most {original['name']} alternatives offer import tools or migration guides. Plan for 1-3 weeks depending on your data volume and the number of integrations you need to reconnect."),
+    ]
+
+
 def build_comparison_pages():
     """Generate comparison pages."""
     for c in COMPARISONS:
@@ -4085,7 +4111,7 @@ def build_comparison_pages():
 
     {c.get("body", "")}
 
-    {"".join(f'<div class="review-section"><div class="faq-list">' + "".join(f'<div class="faq-item"><h3>{fq[0]}</h3><p>{fq[1]}</p></div>' for fq in c["faqs"]) + '</div></div>' if c.get("faqs") else "")}
+    {"".join(f'<div class="review-section"><div class="faq-list">' + "".join(f'<div class="faq-item"><h3>{fq[0]}</h3><p>{fq[1]}</p></div>' for fq in (c.get("faqs") or _generate_comparison_faqs(ta, tb, winner))) + '</div></div>')}
 
     <div class="comparison-grid" style="margin-top: var(--space-8)">
         <a href="/tools/{c["tools"][0]}/" class="comparison-link"><span class="comp-names">Read full {ta["name"]} review &rarr;</span></a>
@@ -4093,10 +4119,9 @@ def build_comparison_pages():
     </div>
 </div>'''
 
-        # FAQ schema if present
-        faq_schema = ""
-        if c.get("faqs"):
-            faq_schema = get_faq_schema(c["faqs"])
+        # FAQ schema: use provided FAQs or generate fallback
+        faqs = c.get("faqs") or _generate_comparison_faqs(ta, tb, winner)
+        faq_schema = get_faq_schema(faqs)
 
         # Custom meta description if present
         meta_desc = c.get("meta_desc", f"{ta['name']} vs {tb['name']}: The Sultan picks {winner['name']}. Side-by-side comparison of features, pricing, and scores.")
@@ -4136,6 +4161,14 @@ def build_alternatives_pages():
         bc = breadcrumb_html([("Home", "/"), (f"{original['name']} Alternatives", "")])
         bc_schema = get_breadcrumb_schema([("Home", "/"), (f"{original['name']} Alternatives", f"/{a['slug']}/")])
 
+        # Generate fallback FAQs for alternatives
+        alts_tools = [TOOLS[alt_slug] for alt_slug in a["alts"]]
+        faqs = a.get("faqs") or _generate_alternatives_faqs(original, alts_tools)
+        faq_html_str = '<div class="review-section"><div class="faq-list">' + "".join(
+            f'<div class="faq-item"><h3>{fq[0]}</h3><p>{fq[1]}</p></div>' for fq in faqs
+        ) + '</div></div>'
+        faq_schema = get_faq_schema(faqs)
+
         body = f'''<div class="alternatives-page">
     {bc}
     <div class="alternatives-header">
@@ -4143,9 +4176,10 @@ def build_alternatives_pages():
     </div>
     <div class="alt-reason">{a["reason"]}</div>
     <div class="alt-list">{alt_items}</div>
+    {faq_html_str}
 </div>'''
 
-        extra_head = bc_schema
+        extra_head = bc_schema + faq_schema
         page = get_page_wrapper(
             f"Best {original['name']} Alternatives ({CURRENT_YEAR})",
             f"Looking for {original['name']} alternatives? The Sultan ranks the {len(a['alts'])} best options with scores, pricing, and honest verdicts.",
