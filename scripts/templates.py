@@ -82,7 +82,7 @@ def get_html_head(title, description, canonical_path, extra_head=""):
     <meta property="og:title" content="{full_title}">
     <meta property="og:description" content="{description}">
     <meta property="og:site_name" content="{SITE_NAME}">
-    <meta property="og:image" content="{SITE_URL}/assets/logos/logo-wordmark.svg">
+    <meta property="og:image" content="{SITE_URL}/assets/social/og-default.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -90,7 +90,7 @@ def get_html_head(title, description, canonical_path, extra_head=""):
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{full_title}">
     <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="{SITE_URL}/assets/logos/logo-wordmark.svg">
+    <meta name="twitter:image" content="{SITE_URL}/assets/social/og-default.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon-gold.svg">
