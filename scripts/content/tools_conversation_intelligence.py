@@ -54,7 +54,7 @@ TOOL_CONTENT["gong"] = {
         },
         {
             "title": "Steep onboarding curve for full value extraction",
-            "detail": "You can start recording calls in a day. Getting value from deal intelligence, custom trackers, and coaching workflows takes 4-8 weeks of configuration and training. Most teams don't reach full utilization for 3+ months. If you're expecting instant ROI, recalibrate. The payoff is real but delayed.",
+            "detail": "You can start recording calls in a day. Getting value from deal intelligence, custom trackers, and coaching workflows takes 4-8 weeks of configuration and training. Most teams don't reach full use for 3+ months. If you're expecting instant ROI, recalibrate. The payoff is real but delayed.",
         },
     ],
     "pricing_detail": [

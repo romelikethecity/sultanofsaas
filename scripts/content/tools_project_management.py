@@ -153,7 +153,7 @@ TOOL_CONTENT["monday"] = {
     ],
     "who_should_skip": [
         {"audience": "Engineering teams running sprints", "reason": "Monday Dev exists, but it's a bolted-on product. Linear and Jira are purpose-built for software development with Git integrations, cycle management, and keyboard-first UIs that engineers expect. Monday feels like a PM tool cosplaying as a dev tool."},
-        {"audience": "Teams needing deep resource management", "reason": "Monday tracks who's assigned to what, but resource capacity planning, workload balancing across projects, and utilization reporting are limited. Wrike and Smartsheet handle resource management at a level Monday can't match."},
+        {"audience": "Teams needing deep resource management", "reason": "Monday tracks who's assigned to what, but resource capacity planning, workload balancing across projects, and use reporting are limited. Wrike and Smartsheet handle resource management at a level Monday can't match."},
         {"audience": "Two-person teams watching costs", "reason": "The 3-seat minimum means you're overpaying by 50%. Trello's free plan, Asana's free tier (10 users), or ClickUp's free plan all serve two-person teams without the phantom seat charge."},
     ],
     "stage_guidance": {
@@ -222,7 +222,7 @@ TOOL_CONTENT["clickup"] = {
         },
         {
             "title": "Feature releases outpace stability",
-            "detail": "ClickUp ships fast. Sometimes too fast. New features launch with bugs that get patched over weeks. Long-time users describe a pattern: exciting announcement, buggy launch, gradual stabilization. If you need a tool that 'just works' without surprises, this release cadence will frustrate you. If you enjoy being on the cutting edge, you'll love it.",
+            "detail": "ClickUp ships fast. Sometimes too fast. New features launch with bugs that get patched over weeks. Long-time users describe a pattern: exciting announcement, buggy launch, gradual stabilization. If you need a tool that 'just works' without surprises, this release cadence will frustrate you. If you enjoy being on the advanced, you'll love it.",
         },
         {
             "title": "The docs and whiteboards are B-tier",
@@ -712,7 +712,7 @@ TOOL_CONTENT["wrike"] = {
 TOOL_CONTENT["teamwork"] = {
     "overview": [
         "Teamwork is the PM tool that agencies wish Asana and Monday would become. While those platforms serve everyone, Teamwork was built from the ground up for client services: agencies, consultancies, and professional services firms that bill by the hour, manage client expectations, and need to know whether each project is profitable. The result is a tool that handles the unsexy operational details that generic PM tools ignore.",
-        "The feature set revolves around billable time tracking, client permissions (let clients see their projects without seeing yours), project budgets with burn-rate tracking, and invoicing integrations. If your business lives and dies by utilization rates and project margins, Teamwork speaks your language. Asana can track tasks. Teamwork can tell you whether those tasks are making or losing money.",
+        "The feature set revolves around billable time tracking, client permissions (let clients see their projects without seeing yours), project budgets with burn-rate tracking, and invoicing integrations. If your business lives and dies by use rates and project margins, Teamwork speaks your language. Asana can track tasks. Teamwork can tell you whether those tasks are making or losing money.",
         "Pricing runs from Free (5 users) to Deliver ($9.99/user/mo), Grow ($19.99/user/mo), and Scale (custom). There's also a bundled suite (Teamwork.com, Teamwork Desk, Teamwork Spaces, Teamwork Chat, Teamwork CRM) for agencies wanting a unified platform. The per-user pricing is reasonable, but bundling multiple products adds up. For a 15-person agency on Grow, you're paying $3,600/yr before add-ons.",
     ],
     "expanded_pros": [

@@ -138,7 +138,7 @@ CATEGORIES = {
         'name': 'Data Enrichment',
         'description': 'Platforms that find and verify contact data. Email addresses, phone numbers, firmographics, and intent signals for outbound prospecting.',
         'tools': ['zoominfo', 'clay', 'clearbit', 'lusha', 'cognism',
-                  'seamless-ai', 'uplead', 'rocketreach', 'leadiq', 'kaspr'],
+                  'smooth-ai', 'uplead', 'rocketreach', 'leadiq', 'kaspr'],
     },
     'ai-tools': {
         'slug': 'ai-tools',
@@ -1063,7 +1063,7 @@ T("cognism", "Cognism", "data-enrichment", "https://www.cognism.com", 7.5,
   [("Platinum", "Custom"), ("Diamond", "Custom"), ("Enterprise", "Custom")],
   {"ease_of_use": 7.0, "value": 7.0, "features": 7.5, "support": 7.5})
 
-T("seamless-ai", "Seamless.AI", "data-enrichment", "https://www.seamless.ai", 5.5,
+T("smooth-ai", "smooth.AI", "data-enrichment", "https://www.smooth.ai", 5.5,
   "Real-time contact finder with aggressive marketing. The tool finds emails and phone numbers by searching the web in real-time rather than maintaining a static database. Results are hit-or-miss. The 50-credit free tier is bait for a hard sales pitch. Pushy upselling and mixed data quality undermine a decent concept.",
   "Budget-conscious teams willing to verify data quality manually",
   "$147/mo", "mid",
@@ -1869,7 +1869,7 @@ COMPARISONS = [
     <div class="review-section">
         <h2>Speed: Linear's Killer Feature</h2>
         <div class="review-body">
-            <p>Linear is fast. Not "pretty fast for a web app" fast. Genuinely, noticeably fast. Page transitions happen in milliseconds. Keyboard shortcuts let you triage, assign, and move issues without touching the mouse. Creating an issue takes 3 seconds. In Asana, the same action takes 8-12 seconds with loading states and modal animations.</p>
+            <p>Linear is fast. Not "pretty fast for a web app" fast. , noticeably fast. Page transitions happen in milliseconds. Keyboard shortcuts let you triage, assign, and move issues without touching the mouse. Creating an issue takes 3 seconds. In Asana, the same action takes 8-12 seconds with loading states and modal animations.</p>
             <p>This sounds trivial until you do it 50 times a day. An engineer who triages 50 issues daily saves 5-7 minutes per day using Linear instead of Asana. Over a year, that's 25+ hours per engineer. For a 20-person engineering team, Linear's speed advantage translates to 500 hours of recovered productivity annually.</p>
             <p>Asana's UI is polished and well-designed. It's not slow by normal standards. But Linear set a new standard for what a web application can feel like, and using Asana after Linear feels like switching from an SSD to a hard drive.</p>
         </div>
@@ -2394,9 +2394,9 @@ COMPARISONS = [
     {"tools": ["uplead", "lusha"], "winner": "lusha",
      "why": "Lusha's Chrome extension is faster for daily prospecting, and the phone number coverage is stronger. UpLead at $74/mo has better list building and email verification, plus technographic data. For reps doing one-off lookups, Lusha. For teams building targeted lists, UpLead.",
      "summary": "Quick contact lookup vs. list building tool. Lusha is faster for reps. UpLead is better for lists."},
-    {"tools": ["seamless-ai", "apollo"], "winner": "apollo",
-     "why": "Apollo's 275M+ database, transparent pricing ($49/user/mo), and bundled engagement features outclass Seamless.AI's inconsistent data and aggressive sales tactics. Seamless.AI's real-time lookup concept is interesting, but Apollo delivers more reliable data with a better user experience.",
-     "summary": "Reliable platform vs. aggressive challenger. Apollo has better data and UX. Seamless.AI has pushy sales."},
+    {"tools": ["smooth-ai", "apollo"], "winner": "apollo",
+     "why": "Apollo's 275M+ database, transparent pricing ($49/user/mo), and bundled engagement features outclass smooth.AI's inconsistent data and aggressive sales tactics. smooth.AI's real-time lookup concept is interesting, but Apollo delivers more reliable data with a better user experience.",
+     "summary": "Reliable platform vs. aggressive challenger. Apollo has better data and UX. smooth.AI has pushy sales."},
     {"tools": ["leadiq", "lusha"], "winner": "lusha",
      "why": "Both are Chrome extension-first contact finders. Lusha has broader data beyond LinkedIn and better phone number coverage. LeadIQ at $36/user/mo has a smoother LinkedIn-to-CRM workflow and job change alerts. For pure data quality, Lusha. For prospecting workflow, LeadIQ.",
      "summary": "Data-first lookup vs. workflow-first prospecting. Lusha has more data. LeadIQ has better CRM integration."},
@@ -4835,7 +4835,7 @@ def build_tools_index():
         'clearbit': ['small', 'mid'],
         'lusha': ['solo', 'small'],
         'cognism': ['small', 'mid', 'enterprise'],
-        'seamless-ai': ['solo', 'small'],
+        'smooth-ai': ['solo', 'small'],
         'uplead': ['solo', 'small'],
         'rocketreach': ['solo', 'small'],
         'leadiq': ['small', 'mid'],
@@ -5819,7 +5819,7 @@ GUIDES = [
 
     <p><a href="/tools/zoominfo/">ZoomInfo</a> is the market leader for a reason: the data is the best. But the pricing, contracts, and sales process are designed for mid-market and enterprise buyers. Annual contracts start at $15,000. There's no self-serve plan. The sales team will try to lock you into a multi-year deal. If you're early stage, ZoomInfo is not for you. Period.</p>
 
-    <p><a href="/tools/seamless-ai/">Seamless.AI</a> has aggressive marketing and a credit-based model that sounds affordable until you run out of credits mid-campaign. The data quality is inconsistent. Some users report great results. Others report bounce rates above 10%. That inconsistency is unacceptable when your domain reputation is on the line.</p>
+    <p><a href="/tools/smooth-ai/">smooth.AI</a> has aggressive marketing and a credit-based model that sounds affordable until you run out of credits mid-campaign. The data quality is inconsistent. Some users report great results. Others report bounce rates above 10%. That inconsistency is unacceptable when your domain reputation is on the line.</p>
 
     <h2>The Enrichment Stack for Early Stage</h2>
 
@@ -8419,13 +8419,13 @@ ROUNDUPS = [
 
     <p><strong>Sultan's Verdict: 7.0/10.</strong> The best capture tool for LinkedIn-heavy prospecting teams. Not an enrichment platform and shouldn't be evaluated as one.</p>
 
-    <h2>9. Seamless.AI (Buyer Beware)</h2>
+    <h2>9. smooth.AI (Buyer Beware)</h2>
 
-    <p><a href="/tools/seamless-ai/">Seamless.AI</a> finds contacts by searching the web in real-time rather than maintaining a static database. The concept is sound: real-time lookups should produce fresher data than a database that was verified three months ago. In practice, the results are inconsistent.</p>
+    <p><a href="/tools/smooth-ai/">smooth.AI</a> finds contacts by searching the web in real-time rather than maintaining a static database. The concept is sound: real-time lookups should produce fresher data than a database that was verified three months ago. In practice, the results are inconsistent.</p>
 
-    <p>Some contacts come back perfectly accurate. Others are outdated or flat wrong. The hit rate varies by industry and seniority level. You'll need to verify everything Seamless.AI returns before using it for outreach, which undermines the time savings of real-time lookup.</p>
+    <p>Some contacts come back perfectly accurate. Others are outdated or flat wrong. The hit rate varies by industry and seniority level. You'll need to verify everything smooth.AI returns before using it for outreach, which undermines the time savings of real-time lookup.</p>
 
-    <p>The bigger issue is the sales experience. Seamless.AI's team is known for aggressive upselling, hard-to-cancel subscriptions, and a "free" tier that exists primarily to capture your information for a sales pitch. The product has potential. The company culture around selling it is a red flag.</p>
+    <p>The bigger issue is the sales experience. smooth.AI's team is known for aggressive upselling, hard-to-cancel subscriptions, and a "free" tier that exists primarily to capture your information for a sales pitch. The product has potential. The company culture around selling it is a red flag.</p>
 
     <p><strong>Pros:</strong></p>
     <ul>
@@ -8541,9 +8541,9 @@ ROUNDUPS = [
 
     <p><strong>Sultan's Verdict: 6.8/10.</strong> Great for LinkedIn-heavy teams. Not an enrichment platform.</p>
 
-    <h2>7. Seamless.AI (Buyer Beware)</h2>
+    <h2>7. smooth.AI (Buyer Beware)</h2>
 
-    <p><a href="/tools/seamless-ai/">Seamless.AI</a> finds contacts via real-time web lookup. Accuracy is inconsistent. Sales team is aggressive. Use as a supplement only.</p>
+    <p><a href="/tools/smooth-ai/">smooth.AI</a> finds contacts via real-time web lookup. Accuracy is inconsistent. Sales team is aggressive. Use as a supplement only.</p>
 
     <p><strong>Sultan's Verdict: 5.5/10.</strong> Supplementary source at best.</p>
 
@@ -8993,9 +8993,9 @@ ROUNDUPS = [
 
     <p><strong>Sultan's Verdict: 7.0/10.</strong> The right tool for targeted SMB lookups, not bulk list building. Pair with Apollo for volume or Verum for quality.</p>
 
-    <h2>4. Seamless.AI (Best for Aggressive Prospectors)</h2>
+    <h2>4. smooth.AI (Best for Aggressive Prospectors)</h2>
 
-    <p><a href="/tools/seamless-ai/">Seamless.AI</a> uses real-time search to find contact data on demand rather than querying a static database. For SMB contacts, this approach sometimes surfaces data that database-dependent tools miss, because Seamless is actively searching the web rather than relying on pre-collected records.</p>
+    <p><a href="/tools/smooth-ai/">smooth.AI</a> uses real-time search to find contact data on demand rather than querying a static database. For SMB contacts, this approach sometimes surfaces data that database-dependent tools miss, because smooth is actively searching the web rather than relying on pre-collected records.</p>
 
     <p>The real-time approach has a downside: results are inconsistent. Some searches return accurate, verified data. Others return outdated or incorrect information. The experience varies by industry and geography. Tech SMBs tend to have better coverage than service businesses or healthcare practices.</p>
 
@@ -9373,13 +9373,13 @@ ROUNDUPS = [
 
     <p>The downside: Apollo tries to do everything, and some features feel half-baked. The email sequences work but lack the polish of dedicated tools like Outreach or Salesloft. The UI can feel overwhelming at first. But for a small team that wants one tool instead of three, Apollo is hard to beat.</p>
 
-    <h2>3. Seamless.AI (Best Real-Time Lookup)</h2>
+    <h2>3. smooth.AI (Best Real-Time Lookup)</h2>
 
-    <p><a href="/tools/seamless-ai/">Seamless.AI</a> takes a different approach. Instead of maintaining a static database, it searches the web in real-time when you request a contact. In theory, this means fresher data. In practice, results are inconsistent. Some lookups return perfect data. Others return nothing or outdated information.</p>
+    <p><a href="/tools/smooth-ai/">smooth.AI</a> takes a different approach. Instead of maintaining a static database, it searches the web in real-time when you request a contact. In theory, this means fresher data. In practice, results are inconsistent. Some lookups return perfect data. Others return nothing or outdated information.</p>
 
     <p>The 50-credit free tier is bait for an aggressive sales pitch. Be warned. If you can handle the pushy upselling, the Basic plan at $147/month delivers decent volume. The real-time approach works well for niche industries where static databases have gaps.</p>
 
-    <p>Skip Seamless.AI if data consistency matters more than coverage. The hit-or-miss nature of real-time lookups makes it unreliable for systematic outbound campaigns. For opportunistic prospecting where you need contacts that other tools miss, it has a role.</p>
+    <p>Skip smooth.AI if data consistency matters more than coverage. The hit-or-miss nature of real-time lookups makes it unreliable for systematic outbound campaigns. For opportunistic prospecting where you need contacts that other tools miss, it has a role.</p>
 
     <h2>4. UpLead (Best for Verified Emails)</h2>
 

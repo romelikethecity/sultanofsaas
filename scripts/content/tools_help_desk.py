@@ -846,7 +846,7 @@ TOOL_CONTENT["groove-helpdesk"] = {
     "who_should_skip": [
         {"audience": "Teams expecting to grow past 10 agents within a year", "reason": "Groove's feature ceiling (no automation, no SLA management, basic reporting) becomes a problem at scale. Starting on Freshdesk or Help Scout avoids a migration you'll otherwise face when you outgrow Groove."},
         {"audience": "Support teams that need phone or social media channels", "reason": "Groove handles email and chat only. If your customers call you, message you on Twitter, or reach out via Facebook, Groove can't capture those interactions. Freshdesk or Zendesk covers all channels."},
-        {"audience": "Data-driven support leaders who need reporting", "reason": "Groove's reports are minimal. If you need to track agent utilization, first-response-time trends, ticket backlog aging, or customer effort scores, you'll need a tool with deeper analytics."},
+        {"audience": "Data-driven support leaders who need reporting", "reason": "Groove's reports are minimal. If you need to track agent use, first-response-time trends, ticket backlog aging, or customer effort scores, you'll need a tool with deeper analytics."},
     ],
     "stage_guidance": {
         "solo": "Standard ($4.80/mo) is the best solo founder help desk. You get a shared inbox and a knowledge base for less than a coffee. Build your FAQ articles now while volume is low. When you hire help, adding a user costs $4.80/mo. Hard to find a reason to spend more at this stage.",
