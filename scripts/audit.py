@@ -79,7 +79,7 @@ def _get_tool_names():
 
 
 def _is_tool_name_context(text, match_start, match_end, word):
-    """Check if a banned word match is actually part of a tool name."""
+    """Check if a banned word match is part of a tool name."""
     # Get surrounding context (40 chars each side)
     ctx_start = max(0, match_start - 40)
     ctx_end = min(len(text), match_end + 40)
@@ -134,8 +134,8 @@ FALSE_REFRAME_PATTERNS = [
 
 # Banned words (AUDIT-03)
 BANNED_WORDS = [
-    "robust", "leverage", "synergy", "holistic", "cutting-edge",
-    "seamless", "frictionless", "end-to-end", "genuinely", "truly",
+    "robust", "leverage", "synergy", "comprehensive", "cutting-edge",
+    "smooth", "frictionless", "end-to-end", "genuinely", "truly",
     "really", "actually", "game-changer", "paradigm shift",
     "best-in-class", "world-class",
 ]

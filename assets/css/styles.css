@@ -818,7 +818,7 @@
     border-bottom: 1px solid var(--border-subtle);
 }
 
-.stage-card-header h4 {
+.stage-card-header h3 {
     font-family: var(--font-display);
     font-size: var(--text-sm);
     font-weight: 600;
@@ -853,7 +853,7 @@
     border-radius: var(--radius-md);
 }
 
-.alt-card h4 {
+.alt-card h3 {
     font-family: var(--font-display);
     font-size: var(--text-base);
     font-weight: 600;
@@ -1972,7 +1972,7 @@
     border-bottom: none;
 }
 
-.guide-faq-item h4 {
+.guide-faq-item h3 {
     font-size: var(--text-base);
     margin-bottom: var(--space-2);
 }
