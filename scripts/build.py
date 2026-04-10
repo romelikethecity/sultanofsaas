@@ -1123,42 +1123,48 @@ T("provyx", "Provyx", "b2b-contact-data", "https://getprovyx.com", 8.4,
   "Healthcare sales teams and medical device companies that need verified provider contacts fast",
   "$750", "Starter",
   ["NPI-verified contacts across 40+ specialties", "Multi-source verification (NPI + PECOS + LinkedIn + state licensing)", "24-48 hour turnaround, no annual contracts"],
-  ["Healthcare only. Useless for general B2B", "Not self-serve. No platform login", "Smaller database than Definitive Healthcare"])
+  ["Healthcare only. Useless for general B2B", "Not self-serve. No platform login", "Smaller database than Definitive Healthcare"],
+  ["NPI registry verification", "State licensing lookups", "Specialty and practice filters", "Custom field delivery", "CSV and JSON export", "Per-record pricing (no contracts)"])
 
 T("verum", "Verum", "b2b-contact-data", "https://veruminc.com", 8.5,
   "The anti-platform. Send your data, get it back clean and enriched from 50+ sources with human QA. Per-record pricing, no contracts, no dashboard to learn.",
   "Midmarket companies (5K+ records) that want done-for-you data quality without managing another tool",
   "$2,000", "Project",
   ["50+ data sources with human QA on every record", "93% email deliverability guarantee", "Cleaning + enrichment + validation in one engagement"],
-  ["No self-serve platform. No login, no API", "$2K minimum locks out very small teams", "24-48 hour turnaround, not instant"])
+  ["No self-serve platform. No login, no API", "$2K minimum locks out very small teams", "24-48 hour turnaround, not instant"],
+  ["Multi-source waterfall enrichment", "Human-QA on every record", "Email deliverability validation", "LinkedIn profile lookup", "Custom field mapping", "Flat per-record pricing"])
 
 T("definitive-healthcare", "Definitive Healthcare", "b2b-contact-data", "https://www.definitivehc.com", 7.8,
   "The largest healthcare commercial intelligence platform. Massive database of hospitals, physicians, and claims data. Built for enterprise pharma and medtech sales teams with enterprise budgets to match.",
   "Enterprise pharma, medtech, and payer teams that need claims-level intelligence and can afford $50K+/yr",
   "$50,000/yr", "enterprise",
   ["Largest healthcare provider database with claims data", "Hospital-level buying committee mapping", "Intent signals and affiliation tracking"],
-  ["$50K+ annual contracts lock out startups and SMBs", "Steep learning curve on the platform", "Overkill for simple provider contact lists"])
+  ["$50K+ annual contracts lock out startups and SMBs", "Steep learning curve on the platform", "Overkill for simple provider contact lists"],
+  ["Provider and facility database", "Claims data analytics", "Buying committee maps", "Affiliation tracking", "Intent signals", "CRM integrations"])
 
 T("ribbon-health", "Ribbon Health", "b2b-contact-data", "https://www.ribbonhealth.com", 7.3,
   "Provider directory API for health tech companies. Ribbon aggregates provider data from insurance networks, NPIs, and public sources into a clean API. Built for developers building care navigation, not for sales teams.",
   "Health tech companies building provider directories or care navigation into their products",
   "Custom", "enterprise",
   ["Clean API for provider directory data", "Insurance network and acceptance data", "Good for care navigation and referral products"],
-  ["Not a sales prospecting tool. No direct contacts", "API-only, no dashboard for non-technical users", "Pricing is opaque and requires a sales conversation"])
+  ["Not a sales prospecting tool. No direct contacts", "API-only, no dashboard for non-technical users", "Pricing is opaque and requires a sales conversation"],
+  ["Provider directory API", "Insurance network data", "NPI and credential lookup", "Specialty and location search", "Care navigation endpoints", "Webhooks and SDKs"])
 
 T("doximity", "Doximity", "b2b-contact-data", "https://www.doximity.com", 6.8,
   "The LinkedIn for doctors. Doximity is a physician networking platform with 80%+ of US physicians on it. Their talent and marketing solutions let companies reach physicians through the platform. Not a traditional data vendor.",
   "Pharma marketers and healthcare recruiters who need to reach physicians through a trusted channel",
   "Custom", "enterprise",
   ["80%+ of US physicians are on the platform", "Trusted channel. Physicians read Doximity messages", "Telehealth and fax features drive daily usage"],
-  ["Not a contact database. You can't export emails or phones", "Advertising and messaging rates are expensive", "Limited to physicians. No facility decision-makers"])
+  ["Not a contact database. You can't export emails or phones", "Advertising and messaging rates are expensive", "Limited to physicians. No facility decision-makers"],
+  ["Physician network profiles", "Sponsored content placements", "In-platform messaging", "Talent recruiting tools", "Telehealth and secure fax", "Continuing medical education"])
 
 T("carevoyance", "Carevoyance", "b2b-contact-data", "https://www.carevoyance.com", 7.4,
   "Healthcare sales intelligence built on claims and procedure data. Carevoyance maps which physicians perform specific procedures and at which facilities, then layers on contact data. Strongest for medtech companies selling devices tied to specific procedures.",
   "Medical device companies targeting physicians who perform specific procedures",
   "Custom", "enterprise",
   ["Procedure-level targeting from claims data", "Maps physician-to-facility relationships", "Territory planning and rep assignment tools"],
-  ["Narrow focus on procedure-based targeting", "Contact data quality is inconsistent vs. dedicated providers", "Enterprise pricing with annual contracts"])
+  ["Narrow focus on procedure-based targeting", "Contact data quality is inconsistent vs. dedicated providers", "Enterprise pricing with annual contracts"],
+  ["Procedure-level physician targeting", "Physician-to-facility mapping", "Claims-based volume data", "Territory planning tools", "Rep assignment workflows", "CRM integration"])
 
 T("adapt-io", "Adapt.io", "data-enrichment", "https://www.adapt.io", 6.3,
   "Budget B2B contact database with industry and technology filters. Adapt's strength is pricing: you get a functional contact lookup tool for less than most competitors charge. The database is smaller and less accurate than Apollo or Lusha, but the price-to-value ratio works for early-stage teams running small campaigns.",
@@ -1260,49 +1266,56 @@ T("validity-demandtools", "Validity DemandTools", "data-cleaning", "https://www.
   "Salesforce admins who need to clean, dedupe, and standardize CRM data",
   "$12,000/yr", "premium",
   ["Best deduplication engine for Salesforce", "Bulk data manipulation without APEX code", "15+ years of battle-tested reliability"],
-  ["Salesforce-only. Zero utility for other CRMs", "Enterprise pricing, no monthly option", "Desktop app feels dated"])
+  ["Salesforce-only. Zero utility for other CRMs", "Enterprise pricing, no monthly option", "Desktop app feels dated"],
+  ["Salesforce deduplication", "Bulk record updates", "Mass delete operations", "Lead-to-contact conversion", "Data standardization rules", "Backup and restore"])
 
 T("reltio", "Reltio", "data-cleaning", "https://www.reltio.com", 7.2,
   "Cloud-native master data management. Reltio unifies customer, product, and supplier data across systems into a single golden record. Enterprise-grade MDM for companies that have data scattered across dozens of tools. Overkill for anything under 500K records.",
   "Enterprise companies with fragmented data across multiple systems needing a single source of truth",
   "Custom ($50K+/yr)", "premium",
   ["Cloud-native MDM (no on-prem headaches)", "ML-powered entity resolution across systems", "Strong healthcare and financial services verticals"],
-  ["Enterprise pricing starts at $50K+/yr", "6-12 month implementation timeline", "Requires dedicated data team to manage"])
+  ["Enterprise pricing starts at $50K+/yr", "6-12 month implementation timeline", "Requires dedicated data team to manage"],
+  ["Master data management", "ML entity resolution", "Golden record creation", "Data lineage tracking", "Cloud-native hosting", "Pre-built industry templates"])
 
 T("informatica", "Informatica CDQ", "data-cleaning", "https://www.informatica.com", 7.0,
   "The grandparent of data quality. Informatica's Cloud Data Quality (CDQ) handles profiling, cleansing, deduplication, and standardization at enterprise scale. Incredibly powerful. Incredibly complex. You will need consultants.",
   "Large enterprises with dedicated data governance teams",
   "Custom ($100K+/yr)", "premium",
   ["Most comprehensive data quality suite in the market", "Handles any data type, any source, any scale", "35+ years of enterprise deployments"],
-  ["Pricing starts well into six figures", "Implementation requires certified consultants", "Overkill for 90% of companies"])
+  ["Pricing starts well into six figures", "Implementation requires certified consultants", "Overkill for 90% of companies"],
+  ["Data profiling", "Cleansing and standardization", "Deduplication engine", "Metadata management", "Data governance workflows", "Any-source connectors"])
 
 T("zoominfo-ops", "ZoomInfo Operations", "data-cleaning", "https://www.zoominfo.com/products/operations", 7.3,
   "ZoomInfo's CRM data management tool. Automated deduplication, normalization, and enrichment for Salesforce and HubSpot. If you already pay for ZoomInfo, Ops is a logical add-on. Standalone, the pricing is hard to justify vs. purpose-built cleaning tools.",
   "Existing ZoomInfo customers who want CRM data hygiene bundled with their enrichment",
   "Custom (ZoomInfo add-on)", "premium",
   ["Automated CRM data cleaning and normalization", "Uses ZoomInfo's database for re-enrichment", "Routing and matching workflows"],
-  ["Only makes sense as a ZoomInfo add-on", "Adds to an already expensive ZoomInfo contract", "Less flexible than standalone cleaning tools"])
+  ["Only makes sense as a ZoomInfo add-on", "Adds to an already expensive ZoomInfo contract", "Less flexible than standalone cleaning tools"],
+  ["Automated CRM cleaning", "Duplicate detection", "Re-enrichment from ZoomInfo", "Lead routing workflows", "Data normalization", "Salesforce + HubSpot sync"])
 
 T("openprise", "Openprise", "data-cleaning", "https://www.openprisetech.com", 6.8,
   "RevOps data orchestration platform. Openprise automates data cleaning, enrichment, segmentation, and routing. Targets revenue operations teams that need to keep Salesforce and Marketo data in sync. Solid mid-market option if you're beyond manual cleaning but not ready for Informatica.",
   "RevOps teams managing data quality across CRM and marketing automation",
   "Custom ($30K+/yr)", "premium",
   ["No-code data orchestration for RevOps", "Strong Salesforce + Marketo integration", "Automated territory assignment and routing"],
-  ["Custom pricing with no transparency", "Smaller community than Validity or Informatica", "Can be overkill for simple cleaning needs"])
+  ["Custom pricing with no transparency", "Smaller community than Validity or Informatica", "Can be overkill for simple cleaning needs"],
+  ["No-code data orchestration", "Territory assignment rules", "Lead routing workflows", "Third-party data enrichment", "Segmentation and scoring", "Salesforce + Marketo sync"])
 
 T("ringlead", "RingLead", "data-cleaning", "https://www.ringlead.com", 6.5,
   "CRM data deduplication and routing acquired by ZoomInfo in 2020. Still operates as a standalone product for lead-to-account matching, deduplication, and data normalization. Solid but increasingly absorbed into the ZoomInfo ecosystem.",
   "Teams needing CRM deduplication and lead routing without full ZoomInfo commitment",
   "$20,000/yr", "premium",
   ["Strong duplicate prevention (catches dupes before they enter CRM)", "Good lead-to-account matching", "Works with Salesforce and Marketo"],
-  ["Increasingly bundled with ZoomInfo rather than standalone", "Enterprise pricing for a focused tool", "UI hasn't kept up with modern alternatives"])
+  ["Increasingly bundled with ZoomInfo rather than standalone", "Enterprise pricing for a focused tool", "UI hasn't kept up with modern alternatives"],
+  ["Real-time duplicate prevention", "Lead-to-account matching", "Data normalization rules", "Web form integration", "Import scrubbing", "Salesforce + Marketo workflows"])
 
 T("insycle", "Insycle", "data-cleaning", "https://www.insycle.com", 7.5,
   "The most accessible CRM data cleaning tool on the market. Insycle works with HubSpot, Salesforce, and Intercom. Deduplication, standardization, bulk operations, and automated data maintenance at prices that don't require VP approval. If Validity is the enterprise choice, Insycle is the midmarket answer.",
   "HubSpot and Salesforce users who need ongoing CRM data hygiene without enterprise pricing",
   "$200/mo", "mid",
   ["Affordable CRM data cleaning (starts at $200/mo)", "Works with HubSpot, Salesforce, Intercom, Pipedrive", "Automated recurring cleaning schedules"],
-  ["Less powerful deduplication than Validity DemandTools", "Limited to CRM cleaning (not a general data quality tool)", "No enrichment, just cleaning and standardization"])
+  ["Less powerful deduplication than Validity DemandTools", "Limited to CRM cleaning (not a general data quality tool)", "No enrichment, just cleaning and standardization"],
+  ["HubSpot and Salesforce deduplication", "Scheduled cleaning automation", "Bulk record updates", "Standardization rules", "Custom formatting templates", "Merge workflow templates"])
 
 
 # =============================================================================
