@@ -83,11 +83,17 @@
   --space-2: 0.5rem;      /* 8px */
   --space-3: 0.75rem;     /* 12px */
   --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
   --space-6: 1.5rem;      /* 24px */
+  --space-7: 1.75rem;     /* 28px */
   --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
   --space-12: 3rem;       /* 48px */
+  --space-14: 3.5rem;     /* 56px */
   --space-16: 4rem;       /* 64px */
   --space-20: 5rem;       /* 80px */
+  --space-24: 6rem;       /* 96px */
+  --space-32: 8rem;       /* 128px */
 
   /* ── Border Radius ── */
   --radius-sm: 6px;       /* Badges, small tags */
@@ -134,22 +140,44 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-body);
-  font-size: var(--text-base);
-  line-height: 1.7;
+  font-size: var(--text-lg);
+  line-height: 1.85;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
-h1 { font-size: var(--text-5xl); font-weight: 800; letter-spacing: -0.03em; }
-h2 { font-size: var(--text-4xl); font-weight: 700; }
-h3 { font-size: var(--text-3xl); font-weight: 700; }
-h4 { font-size: var(--text-2xl); font-weight: 600; }
-h5 { font-size: var(--text-xl); font-weight: 600; }
-h6 { font-size: var(--text-lg); font-weight: 600; }
+h1 { font-size: var(--text-5xl); font-weight: 800; letter-spacing: -0.03em; margin-bottom: var(--space-6); }
+h2 { font-size: var(--text-4xl); font-weight: 700; margin-top: var(--space-12); margin-bottom: var(--space-6); }
+h3 { font-size: var(--text-2xl); font-weight: 700; margin-top: var(--space-8); margin-bottom: var(--space-4); }
+h4 { font-size: var(--text-xl); font-weight: 600; margin-top: var(--space-6); margin-bottom: var(--space-3); }
+h5 { font-size: var(--text-lg); font-weight: 600; margin-top: var(--space-5); margin-bottom: var(--space-3); }
+h6 { font-size: var(--text-base); font-weight: 600; margin-top: var(--space-4); margin-bottom: var(--space-2); }
+
+p {
+  margin-bottom: var(--space-5);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-bottom: var(--space-5);
+  padding-left: var(--space-6);
+  line-height: 1.85;
+}
+
+ul li, ol li {
+  margin-bottom: var(--space-3);
+}
+
+ul li:last-child, ol li:last-child {
+  margin-bottom: 0;
+}
 
 a {
   color: var(--color-primary);
