@@ -15,7 +15,7 @@ COPYRIGHT_YEAR = "2026"
 CURRENT_YEAR = 2026
 
 # CSS cache busting
-CSS_VERSION = "3"
+CSS_VERSION = "4"
 
 # Category slugs used in nav dropdown (must match CATEGORIES keys in build.py)
 NAV_CATEGORIES = [

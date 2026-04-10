@@ -101,8 +101,8 @@ def get_html_head(title, description, canonical_path, extra_head=""):
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/tokens.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/tokens.css?v={CSS_VERSION}">
+    <link rel="stylesheet" href="/assets/css/components.css?v={CSS_VERSION}">
     <link rel="stylesheet" href="/assets/css/styles.css?v={CSS_VERSION}">
 
     <!-- Google Search Console -->

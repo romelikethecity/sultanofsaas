@@ -4065,13 +4065,21 @@ def build_tool_pages():
     </table>
 </div>'''
 
-        # Features list
+        # Features grid (visual card-style)
         features_html = ""
         if t['features']:
-            feat_items = "\n".join(f"<li>{f}</li>" for f in t['features'])
+            feat_cards = "\n".join(
+                f'''<div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <span class="feature-name">{f}</span>
+    </div>'''
+                for f in t['features']
+            )
             features_html = f'''<div class="features-section">
     <h2>Key Features</h2>
-    <ul class="features-list">{feat_items}</ul>
+    <div class="features-grid">{feat_cards}</div>
 </div>'''
 
         # Breadcrumbs
