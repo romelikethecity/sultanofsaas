@@ -604,7 +604,7 @@ TOOL_CONTENT["salesrobot"] = {
     ],
     "who_should_skip": [
         {"audience": "Anyone whose LinkedIn account is critical to their career", "reason": "If losing your LinkedIn account would damage your professional reputation or networking capability, the risk isn't worth the automation benefit. Stick to manual outreach or use LinkedIn Sales Navigator's built-in tools."},
-        {"audience": "Teams needing multi-channel outbound", "reason": "SalesRobot is LinkedIn-only at its core. For coordinated email + LinkedIn + phone sequences, use Apollo, Outreach, or Outplay instead."},
+        {"audience": "Teams needing multi-channel outbound", "reason": "SalesRobot is fundamentally a LinkedIn-only tool. For coordinated email + LinkedIn + phone sequences, use Apollo, Outreach, or Outplay instead."},
     ],
     "stage_guidance": {
         "solo": "If LinkedIn is your primary outreach channel and you're spending hours on manual prospecting, Starter ($99/mo) saves real time. Use a secondary LinkedIn account if possible to protect your primary profile.",
