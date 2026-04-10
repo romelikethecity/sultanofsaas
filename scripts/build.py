@@ -1349,7 +1349,7 @@ T("notion-ai", "Notion AI", "ai-tools", "https://www.notion.so", 7.8,
   "Teams using Notion for docs and wikis who want built-in AI assistance",
   "$10/member/mo add-on", "mid",
   ["AI lives inside your existing workspace", "Summarizes and searches across all your docs", "Autofill database properties"],
-  ["$10/member/mo on top of Notion subscription", "AI quality is good but not best-in-class", "Can't do much outside the Notion ecosystem"],
+  ["$10/member/mo on top of Notion subscription", "AI quality is solid but trails ChatGPT and Claude", "Can't do much outside the Notion ecosystem"],
   ["AI writing assistant", "Q&A over workspace", "Autofill properties", "Meeting summary", "Translation", "Custom AI blocks"],
   [("AI Add-on", "$10/member/mo")],
   {"ease_of_use": 8.0, "value": 7.0, "features": 7.5, "support": 7.0})
@@ -1368,7 +1368,7 @@ T("midjourney", "Midjourney", "ai-tools", "https://www.midjourney.com", 7.5,
   "The best AI image generator for quality and aesthetics. Midjourney produces visuals that look professional enough for marketing materials, social posts, and presentations. The Discord interface is clunky, but the output quality makes up for it.",
   "Small businesses that need professional-looking visuals without hiring a designer",
   "$10/mo", "budget",
-  ["Best-in-class image quality", "Excellent for marketing and social visuals", "Active community and style inspiration"],
+  ["Sharpest image quality of any AI generator we tested", "Excellent for marketing and social visuals", "Active community and style inspiration"],
   ["Discord-only interface is awkward for business use", "Learning prompt engineering takes time", "No API for automation"],
   ["Text-to-image generation", "Image variations", "Upscaling", "Style references", "Zoom out", "Pan and extend"],
   [("Basic", "$10/mo"), ("Standard", "$30/mo"), ("Pro", "$60/mo")],
@@ -1444,7 +1444,7 @@ T("zoho-one", "Zoho One", "all-in-one", "https://www.zoho.com/one/", 7.0,
   "Small businesses that want an all-in-one suite without juggling 10 subscriptions",
   "$45/user/mo", "mid",
   ["45+ business apps in one subscription", "affordable for the breadth you get", "Apps share data without third-party integrations"],
-  ["Individual apps aren't best-in-class", "UI inconsistency across older vs newer apps", "Can feel overwhelming with so many options"],
+  ["Individual apps don't lead their categories (breadth over depth)", "UI inconsistency across older vs newer apps", "Can feel overwhelming with so many options"],
   ["CRM", "Projects", "Email", "Accounting", "HR", "Marketing automation"],
   [("Zoho One (all employees)", "$45/user/mo"), ("Zoho One (flexible)", "$105/user/mo")],
   {"ease_of_use": 6.5, "value": 8.5, "features": 7.0, "support": 6.5})
@@ -1483,7 +1483,7 @@ T("slack", "Slack", "communication", "https://www.slack.com", 8.2,
   "The default workplace chat tool. Slack's channels, threads, integrations, and search make it the standard for team communication. The free tier works for small teams but limits message history to 90 days. Pro at $8.75/user/mo removes that limit and adds screen sharing, group calls, and guest access.",
   "Teams that need real-time communication with strong integrations",
   "Free / $8.75+/user/mo", "low",
-  ["Best-in-class integrations with 2,400+ apps", "Channels + threads keep conversations organized", "Powerful search across all messages"],
+  ["The deepest integration library of any chat tool (2,400+ apps)", "Channels + threads keep conversations organized", "Powerful search across all messages"],
   ["Free tier limits message history to 90 days", "Can become a distraction factory without discipline", "Per-user pricing adds up for larger teams"],
   ["Channels", "Threads", "Direct messages", "Huddles (audio/video)", "Workflows", "App integrations"],
   [("Free", "$0 (90-day history)"), ("Pro", "$8.75/user/mo"), ("Business+", "$12.50/user/mo"), ("Enterprise Grid", "Custom")],
@@ -4363,66 +4363,615 @@ def build_alternatives_pages():
         write_page(f"{a['slug']}/index.html", page)
 
 
+import re as _re_pricing
+
+
+def _parse_price(price_str):
+    """Extract (amount, unit) from a pricing_tiers price string.
+
+    Returns dict with:
+      amount:   float dollar amount or None
+      per_user: True if /user or /employee/seat/person
+      per_mo:   True if /mo or /month (default True unless transactional)
+      is_free:  True if $0 or 'Free'
+      is_custom: True if 'Custom' or non-dollar
+      raw:      the original string
+    """
+    s = (price_str or "").strip()
+    low = s.lower()
+    out = {
+        "amount": None,
+        "per_user": False,
+        "per_mo": True,
+        "is_free": False,
+        "is_custom": False,
+        "raw": s,
+    }
+    if not s or "custom" in low or "quote" in low:
+        out["is_custom"] = True
+        return out
+    if "free" in low or s.startswith("$0"):
+        out["is_free"] = True
+        out["amount"] = 0.0
+        return out
+    m = _re_pricing.search(r"\$\s*([0-9,]+(?:\.[0-9]+)?)", s)
+    if m:
+        try:
+            out["amount"] = float(m.group(1).replace(",", ""))
+        except Exception:
+            out["amount"] = None
+    if "/user" in low or "/employee" in low or "/seat" in low or "/person" in low:
+        out["per_user"] = True
+    if "/transaction" in low or "/op" in low or "task" in low or "/lookup" in low:
+        out["per_mo"] = False
+    return out
+
+
+def _team_math(tiers, seats):
+    """Given pricing tiers and seat count, return a list of (tier_name, monthly_cost_str, notes)."""
+    rows = []
+    for name, price in tiers:
+        p = _parse_price(price)
+        if p["is_custom"]:
+            rows.append((name, "Custom quote", "Contact sales"))
+            continue
+        if p["is_free"]:
+            rows.append((name, "$0", "Free"))
+            continue
+        if p["amount"] is None:
+            rows.append((name, price, "See vendor"))
+            continue
+        if p["per_user"]:
+            total = p["amount"] * seats
+            rows.append((name, f"${total:,.0f}/mo", f"{seats} seats at ${p['amount']:,.0f}/user"))
+        else:
+            rows.append((name, f"${p['amount']:,.0f}/mo", "Flat platform fee"))
+    return rows
+
+
+def _format_tier_rank(idx, total):
+    if idx == 0:
+        return "entry"
+    if idx == total - 1:
+        return "top"
+    if idx == 1:
+        return "workhorse"
+    return "step-up"
+
+
+def _tier_narrative(t, idx, total, tier_name, price_str, parsed):
+    """Write a unique paragraph about a single tier based on tool + tier context."""
+    name = t["name"]
+    rank = _format_tier_rank(idx, total)
+    cat = CATEGORIES.get(t["category"], {}).get("name", t["category"].replace("-", " "))
+
+    # Free tier
+    if parsed["is_free"]:
+        if rank == "entry":
+            return (f"The free plan is the honest starting point. You can set up {name}, "
+                    f"connect it to your workflow, and get real use out of it without handing over a credit card. "
+                    f"For solo founders and tiny teams, this is often all you need for the first 6-12 months.")
+        return (f"An unusual free slot higher up the ladder. Use it to test specific features "
+                f"before committing to a paid plan.")
+
+    if parsed["is_custom"]:
+        return (f"The custom-quote tier means you're into sales-led territory. Expect discovery calls, "
+                f"annual contracts, and a price that scales with your seat count and feature needs. "
+                f"If you're here, build a spreadsheet of alternatives before the first call.")
+
+    amount = parsed["amount"]
+    per_user = parsed["per_user"]
+    if amount is None:
+        return (f"{tier_name} is priced at {price_str}. Check the vendor page for current terms before signing up.")
+
+    # Pick description based on rank + per_user
+    if rank == "entry":
+        if per_user:
+            return (f"At ${amount:,.0f} per user per month, {tier_name} is the real starting line for most paid {cat.lower()} buyers. "
+                    f"A 5-person team lands at ${amount * 5:,.0f}/mo, a 10-person team at ${amount * 10:,.0f}/mo. "
+                    f"You get the core product, but expect feature caps that push you toward the next tier within 6-12 months of serious use.")
+        return (f"{tier_name} at ${amount:,.0f}/mo is the minimum paid commitment. It unlocks {name}'s core feature set "
+                f"and moves you past any free-plan limits. For a small team that knows it will use the product daily, "
+                f"this tier usually earns its keep inside the first month.")
+
+    if rank == "workhorse":
+        if per_user:
+            return (f"{tier_name} is where most growing teams settle. At ${amount:,.0f} per user per month, "
+                    f"a 10-person team pays ${amount * 10:,.0f}/mo and a 25-person team pays ${amount * 25:,.0f}/mo. "
+                    f"You get more automation, better reporting, and the features that make {name} actually worth paying for.")
+        return (f"At ${amount:,.0f}/mo, {tier_name} is the tier {name} wants you to pick. "
+                f"It fills the gaps in the entry plan and adds the integrations and automation that most teams discover "
+                f"they need in week two. Budget for this from day one if you're serious about using {name}.")
+
+    if rank == "top":
+        if per_user:
+            return (f"{tier_name} runs ${amount:,.0f} per user per month, which puts a 10-person team at "
+                    f"${amount * 10:,.0f}/mo before any add-ons. This tier is for teams that genuinely need enterprise controls "
+                    f"like SSO, audit logs, and custom workflows. If you're not sure you need them, you don't.")
+        return (f"At ${amount:,.0f}/mo, {tier_name} is the ceiling of the self-serve pricing. "
+                f"It bundles in the features teams ask for after they hit scale. Good value if you actually use them, "
+                f"expensive padding if you don't.")
+
+    # step-up
+    if per_user:
+        return (f"{tier_name} sits at ${amount:,.0f} per user per month. A 10-person team pays ${amount * 10:,.0f}/mo. "
+                f"This is a step-up tier with specific features bundled in. Audit the feature list before upgrading. "
+                f"Sometimes one missing feature is the only reason to move up, and sometimes there's a cheaper way to get it.")
+    return (f"{tier_name} costs ${amount:,.0f}/mo. It's a step-up from the base plan, typically with more automation, "
+            f"higher limits, or advanced integrations. Worth it only if you can point to a specific feature on this tier "
+            f"that you actually need.")
+
+
+def _competitive_context(t):
+    """Find 3 same-category peers with cheaper and similar pricing for context."""
+    cat_slug = t["category"]
+    peers = []
+    for slug, peer in TOOLS.items():
+        if slug == t["slug"]:
+            continue
+        if peer["category"] != cat_slug:
+            continue
+        p_parsed = _parse_price(peer.get("pricing_start", ""))
+        if p_parsed["amount"] is None and not p_parsed["is_free"]:
+            continue
+        peers.append((slug, peer, p_parsed))
+    # Rank by amount ascending
+    peers.sort(key=lambda x: (x[2]["amount"] if x[2]["amount"] is not None else 0))
+    return peers[:4]
+
+
+def _pricing_faqs(t):
+    """Generate tool-specific pricing FAQs from data."""
+    name = t["name"]
+    start = t["pricing_start"]
+    tiers = t.get("pricing_tiers", [])
+    first_tier = tiers[0] if tiers else None
+    cons = t.get("cons", [])
+    is_free_start = "free" in start.lower() or "$0" in start
+
+    faqs = []
+
+    # How much
+    if is_free_start and len(tiers) > 1:
+        paid = tiers[1]
+        faqs.append((
+            f"How much does {name} cost?",
+            f"{name} has a free plan, and the first paid tier is {paid[0]} at {paid[1]}. "
+            f"Most teams that outgrow the free tier end up on {paid[0]} or higher once they hit the free-plan limits."
+        ))
+    else:
+        faqs.append((
+            f"How much does {name} cost?",
+            f"{name} starts at {start}. The paid plans scale up from there based on features, seats, or usage. "
+            f"Check the pricing table above for the full tier breakdown."
+        ))
+
+    # Free plan
+    if is_free_start:
+        faqs.append((
+            f"Is there a free version of {name}?",
+            f"Yes. {name} offers a free plan that covers the basics. It's a real product, not a time-limited trial, "
+            f"so you can run on it indefinitely if your needs stay small."
+        ))
+    else:
+        faqs.append((
+            f"Does {name} have a free trial?",
+            f"{name} doesn't lead with a free plan, so check the vendor site for current trial terms. "
+            f"Most tools in this category offer a 14-day trial, and some let you demo the product before signing up."
+        ))
+
+    # Per user question
+    per_user_tier = None
+    for tier in tiers:
+        if "/user" in tier[1].lower() or "/seat" in tier[1].lower() or "/employee" in tier[1].lower():
+            per_user_tier = tier
+            break
+    if per_user_tier:
+        parsed = _parse_price(per_user_tier[1])
+        if parsed["amount"]:
+            amt = parsed["amount"]
+            faqs.append((
+                f"How much does {name} cost for a 10-person team?",
+                f"On the {per_user_tier[0]} plan at ${amt:,.0f} per user per month, a 10-person team pays ${amt*10:,.0f}/mo "
+                f"(${amt*10*12:,.0f}/year). Add more for higher tiers or usage-based features."
+            ))
+    else:
+        flat_tier = None
+        for tier in tiers:
+            parsed = _parse_price(tier[1])
+            if parsed["amount"] and not parsed["per_user"] and not parsed["is_free"]:
+                flat_tier = (tier, parsed)
+                break
+        if flat_tier:
+            faqs.append((
+                f"Does {name} charge per user?",
+                f"No, {name}'s {flat_tier[0][0]} plan is a flat platform fee of {flat_tier[0][1]}. "
+                f"You can add team members without the per-seat pricing that most SaaS tools use."
+            ))
+
+    # Hidden costs
+    if cons:
+        # Find a con that sounds cost-related
+        cost_con = None
+        for c in cons:
+            cl = c.lower()
+            if any(k in cl for k in ["expensive", "add up", "adds up", "cost", "price", "pricing", "fee", "upsell", "add-on", "hidden"]):
+                cost_con = c
+                break
+        if cost_con:
+            faqs.append((
+                f"Are there hidden costs with {name}?",
+                f"The biggest gotcha buyers report: {cost_con.lower().rstrip('.')}. "
+                f"Read the contract line items before signing, and ask for the full cost including onboarding and add-ons."
+            ))
+        else:
+            faqs.append((
+                f"Are there hidden costs with {name}?",
+                f"Watch for add-on modules, onboarding fees, and minimum contract lengths on annual plans. "
+                f"These are common in this category and often aren't visible on the public pricing page."
+            ))
+
+    # Discount — varied by slug hash
+    v = (hash(t['slug']) & 0xfffffff) % 3
+    if v == 0:
+        faqs.append((
+            f"Does {name} offer annual discounts?",
+            f"Expect a 15-20% cut for annual prepay, which is standard in this category. "
+            f"Ask sales directly and push for more if you're committing to 10+ seats or multiple years. Monthly billing is the wrong move if you already know you'll stick around."
+        ))
+    elif v == 1:
+        faqs.append((
+            f"Is {name} cheaper if you pay annually?",
+            f"Yes, like most tools in this space, {name} typically discounts annual plans by 15-20%. "
+            f"If the public page only shows monthly, email sales and ask. Founders on tight runway should take the annual cut; everyone else should still consider it."
+        ))
+    else:
+        faqs.append((
+            f"Can you negotiate {name} pricing?",
+            f"Small teams usually can't move list prices much, but annual commits, multi-seat deals, and end-of-quarter timing all give you room to push back. "
+            f"Ask for an annual discount and any waived onboarding fees before you sign."
+        ))
+
+    # Cheaper alternative — varied
+    peers = _competitive_context(t)
+    cheaper = [p for p in peers if p[2]["amount"] is not None and t.get("pricing_start") and
+               (p[2]["amount"] < (_parse_price(t["pricing_start"])["amount"] or 9999))]
+    if cheaper:
+        cp_slug, cp, cp_parsed = cheaper[0]
+        v2 = (hash(t['slug']) & 0xfffffff) % 3
+        if v2 == 0:
+            ans = (f"Yes. {cp['name']} starts at {cp['pricing_start']}, which undercuts {name}'s {start}. "
+                   f"It's a lighter product in some areas, so audit the feature gap before switching. Our <a href=\"/tools/{cp_slug}/\">{cp['name']} review</a> covers the trade-offs.")
+        elif v2 == 1:
+            ans = (f"{cp['name']} is the budget alternative worth looking at first. It begins at {cp['pricing_start']} compared to {name}'s {start}. "
+                   f"Feature parity isn't perfect, so read the <a href=\"/tools/{cp_slug}/\">{cp['name']} review</a> before switching.")
+        else:
+            ans = (f"The cheapest real alternative is {cp['name']} at {cp['pricing_start']}. That's well under {name}'s {start}. "
+                   f"Don't switch just for the savings. Compare what you'd give up in our <a href=\"/tools/{cp_slug}/\">{cp['name']} review</a>.")
+        faqs.append((f"Is there a cheaper alternative to {name}?", ans))
+
+    return faqs[:6]
+
+
 def build_pricing_pages():
-    """Generate pricing breakdown pages for each tool."""
+    """Generate deep, data-driven pricing breakdown pages for each tool."""
     for slug, t in TOOLS.items():
         if not t['pricing_tiers']:
             continue
 
         cat = CATEGORIES.get(t['category'], {})
+        cat_name = cat.get("name", t["category"].replace("-", " ").title())
+        tiers = t['pricing_tiers']
+        tier_total = len(tiers)
+        name = t['name']
+        score = t['score']
+        pricing_tier_class = get_price_tier_class(t["pricing_tier"])
 
-        # Pricing table
-        rows = ""
-        for tier in t['pricing_tiers']:
-            name, price = tier[0], tier[1]
-            rows += f'<tr><td class="plan-name">{name}</td><td class="plan-price">{price}</td></tr>\n'
+        start_parsed = _parse_price(t['pricing_start'])
+        first_tier_parsed = _parse_price(tiers[0][1]) if tiers else None
 
-        # Pricing verdict
-        tier_word = t['pricing_tier'].title()
-        if t['pricing_tier'] == 'free':
-            price_take = f"{t['name']} offers a free tier that handles the basics. Worth starting here before spending money elsewhere."
-        elif t['pricing_tier'] == 'budget':
-            price_take = f"{t['name']} is competitively priced for its category. Good value for small teams watching their spend."
-        elif t['pricing_tier'] == 'mid':
-            price_take = f"{t['name']} sits at the mid-range price point. Fair pricing if you use the features, but make sure you need this tier before committing."
-        elif t['pricing_tier'] == 'premium':
-            price_take = f"{t['name']} commands premium pricing. The feature set justifies it for teams who use it fully, but there are cheaper alternatives that cover 80% of the functionality."
+        # --- INTRO (varied by tool hash to avoid template repetition) ---
+        tier_word_map = {
+            'free': 'one of the cheaper entry points',
+            'budget': 'on the budget end',
+            'mid': 'in the middle of the pack',
+            'premium': 'on the expensive side',
+            'enterprise': 'enterprise-priced',
+        }
+        tier_descriptor = tier_word_map.get(t['pricing_tier'], 'mid-range')
+        variant = (hash(slug) & 0xfffffff) % 4
+        cat_lower = cat_name.lower()
+
+        if variant == 0:
+            intro_p1 = (
+                f"<p>{name} starts at <strong>{t['pricing_start']}</strong>, which puts it {tier_descriptor} for {cat_lower}. "
+                f"We score it {score}/10 in our review. The real question for founders is whether the price matches the value, "
+                f"and that answer depends on which tier you pick and how big your team is.</p>"
+            )
+        elif variant == 1:
+            intro_p1 = (
+                f"<p>Pricing for {name} begins at <strong>{t['pricing_start']}</strong>. That's {tier_descriptor} compared to the rest of the {cat_lower} space. "
+                f"Our review gives it a {score}/10. Below is the tier-by-tier breakdown, the math for different team sizes, "
+                f"and the parts of the pricing model that deserve closer scrutiny before you commit.</p>"
+            )
+        elif variant == 2:
+            intro_p1 = (
+                f"<p>{name} is priced starting at <strong>{t['pricing_start']}</strong>, sitting {tier_descriptor} in {cat_lower}. "
+                f"It scores {score}/10 in our overall review. "
+                f"This page unpacks what each plan actually gets you, what the real monthly spend looks like at different team sizes, "
+                f"and where {name}'s pricing earns its keep or fails to.</p>"
+            )
         else:
-            price_take = f"{t['name']} targets enterprise budgets. Unless your team has outgrown mid-market alternatives, start with something cheaper."
+            intro_p1 = (
+                f"<p>The entry price for {name} is <strong>{t['pricing_start']}</strong>, placing it {tier_descriptor} among {cat_lower} tools. "
+                f"With a {score}/10 score, {name} sits in a spot where the pricing conversation actually matters. "
+                f"Below, we walk through every tier, calculate what real teams end up paying, and flag the line items worth negotiating.</p>"
+            )
 
-        # Breadcrumbs
-        bc = breadcrumb_html([("Home", "/"), (t['name'], f"/tools/{slug}/"), ("Pricing", "")])
-        bc_schema = get_breadcrumb_schema([("Home", "/"), (t['name'], f"/tools/{slug}/"), ("Pricing", f"/{slug}-pricing/")])
+        intro_p2 = (
+            f"<p><em>The quick read on {name}:</em> {t['verdict_line']}</p>"
+        )
+
+        # --- PRICING TABLE ---
+        rows = ""
+        for tier in tiers:
+            tname, tprice = tier[0], tier[1]
+            rows += f'<tr><td class="plan-name">{tname}</td><td class="plan-price">{tprice}</td></tr>\n'
+
+        pricing_table = f'''<table class="pricing-table">
+    <thead><tr><th>Plan</th><th>Price</th></tr></thead>
+    <tbody>{rows}</tbody>
+</table>'''
+
+        # --- PER-TIER BREAKDOWN ---
+        tier_blocks = ""
+        for i, tier in enumerate(tiers):
+            tname, tprice = tier[0], tier[1]
+            parsed = _parse_price(tprice)
+            paragraph = _tier_narrative(t, i, tier_total, tname, tprice, parsed)
+            tier_blocks += f'<div class="review-body"><h3>{tname} — {tprice}</h3><p>{paragraph}</p></div>\n'
+
+        plans_intro_options = [
+            f"Here's what you actually get at each tier, and which plan fits your stage.",
+            f"Breaking down every {name} plan, what's included, and who should pay for it.",
+            f"Each tier in plain English. What unlocks at each level, and when to upgrade.",
+            f"A tier-by-tier walkthrough of the {name} pricing ladder.",
+        ]
+        plans_intro = plans_intro_options[variant]
+        tier_section = f'''<div class="review-section">
+    <h2>{name} Plans Explained</h2>
+    <div class="review-body"><p>{plans_intro}</p></div>
+    {tier_blocks}
+</div>'''
+
+        # --- TEAM MATH ---
+        # Pick the most representative tier: the second one (workhorse) or first paid
+        math_tier_idx = 0
+        for idx, tier in enumerate(tiers):
+            p = _parse_price(tier[1])
+            if not p["is_free"] and not p["is_custom"] and p["amount"]:
+                math_tier_idx = idx
+                break
+        # Prefer the workhorse (index 1 or 2) if it exists and is non-free
+        for candidate in [1, 2]:
+            if candidate < tier_total:
+                p = _parse_price(tiers[candidate][1])
+                if not p["is_free"] and not p["is_custom"] and p["amount"]:
+                    math_tier_idx = candidate
+                    break
+
+        math_tier = tiers[math_tier_idx]
+        math_parsed = _parse_price(math_tier[1])
+
+        team_math_rows = ""
+        team_math_intro = ""
+        if math_parsed["amount"] is not None and not math_parsed["is_custom"]:
+            if math_parsed["per_user"]:
+                amt = math_parsed["amount"]
+                for seats, label in [(1, "Solo founder"), (5, "5-person team"), (10, "10-person team"), (25, "25-person team")]:
+                    monthly = amt * seats
+                    yearly = monthly * 12
+                    team_math_rows += (
+                        f'<tr><td>{label}</td><td>${monthly:,.0f}/mo</td><td>${yearly:,.0f}/yr</td></tr>'
+                    )
+                team_math_intro = (
+                    f"<p>{name}'s {math_tier[0]} plan runs ${amt:,.0f} per user per month. "
+                    f"Here's what that looks like as your team grows:</p>"
+                )
+            else:
+                amt = math_parsed["amount"]
+                for seats, label in [(1, "Solo founder"), (5, "5-person team"), (10, "10-person team"), (25, "25-person team")]:
+                    team_math_rows += (
+                        f'<tr><td>{label}</td><td>${amt:,.0f}/mo</td><td>${amt*12:,.0f}/yr</td></tr>'
+                    )
+                team_math_intro = (
+                    f"<p>{name}'s {math_tier[0]} plan is a flat ${amt:,.0f}/mo regardless of team size. "
+                    f"That changes the math dramatically compared to per-seat tools:</p>"
+                )
+
+        team_math_section = ""
+        if team_math_rows:
+            team_math_section = f'''<div class="review-section">
+    <h2>What You Actually Pay: Team Size Math</h2>
+    <div class="review-body">
+        {team_math_intro}
+        <table class="pricing-table">
+            <thead><tr><th>Team Size</th><th>Monthly</th><th>Yearly</th></tr></thead>
+            <tbody>{team_math_rows}</tbody>
+        </table>
+        <p>These numbers assume list pricing on the {math_tier[0]} tier. Annual prepay usually saves 15-20%, and enterprise seats often get volume discounts. Ask sales for a quote before you commit to more than 10 seats.</p>
+    </div>
+</div>'''
+
+        # --- WHAT YOU GET / WATCH OUT FOR ---
+        features = t.get("features", [])
+        cons = t.get("cons", [])
+        pros = t.get("pros", [])
+        feature_list = ""
+        if features:
+            feature_list = "<ul>" + "".join(f"<li>{f}</li>" for f in features[:6]) + "</ul>"
+
+        gotchas = ""
+        if cons:
+            # Identify cost-related cons
+            cost_cons = [c for c in cons if any(k in c.lower() for k in ["cost", "expensive", "pric", "fee", "add up", "adds up", "add-on", "hidden", "upsell"])]
+            other_cons = [c for c in cons if c not in cost_cons]
+            items = (cost_cons + other_cons)[:3]
+            gotchas = "<ul>" + "".join(f"<li>{c}</li>" for c in items) + "</ul>"
+
+        included_section = f'''<div class="review-section">
+    <h2>What's Included in {name} Pricing</h2>
+    <div class="review-body">
+        <p>Every plan includes the core {name} feature set. Here's what you get access to on paid tiers:</p>
+        {feature_list}
+        <p>Feature depth grows with the tier. Entry plans cap on automation, integrations, or usage limits. Upper plans unlock the heavier features that mid-market teams actually need. Read the vendor's feature matrix before picking a tier, especially if one specific feature is the reason you're buying.</p>
+    </div>
+</div>'''
+
+        gotcha_section = ""
+        if gotchas:
+            gotcha_section = f'''<div class="review-section">
+    <h2>What to Watch Out For</h2>
+    <div class="review-body">
+        <p>The most common pricing complaints buyers raise about {name}:</p>
+        {gotchas}
+        <p>None of these are deal-breakers on their own. They're the things you want to negotiate or plan around before you sign a contract. The worst time to discover an add-on fee is month three.</p>
+    </div>
+</div>'''
+
+        # --- COMPETITIVE CONTEXT ---
+        peers = _competitive_context(t)
+        peer_rows = ""
+        for p_slug, peer, p_parsed in peers[:4]:
+            amt_str = peer["pricing_start"]
+            peer_rows += (
+                f'<tr><td><strong><a href="/{p_slug}-pricing/">{peer["name"]}</a></strong></td>'
+                f'<td>{amt_str}</td>'
+                f'<td>{peer["score"]}/10</td>'
+                f'<td>{peer.get("best_for","")[:80]}</td></tr>'
+            )
+
+        competitive_section = ""
+        if peer_rows:
+            competitive_section = f'''<div class="review-section">
+    <h2>How {name} Pricing Compares to {cat_name} Alternatives</h2>
+    <div class="review-body">
+        <p>Price alone is a bad way to pick tools. But it's a useful sanity check. Here's how {name}'s starting price lines up against the other {cat_name.lower()} tools we rate:</p>
+        <table class="comparison-table">
+            <thead><tr><th>Tool</th><th>Starts At</th><th>Score</th><th>Best For</th></tr></thead>
+            <tbody>{peer_rows}</tbody>
+        </table>
+        <p>If {name}'s sticker shock is real for you, run the math on the cheaper options in this table. Some of them cover 80% of what {name} does at half the price. Others are meaningfully weaker and not worth the saving. Our category guide on <a href="/best/{t['category']}/">best {cat_name.lower()}</a> breaks down the trade-offs in detail.</p>
+    </div>
+</div>'''
+
+        # --- OPINION ---
+        opinion_paragraphs = []
+        # Paragraph 1: Value verdict based on score + pricing_tier
+        if score >= 8.5:
+            p1 = (f"<p>{name} is one of the strongest picks in {cat_name.lower()}, and the pricing earns it. "
+                  f"At {t['pricing_start']}, you're paying for a product that scores {score}/10 in our review, "
+                  f"and the per-dollar value holds up against everything else in this category. "
+                  f"This is a tool you can commit to without second-guessing the spend.</p>")
+        elif score >= 7.5:
+            p1 = (f"<p>{name} lands in the solid-but-not-exceptional zone. The {score}/10 score reflects a product that does its job well, "
+                  f"but there are cheaper tools that cover the same ground and pricier tools that do more. "
+                  f"Whether {t['pricing_start']} is worth it depends on how closely your workflow matches what {name} is built for.</p>")
+        else:
+            p1 = (f"<p>{name} scores {score}/10, which is a reminder that the price tag isn't the whole picture. "
+                  f"You're paying {t['pricing_start']} for a product with real limitations, and the cons matter. "
+                  f"Before committing, check the alternatives above. At this score, you need a specific reason to pick {name} over the leaders in {cat_name.lower()}.</p>")
+        opinion_paragraphs.append(p1)
+
+        # Paragraph 2: Who should buy
+        if t.get("best_for"):
+            p2 = (f"<p>The fit test is simple. {name} is built for {t['best_for'].lower()}. "
+                  f"If that's you, the pricing is worth it. If it's not, you'll end up paying for features you never touch while missing features you actually need. "
+                  f"Buy the tool that fits your motion, not the one with the best pricing page.</p>")
+            opinion_paragraphs.append(p2)
+
+        # Paragraph 3: The bottom line — include a pro as evidence
+        if pros:
+            lead_pro = pros[0].lower()
+            p3 = (f"<p>The bottom line: {name}'s pricing is defensible if you actually use what it's good at. "
+                  f"Its biggest strength is {lead_pro}, and that's where the money goes. "
+                  f"If that strength maps to a real pain point in your business, pay the price. If not, walk away and pick something cheaper.</p>")
+            opinion_paragraphs.append(p3)
+
+        opinion_section = f'''<div class="review-section">
+    <h2>The Sultan's Verdict on {name} Pricing</h2>
+    <div class="review-body">
+        {''.join(opinion_paragraphs)}
+    </div>
+</div>'''
+
+        # --- FAQs ---
+        faqs = _pricing_faqs(t)
+        faq_html_str = ""
+        if faqs:
+            faq_items = "".join(
+                f'<div class="faq-item"><h3>{q}</h3><p>{a}</p></div>' for q, a in faqs
+            )
+            faq_html_str = f'''<div class="review-section">
+    <h2>{name} Pricing FAQs</h2>
+    <div class="faq-list">{faq_items}</div>
+</div>'''
+
+        faq_schema = get_faq_schema(faqs) if faqs else ""
+
+        # --- BREADCRUMBS + ASSEMBLY ---
+        bc = breadcrumb_html([("Home", "/"), (name, f"/tools/{slug}/"), ("Pricing", "")])
+        bc_schema = get_breadcrumb_schema([("Home", "/"), (name, f"/tools/{slug}/"), ("Pricing", f"/{slug}-pricing/")])
 
         body = f'''<div class="pricing-page">
     {bc}
     <div class="pricing-page-header">
-        <h1>{t["name"]} Pricing ({CURRENT_YEAR})</h1>
+        <h1>{name} Pricing ({CURRENT_YEAR})</h1>
         <div class="review-meta">
-            <span class="{get_price_tier_class(t["pricing_tier"])}">Starting at {t["pricing_start"]}</span>
+            <span class="{pricing_tier_class}">Starting at {t["pricing_start"]}</span>
         </div>
     </div>
 
-    <table class="pricing-table">
-        <thead><tr><th>Plan</th><th>Price</th></tr></thead>
-        <tbody>{rows}</tbody>
-    </table>
-
-    <div class="pricing-verdict">
-        <h3>The Sultan's Take on {t["name"]} Pricing</h3>
-        <p>{price_take}</p>
+    <div class="review-section">
+        <div class="review-body">
+            {intro_p1}
+            {intro_p2}
+        </div>
     </div>
+
+    {pricing_table}
+
+    {tier_section}
+
+    {team_math_section}
+
+    {included_section}
+
+    {gotcha_section}
+
+    {competitive_section}
+
+    {opinion_section}
+
+    {faq_html_str}
 
     <div class="review-cta-bar">
         <a href="/tools/{slug}/" class="cta-btn">Read Full Review &rarr;</a>
-        <a href="{t["url"]}" class="cta-btn" target="_blank" rel="noopener">Visit {t["name"]} &rarr;</a>
+        <a href="{t["url"]}" class="cta-btn" target="_blank" rel="noopener">Visit {name} &rarr;</a>
     </div>
 </div>'''
 
-        extra_head = bc_schema
+        meta_desc = f"{name} pricing starts at {t['pricing_start']}. Tier-by-tier breakdown, team cost math, hidden fees, and how it compares to {cat_name.lower()} alternatives."
+        if len(meta_desc) > 160:
+            meta_desc = f"{name} pricing starts at {t['pricing_start']}. Full tier breakdown, team math, and honest comparison to alternatives."
+        if len(meta_desc) > 160:
+            meta_desc = f"{name} pricing: {t['pricing_start']} start. Tier breakdown, team cost math, honest verdict."
+        meta_desc = meta_desc[:160]
+
+        extra_head = bc_schema + faq_schema
         page = get_page_wrapper(
-            f"{t['name']} Pricing Breakdown ({CURRENT_YEAR})",
-            f"{t['name']} pricing starts at {t['pricing_start']}. Full tier-by-tier breakdown with The Sultan's take on value.",
+            f"{name} Pricing ({CURRENT_YEAR})",
+            meta_desc,
             f"/{slug}-pricing/",
             body,
             extra_head=extra_head
