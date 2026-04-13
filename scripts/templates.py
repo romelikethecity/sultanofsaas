@@ -310,6 +310,28 @@ def write_page(rel_path, content):
 # SCHEMA HELPERS
 # =============================================================================
 
+def get_homepage_schema():
+    """Generate Organization + WebSite @graph schema for homepage."""
+    schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "url": SITE_URL,
+                "description": "SaaS tool reviews, pricing comparisons, and stack guides for founders."
+            },
+            {
+                "@type": "WebSite",
+                "name": SITE_NAME,
+                "url": SITE_URL,
+                "description": "Honest SaaS reviews that pick a winner. Scores, comparisons, and stack guides."
+            }
+        ]
+    }
+    return f'    <script type="application/ld+json">{json.dumps(schema)}</script>\n'
+
+
 def get_breadcrumb_schema(items):
     """Generate BreadcrumbList JSON-LD. items = [(label, url), ...]"""
     list_items = []
