@@ -55,6 +55,7 @@ NAV_ITEMS = [
     {"href": "/tools/", "label": "Tools"},
     {"href": "/stacks/", "label": "Stacks"},
     {"href": "/guides/", "label": "Guides"},
+    {"href": "/voices/", "label": "Top Voices"},
     {"href": "/about/", "label": "About"},
 ]
 

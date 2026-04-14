@@ -1,0 +1,258 @@
+{
+  "title": "Top 25 SaaS Tool Voices of 2026",
+  "subtitle": "The most influential voices helping SMB founders and ops leaders evaluate, adopt, and get the most from their software stack",
+  "last_updated": "2026-04-14",
+  "methodology": "Ranked by cross-list appearances across independent publications (SaaStr, G2, Product Hunt, MicroConf, Capterra, and others), community impact, content output, and direct influence on how SMBs discover and choose software tools. We evaluated 60+ candidates and filtered for people who actively shape how businesses think about their tech stack.",
+  "voices": [
+    {
+      "rank": 1,
+      "name": "Dharmesh Shah",
+      "title": "Co-Founder & CTO",
+      "company": "HubSpot",
+      "linkedin_url": "https://www.linkedin.com/in/dharmesh/",
+      "bio": "Co-founded HubSpot in 2006, which has grown into the default platform for SMB marketing, sales, and CRM. 1.1 million LinkedIn followers. His OnStartups blog shaped an entire generation of SaaS founders. Before HubSpot, built and sold Pyramid Digital Solutions to SunGard. Recently invested heavily in Agent.ai as his bet on AI-powered SaaS.",
+      "tags": ["CRM", "SMB SaaS", "AI"],
+      "tier": "leader"
+    },
+    {
+      "rank": 2,
+      "name": "Godard Abel",
+      "title": "Co-Founder & CEO",
+      "company": "G2",
+      "linkedin_url": "https://www.linkedin.com/in/godardabel/",
+      "bio": "Built G2 into the world's largest software review marketplace, used by 90 million buyers annually to make purchasing decisions. Previously founded BigMachines (acquired by Oracle) and SteelBrick (acquired by Salesforce). His leadership has made G2 review scores the de facto trust signal for B2B software purchases.",
+      "tags": ["Software Reviews", "Marketplace", "Enterprise"],
+      "tier": "leader"
+    },
+    {
+      "rank": 3,
+      "name": "Scott Brinker",
+      "title": "Ex-VP Platform Ecosystem",
+      "company": "HubSpot / chiefmartec.com",
+      "linkedin_url": "https://www.linkedin.com/in/sjbrinker/",
+      "bio": "Creator of the Marketing Technology Landscape graphic, which has tracked the growth of martech from a few hundred vendors to over 14,000. His chiefmartec.com blog reaches 75,000+ readers and is the most-cited resource for understanding the SaaS tool ecosystem. Former program chair of the MarTech conference. Co-founded ion interactive before joining HubSpot.",
+      "tags": ["Martech Landscape", "Platform Ecosystem", "Content"],
+      "tier": "leader"
+    },
+    {
+      "rank": 4,
+      "name": "Jason Lemkin",
+      "title": "Founder & CEO",
+      "company": "SaaStr",
+      "linkedin_url": "https://www.linkedin.com/in/jasonmlemkin/",
+      "bio": "Runs SaaStr, the world's largest community for B2B SaaS founders, and manages a $90M venture fund. Previously founded EchoSign (acquired by Adobe). SaaStr Annual is the largest SaaS event on the planet. His daily LinkedIn posts and Quora answers on SaaS metrics, pricing, and scaling have become the reference library for first-time founders.",
+      "tags": ["SaaS Metrics", "Venture Capital", "Community"],
+      "tier": "leader"
+    },
+    {
+      "rank": 5,
+      "name": "Hiten Shah",
+      "title": "Co-Founder & CEO",
+      "company": "Crazy Egg / Nira",
+      "linkedin_url": "https://www.linkedin.com/in/hnshah/",
+      "bio": "Serial SaaS builder who co-founded Crazy Egg, KISSmetrics, FYI, and Nira. Advised 120+ startups on product and growth. His approach to building products, ship fast, measure everything, kill what doesn't work, has influenced thousands of SaaS founders. Known for brutally honest product reviews and startup advice.",
+      "tags": ["Product Building", "Analytics", "Startup Advising"],
+      "tier": "leader"
+    },
+    {
+      "rank": 6,
+      "name": "Rob Walling",
+      "title": "Co-Founder",
+      "company": "MicroConf / TinySeed",
+      "linkedin_url": "https://www.linkedin.com/in/robwalling/",
+      "bio": "Godfather of the bootstrapped SaaS movement. Built and sold Drip for 8 figures. Runs MicroConf (7 events worldwide) and TinySeed, which has invested nearly $60M in 210+ SaaS companies. His podcast Startups for the Rest of Us has 800+ episodes and 15M+ downloads. Champion of building profitable SaaS without VC.",
+      "tags": ["Bootstrapping", "MicroConf", "SaaS Investing"],
+      "tier": "leader"
+    },
+    {
+      "rank": 7,
+      "name": "Nathan Latka",
+      "title": "CEO",
+      "company": "Founderpath / GetLatka",
+      "linkedin_url": "https://www.linkedin.com/in/nathanlatka/",
+      "bio": "Interviewed 4,000+ SaaS CEOs on his daily podcast, extracting live revenue data that populates the GetLatka database (90K+ companies). All ARR figures are confirmed on camera. Runs Founderpath, which provides non-dilutive funding to SaaS founders. His database is the most-used free resource for SaaS benchmarking.",
+      "tags": ["SaaS Data", "Revenue Benchmarks", "Podcasting"],
+      "tier": "leader"
+    },
+    {
+      "rank": 8,
+      "name": "Tomasz Tunguz",
+      "title": "Managing Director",
+      "company": "Theory Ventures",
+      "linkedin_url": "https://www.linkedin.com/in/tomasztunguz/",
+      "bio": "One of the most data-driven SaaS investors and bloggers in the world. His blog tomtunguz.com publishes deep-dive analyses on SaaS metrics, pricing, and market trends backed by real company data. Previously a partner at Redpoint Ventures. Launched Theory Ventures with a $230M fund focused on AI-native software companies.",
+      "tags": ["SaaS Analytics", "Venture Capital", "Data-Driven"],
+      "tier": "leader"
+    },
+    {
+      "rank": 9,
+      "name": "Patrick Campbell",
+      "title": "Founder (acquired by Paddle)",
+      "company": "ProfitWell / Paddle",
+      "linkedin_url": "https://www.linkedin.com/in/patrickccampbell/",
+      "bio": "Built ProfitWell into the gold standard for SaaS pricing and retention analytics, used by 30,000+ companies. Sold to Paddle in 2022. His YouTube series Pricing Page Teardown broke down how real SaaS companies should price their products. His research on willingness-to-pay and retention benchmarks is cited across the industry.",
+      "tags": ["SaaS Pricing", "Retention", "Analytics"],
+      "tier": "leader"
+    },
+    {
+      "rank": 10,
+      "name": "Kieran Flanagan",
+      "title": "SVP of Marketing",
+      "company": "HubSpot",
+      "linkedin_url": "https://www.linkedin.com/in/kieranflanagan/",
+      "bio": "Leads marketing at HubSpot and co-hosts The Marketing Against the Grain podcast with Kipp Bodnar. His content covers how AI is reshaping the SaaS tool landscape, product-led growth tactics, and content distribution strategies. Previously led growth at HubSpot that drove significant adoption among SMBs discovering new tools.",
+      "tags": ["Product-Led Growth", "AI in SaaS", "Content Distribution"],
+      "tier": "leader"
+    },
+    {
+      "rank": 11,
+      "name": "Wes Bush",
+      "title": "Founder & CEO",
+      "company": "ProductLed",
+      "linkedin_url": "https://www.linkedin.com/in/wesbush/",
+      "bio": "Author of Product-Led Growth: How to Build a Product That Sells Itself, the book that defined the PLG category. Runs ProductLed, which trains SaaS companies on building self-serve acquisition and expansion motions. His frameworks on free trial optimization, onboarding flows, and activation metrics are used by hundreds of SaaS teams.",
+      "tags": ["Product-Led Growth", "Onboarding", "Self-Serve SaaS"],
+      "tier": "rising"
+    },
+    {
+      "rank": 12,
+      "name": "April Dunford",
+      "title": "Founder",
+      "company": "Ambient Strategy",
+      "linkedin_url": "https://www.linkedin.com/in/aprildunford/",
+      "bio": "Author of Obviously Awesome, the go-to book on product positioning for SaaS companies. Her positioning framework has been adopted by hundreds of startups trying to explain what their product does and who it's for. Her follow-up book Sales Pitch extended the methodology into sales conversations. Consultant to companies including Google and Epic Games.",
+      "tags": ["Positioning", "Go-to-Market", "Author"],
+      "tier": "rising"
+    },
+    {
+      "rank": 13,
+      "name": "Elena Verna",
+      "title": "Interim Head of Growth",
+      "company": "Various (Advisor, formerly Miro, Amplitude)",
+      "linkedin_url": "https://www.linkedin.com/in/elenaverna/",
+      "bio": "One of the most respected voices on product-led growth and PLG + sales hybrid motions. Previously led growth at Miro, Amplitude, and SurveyMonkey. Her LinkedIn breakdowns of how specific SaaS companies grow (with real metrics) are some of the most-shared B2B content on the platform. Board member at MongoDB and Netlify.",
+      "tags": ["Product-Led Growth", "Growth Strategy", "PLG + Sales"],
+      "tier": "rising"
+    },
+    {
+      "rank": 14,
+      "name": "Rand Fishkin",
+      "title": "Co-Founder & CEO",
+      "company": "SparkToro",
+      "linkedin_url": "https://www.linkedin.com/in/randfishkin/",
+      "bio": "Founded Moz (raised $30M+) before starting SparkToro, an audience research tool built with zero VC and just two people. His book Lost and Founder is the most honest account of startup life ever written. Champion of building sustainable, profitable SaaS companies. His content on why VC-backed growth is overrated influences how SMB founders think about tool adoption.",
+      "tags": ["Audience Research", "Bootstrapping", "SEO"],
+      "tier": "rising"
+    },
+    {
+      "rank": 15,
+      "name": "Kyle Poyar",
+      "title": "Operating Partner",
+      "company": "OpenView Partners",
+      "linkedin_url": "https://www.linkedin.com/in/kylepoyar/",
+      "bio": "Runs the Growth Unhinged newsletter and is the leading voice on SaaS pricing and packaging strategy. His research on usage-based pricing, PLG benchmarks, and expansion revenue has been cited by thousands of SaaS companies. Previously built OpenView's product-led growth practice from scratch.",
+      "tags": ["SaaS Pricing", "Usage-Based", "PLG Benchmarks"],
+      "tier": "rising"
+    },
+    {
+      "rank": 16,
+      "name": "Ryan Kulp",
+      "title": "Founder",
+      "company": "Micro Acquisitions / Fork Equity",
+      "linkedin_url": "https://www.linkedin.com/in/ryanckulp/",
+      "bio": "Pioneer in the micro-SaaS acquisition space, buying and growing small software products. His content on evaluating, acquiring, and operating small SaaS tools gives SMB founders a practical lens on what makes software actually valuable. Teaches courses on buying internet businesses and has completed dozens of small acquisitions.",
+      "tags": ["Micro-SaaS", "Acquisitions", "Indie Software"],
+      "tier": "rising"
+    },
+    {
+      "rank": 17,
+      "name": "Lenny Rachitsky",
+      "title": "Author",
+      "company": "Lenny's Newsletter",
+      "linkedin_url": "https://www.linkedin.com/in/lennyrachitsky/",
+      "bio": "Runs the #1 business newsletter on Substack, reaching 700,000+ subscribers. Former product lead at Airbnb. His deep-dive interviews with SaaS founders and product leaders have become the definitive reference for understanding how tools grow, price, and retain users. Every issue includes real metrics and actionable frameworks.",
+      "tags": ["Product", "Newsletter", "SaaS Growth"],
+      "tier": "rising"
+    },
+    {
+      "rank": 18,
+      "name": "Leah Tharin",
+      "title": "Head of Product & Growth",
+      "company": "Jua.ai",
+      "linkedin_url": "https://www.linkedin.com/in/leahtharin/",
+      "bio": "One of LinkedIn's fastest-growing voices on product-led growth. Her content breaks down how SaaS products should design their self-serve experience, trial-to-paid conversion, and expansion flows. Known for sharp, data-backed takes that cut through PLG hype to focus on what actually drives revenue.",
+      "tags": ["Product-Led Growth", "Conversion", "SaaS Strategy"],
+      "tier": "rising"
+    },
+    {
+      "rank": 19,
+      "name": "David Cancel",
+      "title": "Co-Founder & Former CEO",
+      "company": "Drift (acquired by Salesloft)",
+      "linkedin_url": "https://www.linkedin.com/in/dcancel/",
+      "bio": "Serial founder who built Drift into a $1B+ company before its acquisition by Salesloft. Previously founded Performable (acquired by HubSpot) and Lookery. Now invests in early-stage SaaS companies. His Seeking Wisdom podcast and content on building customer-centric products shaped how a generation of SaaS companies think about conversational tools.",
+      "tags": ["Conversational AI", "SaaS Founding", "Product"],
+      "tier": "rising"
+    },
+    {
+      "rank": 20,
+      "name": "Christoph Janz",
+      "title": "Managing Partner",
+      "company": "Point Nine Capital",
+      "linkedin_url": "https://www.linkedin.com/in/christophjanz/",
+      "bio": "Runs The Angel VC blog, one of the most popular SaaS investing blogs globally. His 'Five Ways to Build a $100M Business' framework is one of the most-shared SaaS strategy graphics ever created. Invested early in Zendesk, Algolia, and Contentful. His annual SaaS funding napkin is a benchmarking staple for founders.",
+      "tags": ["SaaS Investing", "Benchmarks", "Angel Investing"],
+      "tier": "rising"
+    },
+    {
+      "rank": 21,
+      "name": "Amanda Natividad",
+      "title": "VP of Marketing",
+      "company": "SparkToro",
+      "linkedin_url": "https://www.linkedin.com/in/amandanatividad/",
+      "bio": "Runs marketing at SparkToro and publishes the Zero-Click Content newsletter. Her framework on creating content that delivers value without requiring a click has been widely adopted by SaaS marketers. Previously led marketing at Fitbit and Growth Machine. Her audience research methodology helps SMBs find tools through community signals, not ads.",
+      "tags": ["Content Marketing", "Audience Research", "Zero-Click"],
+      "tier": "rising"
+    },
+    {
+      "rank": 22,
+      "name": "G.C. Lionetti",
+      "title": "CMO",
+      "company": "Ramp",
+      "linkedin_url": "https://www.linkedin.com/in/gclionetti/",
+      "bio": "Leads marketing at Ramp, one of the fastest-growing fintech/SaaS companies in history. Previously at Inflection, Atlassian, and HubSpot. Known for building self-serve funnels that convert at scale. His approach to SaaS growth, combining product-led acquisition with strong brand storytelling, is studied by operators across the industry.",
+      "tags": ["Fintech SaaS", "Growth Marketing", "PLG"],
+      "tier": "rising"
+    },
+    {
+      "rank": 23,
+      "name": "Justin Welsh",
+      "title": "Solopreneur",
+      "company": "Justin Welsh LLC",
+      "linkedin_url": "https://www.linkedin.com/in/justinwelsh/",
+      "bio": "Built a $5M+ solo business teaching other solopreneurs how to use SaaS tools to create content, build audiences, and sell digital products. Previously SVP Sales at PatientPop. His Saturday Solopreneur newsletter reaches 200,000+ subscribers. His tool stack breakdowns show SMB operators exactly which software to use and why.",
+      "tags": ["Solopreneur", "Tool Stacks", "Personal Brand"],
+      "tier": "rising"
+    },
+    {
+      "rank": 24,
+      "name": "Arvid Kahl",
+      "title": "Author & Creator",
+      "company": "The Bootstrapped Founder",
+      "linkedin_url": "https://www.linkedin.com/in/arvidkahl/",
+      "bio": "Co-founded FeedbackPanda, bootstrapped it to profitability, and sold it. Now writes The Bootstrapped Founder newsletter and podcast helping indie SaaS builders find audiences, validate products, and grow without funding. His book Zero to Sold is the practical guide for bootstrapped SaaS that Rob Walling's community recommends most often.",
+      "tags": ["Bootstrapping", "Indie SaaS", "Author"],
+      "tier": "rising"
+    },
+    {
+      "rank": 25,
+      "name": "Corey Haines",
+      "title": "Founder",
+      "company": "Conversion Factory",
+      "linkedin_url": "https://www.linkedin.com/in/coreyhainesco/",
+      "bio": "Founder of Conversion Factory and previously head of growth at Baremetrics. His content on SaaS landing page optimization, trial conversion, and positioning helps SMB founders turn website visitors into paying customers. Known for detailed teardowns of real SaaS pricing pages, showing what converts and what doesn't.",
+      "tags": ["Conversion Optimization", "SaaS Marketing", "Pricing Pages"],
+      "tier": "rising"
+    }
+  ]
+}
