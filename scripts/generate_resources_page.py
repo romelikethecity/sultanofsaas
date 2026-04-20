@@ -34,6 +34,7 @@ SECTIONS = [
         {"name": "All That SaaS", "url": "https://www.allthatsaas.com/", "desc": "SaaS product reviews, comparisons, and roundups from a team of software and UX professionals."},
         {"name": "Sultan of SaaS", "url": "https://sultanofsaas.com/", "desc": "Opinionated SaaS reviews for SMBs and founders. Picks winners, no 'it depends' answers.", "owned": True},
         {"name": "B2B Sales Tools", "url": "https://b2bsalestools.com/", "desc": "Independent reviews and comparisons of 130+ B2B sales tools across 22 categories.", "owned": True},
+        {"name": "MOPs Report", "url": "https://mopsreport.com/", "desc": "Marketing operations tool reviews, salary data, and career intelligence for MOps professionals.", "owned": True},
     ]},
     {"title": "Tools Worth Knowing", "items": [
         {"name": "G2", "url": "https://www.g2.com/", "desc": "Largest review database (3.3M+ reviews). The G2 Grid is the most recognized SaaS evaluation framework."},
