@@ -1,0 +1,111 @@
+# SultanOfSaaS
+
+> Honest SaaS reviews with scores, pricing breakdowns, head-to-head comparisons, and stack guides for founders and operators who buy their own tools. No sponsored rankings. Updated 2026.
+
+SultanOfSaaS covers 200+ B2B SaaS products across CRM, project management, email marketing, SEO, help desk, sales engagement, conversation intelligence, data enrichment, and AI SDR categories. Every review includes actual pricing (not "contact us"), real user complaints, and a clear recommendation. The site also publishes industry-specific guides for healthcare, e-commerce, SaaS, agencies, and 12 other verticals.
+
+## Core Pages
+
+- [Homepage](https://sultanofsaas.com/): SaaS reviews, scores, and recommendations
+- [All Tools](https://sultanofsaas.com/tools/): Browse all reviewed SaaS tools
+- [Best Of Lists](https://sultanofsaas.com/best/): Category rankings with scoring methodology
+- [Industry Guides](https://sultanofsaas.com/for/): SaaS recommendations by industry
+- [Stack Guides](https://sultanofsaas.com/stacks/): Recommended tool stacks by company stage
+- [Buying Guides](https://sultanofsaas.com/guides/): Deep-dive guides for SaaS buyers
+- [About](https://sultanofsaas.com/about/): About SultanOfSaaS
+
+## Best Of Lists
+
+- [Best CRM Software](https://sultanofsaas.com/best/crm/): CRM rankings for SMBs and startups
+- [Best Project Management Tools](https://sultanofsaas.com/best/project-management/): PM tool rankings
+- [Best Email Marketing Platforms](https://sultanofsaas.com/best/email-marketing/): Email platform rankings
+- [Best SEO Tools](https://sultanofsaas.com/best/seo-tools/): SEO tool rankings
+- [Best Help Desk Software](https://sultanofsaas.com/best/help-desk/): Help desk rankings
+- [Best AI SDR Tools](https://sultanofsaas.com/best/ai-sdr/): AI sales development rep tools
+- [Best Sales Engagement Platforms](https://sultanofsaas.com/best/sales-engagement/): Outreach and engagement tools
+- [Best Conversation Intelligence](https://sultanofsaas.com/best/conversation-intelligence/): Call recording and analysis tools
+- [Best Data Enrichment Tools](https://sultanofsaas.com/best/data-enrichment/): Contact and company data tools
+- [Best AI Tools for Small Business](https://sultanofsaas.com/best/ai-tools/): AI tool rankings
+
+## CRM Pricing Pages
+
+- [HubSpot Pricing](https://sultanofsaas.com/hubspot-pricing/): Hub pricing and add-ons
+- [Salesforce Pricing](https://sultanofsaas.com/salesforce-pricing/): Enterprise CRM pricing
+- [Pipedrive Pricing](https://sultanofsaas.com/pipedrive-pricing/): Pipeline CRM pricing tiers
+- [Close Pricing](https://sultanofsaas.com/close-pricing/): Inside sales CRM pricing
+- [Zoho CRM Pricing](https://sultanofsaas.com/zoho-crm-pricing/): Zoho CRM tier breakdown
+- [Freshsales Pricing](https://sultanofsaas.com/freshsales-pricing/): Freshworks CRM pricing
+- [Copper Pricing](https://sultanofsaas.com/copper-pricing/): Google Workspace CRM pricing
+
+## SEO Tool Pricing Pages
+
+- [Semrush Pricing](https://sultanofsaas.com/semrush-pricing/): Semrush plan breakdown
+- [Ahrefs Pricing](https://sultanofsaas.com/ahrefs-pricing/): Ahrefs tier pricing
+- [Moz Pricing](https://sultanofsaas.com/moz-pricing/): Moz Pro pricing
+- [SE Ranking Pricing](https://sultanofsaas.com/se-ranking-pricing/): SE Ranking plans
+- [Mangools Pricing](https://sultanofsaas.com/mangools-pricing/): Budget SEO tool pricing
+- [Surfer SEO Pricing](https://sultanofsaas.com/surfer-seo-pricing/): Content optimization pricing
+
+## Sales and Outreach Pricing Pages
+
+- [Apollo Pricing](https://sultanofsaas.com/apollo-pricing/): Apollo.io pricing and credits
+- [Outreach Pricing](https://sultanofsaas.com/outreach-pricing/): Sales engagement pricing
+- [Salesloft Pricing](https://sultanofsaas.com/salesloft-pricing/): Salesloft tier pricing
+- [Instantly Pricing](https://sultanofsaas.com/instantly-pricing/): Cold email platform pricing
+- [Lemlist Pricing](https://sultanofsaas.com/lemlist-pricing/): Multichannel outreach pricing
+- [Smartlead Pricing](https://sultanofsaas.com/smartlead-pricing/): Cold email infrastructure pricing
+- [Lusha Pricing](https://sultanofsaas.com/lusha-pricing/): Contact data pricing
+- [ZoomInfo Pricing](https://sultanofsaas.com/zoominfo-pricing/): Enterprise data pricing
+- [Cognism Pricing](https://sultanofsaas.com/cognism-pricing/): GDPR-compliant data pricing
+- [Clay Pricing](https://sultanofsaas.com/clay-pricing/): Data workflow pricing
+
+## Email Marketing Pricing Pages
+
+- [Mailchimp Pricing](https://sultanofsaas.com/mailchimp-pricing/): Mailchimp plan breakdown
+- [Klaviyo Pricing](https://sultanofsaas.com/klaviyo-pricing/): E-commerce email pricing
+- [ActiveCampaign Pricing](https://sultanofsaas.com/activecampaign-pricing/): Marketing automation pricing
+- [ConvertKit Pricing](https://sultanofsaas.com/convertkit-pricing/): Creator email pricing
+- [Brevo Pricing](https://sultanofsaas.com/brevo-pricing/): Brevo (Sendinblue) pricing
+- [Beehiiv Pricing](https://sultanofsaas.com/beehiiv-pricing/): Newsletter platform pricing
+
+## Project Management Pricing Pages
+
+- [Asana Pricing](https://sultanofsaas.com/asana-pricing/): Asana plan breakdown
+- [Monday Pricing](https://sultanofsaas.com/monday-pricing/): Monday.com pricing tiers
+- [ClickUp Pricing](https://sultanofsaas.com/clickup-pricing/): ClickUp plan pricing
+- [Notion Pricing](https://sultanofsaas.com/notion-pricing/): Notion workspace pricing
+- [Linear Pricing](https://sultanofsaas.com/linear-pricing/): Engineering PM pricing
+- [Trello Pricing](https://sultanofsaas.com/trello-pricing/): Kanban tool pricing
+
+## Conversation Intelligence Pricing
+
+- [Gong Pricing](https://sultanofsaas.com/gong-pricing/): Revenue intelligence pricing
+- [Fathom Pricing](https://sultanofsaas.com/fathom-pricing/): AI meeting assistant pricing
+- [Fireflies Pricing](https://sultanofsaas.com/fireflies-pricing/): Meeting transcription pricing
+- [Sybill Pricing](https://sultanofsaas.com/sybill-pricing/): AI sales assistant pricing
+
+## Head-to-Head Comparisons
+
+- [HubSpot vs Salesforce](https://sultanofsaas.com/hubspot-vs-salesforce/): CRM comparison
+- [HubSpot vs Pipedrive](https://sultanofsaas.com/hubspot-vs-pipedrive/): SMB CRM comparison
+- [Semrush vs Ahrefs](https://sultanofsaas.com/semrush-vs-ahrefs/): SEO tool comparison
+- [Outreach vs Salesloft](https://sultanofsaas.com/outreach-vs-salesloft/): Sales engagement comparison
+- [Mailchimp vs ConvertKit](https://sultanofsaas.com/mailchimp-vs-convertkit/): Email platform comparison
+- [Asana vs Monday](https://sultanofsaas.com/asana-vs-monday/): PM tool comparison
+- [Gong vs Chorus](https://sultanofsaas.com/gong-vs-chorus/): Conversation intelligence comparison
+- [Zendesk vs Freshdesk](https://sultanofsaas.com/zendesk-vs-freshdesk/): Help desk comparison
+- [Intercom vs Zendesk](https://sultanofsaas.com/intercom-vs-zendesk/): Support platform comparison
+- [Instantly vs Lemlist](https://sultanofsaas.com/instantly-vs-lemlist/): Cold email comparison
+
+## Industry Guides
+
+- [Best SaaS for E-Commerce](https://sultanofsaas.com/for/ecommerce/): E-commerce tool recommendations
+- [Best SaaS for SaaS Companies](https://sultanofsaas.com/for/saas/): Meta stack guide
+- [Best SaaS for Healthcare](https://sultanofsaas.com/for/healthcare/): Healthcare-specific tools
+- [Best SaaS for Agencies](https://sultanofsaas.com/for/agencies/): Agency tool stack
+- [Best SaaS for Startups](https://sultanofsaas.com/for/startups/): Startup tool recommendations
+- [Best SaaS for Real Estate](https://sultanofsaas.com/for/real-estate/): Real estate tools
+- [Best SaaS for Restaurants](https://sultanofsaas.com/for/restaurants/): Restaurant management tools
+- [Best SaaS for Construction](https://sultanofsaas.com/for/construction/): Construction tools
+- [Best SaaS for Education](https://sultanofsaas.com/for/education/): EdTech tools
+- [Best SaaS for Creators](https://sultanofsaas.com/for/creators/): Creator economy tools

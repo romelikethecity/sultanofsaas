@@ -1,0 +1,433 @@
+/* ═══════════════════════════════════════════════════════
+   SultanOfSaaS.com — Component Styles
+   Requires tokens.css to be loaded first.
+   ═══════════════════════════════════════════════════════ */
+
+
+/* ── Sultan's Verdict Badge (inline, compact) ── */
+.verdict-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-default);
+}
+.verdict-badge .verdict-score {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 900;
+  line-height: 1;
+}
+.verdict-badge .verdict-label {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+.verdict-badge .verdict-word {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.verdict-badge .verdict-bar {
+  width: 100%;
+  height: 3px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+.verdict-badge .verdict-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+
+/* ── Sultan's Verdict Card (full, review pages) ── */
+.verdict-card {
+  padding: var(--space-6);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-gold);
+}
+.verdict-card .verdict-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.verdict-card .verdict-header-text {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.verdict-card .verdict-main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+.verdict-card .verdict-score-large {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.verdict-card .verdict-summary-word {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+}
+.verdict-card .verdict-summary p {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.verdict-card .verdict-breakdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+.verdict-card .breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-hover);
+  border-radius: var(--radius-sm);
+}
+.verdict-card .breakdown-item .bl {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+.verdict-card .breakdown-item .bv {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+
+/* ── Tool Profile Card ── */
+.tool-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition-default), box-shadow var(--transition-default);
+}
+.tool-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-elevated);
+}
+.tool-card.sultans-pick {
+  background: var(--sultans-pick-bg);
+  border-color: var(--sultans-pick-border);
+  box-shadow: var(--sultans-pick-glow);
+}
+.tool-card .card-top {
+  padding: var(--space-6);
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+.tool-card .card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--bg-hover);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.tool-card .card-name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.tool-card .card-category {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+.tool-card .card-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: var(--space-2);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.tool-card .card-description {
+  padding: 0 var(--space-6);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+.tool-card .card-footer {
+  padding: var(--space-4) var(--space-6);
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool-card .card-price {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.tool-card .card-cta {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 0.03em;
+}
+
+
+/* ── Sultan's Pick Badge ── */
+.sultans-pick-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: rgba(212, 160, 84, 0.15);
+  border: 1px solid rgba(212, 160, 84, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+
+/* ── Comparison Table ── */
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+}
+.comparison-table th,
+.comparison-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.comparison-table thead th {
+  background: var(--bg-tertiary);
+  color: var(--text-tertiary);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.comparison-table thead th:first-child { border-radius: var(--radius-md) 0 0 0; }
+.comparison-table thead th:last-child { border-radius: 0 var(--radius-md) 0 0; }
+.comparison-table thead th.winner-col {
+  background: linear-gradient(180deg, rgba(212, 160, 84, 0.12), var(--bg-tertiary));
+  border-top: 2px solid var(--color-primary);
+}
+.comparison-table tbody td { color: var(--text-secondary); }
+.comparison-table tbody td.winner-col {
+  background: rgba(212, 160, 84, 0.04);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.comparison-table tbody tr:hover td { background: var(--bg-hover); }
+
+.comparison-table .winner-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: rgba(212, 160, 84, 0.15);
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+}
+
+
+/* ── Category Navigation ── */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.category-nav .cat-item {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all var(--transition-default);
+  text-decoration: none;
+}
+.category-nav .cat-item:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+.category-nav .cat-item.active {
+  background: var(--color-primary-subtle);
+  border-color: var(--color-primary-dim);
+  color: var(--color-primary);
+}
+.category-nav .cat-count {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-left: 4px;
+}
+
+
+/* ── Winner Banner ── */
+.winner-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  background: var(--winner-bg);
+  border: 1px solid var(--winner-border);
+  border-radius: var(--radius-md);
+}
+.winner-banner .winner-title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+.winner-banner .winner-reason {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+.winner-banner .winner-score {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 900;
+  color: var(--verdict-excellent);
+  padding: var(--space-2) var(--space-4);
+  background: rgba(52, 211, 153, 0.1);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+
+/* ── Price Tier Tags ── */
+.price-tag {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  display: inline-block;
+}
+.price-tag--free       { color: var(--price-free);       border-color: rgba(52, 211, 153, 0.3);  background: rgba(52, 211, 153, 0.08); }
+.price-tag--budget     { color: var(--price-budget);     border-color: rgba(96, 165, 250, 0.3);  background: rgba(96, 165, 250, 0.08); }
+.price-tag--mid        { color: var(--price-mid);        border-color: rgba(251, 191, 36, 0.3);  background: rgba(251, 191, 36, 0.08); }
+.price-tag--premium    { color: var(--price-premium);    border-color: rgba(244, 114, 182, 0.3); background: rgba(244, 114, 182, 0.08); }
+.price-tag--enterprise { color: var(--price-enterprise); border-color: rgba(167, 139, 250, 0.3); background: rgba(167, 139, 250, 0.08); }
+
+
+/* ── Features Grid (visual cards) ── */
+.features-section {
+  margin-bottom: var(--space-12);
+}
+
+.features-section h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.02em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-default), transform var(--transition-default), background var(--transition-default);
+}
+
+.feature-card:hover {
+  border-color: var(--border-gold);
+  background: var(--bg-tertiary);
+  transform: translateY(-1px);
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border: 1px solid var(--border-gold);
+}
+
+.feature-name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-card {
+    padding: var(--space-4) var(--space-5);
+  }
+}
