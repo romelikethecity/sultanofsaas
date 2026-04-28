@@ -261,13 +261,28 @@ def get_newsletter_html():
 # PAGE WRAPPER
 # =============================================================================
 
-def get_page_wrapper(title, description, canonical_path, body_content, active_page="", extra_head=""):
-    """Wrap body content in a complete HTML page."""
+def get_sources_section():
+    """Return E-E-A-T sources & methodology block for content pages."""
+    return '''<aside class="content-sources">
+    <h4>Sources & Methodology</h4>
+    <ul>
+        <li>Reviews based on hands-on product testing, vendor documentation, verified user feedback, and founder conversations</li>
+        <li>Pricing data verified directly from vendor websites and sales teams, updated monthly</li>
+        <li>Feature comparisons derived from documented product capabilities across verified sources</li>
+        <li><a href="/about/">Read our review methodology</a></li>
+    </ul>
+</aside>'''
+
+
+def get_page_wrapper(title, description, canonical_path, body_content, active_page="", extra_head="", show_sources=False):
+    """Wrap body content in a complete HTML page. Pass show_sources=True for content pages (E-E-A-T)."""
+    sources = get_sources_section() if show_sources else ""
     return f'''{get_html_head(title, description, canonical_path, extra_head)}
 <body>
 {get_nav_html(active_page)}
 <main class="main-content">
 {body_content}
+{sources}
 </main>
 {get_newsletter_html()}
 {get_footer_html()}

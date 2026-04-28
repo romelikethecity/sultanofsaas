@@ -147,6 +147,12 @@ CATEGORIES = {
         'tools': ['chatgpt', 'zapier-ai', 'notion-ai', 'jasper', 'fireflies',
                   'midjourney', 'descript', 'motion'],
     },
+    'website-builders': {
+        'slug': 'website-builders',
+        'name': 'Website Builders & Design',
+        'description': 'Tools for building, optimizing, and maintaining business websites. From drag-and-drop builders to performance-first static site services.',
+        'tools': ['sharppages'],
+    },
 }
 
 
@@ -1407,6 +1413,17 @@ T("motion", "Motion", "ai-tools", "https://www.usemotion.com", 7.0,
   [("Individual", "$19/mo"), ("Team", "$12/user/mo")],
   {"ease_of_use": 6.5, "value": 7.0, "features": 7.0, "support": 6.5})
 
+# --- Website Builders & Design ---
+T("sharppages", "SharpPages", "website-builders", "https://sharppages.com", 9.2,
+  "Static HTML websites that load in under a second and score 90+ on PageSpeed. Flat-fee builds, no vendor lock-in, and programmatic SEO at scale. The fastest marketing sites you can buy.",
+  "B2B companies and professional services firms that want a marketing site that outperforms every WordPress and Webflow build on speed",
+  "$2,500", "mid",
+  ["Every site scores 90+ on mobile PageSpeed", "Flat-fee pricing, no hourly billing or change orders", "You own the source files, host anywhere"],
+  ["No CMS dashboard for self-serve edits", "Marketing sites only, not web apps", "Smaller operation than full-service agencies"],
+  ["Static HTML websites", "Programmatic SEO pages", "Event marketing sites", "Paid social management", "Core Web Vitals optimization", "PageSpeed audits"],
+  [("Standard Site", "$2,500+"), ("Programmatic SEO", "Per project"), ("Event Sites", "Per event")],
+  {"ease_of_use": 8.5, "value": 9.0, "features": 8.5, "support": 8.5},
+  sultans_pick=True)
 
 # =============================================================================
 # PHASE 3 TOOL REGISTRATIONS
@@ -4187,7 +4204,8 @@ def build_tool_pages():
             meta_review,
             f"/tools/{slug}/",
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f"tools/{slug}/index.html", page)
 
@@ -4298,7 +4316,8 @@ def build_category_pages():
             f"/best/{slug}/",
             body,
             active_page="/best/",
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f"best/{slug}/index.html", page)
 
@@ -4539,7 +4558,8 @@ def build_comparison_pages():
             meta_desc,
             f"/{c['slug']}/",
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f"{c['slug']}/index.html", page)
 
@@ -4648,7 +4668,8 @@ def build_alternatives_pages():
             f"Looking for {original['name']} alternatives? The Sultan ranks the {len(a['alts'])} best options with scores, pricing, and honest verdicts.",
             f"/{a['slug']}/",
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f"{a['slug']}/index.html", page)
 
@@ -5264,7 +5285,8 @@ def build_pricing_pages():
             meta_desc,
             f"/{slug}-pricing/",
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f"{slug}-pricing/index.html", page)
 
@@ -5373,7 +5395,8 @@ def build_stack_pages():
             f'/stacks/{stack["slug"]}/',
             body,
             active_page="/stacks/",
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f'stacks/{stack["slug"]}/index.html', page)
 
@@ -5435,7 +5458,8 @@ def build_stacks_index():
         "/stacks/",
         body,
         active_page="/stacks/",
-        extra_head=bc_schema
+        extra_head=bc_schema,
+        show_sources=True,
     )
     write_page("stacks/index.html", page)
 
@@ -5453,7 +5477,9 @@ def build_about_page():
 
     <h2>Who is The Sultan?</h2>
 
-    <p>The Sultan is an anonymous reviewer who has spent years helping SMBs and founders pick the right tools. The anonymity is deliberate. It keeps vendor relationships out of the review process and lets the work speak for itself. No personal brand to protect. No conference circuit to maintain. Just opinions, backed by evidence.</p>
+    <p>The Sultan is an anonymous reviewer who has spent over 15 years evaluating, implementing, and managing SaaS tools across enterprise sales, marketing, revenue operations, and data infrastructure. This includes hands-on experience across the full Salesforce ecosystem, Microsoft Dynamics and Azure, marketing automation platforms, and dozens of point solutions. The reviews on this site come from someone who has used these tools to hit quota, manage teams, and build revenue engines, not from someone who read the product page and wrote a summary. The Sultan holds an MBA from a top-10 business school.</p>
+
+    <p>The anonymity is deliberate. It keeps vendor relationships out of the review process and lets the work speak for itself. No personal brand to protect. No conference circuit to maintain. Just opinions, backed by evidence.</p>
 
     <p>Behind the persona is real research. Every review pulls from hands-on testing, vendor documentation, public pricing pages, support transcripts on Reddit and G2, and direct conversations with founders who use the tools day-to-day. When The Sultan picks a winner, it is because the tool earned it across multiple evaluation passes, not because a marketing team sent a glossy deck.</p>
 
@@ -5502,6 +5528,175 @@ def build_about_page():
         extra_head=bc_schema
     )
     write_page("about/index.html", page)
+
+
+def build_privacy_page():
+    """Generate the privacy policy page."""
+    body = f'''<div class="about-page">
+    <h1>Privacy Policy</h1>
+
+    <p><strong>Last updated:</strong> {BUILD_DATE}</p>
+
+    <p>SultanOfSaaS ("we," "us," "our") operates the website sultanofsaas.com. This page describes how we collect, use, and protect information when you visit our site.</p>
+
+    <h2>Information We Collect</h2>
+
+    <h3>Information You Provide</h3>
+    <p>If you contact us by email, we collect your email address and the content of your message. We do not require account creation, login, or payment to access any content on the Site.</p>
+
+    <h3>Information Collected Automatically</h3>
+    <p>When you visit sultanofsaas.com, we may collect standard web analytics data through Google Analytics 4 (GA4), including:</p>
+
+    <ul style="color: var(--text-secondary); line-height: 2; padding-left: var(--space-6); margin-bottom: var(--space-4);">
+        <li>Pages visited and time spent on each page</li>
+        <li>Referring website or search engine</li>
+        <li>Browser type and operating system</li>
+        <li>Approximate geographic location (city/region level, not precise)</li>
+        <li>Device type (desktop, mobile, tablet)</li>
+    </ul>
+
+    <p>This data is aggregated and used to understand how visitors use the site. We do not use this data to identify individual visitors.</p>
+
+    <h2>How We Use Your Information</h2>
+
+    <p>We use collected information for these purposes:</p>
+
+    <ul style="color: var(--text-secondary); line-height: 2; padding-left: var(--space-6); margin-bottom: var(--space-4);">
+        <li><strong>Site improvement:</strong> Analytics data helps us understand which reviews and categories are most useful and where to focus our efforts.</li>
+        <li><strong>Communication:</strong> If you email us directly, we use your email to respond to your message.</li>
+    </ul>
+
+    <h2>Email Service</h2>
+
+    <p>If we send transactional emails (such as responses to inquiries), they are sent through Resend. Resend processes your email address solely to deliver our messages. Their privacy policy is available at <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a>.</p>
+
+    <h2>Analytics (GA4)</h2>
+
+    <p>We use Google Analytics 4 for aggregate site analytics. GA4 collects anonymized usage data to help us understand traffic patterns and content performance. We do not use analytics data for advertising, retargeting, or any form of individual tracking. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</p>
+
+    <h2>Cookies</h2>
+
+    <p>We use cookies only through Google Analytics 4 for aggregate site analytics. We do not use cookies for advertising, tracking across sites, or personalizing content. You can disable cookies in your browser settings without affecting your ability to use the site.</p>
+
+    <h2>Third-Party Services</h2>
+
+    <p>We use the following third-party services:</p>
+
+    <ul style="color: var(--text-secondary); line-height: 2; padding-left: var(--space-6); margin-bottom: var(--space-4);">
+        <li><strong>Google Analytics 4:</strong> Web analytics. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's privacy policy</a>.</li>
+        <li><strong>GitHub Pages:</strong> Website hosting. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</li>
+        <li><strong>Google Fonts:</strong> Web fonts. <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts privacy FAQ</a>.</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+
+    <p>Analytics data is retained according to Google Analytics 4 default settings (14 months). We do not maintain databases of visitor personal information.</p>
+
+    <h2>Your Rights</h2>
+
+    <p>To request information about any personal data we may hold, or to request its deletion, email <a href="mailto:hello@sultanofsaas.com">hello@sultanofsaas.com</a> and we will process your request within 48 hours.</p>
+
+    <p>If you are located in the EU, you have additional rights under GDPR including the right to access, correct, and delete your personal data. Contact us at <a href="mailto:hello@sultanofsaas.com">hello@sultanofsaas.com</a> to exercise these rights.</p>
+
+    <h2>Children's Privacy</h2>
+
+    <p>SultanOfSaaS is not intended for children under 16. We do not knowingly collect personal information from children.</p>
+
+    <h2>Changes to This Policy</h2>
+
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last updated" date. We will not materially reduce your privacy protections without notice.</p>
+
+    <h2>Contact</h2>
+
+    <p>Questions about this privacy policy? Email <a href="mailto:hello@sultanofsaas.com">hello@sultanofsaas.com</a>.</p>
+</div>'''
+
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Privacy Policy", "/privacy/")])
+
+    page = get_page_wrapper(
+        "Privacy Policy",
+        "SultanOfSaaS privacy policy. How we collect, use, and protect your data when you use our SaaS review platform.",
+        "/privacy/",
+        body,
+        active_page="/privacy/",
+        extra_head=bc_schema
+    )
+    write_page("privacy/index.html", page)
+
+
+def build_terms_page():
+    """Generate the terms of service page."""
+    body = f'''<div class="about-page">
+    <h1>Terms of Service</h1>
+
+    <p><strong>Last updated:</strong> {BUILD_DATE}</p>
+
+    <p>These terms of service ("Terms") govern your use of sultanofsaas.com ("the Site"), operated by SultanOfSaaS ("we," "us," "our"). By accessing or using the Site, you agree to these Terms. If you do not agree, do not use the Site.</p>
+
+    <h2>Acceptance of Terms</h2>
+
+    <p>By accessing the Site, you confirm that you are at least 16 years old and agree to be bound by these Terms and our <a href="/privacy/">Privacy Policy</a>. Continued use of the Site after changes to these Terms constitutes acceptance of those changes.</p>
+
+    <h2>Use License</h2>
+
+    <p>We grant you a limited, non-exclusive, non-transferable license to access and use the Site for personal, non-commercial purposes. You may not:</p>
+
+    <ul style="color: var(--text-secondary); line-height: 2; padding-left: var(--space-6); margin-bottom: var(--space-4);">
+        <li>Reproduce, distribute, or republish content from this Site without written permission</li>
+        <li>Use automated tools to scrape, crawl, or extract data from the Site beyond what is permitted by our robots.txt</li>
+        <li>Use the Site for any unlawful purpose or in violation of any applicable laws</li>
+        <li>Attempt to interfere with the proper functioning of the Site</li>
+        <li>Remove or alter any copyright, trademark, or other proprietary notices</li>
+    </ul>
+
+    <h2>Content Accuracy</h2>
+
+    <p>We strive to keep tool reviews, pricing data, comparisons, and recommendations accurate and current. However, SaaS products change frequently. Vendors update pricing, modify features, and alter terms without notice. We do not guarantee that any specific price, feature, or score reflects the current state of a product. Always verify details directly with the vendor before making purchasing decisions.</p>
+
+    <h2>Disclaimer</h2>
+
+    <p>The Site and all content are provided "as is" without warranties of any kind, express or implied. Reviews, scores, and recommendations reflect the opinions of the reviewer and should not be taken as professional advice. We do not warrant that the Site will be available without interruption or that content will be error-free.</p>
+
+    <h2>Affiliate Disclosure</h2>
+
+    <p>Some links on this Site are affiliate links. If you sign up for a product through an affiliate link, we may earn a commission at no extra cost to you. Affiliate relationships never influence review scores or recommendations. Tools that pay affiliate commissions do not receive higher ratings.</p>
+
+    <h2>Limitation of Liability</h2>
+
+    <p>To the maximum extent permitted by law, SultanOfSaaS and its operators shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Site, including but not limited to loss of profits, data, or business opportunities resulting from reliance on our reviews or recommendations.</p>
+
+    <h2>External Links</h2>
+
+    <p>The Site contains links to third-party websites, including SaaS vendor sites, pricing pages, and documentation. We are not responsible for the content, privacy practices, or availability of these external sites. Accessing them is at your own risk.</p>
+
+    <h2>Newsletter</h2>
+
+    <p>If you subscribe to any newsletter operated by SultanOfSaaS, you consent to receive periodic emails about SaaS reviews, tool updates, and industry insights. You can unsubscribe at any time using the link in any email. We will not share your email address with third parties.</p>
+
+    <h2>Modifications</h2>
+
+    <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated "Last updated" date. Your continued use of the Site after changes constitutes acceptance.</p>
+
+    <h2>Governing Law</h2>
+
+    <p>These Terms are governed by the laws of the State of Ohio, United States, without regard to conflict of law principles.</p>
+
+    <h2>Contact</h2>
+
+    <p>Questions about these terms? Email <a href="mailto:hello@sultanofsaas.com">hello@sultanofsaas.com</a>.</p>
+</div>'''
+
+    bc_schema = get_breadcrumb_schema([("Home", "/"), ("Terms of Service", "/terms/")])
+
+    page = get_page_wrapper(
+        "Terms of Service",
+        "Terms of service for sultanofsaas.com. Rules governing use of the SultanOfSaaS website and SaaS review platform.",
+        "/terms/",
+        body,
+        active_page="/terms/",
+        extra_head=bc_schema
+    )
+    write_page("terms/index.html", page)
 
 
 def build_niche_pages():
@@ -5575,7 +5770,8 @@ def build_niche_pages():
                 f'/best/{cat_slug}/{niche_slug}/',
                 body,
                 active_page="/best/",
-                extra_head=extra_head
+                extra_head=extra_head,
+                show_sources=True,
             )
             write_page(f'best/{cat_slug}/{niche_slug}/index.html', page)
             count += 1
@@ -5694,7 +5890,8 @@ def build_industry_pages():
             meta_desc,
             f'/for/{slug}/',
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f'for/{slug}/index.html', page)
 
@@ -5760,7 +5957,8 @@ def build_industries_index():
         f"SaaS tool recommendations for {len(INDUSTRIES)} industries. CRM, email, SEO, PM, and help desk picks tailored to your business.",
         "/for/",
         body,
-        extra_head=bc_schema
+        extra_head=bc_schema,
+        show_sources=True,
     )
     write_page("for/index.html", page)
 
@@ -6026,7 +6224,8 @@ def build_tools_index():
         f"Browse all {len(TOOLS)} SaaS tools reviewed by The Sultan. Filter by category, price, company size, and industry.",
         "/tools/",
         body,
-        extra_head=bc_schema
+        extra_head=bc_schema,
+        show_sources=True,
     )
     write_page("tools/index.html", page)
 
@@ -6086,7 +6285,8 @@ def build_category_index():
         "/best/",
         body,
         active_page="/best/",
-        extra_head=bc_schema
+        extra_head=bc_schema,
+        show_sources=True,
     )
     write_page("best/index.html", page)
 
@@ -6782,6 +6982,12 @@ GUIDES = [
 
     <p>If you have a site with 50+ pages, run a Screaming Frog crawl once a month. It will find issues that cloud-based site audits miss. It's ugly, it's technical, and it's the tool that actual SEO professionals use every day.</p>
 
+    <h2>Before You Buy Any Tool: Fix Your Site Speed</h2>
+
+    <p>None of these tools matter if your site scores 45 on mobile PageSpeed. Google uses Core Web Vitals as a ranking signal. A slow site penalizes every page you publish, every keyword you target, and every backlink you earn. The best SEO tool in the world cannot compensate for a WordPress site loading in 4 seconds.</p>
+
+    <p>If your site scores below 70 on <a href="https://pagespeed.web.dev/" rel="nofollow">PageSpeed Insights</a>, fix that before spending $99/month on Ahrefs. Services like <a href="/tools/sharppages/">SharpPages</a> build static HTML sites that score 90+ out of the box with zero ongoing hosting costs. The one-time investment pays for itself in recovered organic traffic within months.</p>
+
     <h2>The Recommended Stack by Budget</h2>
 
     <ul>
@@ -6994,6 +7200,16 @@ GUIDES = [
     <p><a href="/tools/apollo/">Apollo</a> replaces what used to require three separate tools: a contact database, an email sequencer, and a dialer. The Professional plan gives you unlimited email credits, 120 mobile credits, A/B testing, and advanced filters.</p>
 
     <p>You could use <a href="/tools/instantly/">Instantly</a> ($30/month) for email-only outbound. But Apollo's built-in data eliminates the need for a separate enrichment tool, which saves $50-150/month and the headache of CSV imports.</p>
+
+    <h2>Website: SharpPages ($2,500 one-time)</h2>
+
+    <p>Budget allocation: $0/month (one-time project fee)</p>
+
+    <p><a href="/tools/sharppages/">SharpPages</a> builds static HTML sites that score 90+ on Google PageSpeed. No WordPress. No Webflow. No monthly hosting bill. You pay a flat fee, get your site, and own every file. Host it on GitHub Pages for free. Total ongoing cost: zero.</p>
+
+    <p>Why not WordPress? Because a WordPress site from a freelancer will score 40-65 on mobile PageSpeed, require $200/month in hosting and maintenance, and need plugin updates every week. SharpPages eliminates all of that. Your site loads in under a second, passes Core Web Vitals on day one, and costs nothing to maintain.</p>
+
+    <p>Why not Webflow? Webflow locks you into their platform at $29-49/month just for hosting. Your site lives inside their editor. SharpPages gives you HTML files you can move anywhere. No vendor lock-in, no recurring platform fee.</p>
 
     <h2>The Optional Add-Ons</h2>
 
@@ -12591,7 +12807,8 @@ def build_roundup_pages():
             roundup['meta_desc'],
             f'/{roundup["slug"]}/',
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f'{roundup["slug"]}/index.html', page)
 
@@ -12629,7 +12846,8 @@ def build_guide_pages():
             guide['meta_desc'],
             f'/guides/{guide["slug"]}/',
             body,
-            extra_head=extra_head
+            extra_head=extra_head,
+            show_sources=True,
         )
         write_page(f'guides/{guide["slug"]}/index.html', page)
 
@@ -12682,7 +12900,8 @@ def build_guides_index():
         f"Opinionated guides for SaaS founders choosing tools. CRM, AI SDR, sales engagement, and more. {len(GUIDES)} guides.",
         "/guides/",
         body,
-        extra_head=bc_schema
+        extra_head=bc_schema,
+        show_sources=True,
     )
     write_page("guides/index.html", page)
 
@@ -12823,7 +13042,7 @@ def build_top_voices():
     extra = bc_schema + item_list_schema + article_schema + voices_css
     page = get_page_wrapper(data["title"], data.get("subtitle", ""),
                             "voices/", body, active_page="voices",
-                            extra_head=extra)
+                            extra_head=extra, show_sources=True)
     write_page("voices/index.html", page)
 
 
@@ -13082,6 +13301,12 @@ def main():
 
     build_about_page()
     print(f"  About page")
+
+    build_privacy_page()
+    print(f"  Privacy page")
+
+    build_terms_page()
+    print(f"  Terms page")
 
     niche_count = build_niche_pages()
     print(f"  {niche_count} niche pages")
