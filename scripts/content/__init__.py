@@ -63,6 +63,7 @@ _CONTENT_MODULES = {
     'sales-engagement': 'tools_sales_engagement',
     'conversation-intelligence': 'tools_conversation_intelligence',
     'data-enrichment': 'tools_data_enrichment',
+    'website-builders': 'tools_website_builders',
 }
 
 # Merged content from all modules, keyed by tool slug
